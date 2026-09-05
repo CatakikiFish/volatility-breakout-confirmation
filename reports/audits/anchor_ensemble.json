@@ -1,0 +1,752 @@
+{
+  "seed": 20260902,
+  "n_boot": 10000,
+  "block_len": 10,
+  "start_balance": 1000.0,
+  "archives": {
+    "train_20200415-20240829": "backtest-result-2026-09-02_09-52-29.zip",
+    "check1_20240829-20250829": "backtest-result-2026-09-02_09-53-42.zip",
+    "check2_20250918-20260829": "backtest-result-2026-09-02_09-54-39.zip"
+  },
+  "anchors": {
+    "anchor0": "confirm_v3_BTC",
+    "anchor1": "confirm_v3_BTC_anchor1",
+    "anchor2": "confirm_v3_BTC_anchor2"
+  },
+  "ratio_definition": "profit_total_abs / (max_drawdown_account * 1000) on the 1000-start close-time path for ensembles; zip max_drawdown_account for per-anchor structure table",
+  "windows": {
+    "train_20200415-20240829": {
+      "archive": "backtest-result-2026-09-02_09-52-29.zip",
+      "structure": {
+        "anchor0": {
+          "n": 239,
+          "profit_total_abs": 1069.25931097,
+          "profit_factor": 1.6276520508457768,
+          "max_drawdown_account": 0.0796386972621279,
+          "ratio": 13.426378729558715,
+          "top5_sum": 883.68627901,
+          "top5_share_of_total": 0.8264471208657014,
+          "worst5_sum": -224.52388541,
+          "n_confirm": 47,
+          "confirm_net": 1506.83537613,
+          "scout_stop_n": 174,
+          "scout_stop_sum": -375.14385815,
+          "long_n": 127,
+          "long_pnl": 942.23450512,
+          "short_n": 112,
+          "short_pnl": 127.02480584999998,
+          "rejected_signals": 0
+        },
+        "anchor1": {
+          "n": 243,
+          "profit_total_abs": 204.65487042,
+          "profit_factor": 1.113713293105088,
+          "max_drawdown_account": 0.14809358318639357,
+          "ratio": 1.3819293585625332,
+          "top5_sum": 479.80368963,
+          "top5_share_of_total": 2.3444528275595387,
+          "worst5_sum": -222.45778378,
+          "n_confirm": 53,
+          "confirm_net": 881.54605481,
+          "scout_stop_n": 175,
+          "scout_stop_sum": -639.23716426,
+          "long_n": 126,
+          "long_pnl": 318.2832365,
+          "short_n": 117,
+          "short_pnl": -113.62836607999999,
+          "rejected_signals": 0
+        },
+        "anchor2": {
+          "n": 241,
+          "profit_total_abs": 528.3335918700001,
+          "profit_factor": 1.3119105919149785,
+          "max_drawdown_account": 0.15355381993603515,
+          "ratio": 3.44070627542893,
+          "top5_sum": 550.00831507,
+          "top5_share_of_total": 1.0410246926062068,
+          "worst5_sum": -218.57611568000002,
+          "n_confirm": 46,
+          "confirm_net": 1138.08947057,
+          "scout_stop_n": 170,
+          "scout_stop_sum": -598.5803240399999,
+          "long_n": 124,
+          "long_pnl": 592.00674064,
+          "short_n": 117,
+          "short_pnl": -63.67314877000001,
+          "rejected_signals": 0
+        }
+      },
+      "occupancy": {
+        "window_hours": 38328.0,
+        "hours_by_n_anchors": {
+          "0": 12589.0,
+          "1": 8535.0,
+          "2": 7970.0,
+          "3": 9234.0
+        },
+        "share_of_window": {
+          "0": 0.32845439365476936,
+          "1": 0.22268315591734503,
+          "2": 0.20794197453558755,
+          "3": 0.24092047589229806
+        },
+        "share_of_occupied": {
+          "1": 0.33159796417887255,
+          "2": 0.30964683942655113,
+          "3": 0.3587551963945763
+        },
+        "max_combined_notional_stake_times_leverage": 9096.816500010002,
+        "max_combined_notional_at": "2020-10-19T16:00:00+00:00",
+        "note": "notional = stake_amount × leverage (3x). Three concurrent anchors can reach ~3× a single-anchor book."
+      },
+      "ensemble_equal_1_3": {
+        "profit_total_abs": 600.7492577533333,
+        "end_balance": 1600.7492577533342,
+        "max_drawdown_account": 0.08591738519878019,
+        "profit_factor": 1.3599240000560806,
+        "ratio": 6.992173427571472,
+        "n_events": 528,
+        "members": [
+          "anchor0",
+          "anchor1",
+          "anchor2"
+        ],
+        "weight_each": 0.3333333333333333
+      },
+      "leave_one_out_equal_1_2": {
+        "drop_anchor0": {
+          "profit_total_abs": 366.494231145,
+          "end_balance": 1366.4942311449995,
+          "max_drawdown_account": 0.1304649291601779,
+          "profit_factor": 1.2124008937420758,
+          "ratio": 2.809139847039183,
+          "n_events": 397,
+          "members": [
+            "anchor1",
+            "anchor2"
+          ],
+          "weight_each": 0.5
+        },
+        "drop_anchor1": {
+          "profit_total_abs": 798.7964514199999,
+          "end_balance": 1798.796451419999,
+          "max_drawdown_account": 0.10678776685973562,
+          "profit_factor": 1.4825974114597982,
+          "ratio": 7.480224326342632,
+          "n_events": 405,
+          "members": [
+            "anchor0",
+            "anchor2"
+          ],
+          "weight_each": 0.5
+        },
+        "drop_anchor2": {
+          "profit_total_abs": 636.957090695,
+          "end_balance": 1636.9570906950005,
+          "max_drawdown_account": 0.10825125496827326,
+          "profit_factor": 1.3777009381550094,
+          "ratio": 5.884061952738397,
+          "n_events": 398,
+          "members": [
+            "anchor0",
+            "anchor1"
+          ],
+          "weight_each": 0.5
+        }
+      },
+      "bootstrap_daily_ensemble_vs_anchor0": {
+        "n_days": 377,
+        "observed": {
+          "ensemble": {
+            "profit_total_abs": 600.7492577533333,
+            "end_balance": 1600.7492577533342,
+            "max_drawdown_account": 0.08103742774068616,
+            "profit_factor": 1.3892828101431707,
+            "ratio": 7.413232064518224,
+            "n_events": 377
+          },
+          "anchor0": {
+            "profit_total_abs": 1069.25931097,
+            "end_balance": 2069.259310970002,
+            "max_drawdown_account": 0.09083296037213169,
+            "profit_factor": 1.6502730526331217,
+            "ratio": 11.771710473702203,
+            "n_events": 377
+          },
+          "ratio_diff_ensemble_minus_anchor0": -4.358478409183979
+        },
+        "bootstrap": {
+          "n_boot": 10000,
+          "block_len": 10,
+          "seed": 20260902,
+          "alignment": "UTC calendar day of close_date; missing day = 0; shared block indices",
+          "ratio_diff_ensemble_minus_anchor0": {
+            "mean": -3.395952052401725,
+            "ci95_low": -14.718279989152665,
+            "ci95_high": 3.339209127524851,
+            "p_gt_0": 0.1866,
+            "n_finite": 10000,
+            "n_nonfinite": 0
+          },
+          "ratio_ensemble": {
+            "mean": 5.783637715848368,
+            "ci95_low": 0.22647388957334147,
+            "ci95_high": 16.765558847412816,
+            "p_gt_0": 0.9844,
+            "n_finite": 10000,
+            "n_nonfinite": 0
+          },
+          "ratio_anchor0": {
+            "mean": 9.179589768250091,
+            "ci95_low": 0.6616477341116982,
+            "ci95_high": 27.36098960303715,
+            "p_gt_0": 0.9921,
+            "n_finite": 10000,
+            "n_nonfinite": 0
+          }
+        },
+        "insignificant_if_p_lt_0_80": true
+      }
+    },
+    "check1_20240829-20250829": {
+      "archive": "backtest-result-2026-09-02_09-53-42.zip",
+      "structure": {
+        "anchor0": {
+          "n": 47,
+          "profit_total_abs": 450.80235582000006,
+          "profit_factor": 2.258072398181309,
+          "max_drawdown_account": 0.06821309918122843,
+          "ratio": 6.608735876701764,
+          "top5_sum": 620.9941397800001,
+          "top5_share_of_total": 1.377530822017167,
+          "worst5_sum": -144.89143479,
+          "n_confirm": 12,
+          "confirm_net": 576.25438705,
+          "scout_stop_n": 34,
+          "scout_stop_sum": -118.44426913000001,
+          "long_n": 20,
+          "long_pnl": 296.35426247000004,
+          "short_n": 27,
+          "short_pnl": 154.44809335000002,
+          "rejected_signals": 0
+        },
+        "anchor1": {
+          "n": 50,
+          "profit_total_abs": -30.289985129999994,
+          "profit_factor": 0.9227286201685793,
+          "max_drawdown_account": 0.14738661090000005,
+          "ratio": -0.20551381801262372,
+          "top5_sum": 187.42680803,
+          "top5_share_of_total": -6.1877484332063135,
+          "worst5_sum": -174.173048,
+          "n_confirm": 13,
+          "confirm_net": 80.53280928999999,
+          "scout_stop_n": 32,
+          "scout_stop_sum": -103.88484158,
+          "long_n": 30,
+          "long_pnl": -17.88266374,
+          "short_n": 20,
+          "short_pnl": -12.407321390000003,
+          "rejected_signals": 0
+        },
+        "anchor2": {
+          "n": 47,
+          "profit_total_abs": 128.58157221,
+          "profit_factor": 1.5105806675312485,
+          "max_drawdown_account": 0.0726440440895426,
+          "ratio": 1.7700222202870148,
+          "top5_sum": 192.79678705,
+          "top5_share_of_total": 1.499412269863394,
+          "worst5_sum": -84.95093442,
+          "n_confirm": 11,
+          "confirm_net": 181.31698748,
+          "scout_stop_n": 33,
+          "scout_stop_sum": -52.96628073,
+          "long_n": 27,
+          "long_pnl": 69.9347452,
+          "short_n": 20,
+          "short_pnl": 58.64682701,
+          "rejected_signals": 0
+        }
+      },
+      "occupancy": {
+        "window_hours": 8760.0,
+        "hours_by_n_anchors": {
+          "0": 3234.0,
+          "1": 2176.0,
+          "2": 1641.0,
+          "3": 1709.0
+        },
+        "share_of_window": {
+          "0": 0.36917808219178083,
+          "1": 0.24840182648401826,
+          "2": 0.18732876712328766,
+          "3": 0.19509132420091324
+        },
+        "share_of_occupied": {
+          "1": 0.3937748823742309,
+          "2": 0.2969598262757872,
+          "3": 0.30926529134998193
+        },
+        "max_combined_notional_stake_times_leverage": 5748.213599999999,
+        "max_combined_notional_at": "2025-07-10T19:00:00+00:00",
+        "note": "notional = stake_amount × leverage (3x). Three concurrent anchors can reach ~3× a single-anchor book."
+      },
+      "ensemble_equal_1_3": {
+        "profit_total_abs": 183.0313143,
+        "end_balance": 1183.0313143000012,
+        "max_drawdown_account": 0.08489428154693934,
+        "profit_factor": 1.5545381543473233,
+        "ratio": 2.1559910863819396,
+        "n_events": 110,
+        "members": [
+          "anchor0",
+          "anchor1",
+          "anchor2"
+        ],
+        "weight_each": 0.3333333333333333
+      },
+      "leave_one_out_equal_1_2": {
+        "drop_anchor0": {
+          "profit_total_abs": 49.14579353999999,
+          "end_balance": 1049.1457935399997,
+          "max_drawdown_account": 0.09659826168003391,
+          "profit_factor": 1.1547671097991192,
+          "ratio": 0.5087647819459471,
+          "n_events": 82,
+          "members": [
+            "anchor1",
+            "anchor2"
+          ],
+          "weight_each": 0.5
+        },
+        "drop_anchor1": {
+          "profit_total_abs": 289.691964015,
+          "end_balance": 1289.6919640149983,
+          "max_drawdown_account": 0.06710098718351977,
+          "profit_factor": 1.9546252068146113,
+          "ratio": 4.317253384405489,
+          "n_events": 78,
+          "members": [
+            "anchor0",
+            "anchor2"
+          ],
+          "weight_each": 0.5
+        },
+        "drop_anchor2": {
+          "profit_total_abs": 210.25618534500003,
+          "end_balance": 1210.2561853449993,
+          "max_drawdown_account": 0.09538920584604828,
+          "profit_factor": 1.560442013213189,
+          "ratio": 2.2041926387807367,
+          "n_events": 86,
+          "members": [
+            "anchor0",
+            "anchor1"
+          ],
+          "weight_each": 0.5
+        }
+      },
+      "bootstrap_daily_ensemble_vs_anchor0": {
+        "n_days": 78,
+        "observed": {
+          "ensemble": {
+            "profit_total_abs": 183.0313143,
+            "end_balance": 1183.0313143000008,
+            "max_drawdown_account": 0.08489428154693994,
+            "profit_factor": 1.644022752211893,
+            "ratio": 2.1559910863819245,
+            "n_events": 78
+          },
+          "anchor0": {
+            "profit_total_abs": 450.80235582000006,
+            "end_balance": 1450.8023558200005,
+            "max_drawdown_account": 0.06821309918122843,
+            "profit_factor": 2.298357075641076,
+            "ratio": 6.608735876701764,
+            "n_events": 78
+          },
+          "ratio_diff_ensemble_minus_anchor0": -4.452744790319839
+        },
+        "bootstrap": {
+          "n_boot": 10000,
+          "block_len": 10,
+          "seed": 20260902,
+          "alignment": "UTC calendar day of close_date; missing day = 0; shared block indices",
+          "ratio_diff_ensemble_minus_anchor0": {
+            "mean": -3.370268441739911,
+            "ci95_low": -15.32792546629057,
+            "ci95_high": 2.138614391028552,
+            "p_gt_0": 0.1447,
+            "n_finite": 10000,
+            "n_nonfinite": 0
+          },
+          "ratio_ensemble": {
+            "mean": 4.188794755320357,
+            "ci95_low": -0.2820901529095412,
+            "ci95_high": 13.195412815716145,
+            "p_gt_0": 0.9521,
+            "n_finite": 10000,
+            "n_nonfinite": 0
+          },
+          "ratio_anchor0": {
+            "mean": 7.5590631970602695,
+            "ci95_low": 0.09510327972866614,
+            "ci95_high": 24.252277805570635,
+            "p_gt_0": 0.9787,
+            "n_finite": 10000,
+            "n_nonfinite": 0
+          }
+        },
+        "insignificant_if_p_lt_0_80": true
+      },
+      "divergence_vs_anchor0": {
+        "anchor1": {
+          "alignment": "(open_date floored to UTC 3h bin, is_short)",
+          "n_bins_anchor0": 47,
+          "n_bins_other": 50,
+          "n_bins_only_anchor0": 35,
+          "n_bins_only_other": 38,
+          "n_bins_both": 12,
+          "missed_winners_ge_50": [
+            {
+              "pair": "BTC/USDT:USDT",
+              "is_short": false,
+              "open_date": "2024-09-09 18:00:00+00:00",
+              "close_date": "2024-09-30 01:00:00+00:00",
+              "exit_reason": "trailing_stop_loss",
+              "profit_abs": 165.93798079,
+              "bin": "2024-09-09T18:00:00+00:00"
+            },
+            {
+              "pair": "BTC/USDT:USDT",
+              "is_short": true,
+              "open_date": "2025-02-21 18:00:00+00:00",
+              "close_date": "2025-03-01 02:00:00+00:00",
+              "exit_reason": "trailing_stop_loss",
+              "profit_abs": 201.94225954,
+              "bin": "2025-02-21T18:00:00+00:00"
+            }
+          ],
+          "extra_losers_le_m30": [
+            {
+              "pair": "BTC/USDT:USDT",
+              "is_short": false,
+              "open_date": "2024-12-16 01:00:00+00:00",
+              "close_date": "2024-12-18 05:00:00+00:00",
+              "exit_reason": "trailing_stop_loss",
+              "profit_abs": -43.67753866,
+              "bin": "2024-12-16T00:00:00+00:00"
+            },
+            {
+              "pair": "BTC/USDT:USDT",
+              "is_short": true,
+              "open_date": "2025-01-27 01:00:00+00:00",
+              "close_date": "2025-01-27 14:00:00+00:00",
+              "exit_reason": "trailing_stop_loss",
+              "profit_abs": -43.04846095,
+              "bin": "2025-01-27T00:00:00+00:00"
+            },
+            {
+              "pair": "BTC/USDT:USDT",
+              "is_short": true,
+              "open_date": "2025-04-06 19:00:00+00:00",
+              "close_date": "2025-04-07 13:00:00+00:00",
+              "exit_reason": "trailing_stop_loss",
+              "profit_abs": -35.26109669,
+              "bin": "2025-04-06T18:00:00+00:00"
+            }
+          ],
+          "both_pnl_diff_ge_50": [
+            {
+              "bin": "2024-11-06T03:00:00+00:00",
+              "is_short": false,
+              "pnl_anchor0": 159.7041082,
+              "pnl_other": 8.34761441,
+              "diff_other_minus_0": -151.35649379,
+              "anchor0": [
+                {
+                  "pair": "BTC/USDT:USDT",
+                  "is_short": false,
+                  "open_date": "2024-11-06 03:00:00+00:00",
+                  "close_date": "2024-11-17 22:00:00+00:00",
+                  "exit_reason": "trailing_stop_loss",
+                  "profit_abs": 159.7041082
+                }
+              ],
+              "other": [
+                {
+                  "pair": "BTC/USDT:USDT",
+                  "is_short": false,
+                  "open_date": "2024-11-06 05:00:00+00:00",
+                  "close_date": "2024-11-10 21:00:00+00:00",
+                  "exit_reason": "trailing_stop_loss",
+                  "profit_abs": 8.34761441
+                }
+              ]
+            }
+          ],
+          "extra_unique_loss_n": 22,
+          "extra_unique_loss_sum": -292.91900394,
+          "kind": "missed_large_winners",
+          "one_sentence": "该窗转亏主要是漏掉 1–2 笔大单，而不是系统性多出许多小亏。"
+        }
+      }
+    },
+    "check2_20250918-20260829": {
+      "archive": "backtest-result-2026-09-02_09-54-39.zip",
+      "structure": {
+        "anchor0": {
+          "n": 54,
+          "profit_total_abs": 511.31878711999997,
+          "profit_factor": 2.3040036677738893,
+          "max_drawdown_account": 0.12416622825946917,
+          "ratio": 4.118018194540799,
+          "top5_sum": 722.75047969,
+          "top5_share_of_total": 1.4135026873565273,
+          "worst5_sum": -86.26709968,
+          "n_confirm": 11,
+          "confirm_net": 783.72557527,
+          "scout_stop_n": 39,
+          "scout_stop_sum": -260.26344329,
+          "long_n": 29,
+          "long_pnl": 193.13590262,
+          "short_n": 25,
+          "short_pnl": 318.1828845,
+          "rejected_signals": 0
+        },
+        "anchor1": {
+          "n": 54,
+          "profit_total_abs": 684.2112348699998,
+          "profit_factor": 2.966115407053645,
+          "max_drawdown_account": 0.10810306680774111,
+          "ratio": 6.3292490682697675,
+          "top5_sum": 839.41870604,
+          "top5_share_of_total": 1.226841453720779,
+          "worst5_sum": -69.60869687,
+          "n_confirm": 14,
+          "confirm_net": 947.79048525,
+          "scout_stop_n": 37,
+          "scout_stop_sum": -257.48623452,
+          "long_n": 23,
+          "long_pnl": 343.40018929999997,
+          "short_n": 31,
+          "short_pnl": 340.81104557,
+          "rejected_signals": 0
+        },
+        "anchor2": {
+          "n": 54,
+          "profit_total_abs": -193.24715146,
+          "profit_factor": 0.46892931860380016,
+          "max_drawdown_account": 0.25676555421915787,
+          "ratio": -0.7526210127666002,
+          "top5_sum": 100.27502826999999,
+          "top5_share_of_total": -0.5188952463848131,
+          "worst5_sum": -51.48761638,
+          "n_confirm": 6,
+          "confirm_net": 117.06869746,
+          "scout_stop_n": 44,
+          "scout_stop_sum": -307.22589375,
+          "long_n": 27,
+          "long_pnl": -83.80474111000001,
+          "short_n": 27,
+          "short_pnl": -109.44241035,
+          "rejected_signals": 0
+        }
+      },
+      "occupancy": {
+        "window_hours": 8280.0,
+        "hours_by_n_anchors": {
+          "0": 2880.0,
+          "1": 2148.0,
+          "2": 2097.0,
+          "3": 1155.0
+        },
+        "share_of_window": {
+          "0": 0.34782608695652173,
+          "1": 0.2594202898550725,
+          "2": 0.2532608695652174,
+          "3": 0.13949275362318841
+        },
+        "share_of_occupied": {
+          "1": 0.3977777777777778,
+          "2": 0.3883333333333333,
+          "3": 0.21388888888888888
+        },
+        "max_combined_notional_stake_times_leverage": 8398.63559997,
+        "max_combined_notional_at": "2025-09-29T01:00:00+00:00",
+        "note": "notional = stake_amount × leverage (3x). Three concurrent anchors can reach ~3× a single-anchor book."
+      },
+      "ensemble_equal_1_3": {
+        "profit_total_abs": 334.0942901766666,
+        "end_balance": 1334.094290176668,
+        "max_drawdown_account": 0.10140419469738009,
+        "profit_factor": 1.9078663469399946,
+        "ratio": 3.294679191267207,
+        "n_events": 127,
+        "members": [
+          "anchor0",
+          "anchor1",
+          "anchor2"
+        ],
+        "weight_each": 0.3333333333333333
+      },
+      "leave_one_out_equal_1_2": {
+        "drop_anchor0": {
+          "profit_total_abs": 245.48204170499997,
+          "end_balance": 1245.4820417049996,
+          "max_drawdown_account": 0.14771671079170343,
+          "profit_factor": 1.6896689181827562,
+          "ratio": 1.6618434054570592,
+          "n_events": 98,
+          "members": [
+            "anchor1",
+            "anchor2"
+          ],
+          "weight_each": 0.5
+        },
+        "drop_anchor1": {
+          "profit_total_abs": 159.03581783,
+          "end_balance": 1159.0358178299994,
+          "max_drawdown_account": 0.11863554139191063,
+          "profit_factor": 1.4207315130860827,
+          "ratio": 1.3405410888177913,
+          "n_events": 94,
+          "members": [
+            "anchor0",
+            "anchor2"
+          ],
+          "weight_each": 0.5
+        },
+        "drop_anchor2": {
+          "profit_total_abs": 597.765010995,
+          "end_balance": 1597.7650109949996,
+          "max_drawdown_account": 0.09609127717365679,
+          "profit_factor": 2.6153276910292975,
+          "ratio": 6.220804099780203,
+          "n_events": 91,
+          "members": [
+            "anchor0",
+            "anchor1"
+          ],
+          "weight_each": 0.5
+        }
+      },
+      "bootstrap_daily_ensemble_vs_anchor0": {
+        "n_days": 89,
+        "observed": {
+          "ensemble": {
+            "profit_total_abs": 334.0942901766667,
+            "end_balance": 1334.094290176667,
+            "max_drawdown_account": 0.10140419469738014,
+            "profit_factor": 1.9699992104823458,
+            "ratio": 3.2946791912672055,
+            "n_events": 89
+          },
+          "anchor0": {
+            "profit_total_abs": 511.31878712,
+            "end_balance": 1511.31878712,
+            "max_drawdown_account": 0.12416622825946902,
+            "profit_factor": 2.30400366777389,
+            "ratio": 4.118018194540804,
+            "n_events": 89
+          },
+          "ratio_diff_ensemble_minus_anchor0": -0.8233390032735985
+        },
+        "bootstrap": {
+          "n_boot": 10000,
+          "block_len": 10,
+          "seed": 20260902,
+          "alignment": "UTC calendar day of close_date; missing day = 0; shared block indices",
+          "ratio_diff_ensemble_minus_anchor0": {
+            "mean": -1.7224018433960075,
+            "ci95_low": -9.12475616046941,
+            "ci95_high": 0.8288940823445835,
+            "p_gt_0": 0.1491,
+            "n_finite": 10000,
+            "n_nonfinite": 0
+          },
+          "ratio_ensemble": {
+            "mean": 2.509834188450229,
+            "ci95_low": -0.9878915632922695,
+            "ci95_high": 13.409459412220617,
+            "p_gt_0": 0.7368,
+            "n_finite": 10000,
+            "n_nonfinite": 0
+          },
+          "ratio_anchor0": {
+            "mean": 4.232236031846236,
+            "ci95_low": -0.9240339706815772,
+            "ci95_high": 20.158030302111467,
+            "p_gt_0": 0.8316,
+            "n_finite": 10000,
+            "n_nonfinite": 0
+          }
+        },
+        "insignificant_if_p_lt_0_80": true
+      },
+      "divergence_vs_anchor0": {
+        "anchor2": {
+          "alignment": "(open_date floored to UTC 3h bin, is_short)",
+          "n_bins_anchor0": 53,
+          "n_bins_other": 54,
+          "n_bins_only_anchor0": 45,
+          "n_bins_only_other": 46,
+          "n_bins_both": 8,
+          "missed_winners_ge_50": [
+            {
+              "pair": "BTC/USDT:USDT",
+              "is_short": false,
+              "open_date": "2025-09-29 00:00:00+00:00",
+              "close_date": "2025-10-05 16:00:00+00:00",
+              "exit_reason": "trailing_stop_loss",
+              "profit_abs": 196.72546987,
+              "bin": "2025-09-29T00:00:00+00:00"
+            },
+            {
+              "pair": "BTC/USDT:USDT",
+              "is_short": true,
+              "open_date": "2025-10-10 18:00:00+00:00",
+              "close_date": "2025-10-10 21:00:00+00:00",
+              "exit_reason": "trailing_stop_loss",
+              "profit_abs": 93.59348034,
+              "bin": "2025-10-10T18:00:00+00:00"
+            },
+            {
+              "pair": "BTC/USDT:USDT",
+              "is_short": true,
+              "open_date": "2026-01-29 18:00:00+00:00",
+              "close_date": "2026-02-06 13:00:00+00:00",
+              "exit_reason": "trailing_stop_loss",
+              "profit_abs": 244.81948764,
+              "bin": "2026-01-29T18:00:00+00:00"
+            },
+            {
+              "pair": "BTC/USDT:USDT",
+              "is_short": false,
+              "open_date": "2026-08-17 03:00:00+00:00",
+              "close_date": "2026-08-19 15:00:00+00:00",
+              "exit_reason": "trailing_stop_loss",
+              "profit_abs": 139.63761619,
+              "bin": "2026-08-17T03:00:00+00:00"
+            }
+          ],
+          "extra_losers_le_m30": [],
+          "both_pnl_diff_ge_50": [],
+          "extra_unique_loss_n": 34,
+          "extra_unique_loss_sum": -306.29902373,
+          "kind": "mixed",
+          "one_sentence": "该窗转亏是混合来源：锚点0有而该锚点没有的≥50盈利 4 笔合计 674.8；该锚点独有≤−30亏损 0 笔合计 0.0；同窗盈亏差≥50 共 0 组合计差 0.0。"
+        }
+      }
+    }
+  },
+  "pre_registered_readout": {
+    "ensemble_three_windows_all_profit": true,
+    "ensemble_three_windows_pf_ge_1_20": true,
+    "n_windows_ensemble_ratio_ge_anchor0": 0,
+    "rule": "集成三窗均盈利、PF≥1.20，且比值在 ≥2 个窗口 ≥ 锚点 0 → 锚点集成为部署形态候选，待工程可行性评估；否则保留单锚点，锚点敏感记入风险清单。两种结论都不触发新变体。",
+    "verdict": "保留单锚点，锚点敏感记入风险清单",
+    "verdict_code": "keep_single_anchor"
+  }
+}

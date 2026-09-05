@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this research artifact, please cite it as below."
+title: "Volatility Breakout Confirmation Research Artifact"
+type: software
+version: 1.0.0
+date-released: 2026-09-05
+authors:
+  - family-names: "鄢"
+    given-names: "靖东"
+preferred-citation:
+  type: article
+  title: "规则化退出与确认加仓对波动突破策略收益兑现的影响"
+  authors:
+    - family-names: "鄢"
+      given-names: "靖东"
+  year: 2026

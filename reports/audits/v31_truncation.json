@@ -1,0 +1,100 @@
+{
+  "train": {
+    "archive": "backtest-result-2026-09-02_11-18-39.zip",
+    "n_noloosen": 239,
+    "n_v31": 239,
+    "n_truncated_adds": 3,
+    "n_skipped_adds": 0,
+    "n_identity_diffs": 0,
+    "max_margin_noloosen": 1022.338,
+    "max_margin_v31": 850.76933333,
+    "truncated": [
+      {
+        "open_date": "2020-07-23 00:00:00+00:00",
+        "is_short": false,
+        "first_stake": 269.60583333333335,
+        "add_before": 697.7453333333333,
+        "add_after": 502.50466666666665,
+        "margin_before": 967.35116667,
+        "margin_after": 772.1105
+      },
+      {
+        "open_date": "2020-10-08 15:00:00+00:00",
+        "is_short": false,
+        "first_stake": 236.26416666666668,
+        "add_before": 706.752,
+        "add_after": 566.874,
+        "margin_before": 943.01616667,
+        "margin_after": 803.13816667
+      },
+      {
+        "open_date": "2020-10-19 15:00:00+00:00",
+        "is_short": false,
+        "first_stake": 263.7266666666667,
+        "add_before": 758.6113333333333,
+        "add_after": 536.6771666666667,
+        "margin_before": 1022.338,
+        "margin_after": 800.40383333
+      }
+    ],
+    "skipped_adds": [],
+    "identity_diffs": []
+  },
+  "check1": {
+    "archive": "backtest-result-2026-09-02_11-19-12.zip",
+    "n_noloosen": 47,
+    "n_v31": 47,
+    "n_truncated_adds": 0,
+    "n_skipped_adds": 1,
+    "n_identity_diffs": 1,
+    "max_margin_noloosen": 865.603,
+    "max_margin_v31": 865.603,
+    "truncated": [],
+    "skipped_adds": [
+      {
+        "open_date": "2025-01-20 18:00:00+00:00",
+        "is_short": true,
+        "first_stake_noloosen": 34.32613333333333,
+        "add_stake_noloosen": 102.55369999999999,
+        "first_stake_v31": 34.32613333333333,
+        "max_stake_noloosen": 136.87983333,
+        "max_stake_v31": 34.32613333
+      }
+    ],
+    "identity_diffs": [
+      {
+        "open_date": "2025-01-20 18:00:00+00:00",
+        "is_short": true,
+        "close_noloosen": "2025-01-27 13:00:00+00:00",
+        "close_v31": "2025-01-27 15:00:00+00:00",
+        "exit_noloosen": "trailing_stop_loss",
+        "exit_v31": "exit_signal",
+        "pnl_noloosen": 4.04779591,
+        "pnl_v31": 1.18249893
+      }
+    ]
+  },
+  "check2": {
+    "archive": "backtest-result-2026-09-02_11-24-25.zip",
+    "n_noloosen": 54,
+    "n_v31": 54,
+    "n_truncated_adds": 1,
+    "n_skipped_adds": 0,
+    "n_identity_diffs": 0,
+    "max_margin_noloosen": 1000.37186667,
+    "max_margin_v31": 1000.37186667,
+    "truncated": [
+      {
+        "open_date": "2025-09-29 00:00:00+00:00",
+        "is_short": false,
+        "first_stake": 224.26700000000002,
+        "add_before": 645.9722333333334,
+        "add_after": 531.9771333333334,
+        "margin_before": 870.23923333,
+        "margin_after": 756.24413333
+      }
+    ],
+    "skipped_adds": [],
+    "identity_diffs": []
+  }
+}

@@ -1,0 +1,6 @@
+strategy,reason,trades,profit_abs
+Original,exit_signal,192,2571.754381
+Original,force_exit,1,210.028380
+V3.2,trailing_stop_loss,118,4570.742031
+V3.2,exit_signal,27,54.399501
+V3.2,stop_loss,181,-1760.406081

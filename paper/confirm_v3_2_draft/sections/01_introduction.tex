@@ -1,0 +1,50 @@
+\section{引言}
+
+趋势策略的绩效既取决于趋势识别，也取决于仓位配置和退出时机。对于低胜率、少数大额盈利驱动的波动突破系统，退出过紧可能截断趋势收益，退出过宽则会扩大回撤；分阶段加仓进一步改变不同交易状态的资金权重。本文研究规则化退出与确认加仓能否在保持累计收益水平的同时，改善收益兑现和下行风险。
+
+以 BTC 永续合约的原始 \Original 为基线，本文构建 \Vthree，比较 2020 年 4 月至 2026 年 8 月的历史表现。两者累计收益分别为 278.18\% 和 286.47\%，最大百分比回撤分别为 19.88\% 和 14.20\%。\cref{fig:opening-risk} 显示，主要差异表现为回撤深度与月度下行偏差下降，而非总体波动率大幅降低。
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[
+      paper axis,
+      width=0.96\textwidth,
+      height=5.5cm,
+      date coordinates in=x,
+      xmin=2020-04-01,xmax=2026-09-01,
+      xtick={2020-04-01,2021-01-01,2022-01-01,2023-01-01,2024-01-01,2025-01-01,2026-01-01},
+      xticklabel=\year,
+      ylabel={回撤（\%）},
+      ymin=-22,ymax=1,
+      legend columns=2,
+      legend pos=south west,
+    ]
+      \addplot[PaperGray,thick] table[x=date,y=volatility,col sep=comma]{data/drawdown_curves.csv};
+      \addlegendentry{原始系统}
+      \addplot[PaperRed,very thick] table[x=date,y=confirm_v32,col sep=comma]{data/drawdown_curves.csv};
+      \addlegendentry{Confirm V3.2}
+    \end{axis}
+  \end{tikzpicture}
+
+  \vspace{0.35em}
+  \small
+  \renewcommand{\arraystretch}{1.18}
+  \begin{tabular}{lrrr}
+    \toprule
+    指标 & 原始系统 & Confirm V3.2 & 变化\\
+    \midrule
+    累计收益 & 278.18\% & 286.47\% & +8.29 个百分点\\
+    最大百分比回撤 & 19.88\% & 14.20\% & $-5.68$ 个百分点\\
+    月度收益年化波动率 & 28.03\% & 26.41\% & $-1.62$ 个百分点\\
+    月度下行偏差 & 2.53\% & 1.32\% & $-1.22$ 个百分点\\
+    正收益年度 & 5/7 & 7/7 & +2 个年度\\
+    \bottomrule
+  \end{tabular}
+  \caption{完整历史的回撤路径与收益风险概览。在累计收益近似持平的同时，V3.2 的最大百分比回撤相对降低 28.6\%，月度下行偏差相对降低 48.1\%。曲线为月度采样的已实现权益回撤；最大百分比回撤仍采用回测引擎的完整路径口径。}
+  \label{fig:opening-risk}
+\end{figure}
+
+时间序列动量文献表明，趋势延续和风险缩放与期货策略的收益分布密切相关\cite{moskowitz2012,harvey2018}。本文将研究对象限定于小时级 BTC 永续波动突破，重点考察两个机制：一是利用初始止损、盈利保护与跟踪退出约束损失并实现利润；二是通过小仓试探和第二次独立同向突破后的加仓，调整交易状态与资金规模的对应关系。
+
+本文的贡献包括：区分正常规则退出与样本末端强制平仓的利润；通过版本比较分析退出与风险管理的逐步变化；利用确认分组解释仓位不等时的收益分布。实证部分同时报告完整权益曲线、年度结果和熊市压力窗口，并以 BTC 持有基准衡量市场机会成本。

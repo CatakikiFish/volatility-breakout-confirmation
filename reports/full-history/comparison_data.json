@@ -1,0 +1,3558 @@
+{
+  "generatedAt": "2026-09-04 15:17 Asia/Shanghai",
+  "engine": {
+    "freqtrade": "2026.7",
+    "ccxt": "4.5.68"
+  },
+  "commonConfig": {
+    "exchange": "bybit",
+    "pair_whitelist": [
+      "BTC/USDT:USDT"
+    ],
+    "trading_mode": "futures",
+    "margin_mode": "isolated",
+    "stake_currency": "USDT",
+    "dry_run_wallet": 1000,
+    "stake_amount": 540,
+    "max_open_trades": 1,
+    "tradable_balance_ratio": 0.99,
+    "timeframe": null,
+    "pairlists": [
+      {
+        "method": "StaticPairList"
+      }
+    ],
+    "order_types": null,
+    "order_time_in_force": null,
+    "entry_pricing": {
+      "price_side": "same",
+      "use_order_book": true,
+      "order_book_top": 1,
+      "price_last_balance": 0.0,
+      "check_depth_of_market": {
+        "enabled": false,
+        "bids_to_ask_delta": 1
+      }
+    },
+    "exit_pricing": {
+      "price_side": "same",
+      "use_order_book": true,
+      "order_book_top": 1
+    },
+    "fee": null
+  },
+  "strategies": {
+    "VolatilitySystem": {
+      "name": "VolatilitySystem",
+      "archive": "user_data/research/volatility_vs_v32_full_history/results/volatilitysystem/backtest-result-2026-09-04_03-14-47.zip",
+      "archiveSha256": "a1b96594f2e84228922600e26dc2265798592951da8b2cd604d3448701f1ff2b",
+      "strategyFile": "user_data/strategies/VolatilitySystem.py",
+      "strategySha256": "5214637b065632e9c7b3121f67fbe630ee41153fc53ed78d49c444f37a438477",
+      "summary": {
+        "start": "2020-04-15 06:00:00",
+        "end": "2026-08-30 14:00:00",
+        "days": 2328,
+        "trades": 193,
+        "tradesPerDay": 0.08,
+        "startingBalance": 1000.0,
+        "finalBalance": 3781.7827606599976,
+        "profitAbs": 2781.7827606600003,
+        "profitPct": 278.1782760660001,
+        "avgProfitPct": 1.0430505360563325,
+        "normalExitProfitAbs": 2571.7543809200006,
+        "forceExitProfitAbs": 210.02837974,
+        "forceExitTrades": 1,
+        "cagrPct": 23.189950181167095,
+        "profitFactor": 1.7486573179594571,
+        "expectancy": 14.41338217958549,
+        "expectancyRatio": 0.4693654687725095,
+        "sharpeClosed": 0.25414774986084526,
+        "sortinoClosed": 0.8428263250244578,
+        "calmarClosed": 26.028758230952583,
+        "sqn": 2.2234,
+        "pValue": 0.027355419757590944,
+        "avgDailyProfit": 1.1949238662628867,
+        "avgStake": 378.13267720207256,
+        "totalVolume": 295381.55736082,
+        "marketChangePct": 1045.1039697542533,
+        "wins": 72,
+        "draws": 0,
+        "losses": 121,
+        "winRatePct": 37.30569948186528,
+        "avgDurationSeconds": 1041840.0,
+        "avgDuration": "12 days, 1:24:00",
+        "bestTradePct": 100.42518765062978,
+        "worstTradePct": -35.337684623057015,
+        "bestDayAbs": 525.53735837,
+        "worstDayAbs": -146.68165631,
+        "maxConsecutiveWins": 7,
+        "maxConsecutiveLosses": 11,
+        "maxDrawdownAccountPct": 8.770679034325157,
+        "maxRelativeDrawdownPct": 19.884875312012205,
+        "maxDrawdownAbs": 331.8246158699999,
+        "drawdownDuration": "110 days 18:00:00",
+        "drawdownStart": "2024-03-05 18:00:00",
+        "drawdownEnd": "2024-06-24 12:00:00",
+        "returnDrawdownRatio": 31.71684597934941,
+        "calmarStyleRatio": 1.1662104899978094,
+        "longTrades": 97,
+        "shortTrades": 96,
+        "longProfitAbs": 2674.0990028099995,
+        "shortProfitAbs": 107.68375785,
+        "leverageValues": [
+          2.0
+        ],
+        "feeOpenPct": 0.06,
+        "feeClosePct": 0.06,
+        "top1GrossProfitPct": 8.0883,
+        "top5GrossProfitPct": 28.4004,
+        "top10GrossProfitPct": 46.7051,
+        "scoutOnlyTrades": 95,
+        "scoutOnlyProfitAbs": -1813.36009686,
+        "scoutOnlyMeanProfitPct": -7.402023573911452,
+        "scoutOnlyWinRatePct": 14.736842105263156,
+        "scoutOnlyProfitFactor": 0.13611811906116503,
+        "scoutOnlyAvgStake": 255.97425263157893,
+        "confirmedTrades": 98,
+        "confirmedProfitAbs": 4595.14285752,
+        "confirmedMeanProfitPct": 9.22960196918837,
+        "confirmedWinRatePct": 59.183673469387756,
+        "confirmedProfitFactor": 3.8424519951681826,
+        "confirmedAvgStake": 496.5515581632653,
+        "winnerAvgStake": 450.66749652777776,
+        "loserAvgStake": 334.97146239669416,
+        "pnlPerCommittedStakePct": 3.8117261608372024,
+        "equal100StakeDiagnosticProfitAbs": 201.30875345887213
+      },
+      "curve": [
+        {
+          "date": "2020-04",
+          "equity": 950.186654,
+          "drawdownPct": -4.981335
+        },
+        {
+          "date": "2020-05",
+          "equity": 938.251498,
+          "drawdownPct": -11.376845
+        },
+        {
+          "date": "2020-06",
+          "equity": 869.283013,
+          "drawdownPct": -17.891308
+        },
+        {
+          "date": "2020-07",
+          "equity": 879.190222,
+          "drawdownPct": -16.955516
+        },
+        {
+          "date": "2020-08",
+          "equity": 992.957852,
+          "drawdownPct": -10.188144
+        },
+        {
+          "date": "2020-09",
+          "equity": 978.557275,
+          "drawdownPct": -11.490659
+        },
+        {
+          "date": "2020-10",
+          "equity": 1091.233293,
+          "drawdownPct": -2.104904
+        },
+        {
+          "date": "2020-11",
+          "equity": 921.453097,
+          "drawdownPct": -19.884875
+        },
+        {
+          "date": "2020-12",
+          "equity": 921.453097,
+          "drawdownPct": -19.884875
+        },
+        {
+          "date": "2021-01",
+          "equity": 1390.679606,
+          "drawdownPct": -3.891584
+        },
+        {
+          "date": "2021-02",
+          "equity": 1390.679606,
+          "drawdownPct": -3.891584
+        },
+        {
+          "date": "2021-03",
+          "equity": 1582.711726,
+          "drawdownPct": -1.289262
+        },
+        {
+          "date": "2021-04",
+          "equity": 1512.808434,
+          "drawdownPct": -5.648998
+        },
+        {
+          "date": "2021-05",
+          "equity": 1478.095471,
+          "drawdownPct": -7.81398
+        },
+        {
+          "date": "2021-06",
+          "equity": 1551.864243,
+          "drawdownPct": -5.221471
+        },
+        {
+          "date": "2021-07",
+          "equity": 1551.864243,
+          "drawdownPct": -5.221471
+        },
+        {
+          "date": "2021-08",
+          "equity": 1989.788031,
+          "drawdownPct": 0.0
+        },
+        {
+          "date": "2021-09",
+          "equity": 2101.240626,
+          "drawdownPct": 0.0
+        },
+        {
+          "date": "2021-10",
+          "equity": 2398.618329,
+          "drawdownPct": 0.0
+        },
+        {
+          "date": "2021-11",
+          "equity": 2468.34626,
+          "drawdownPct": 0.0
+        },
+        {
+          "date": "2021-12",
+          "equity": 2359.120369,
+          "drawdownPct": -4.425064
+        },
+        {
+          "date": "2022-01",
+          "equity": 2254.290691,
+          "drawdownPct": -8.672024
+        },
+        {
+          "date": "2022-02",
+          "equity": 2353.366003,
+          "drawdownPct": -4.65819
+        },
+        {
+          "date": "2022-03",
+          "equity": 2353.366003,
+          "drawdownPct": -4.65819
+        },
+        {
+          "date": "2022-04",
+          "equity": 2405.308988,
+          "drawdownPct": -2.553826
+        },
+        {
+          "date": "2022-05",
+          "equity": 2681.409756,
+          "drawdownPct": 0.0
+        },
+        {
+          "date": "2022-06",
+          "equity": 2536.986909,
+          "drawdownPct": -5.386079
+        },
+        {
+          "date": "2022-07",
+          "equity": 2820.919769,
+          "drawdownPct": -1.299934
+        },
+        {
+          "date": "2022-08",
+          "equity": 2843.658496,
+          "drawdownPct": -0.504337
+        },
+        {
+          "date": "2022-09",
+          "equity": 2921.961767,
+          "drawdownPct": -1.418519
+        },
+        {
+          "date": "2022-10",
+          "equity": 2917.3073,
+          "drawdownPct": -1.575552
+        },
+        {
+          "date": "2022-11",
+          "equity": 3004.347496,
+          "drawdownPct": -1.524246
+        },
+        {
+          "date": "2022-12",
+          "equity": 2986.523122,
+          "drawdownPct": -2.108489
+        },
+        {
+          "date": "2023-01",
+          "equity": 3007.784898,
+          "drawdownPct": -1.411575
+        },
+        {
+          "date": "2023-02",
+          "equity": 3278.403832,
+          "drawdownPct": 0.0
+        },
+        {
+          "date": "2023-03",
+          "equity": 3493.834584,
+          "drawdownPct": -1.500344
+        },
+        {
+          "date": "2023-04",
+          "equity": 3483.289234,
+          "drawdownPct": -1.797643
+        },
+        {
+          "date": "2023-05",
+          "equity": 3483.817314,
+          "drawdownPct": -1.782755
+        },
+        {
+          "date": "2023-06",
+          "equity": 3516.949193,
+          "drawdownPct": -0.848687
+        },
+        {
+          "date": "2023-07",
+          "equity": 3481.007919,
+          "drawdownPct": -1.861959
+        },
+        {
+          "date": "2023-08",
+          "equity": 3432.965325,
+          "drawdownPct": -3.216396
+        },
+        {
+          "date": "2023-09",
+          "equity": 3429.464559,
+          "drawdownPct": -3.315091
+        },
+        {
+          "date": "2023-10",
+          "equity": 3340.557234,
+          "drawdownPct": -5.821603
+        },
+        {
+          "date": "2023-11",
+          "equity": 3581.85755,
+          "drawdownPct": -1.838051
+        },
+        {
+          "date": "2023-12",
+          "equity": 3682.46643,
+          "drawdownPct": 0.0
+        },
+        {
+          "date": "2024-01",
+          "equity": 3665.631098,
+          "drawdownPct": -0.457175
+        },
+        {
+          "date": "2024-02",
+          "equity": 3595.081887,
+          "drawdownPct": -2.37299
+        },
+        {
+          "date": "2024-03",
+          "equity": 3669.786888,
+          "drawdownPct": -3.001401
+        },
+        {
+          "date": "2024-04",
+          "equity": 3513.519672,
+          "drawdownPct": -7.131804
+        },
+        {
+          "date": "2024-05",
+          "equity": 3520.861284,
+          "drawdownPct": -6.937753
+        },
+        {
+          "date": "2024-06",
+          "equity": 3451.515472,
+          "drawdownPct": -8.770679
+        },
+        {
+          "date": "2024-07",
+          "equity": 3550.437973,
+          "drawdownPct": -6.155992
+        },
+        {
+          "date": "2024-08",
+          "equity": 3459.466861,
+          "drawdownPct": -8.560511
+        },
+        {
+          "date": "2024-09",
+          "equity": 3614.959677,
+          "drawdownPct": -4.450576
+        },
+        {
+          "date": "2024-10",
+          "equity": 3611.337354,
+          "drawdownPct": -4.54632
+        },
+        {
+          "date": "2024-11",
+          "equity": 3800.786275,
+          "drawdownPct": 0.0
+        },
+        {
+          "date": "2024-12",
+          "equity": 3701.549113,
+          "drawdownPct": -2.610964
+        },
+        {
+          "date": "2025-01",
+          "equity": 3613.510596,
+          "drawdownPct": -4.927288
+        },
+        {
+          "date": "2025-02",
+          "equity": 3613.510596,
+          "drawdownPct": -4.927288
+        },
+        {
+          "date": "2025-03",
+          "equity": 3610.388679,
+          "drawdownPct": -5.009427
+        },
+        {
+          "date": "2025-04",
+          "equity": 3620.33604,
+          "drawdownPct": -4.747708
+        },
+        {
+          "date": "2025-05",
+          "equity": 3711.926774,
+          "drawdownPct": -2.337924
+        },
+        {
+          "date": "2025-06",
+          "equity": 3641.124752,
+          "drawdownPct": -4.20075
+        },
+        {
+          "date": "2025-07",
+          "equity": 3602.359421,
+          "drawdownPct": -5.220679
+        },
+        {
+          "date": "2025-08",
+          "equity": 3525.585573,
+          "drawdownPct": -7.240626
+        },
+        {
+          "date": "2025-09",
+          "equity": 3577.70215,
+          "drawdownPct": -5.86942
+        },
+        {
+          "date": "2025-10",
+          "equity": 3638.28105,
+          "drawdownPct": -4.275569
+        },
+        {
+          "date": "2025-11",
+          "equity": 3775.743986,
+          "drawdownPct": -0.658871
+        },
+        {
+          "date": "2025-12",
+          "equity": 3643.956508,
+          "drawdownPct": -4.126245
+        },
+        {
+          "date": "2026-01",
+          "equity": 3583.835158,
+          "drawdownPct": -5.708059
+        },
+        {
+          "date": "2026-02",
+          "equity": 3583.835158,
+          "drawdownPct": -5.708059
+        },
+        {
+          "date": "2026-03",
+          "equity": 3682.802647,
+          "drawdownPct": -3.10419
+        },
+        {
+          "date": "2026-04",
+          "equity": 3777.202446,
+          "drawdownPct": -0.620499
+        },
+        {
+          "date": "2026-05",
+          "equity": 3762.078791,
+          "drawdownPct": -1.018407
+        },
+        {
+          "date": "2026-06",
+          "equity": 3619.965451,
+          "drawdownPct": -4.757458
+        },
+        {
+          "date": "2026-07",
+          "equity": 3580.241579,
+          "drawdownPct": -5.802607
+        },
+        {
+          "date": "2026-08",
+          "equity": 3781.782761,
+          "drawdownPct": -0.499989
+        }
+      ],
+      "yearly": [
+        {
+          "year": 2020,
+          "trades": 22,
+          "profitAbs": -78.54690301,
+          "profitFactor": 0.88578225,
+          "wins": 7,
+          "losses": 15,
+          "startEquity": 1000.0,
+          "endEquity": 921.45309699,
+          "returnPct": -7.854690300999999
+        },
+        {
+          "year": 2021,
+          "trades": 20,
+          "profitAbs": 1437.66727189,
+          "profitFactor": 3.95018529,
+          "wins": 9,
+          "losses": 11,
+          "startEquity": 921.45309699,
+          "endEquity": 2359.1203688799997,
+          "returnPct": 156.02175266285988
+        },
+        {
+          "year": 2022,
+          "trades": 27,
+          "profitAbs": 627.40275266,
+          "profitFactor": 2.54212958,
+          "wins": 13,
+          "losses": 14,
+          "startEquity": 2359.1203688799997,
+          "endEquity": 2986.52312154,
+          "returnPct": 26.594774939689138
+        },
+        {
+          "year": 2023,
+          "trades": 34,
+          "profitAbs": 695.94330815,
+          "profitFactor": 2.41797288,
+          "wins": 13,
+          "losses": 21,
+          "startEquity": 2986.52312154,
+          "endEquity": 3682.46642969,
+          "returnPct": 23.302793242435605
+        },
+        {
+          "year": 2024,
+          "trades": 34,
+          "profitAbs": 19.08268311,
+          "profitFactor": 1.02351241,
+          "wins": 12,
+          "losses": 22,
+          "startEquity": 3682.46642969,
+          "endEquity": 3701.5491128,
+          "returnPct": 0.5182038580486512
+        },
+        {
+          "year": 2025,
+          "trades": 34,
+          "profitAbs": -57.59260525,
+          "profitFactor": 0.87950165,
+          "wins": 13,
+          "losses": 21,
+          "startEquity": 3701.5491128,
+          "endEquity": 3643.95650755,
+          "returnPct": -1.5559054734906554
+        },
+        {
+          "year": 2026,
+          "trades": 22,
+          "profitAbs": 137.82625311,
+          "profitFactor": 1.38990166,
+          "wins": 5,
+          "losses": 17,
+          "startEquity": 3643.95650755,
+          "endEquity": 3781.78276066,
+          "returnPct": 3.7823243176595147
+        }
+      ],
+      "exits": [
+        {
+          "reason": "exit_signal",
+          "trades": 192,
+          "profitMeanPct": 0.82,
+          "profitAbs": 2571.75438092,
+          "profitPct": 257.18,
+          "wins": 71,
+          "draws": 0,
+          "losses": 121,
+          "winRatePct": 36.97916666666667,
+          "avgDuration": "12 days, 1:13:00"
+        },
+        {
+          "reason": "force_exit",
+          "trades": 1,
+          "profitMeanPct": 43.35,
+          "profitAbs": 210.02837974,
+          "profitPct": 21.0,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "winRatePct": 100.0,
+          "avgDuration": "13 days, 11:00:00"
+        }
+      ],
+      "histogram": [
+        {
+          "bucket": "< -20%",
+          "trades": 12,
+          "profitAbs": -1126.838223
+        },
+        {
+          "bucket": "-20%~-10%",
+          "trades": 36,
+          "profitAbs": -1444.060054
+        },
+        {
+          "bucket": "-10%~0",
+          "trades": 73,
+          "profitAbs": -1144.797402
+        },
+        {
+          "bucket": "0~10%",
+          "trades": 35,
+          "profitAbs": 648.890536
+        },
+        {
+          "bucket": "10%~25%",
+          "trades": 20,
+          "profitAbs": 1594.108805
+        },
+        {
+          "bucket": "25%~50%",
+          "trades": 12,
+          "profitAbs": 2409.170046
+        },
+        {
+          "bucket": ">= 50%",
+          "trades": 5,
+          "profitAbs": 1845.309052
+        }
+      ],
+      "allMetrics": {
+        "best_pair": {
+          "section": "收益与总体统计",
+          "value": "{\"key\":\"BTC/USDT:USDT\",\"trades\":193,\"profit_mean\":0.010430505360563324,\"profit_mean_pct\":1.04,\"profit_total_abs\":2781.7827606600003,\"profit_total\":2.7817827606600005,\"profit_total_pct\":278.18,\"duration_avg\":\"12 days, 1:24:00\",\"wins\":72,\"draws\":0,\"losses\":121,\"winrate\":0.37305699481865284,\"cagr\":0.23189950181167118,\"expectancy\":14.41338217958549,\"expectancy_ratio\":0.4693654687725095,\"sortino\":0.8428263250244578,\"sharpe\":0.25414774986084526,\"calmar\":26.028758230952583,\"sqn\":2.2234,\"p_value\":0.027355419757590944,\"profit_factor\":1.7486573179594571,\"max_drawdown_account\":0.08770679034325157,\"max_drawdown_abs\":331.8246158699999}"
+        },
+        "worst_pair": {
+          "section": "收益与总体统计",
+          "value": "{\"key\":\"BTC/USDT:USDT\",\"trades\":193,\"profit_mean\":0.010430505360563324,\"profit_mean_pct\":1.04,\"profit_total_abs\":2781.7827606600003,\"profit_total\":2.7817827606600005,\"profit_total_pct\":278.18,\"duration_avg\":\"12 days, 1:24:00\",\"wins\":72,\"draws\":0,\"losses\":121,\"winrate\":0.37305699481865284,\"cagr\":0.23189950181167118,\"expectancy\":14.41338217958549,\"expectancy_ratio\":0.4693654687725095,\"sortino\":0.8428263250244578,\"sharpe\":0.25414774986084526,\"calmar\":26.028758230952583,\"sqn\":2.2234,\"p_value\":0.027355419757590944,\"profit_factor\":1.7486573179594571,\"max_drawdown_account\":0.08770679034325157,\"max_drawdown_abs\":331.8246158699999}"
+        },
+        "total_trades": {
+          "section": "收益与总体统计",
+          "value": 193
+        },
+        "trade_count_long": {
+          "section": "多空方向",
+          "value": 97
+        },
+        "trade_count_short": {
+          "section": "多空方向",
+          "value": 96
+        },
+        "total_volume": {
+          "section": "收益与总体统计",
+          "value": 295381.55736082
+        },
+        "avg_stake_amount": {
+          "section": "收益与总体统计",
+          "value": 378.13267720207256
+        },
+        "profit_mean": {
+          "section": "收益与总体统计",
+          "value": 0.010430505360563324
+        },
+        "profit_median": {
+          "section": "收益与总体统计",
+          "value": -0.029579887029530367
+        },
+        "profit_total": {
+          "section": "收益与总体统计",
+          "value": 2.7817827606600005
+        },
+        "profit_total_long": {
+          "section": "多空方向",
+          "value": 2.6740990028099993
+        },
+        "profit_total_short": {
+          "section": "多空方向",
+          "value": 0.10768375785
+        },
+        "profit_total_abs": {
+          "section": "收益与总体统计",
+          "value": 2781.7827606600003
+        },
+        "profit_total_long_abs": {
+          "section": "多空方向",
+          "value": 2674.0990028099995
+        },
+        "profit_total_short_abs": {
+          "section": "多空方向",
+          "value": 107.68375785
+        },
+        "cagr": {
+          "section": "收益与总体统计",
+          "value": 0.23189950181167096
+        },
+        "expectancy": {
+          "section": "收益与总体统计",
+          "value": 14.41338217958549
+        },
+        "expectancy_ratio": {
+          "section": "收益与总体统计",
+          "value": 0.4693654687725095
+        },
+        "sortino": {
+          "section": "收益与总体统计",
+          "value": 0.8428263250244578
+        },
+        "sharpe": {
+          "section": "收益与总体统计",
+          "value": 0.25414774986084526
+        },
+        "calmar": {
+          "section": "收益与总体统计",
+          "value": 26.028758230952583
+        },
+        "sqn": {
+          "section": "收益与总体统计",
+          "value": 2.2234
+        },
+        "p_value": {
+          "section": "收益与总体统计",
+          "value": 0.027355419757590944
+        },
+        "wallet_stats.start_balance": {
+          "section": "回撤与钱包",
+          "value": 1000.0
+        },
+        "wallet_stats.end_balance": {
+          "section": "回撤与钱包",
+          "value": 3571.7543809199974
+        },
+        "wallet_stats.high_balance": {
+          "section": "回撤与钱包",
+          "value": 3800.7862748499997
+        },
+        "wallet_stats.low_balance": {
+          "section": "回撤与钱包",
+          "value": 869.2830129
+        },
+        "wallet_stats.sharpe": {
+          "section": "回撤与钱包",
+          "value": 0.7369658785388833
+        },
+        "wallet_stats.sortino": {
+          "section": "回撤与钱包",
+          "value": 0.689091152706187
+        },
+        "wallet_stats.calmar": {
+          "section": "回撤与钱包",
+          "value": 24.063551603317073
+        },
+        "wallet_stats.low_date": {
+          "section": "回撤与钱包",
+          "value": "2020-06-15 07:00:00"
+        },
+        "wallet_stats.low_ts": {
+          "section": "回撤与钱包",
+          "value": 1592204400000
+        },
+        "wallet_stats.high_date": {
+          "section": "回撤与钱包",
+          "value": "2024-11-25 16:00:00"
+        },
+        "wallet_stats.high_ts": {
+          "section": "回撤与钱包",
+          "value": 1732550400000
+        },
+        "wallet_stats.max_drawdown_account": {
+          "section": "回撤与钱包",
+          "value": 0.08770679034325157
+        },
+        "wallet_stats.max_relative_drawdown": {
+          "section": "回撤与钱包",
+          "value": 0.19884875312012204
+        },
+        "wallet_stats.max_drawdown_abs": {
+          "section": "回撤与钱包",
+          "value": 331.8246158699999
+        },
+        "wallet_stats.drawdown_start": {
+          "section": "回撤与钱包",
+          "value": "2024-03-05 19:00:00"
+        },
+        "wallet_stats.drawdown_start_ts": {
+          "section": "回撤与钱包",
+          "value": 1709665200000
+        },
+        "wallet_stats.drawdown_end": {
+          "section": "回撤与钱包",
+          "value": "2024-06-24 13:00:00"
+        },
+        "wallet_stats.drawdown_end_ts": {
+          "section": "回撤与钱包",
+          "value": 1719234000000
+        },
+        "wallet_stats.drawdown_duration": {
+          "section": "回撤与钱包",
+          "value": "110 days 18:00:00"
+        },
+        "wallet_stats.drawdown_duration_s": {
+          "section": "回撤与钱包",
+          "value": 9568800.0
+        },
+        "wallet_stats.max_drawdown_low": {
+          "section": "回撤与钱包",
+          "value": 2451.515471839999
+        },
+        "wallet_stats.max_drawdown_high": {
+          "section": "回撤与钱包",
+          "value": 2783.340087709999
+        },
+        "profit_factor": {
+          "section": "收益与总体统计",
+          "value": 1.7486573179594571
+        },
+        "backtest_start": {
+          "section": "回测与策略设置",
+          "value": "2020-04-15 06:00:00"
+        },
+        "backtest_start_ts": {
+          "section": "收益与总体统计",
+          "value": 1586930400000
+        },
+        "backtest_end": {
+          "section": "回测与策略设置",
+          "value": "2026-08-30 14:00:00"
+        },
+        "backtest_end_ts": {
+          "section": "收益与总体统计",
+          "value": 1788098400000
+        },
+        "backtest_days": {
+          "section": "回测与策略设置",
+          "value": 2328
+        },
+        "backtest_run_start_ts": {
+          "section": "收益与总体统计",
+          "value": 1788491654
+        },
+        "backtest_run_end_ts": {
+          "section": "收益与总体统计",
+          "value": 1788491686
+        },
+        "trades_per_day": {
+          "section": "收益与总体统计",
+          "value": 0.08
+        },
+        "market_change": {
+          "section": "收益与总体统计",
+          "value": 10.451039697542534
+        },
+        "pairlist": {
+          "section": "回测与策略设置",
+          "value": "[\"BTC/USDT:USDT\"]"
+        },
+        "stake_amount": {
+          "section": "回测与策略设置",
+          "value": 540
+        },
+        "stake_currency": {
+          "section": "回测与策略设置",
+          "value": "USDT"
+        },
+        "stake_currency_decimals": {
+          "section": "收益与总体统计",
+          "value": 3
+        },
+        "starting_balance": {
+          "section": "回测与策略设置",
+          "value": 1000
+        },
+        "dry_run_wallet": {
+          "section": "回测与策略设置",
+          "value": 1000
+        },
+        "final_balance": {
+          "section": "收益与总体统计",
+          "value": 3781.7827606599976
+        },
+        "rejected_signals": {
+          "section": "执行统计",
+          "value": 0
+        },
+        "timedout_entry_orders": {
+          "section": "执行统计",
+          "value": 0
+        },
+        "timedout_exit_orders": {
+          "section": "执行统计",
+          "value": 0
+        },
+        "canceled_trade_entries": {
+          "section": "执行统计",
+          "value": 0
+        },
+        "canceled_entry_orders": {
+          "section": "执行统计",
+          "value": 0
+        },
+        "replaced_entry_orders": {
+          "section": "执行统计",
+          "value": 0
+        },
+        "max_open_trades": {
+          "section": "回测与策略设置",
+          "value": 1
+        },
+        "max_open_trades_setting": {
+          "section": "回测与策略设置",
+          "value": 1
+        },
+        "timeframe": {
+          "section": "回测与策略设置",
+          "value": "1h"
+        },
+        "timeframe_detail": {
+          "section": "回测与策略设置",
+          "value": ""
+        },
+        "timerange": {
+          "section": "回测与策略设置",
+          "value": ""
+        },
+        "enable_protections": {
+          "section": "回测与策略设置",
+          "value": true
+        },
+        "strategy_name": {
+          "section": "回测与策略设置",
+          "value": "VolatilitySystem"
+        },
+        "freqaimodel": {
+          "section": "收益与总体统计",
+          "value": null
+        },
+        "freqai_identifier": {
+          "section": "收益与总体统计",
+          "value": null
+        },
+        "stoploss": {
+          "section": "回测与策略设置",
+          "value": -1
+        },
+        "trailing_stop": {
+          "section": "回测与策略设置",
+          "value": false
+        },
+        "trailing_stop_positive": {
+          "section": "回测与策略设置",
+          "value": null
+        },
+        "trailing_stop_positive_offset": {
+          "section": "回测与策略设置",
+          "value": 0.0
+        },
+        "trailing_only_offset_is_reached": {
+          "section": "回测与策略设置",
+          "value": false
+        },
+        "use_custom_stoploss": {
+          "section": "回测与策略设置",
+          "value": false
+        },
+        "minimal_roi": {
+          "section": "回测与策略设置",
+          "value": "{\"0\":100}"
+        },
+        "use_exit_signal": {
+          "section": "回测与策略设置",
+          "value": true
+        },
+        "exit_profit_only": {
+          "section": "回测与策略设置",
+          "value": false
+        },
+        "exit_profit_offset": {
+          "section": "回测与策略设置",
+          "value": 0.0
+        },
+        "ignore_roi_if_entry_signal": {
+          "section": "回测与策略设置",
+          "value": false
+        },
+        "trading_mode": {
+          "section": "回测与策略设置",
+          "value": "futures"
+        },
+        "margin_mode": {
+          "section": "回测与策略设置",
+          "value": "isolated"
+        },
+        "backtest_best_day": {
+          "section": "收益与总体统计",
+          "value": 1.0042518765062978
+        },
+        "backtest_worst_day": {
+          "section": "收益与总体统计",
+          "value": -0.35337684623057014
+        },
+        "backtest_best_day_abs": {
+          "section": "收益与总体统计",
+          "value": 525.53735837
+        },
+        "backtest_worst_day_abs": {
+          "section": "收益与总体统计",
+          "value": -146.68165631
+        },
+        "winning_days": {
+          "section": "收益与总体统计",
+          "value": 71
+        },
+        "draw_days": {
+          "section": "收益与总体统计",
+          "value": 2141
+        },
+        "losing_days": {
+          "section": "收益与总体统计",
+          "value": 112
+        },
+        "wins": {
+          "section": "收益与总体统计",
+          "value": 72
+        },
+        "losses": {
+          "section": "收益与总体统计",
+          "value": 121
+        },
+        "draws": {
+          "section": "收益与总体统计",
+          "value": 0
+        },
+        "winrate": {
+          "section": "收益与总体统计",
+          "value": 0.37305699481865284
+        },
+        "holding_avg": {
+          "section": "持仓与连续性",
+          "value": "12 days, 1:24:00"
+        },
+        "holding_avg_s": {
+          "section": "持仓与连续性",
+          "value": 1041840.0
+        },
+        "winner_holding_min": {
+          "section": "持仓与连续性",
+          "value": "1d 09:00"
+        },
+        "winner_holding_min_s": {
+          "section": "持仓与连续性",
+          "value": 118800.0
+        },
+        "winner_holding_max": {
+          "section": "持仓与连续性",
+          "value": "59d 06:00"
+        },
+        "winner_holding_max_s": {
+          "section": "持仓与连续性",
+          "value": 5119200.0
+        },
+        "winner_holding_avg": {
+          "section": "持仓与连续性",
+          "value": "18d 23:34"
+        },
+        "winner_holding_avg_s": {
+          "section": "持仓与连续性",
+          "value": 1640040.0
+        },
+        "loser_holding_min": {
+          "section": "持仓与连续性",
+          "value": "0d 03:00"
+        },
+        "loser_holding_min_s": {
+          "section": "持仓与连续性",
+          "value": 10800.0
+        },
+        "loser_holding_max": {
+          "section": "持仓与连续性",
+          "value": "29d 21:00"
+        },
+        "loser_holding_max_s": {
+          "section": "持仓与连续性",
+          "value": 2581200.0
+        },
+        "loser_holding_avg": {
+          "section": "持仓与连续性",
+          "value": "7d 22:31"
+        },
+        "loser_holding_avg_s": {
+          "section": "持仓与连续性",
+          "value": 685860.0
+        },
+        "max_consecutive_wins": {
+          "section": "持仓与连续性",
+          "value": 7
+        },
+        "max_consecutive_losses": {
+          "section": "持仓与连续性",
+          "value": 11
+        },
+        "max_drawdown_account": {
+          "section": "回撤与钱包",
+          "value": 0.08770679034325157
+        },
+        "max_relative_drawdown": {
+          "section": "回撤与钱包",
+          "value": 0.19884875312012204
+        },
+        "max_drawdown_abs": {
+          "section": "回撤与钱包",
+          "value": 331.8246158699999
+        },
+        "drawdown_start": {
+          "section": "回撤与钱包",
+          "value": "2024-03-05 18:00:00"
+        },
+        "drawdown_start_ts": {
+          "section": "回撤与钱包",
+          "value": 1709661600000.0
+        },
+        "drawdown_end": {
+          "section": "回撤与钱包",
+          "value": "2024-06-24 12:00:00"
+        },
+        "drawdown_end_ts": {
+          "section": "回撤与钱包",
+          "value": 1719230400000.0
+        },
+        "drawdown_duration": {
+          "section": "回撤与钱包",
+          "value": "110 days 18:00:00"
+        },
+        "drawdown_duration_s": {
+          "section": "回撤与钱包",
+          "value": 9568800.0
+        },
+        "max_drawdown_low": {
+          "section": "回撤与钱包",
+          "value": 2451.515471839999
+        },
+        "max_drawdown_high": {
+          "section": "回撤与钱包",
+          "value": 2783.340087709999
+        },
+        "csum_min": {
+          "section": "回撤与钱包",
+          "value": 869.2830129
+        },
+        "csum_max": {
+          "section": "回撤与钱包",
+          "value": 3800.7862748499997
+        }
+      }
+    },
+    "confirm_v3_2_BTC": {
+      "name": "confirm_v3_2_BTC",
+      "archive": "user_data/research/volatility_vs_v32_full_history/results/confirm_v3_2_btc/backtest-result-2026-09-04_03-16-28.zip",
+      "archiveSha256": "3d4db40b8498bb1c3bacbcdeb407d499a43c76dfd02f4dd72004a49ea4979967",
+      "strategyFile": "user_data/strategies/confirm_v3_2_BTC.py",
+      "strategySha256": "909a30dd56cd2e71db52188b10026887809822bc7ad5fa5da63bc6026b121424",
+      "summary": {
+        "start": "2020-04-15 06:00:00",
+        "end": "2026-08-30 14:00:00",
+        "days": 2328,
+        "trades": 326,
+        "tradesPerDay": 0.14,
+        "startingBalance": 1000.0,
+        "finalBalance": 3864.7354519899986,
+        "profitAbs": 2864.73545199,
+        "profitPct": 286.473545199,
+        "avgProfitPct": -1.271319340822618,
+        "normalExitProfitAbs": 2864.73545199,
+        "forceExitProfitAbs": 0,
+        "forceExitTrades": 0,
+        "cagrPct": 23.609745780499992,
+        "profitFactor": 2.199520166369294,
+        "expectancy": 8.78753206131902,
+        "expectancyRatio": 0.7984536076752666,
+        "sharpeClosed": 0.33570961289363255,
+        "sortinoClosed": 3.4215524252606673,
+        "calmarClosed": 39.39327259971566,
+        "sqn": 2.2622,
+        "pValue": 0.024347215136723346,
+        "avgDailyProfit": 1.2305564656314434,
+        "avgStake": 218.3002834355215,
+        "totalVolume": 429819.63724005996,
+        "marketChangePct": 1045.1039697542533,
+        "wins": 109,
+        "draws": 0,
+        "losses": 217,
+        "winRatePct": 33.43558282208589,
+        "avgDurationSeconds": 292620.0,
+        "avgDuration": "3 days, 9:17:00",
+        "bestTradePct": 85.51563487607893,
+        "worstTradePct": -18.477970608544712,
+        "bestDayAbs": 914.73986948,
+        "worstDayAbs": -46.73493767,
+        "maxConsecutiveWins": 4,
+        "maxConsecutiveLosses": 14,
+        "maxDrawdownAccountPct": 5.9679601906998245,
+        "maxRelativeDrawdownPct": 14.202863665796562,
+        "maxDrawdownAbs": 168.29170471999964,
+        "drawdownDuration": "262 days 13:00:00",
+        "drawdownStart": "2023-12-11 02:00:00",
+        "drawdownEnd": "2024-08-29 15:00:00",
+        "returnDrawdownRatio": 48.00191959145879,
+        "calmarStyleRatio": 1.6623229185362915,
+        "longTrades": 164,
+        "shortTrades": 162,
+        "longProfitAbs": 2595.6446241699996,
+        "shortProfitAbs": 269.09082781999996,
+        "leverageValues": [
+          3.0
+        ],
+        "feeOpenPct": 0.06,
+        "feeClosePct": 0.06,
+        "top1GrossProfitPct": 17.4138,
+        "top5GrossProfitPct": 41.1511,
+        "top10GrossProfitPct": 57.9993,
+        "scoutOnlyTrades": 248,
+        "scoutOnlyProfitAbs": -1309.6042635000001,
+        "scoutOnlyMeanProfitPct": -4.851892761730264,
+        "scoutOnlyWinRatePct": 20.161290322580644,
+        "scoutOnlyProfitFactor": 0.286189827143707,
+        "scoutOnlyAvgStake": 126.95121115580645,
+        "confirmedTrades": 78,
+        "confirmedProfitAbs": 4174.33971549,
+        "confirmedMeanProfitPct": 10.113067946165797,
+        "confirmedWinRatePct": 75.64102564102564,
+        "confirmedProfitFactor": 8.540801776725035,
+        "confirmedAvgStake": 508.7434876069231,
+        "winnerAvgStake": 329.49378440348625,
+        "loserAvgStake": 162.4473267281106,
+        "pnlPerCommittedStakePct": 4.0254331891028245,
+        "equal100StakeDiagnosticProfitAbs": -414.45010510817343
+      },
+      "curve": [
+        {
+          "date": "2020-04",
+          "equity": 1086.59234,
+          "drawdownPct": 0.0
+        },
+        {
+          "date": "2020-05",
+          "equity": 1056.295708,
+          "drawdownPct": -2.788224
+        },
+        {
+          "date": "2020-06",
+          "equity": 997.414672,
+          "drawdownPct": -8.207095
+        },
+        {
+          "date": "2020-07",
+          "equity": 1008.699799,
+          "drawdownPct": -7.168516
+        },
+        {
+          "date": "2020-08",
+          "equity": 978.278975,
+          "drawdownPct": -9.968169
+        },
+        {
+          "date": "2020-09",
+          "equity": 994.384102,
+          "drawdownPct": -8.486001
+        },
+        {
+          "date": "2020-10",
+          "equity": 1063.809618,
+          "drawdownPct": -2.096713
+        },
+        {
+          "date": "2020-11",
+          "equity": 1034.557284,
+          "drawdownPct": -4.78883
+        },
+        {
+          "date": "2020-12",
+          "equity": 1051.030216,
+          "drawdownPct": -3.272812
+        },
+        {
+          "date": "2021-01",
+          "equity": 1029.767792,
+          "drawdownPct": -5.229611
+        },
+        {
+          "date": "2021-02",
+          "equity": 1042.450768,
+          "drawdownPct": -4.062386
+        },
+        {
+          "date": "2021-03",
+          "equity": 1023.641337,
+          "drawdownPct": -5.793433
+        },
+        {
+          "date": "2021-04",
+          "equity": 1019.232175,
+          "drawdownPct": -6.199212
+        },
+        {
+          "date": "2021-05",
+          "equity": 1105.755276,
+          "drawdownPct": 0.0
+        },
+        {
+          "date": "2021-06",
+          "equity": 1090.446351,
+          "drawdownPct": -1.764257
+        },
+        {
+          "date": "2021-07",
+          "equity": 1082.032665,
+          "drawdownPct": -2.522226
+        },
+        {
+          "date": "2021-08",
+          "equity": 1356.030961,
+          "drawdownPct": -1.301173
+        },
+        {
+          "date": "2021-09",
+          "equity": 1349.217784,
+          "drawdownPct": -1.797071
+        },
+        {
+          "date": "2021-10",
+          "equity": 1460.665787,
+          "drawdownPct": -1.262982
+        },
+        {
+          "date": "2021-11",
+          "equity": 1470.439538,
+          "drawdownPct": -0.602303
+        },
+        {
+          "date": "2021-12",
+          "equity": 1413.993437,
+          "drawdownPct": -4.417906
+        },
+        {
+          "date": "2022-01",
+          "equity": 1447.852267,
+          "drawdownPct": -2.129141
+        },
+        {
+          "date": "2022-02",
+          "equity": 1465.781378,
+          "drawdownPct": -0.917182
+        },
+        {
+          "date": "2022-03",
+          "equity": 1459.145606,
+          "drawdownPct": -1.365742
+        },
+        {
+          "date": "2022-04",
+          "equity": 1479.385644,
+          "drawdownPct": 0.0
+        },
+        {
+          "date": "2022-05",
+          "equity": 1554.896912,
+          "drawdownPct": 0.0
+        },
+        {
+          "date": "2022-06",
+          "equity": 1716.937606,
+          "drawdownPct": -0.596981
+        },
+        {
+          "date": "2022-07",
+          "equity": 1726.926314,
+          "drawdownPct": -0.56274
+        },
+        {
+          "date": "2022-08",
+          "equity": 1701.665791,
+          "drawdownPct": -2.017253
+        },
+        {
+          "date": "2022-09",
+          "equity": 1684.805736,
+          "drawdownPct": -2.988063
+        },
+        {
+          "date": "2022-10",
+          "equity": 1684.805736,
+          "drawdownPct": -2.988063
+        },
+        {
+          "date": "2022-11",
+          "equity": 1698.863933,
+          "drawdownPct": -2.62773
+        },
+        {
+          "date": "2022-12",
+          "equity": 1680.054117,
+          "drawdownPct": -3.705836
+        },
+        {
+          "date": "2023-01",
+          "equity": 2594.793986,
+          "drawdownPct": 0.0
+        },
+        {
+          "date": "2023-02",
+          "equity": 2584.892252,
+          "drawdownPct": -0.772352
+        },
+        {
+          "date": "2023-03",
+          "equity": 2580.406291,
+          "drawdownPct": -1.294852
+        },
+        {
+          "date": "2023-04",
+          "equity": 2586.847973,
+          "drawdownPct": -1.048446
+        },
+        {
+          "date": "2023-05",
+          "equity": 2533.355555,
+          "drawdownPct": -3.094627
+        },
+        {
+          "date": "2023-06",
+          "equity": 2680.574202,
+          "drawdownPct": 0.0
+        },
+        {
+          "date": "2023-07",
+          "equity": 2626.836388,
+          "drawdownPct": -2.004713
+        },
+        {
+          "date": "2023-08",
+          "equity": 2591.095917,
+          "drawdownPct": -3.338027
+        },
+        {
+          "date": "2023-09",
+          "equity": 2571.250933,
+          "drawdownPct": -4.078353
+        },
+        {
+          "date": "2023-10",
+          "equity": 2555.032976,
+          "drawdownPct": -4.683371
+        },
+        {
+          "date": "2023-11",
+          "equity": 2657.894735,
+          "drawdownPct": -0.954302
+        },
+        {
+          "date": "2023-12",
+          "equity": 2800.419573,
+          "drawdownPct": -0.691525
+        },
+        {
+          "date": "2024-01",
+          "equity": 2741.945179,
+          "drawdownPct": -2.765144
+        },
+        {
+          "date": "2024-02",
+          "equity": 2752.010745,
+          "drawdownPct": -2.408199
+        },
+        {
+          "date": "2024-03",
+          "equity": 2717.129007,
+          "drawdownPct": -3.645175
+        },
+        {
+          "date": "2024-04",
+          "equity": 2689.468478,
+          "drawdownPct": -4.626073
+        },
+        {
+          "date": "2024-05",
+          "equity": 2679.166794,
+          "drawdownPct": -4.991391
+        },
+        {
+          "date": "2024-06",
+          "equity": 2663.175989,
+          "drawdownPct": -5.558457
+        },
+        {
+          "date": "2024-07",
+          "equity": 2657.99315,
+          "drawdownPct": -5.742251
+        },
+        {
+          "date": "2024-08",
+          "equity": 2651.628324,
+          "drawdownPct": -5.96796
+        },
+        {
+          "date": "2024-09",
+          "equity": 2824.623158,
+          "drawdownPct": 0.0
+        },
+        {
+          "date": "2024-10",
+          "equity": 2847.383819,
+          "drawdownPct": -0.339015
+        },
+        {
+          "date": "2024-11",
+          "equity": 3092.756757,
+          "drawdownPct": -0.288155
+        },
+        {
+          "date": "2024-12",
+          "equity": 3035.384576,
+          "drawdownPct": -2.13786
+        },
+        {
+          "date": "2025-01",
+          "equity": 3014.980158,
+          "drawdownPct": -2.795707
+        },
+        {
+          "date": "2025-02",
+          "equity": 3026.992844,
+          "drawdownPct": -2.408413
+        },
+        {
+          "date": "2025-03",
+          "equity": 3179.615253,
+          "drawdownPct": -1.098667
+        },
+        {
+          "date": "2025-04",
+          "equity": 3180.971601,
+          "drawdownPct": -1.056478
+        },
+        {
+          "date": "2025-05",
+          "equity": 3230.619179,
+          "drawdownPct": -0.845456
+        },
+        {
+          "date": "2025-06",
+          "equity": 3191.902647,
+          "drawdownPct": -2.033749
+        },
+        {
+          "date": "2025-07",
+          "equity": 3221.682671,
+          "drawdownPct": -1.119737
+        },
+        {
+          "date": "2025-08",
+          "equity": 3164.013976,
+          "drawdownPct": -2.889711
+        },
+        {
+          "date": "2025-09",
+          "equity": 3141.538441,
+          "drawdownPct": -3.579533
+        },
+        {
+          "date": "2025-10",
+          "equity": 3325.905143,
+          "drawdownPct": -0.365504
+        },
+        {
+          "date": "2025-11",
+          "equity": 3349.908036,
+          "drawdownPct": 0.0
+        },
+        {
+          "date": "2025-12",
+          "equity": 3232.204953,
+          "drawdownPct": -3.513621
+        },
+        {
+          "date": "2026-01",
+          "equity": 3215.243939,
+          "drawdownPct": -4.019934
+        },
+        {
+          "date": "2026-02",
+          "equity": 3393.201425,
+          "drawdownPct": -0.556118
+        },
+        {
+          "date": "2026-03",
+          "equity": 3364.926805,
+          "drawdownPct": -1.384757
+        },
+        {
+          "date": "2026-04",
+          "equity": 3398.36433,
+          "drawdownPct": -0.40481
+        },
+        {
+          "date": "2026-05",
+          "equity": 3364.034438,
+          "drawdownPct": -1.410909
+        },
+        {
+          "date": "2026-06",
+          "equity": 3392.504178,
+          "drawdownPct": -0.576552
+        },
+        {
+          "date": "2026-07",
+          "equity": 3322.300555,
+          "drawdownPct": -2.633996
+        },
+        {
+          "date": "2026-08",
+          "equity": 3864.735452,
+          "drawdownPct": 0.0
+        }
+      ],
+      "yearly": [
+        {
+          "year": 2020,
+          "trades": 41,
+          "profitAbs": 51.03021553,
+          "profitFactor": 1.14906334,
+          "wins": 12,
+          "losses": 29,
+          "startEquity": 1000.0,
+          "endEquity": 1051.03021553,
+          "returnPct": 5.103021553
+        },
+        {
+          "year": 2021,
+          "trades": 42,
+          "profitAbs": 362.96322178,
+          "profitFactor": 2.55539303,
+          "wins": 17,
+          "losses": 25,
+          "startEquity": 1051.03021553,
+          "endEquity": 1413.99343731,
+          "returnPct": 34.53404254386441
+        },
+        {
+          "year": 2022,
+          "trades": 46,
+          "profitAbs": 266.06067958,
+          "profitFactor": 1.90067917,
+          "wins": 20,
+          "losses": 26,
+          "startEquity": 1413.99343731,
+          "endEquity": 1680.05411689,
+          "returnPct": 18.816259860877246
+        },
+        {
+          "year": 2023,
+          "trades": 61,
+          "profitAbs": 1120.36545607,
+          "profitFactor": 3.34133692,
+          "wins": 19,
+          "losses": 42,
+          "startEquity": 1680.05411689,
+          "endEquity": 2800.4195729599996,
+          "returnPct": 66.6862718770002
+        },
+        {
+          "year": 2024,
+          "trades": 49,
+          "profitAbs": 234.96500283,
+          "profitFactor": 1.60261329,
+          "wins": 16,
+          "losses": 33,
+          "startEquity": 2800.4195729599996,
+          "endEquity": 3035.38457579,
+          "returnPct": 8.390349971081143
+        },
+        {
+          "year": 2025,
+          "trades": 55,
+          "profitAbs": 196.82037745,
+          "profitFactor": 1.47440735,
+          "wins": 18,
+          "losses": 37,
+          "startEquity": 3035.38457579,
+          "endEquity": 3232.2049532399997,
+          "returnPct": 6.484199037572523
+        },
+        {
+          "year": 2026,
+          "trades": 32,
+          "profitAbs": 632.53049875,
+          "profitFactor": 3.70502057,
+          "wins": 7,
+          "losses": 25,
+          "startEquity": 3232.2049532399997,
+          "endEquity": 3864.7354519899995,
+          "returnPct": 19.569628408493838
+        }
+      ],
+      "exits": [
+        {
+          "reason": "trailing_stop_loss",
+          "trades": 118,
+          "profitMeanPct": 10.18,
+          "profitAbs": 4570.74203115,
+          "profitPct": 457.07,
+          "wins": 102,
+          "draws": 0,
+          "losses": 16,
+          "winRatePct": 86.4406779661017,
+          "avgDuration": "5 days, 20:28:00"
+        },
+        {
+          "reason": "exit_signal",
+          "trades": 27,
+          "profitMeanPct": -0.68,
+          "profitAbs": 54.39950146999999,
+          "profitPct": 5.44,
+          "wins": 7,
+          "draws": 0,
+          "losses": 20,
+          "winRatePct": 25.925925925925924,
+          "avgDuration": "4 days, 19:42:00"
+        },
+        {
+          "reason": "stop_loss",
+          "trades": 181,
+          "profitMeanPct": -8.82,
+          "profitAbs": -1760.40608063,
+          "profitPct": -176.04,
+          "wins": 0,
+          "draws": 0,
+          "losses": 181,
+          "winRatePct": 0.0,
+          "avgDuration": "1 day, 13:33:00"
+        }
+      ],
+      "histogram": [
+        {
+          "bucket": "< -20%",
+          "trades": 0,
+          "profitAbs": 0
+        },
+        {
+          "bucket": "-20%~-10%",
+          "trades": 59,
+          "profitAbs": -566.893208
+        },
+        {
+          "bucket": "-10%~0",
+          "trades": 158,
+          "profitAbs": -1821.341298
+        },
+        {
+          "bucket": "0~10%",
+          "trades": 70,
+          "profitAbs": 904.942053
+        },
+        {
+          "bucket": "10%~25%",
+          "trades": 22,
+          "profitAbs": 795.919105
+        },
+        {
+          "bucket": "25%~50%",
+          "trades": 11,
+          "profitAbs": 1331.081923
+        },
+        {
+          "bucket": ">= 50%",
+          "trades": 6,
+          "profitAbs": 2221.026876
+        }
+      ],
+      "allMetrics": {
+        "best_pair": {
+          "section": "收益与总体统计",
+          "value": "{\"key\":\"BTC/USDT:USDT\",\"trades\":326,\"profit_mean\":-0.01271319340822618,\"profit_mean_pct\":-1.27,\"profit_total_abs\":2864.73545199,\"profit_total\":2.86473545199,\"profit_total_pct\":286.47,\"duration_avg\":\"3 days, 9:17:00\",\"wins\":109,\"draws\":0,\"losses\":217,\"winrate\":0.3343558282208589,\"cagr\":0.2360974578049999,\"expectancy\":8.78753206131902,\"expectancy_ratio\":0.7984536076752666,\"sortino\":3.4215524252606673,\"sharpe\":0.33570961289363255,\"calmar\":39.39327259971566,\"sqn\":2.2622,\"p_value\":0.024347215136723346,\"profit_factor\":2.199520166369294,\"max_drawdown_account\":0.059679601906998246,\"max_drawdown_abs\":168.29170471999964}"
+        },
+        "worst_pair": {
+          "section": "收益与总体统计",
+          "value": "{\"key\":\"BTC/USDT:USDT\",\"trades\":326,\"profit_mean\":-0.01271319340822618,\"profit_mean_pct\":-1.27,\"profit_total_abs\":2864.73545199,\"profit_total\":2.86473545199,\"profit_total_pct\":286.47,\"duration_avg\":\"3 days, 9:17:00\",\"wins\":109,\"draws\":0,\"losses\":217,\"winrate\":0.3343558282208589,\"cagr\":0.2360974578049999,\"expectancy\":8.78753206131902,\"expectancy_ratio\":0.7984536076752666,\"sortino\":3.4215524252606673,\"sharpe\":0.33570961289363255,\"calmar\":39.39327259971566,\"sqn\":2.2622,\"p_value\":0.024347215136723346,\"profit_factor\":2.199520166369294,\"max_drawdown_account\":0.059679601906998246,\"max_drawdown_abs\":168.29170471999964}"
+        },
+        "total_trades": {
+          "section": "收益与总体统计",
+          "value": 326
+        },
+        "trade_count_long": {
+          "section": "多空方向",
+          "value": 164
+        },
+        "trade_count_short": {
+          "section": "多空方向",
+          "value": 162
+        },
+        "total_volume": {
+          "section": "收益与总体统计",
+          "value": 429819.63724005996
+        },
+        "avg_stake_amount": {
+          "section": "收益与总体统计",
+          "value": 218.3002834355215
+        },
+        "profit_mean": {
+          "section": "收益与总体统计",
+          "value": -0.01271319340822618
+        },
+        "profit_median": {
+          "section": "收益与总体统计",
+          "value": -0.05570777467954933
+        },
+        "profit_total": {
+          "section": "收益与总体统计",
+          "value": 2.86473545199
+        },
+        "profit_total_long": {
+          "section": "多空方向",
+          "value": 2.5956446241699997
+        },
+        "profit_total_short": {
+          "section": "多空方向",
+          "value": 0.26909082781999993
+        },
+        "profit_total_abs": {
+          "section": "收益与总体统计",
+          "value": 2864.73545199
+        },
+        "profit_total_long_abs": {
+          "section": "多空方向",
+          "value": 2595.6446241699996
+        },
+        "profit_total_short_abs": {
+          "section": "多空方向",
+          "value": 269.09082781999996
+        },
+        "cagr": {
+          "section": "收益与总体统计",
+          "value": 0.2360974578049999
+        },
+        "expectancy": {
+          "section": "收益与总体统计",
+          "value": 8.78753206131902
+        },
+        "expectancy_ratio": {
+          "section": "收益与总体统计",
+          "value": 0.7984536076752666
+        },
+        "sortino": {
+          "section": "收益与总体统计",
+          "value": 3.4215524252606673
+        },
+        "sharpe": {
+          "section": "收益与总体统计",
+          "value": 0.33570961289363255
+        },
+        "calmar": {
+          "section": "收益与总体统计",
+          "value": 39.39327259971566
+        },
+        "sqn": {
+          "section": "收益与总体统计",
+          "value": 2.2622
+        },
+        "p_value": {
+          "section": "收益与总体统计",
+          "value": 0.024347215136723346
+        },
+        "wallet_stats.start_balance": {
+          "section": "回撤与钱包",
+          "value": 1000.0
+        },
+        "wallet_stats.end_balance": {
+          "section": "回撤与钱包",
+          "value": 3864.7354519899986
+        },
+        "wallet_stats.high_balance": {
+          "section": "回撤与钱包",
+          "value": 3864.7354519899986
+        },
+        "wallet_stats.low_balance": {
+          "section": "回撤与钱包",
+          "value": 932.2651116899999
+        },
+        "wallet_stats.sharpe": {
+          "section": "回撤与钱包",
+          "value": 0.8751876474555624
+        },
+        "wallet_stats.sortino": {
+          "section": "回撤与钱包",
+          "value": 2.4916176031060124
+        },
+        "wallet_stats.calmar": {
+          "section": "回撤与钱包",
+          "value": 39.393272599715644
+        },
+        "wallet_stats.low_date": {
+          "section": "回撤与钱包",
+          "value": "2020-10-16 05:00:00"
+        },
+        "wallet_stats.low_ts": {
+          "section": "回撤与钱包",
+          "value": 1602824400000
+        },
+        "wallet_stats.high_date": {
+          "section": "回撤与钱包",
+          "value": "2026-08-28 17:00:00"
+        },
+        "wallet_stats.high_ts": {
+          "section": "回撤与钱包",
+          "value": 1787936400000
+        },
+        "wallet_stats.max_drawdown_account": {
+          "section": "回撤与钱包",
+          "value": 0.059679601906998246
+        },
+        "wallet_stats.max_relative_drawdown": {
+          "section": "回撤与钱包",
+          "value": 0.1420286366579656
+        },
+        "wallet_stats.max_drawdown_abs": {
+          "section": "回撤与钱包",
+          "value": 168.29170471999987
+        },
+        "wallet_stats.drawdown_start": {
+          "section": "回撤与钱包",
+          "value": "2023-12-11 03:00:00"
+        },
+        "wallet_stats.drawdown_start_ts": {
+          "section": "回撤与钱包",
+          "value": 1702263600000
+        },
+        "wallet_stats.drawdown_end": {
+          "section": "回撤与钱包",
+          "value": "2024-08-29 16:00:00"
+        },
+        "wallet_stats.drawdown_end_ts": {
+          "section": "回撤与钱包",
+          "value": 1724947200000
+        },
+        "wallet_stats.drawdown_duration": {
+          "section": "回撤与钱包",
+          "value": "262 days 13:00:00"
+        },
+        "wallet_stats.drawdown_duration_s": {
+          "section": "回撤与钱包",
+          "value": 22683600.0
+        },
+        "wallet_stats.max_drawdown_low": {
+          "section": "回撤与钱包",
+          "value": 1651.62832394
+        },
+        "wallet_stats.max_drawdown_high": {
+          "section": "回撤与钱包",
+          "value": 1819.9200286599998
+        },
+        "profit_factor": {
+          "section": "收益与总体统计",
+          "value": 2.199520166369294
+        },
+        "backtest_start": {
+          "section": "回测与策略设置",
+          "value": "2020-04-15 06:00:00"
+        },
+        "backtest_start_ts": {
+          "section": "收益与总体统计",
+          "value": 1586930400000
+        },
+        "backtest_end": {
+          "section": "回测与策略设置",
+          "value": "2026-08-30 14:00:00"
+        },
+        "backtest_end_ts": {
+          "section": "收益与总体统计",
+          "value": 1788098400000
+        },
+        "backtest_days": {
+          "section": "回测与策略设置",
+          "value": 2328
+        },
+        "backtest_run_start_ts": {
+          "section": "收益与总体统计",
+          "value": 1788491711
+        },
+        "backtest_run_end_ts": {
+          "section": "收益与总体统计",
+          "value": 1788491787
+        },
+        "trades_per_day": {
+          "section": "收益与总体统计",
+          "value": 0.14
+        },
+        "market_change": {
+          "section": "收益与总体统计",
+          "value": 10.451039697542534
+        },
+        "pairlist": {
+          "section": "回测与策略设置",
+          "value": "[\"BTC/USDT:USDT\"]"
+        },
+        "stake_amount": {
+          "section": "回测与策略设置",
+          "value": 540
+        },
+        "stake_currency": {
+          "section": "回测与策略设置",
+          "value": "USDT"
+        },
+        "stake_currency_decimals": {
+          "section": "收益与总体统计",
+          "value": 3
+        },
+        "starting_balance": {
+          "section": "回测与策略设置",
+          "value": 1000
+        },
+        "dry_run_wallet": {
+          "section": "回测与策略设置",
+          "value": 1000
+        },
+        "final_balance": {
+          "section": "收益与总体统计",
+          "value": 3864.7354519899986
+        },
+        "rejected_signals": {
+          "section": "执行统计",
+          "value": 0
+        },
+        "timedout_entry_orders": {
+          "section": "执行统计",
+          "value": 0
+        },
+        "timedout_exit_orders": {
+          "section": "执行统计",
+          "value": 0
+        },
+        "canceled_trade_entries": {
+          "section": "执行统计",
+          "value": 0
+        },
+        "canceled_entry_orders": {
+          "section": "执行统计",
+          "value": 0
+        },
+        "replaced_entry_orders": {
+          "section": "执行统计",
+          "value": 0
+        },
+        "max_open_trades": {
+          "section": "回测与策略设置",
+          "value": 1
+        },
+        "max_open_trades_setting": {
+          "section": "回测与策略设置",
+          "value": 1
+        },
+        "timeframe": {
+          "section": "回测与策略设置",
+          "value": "1h"
+        },
+        "timeframe_detail": {
+          "section": "回测与策略设置",
+          "value": ""
+        },
+        "timerange": {
+          "section": "回测与策略设置",
+          "value": ""
+        },
+        "enable_protections": {
+          "section": "回测与策略设置",
+          "value": true
+        },
+        "strategy_name": {
+          "section": "回测与策略设置",
+          "value": "confirm_v3_2_BTC"
+        },
+        "freqaimodel": {
+          "section": "收益与总体统计",
+          "value": null
+        },
+        "freqai_identifier": {
+          "section": "收益与总体统计",
+          "value": null
+        },
+        "stoploss": {
+          "section": "回测与策略设置",
+          "value": -0.18
+        },
+        "trailing_stop": {
+          "section": "回测与策略设置",
+          "value": false
+        },
+        "trailing_stop_positive": {
+          "section": "回测与策略设置",
+          "value": null
+        },
+        "trailing_stop_positive_offset": {
+          "section": "回测与策略设置",
+          "value": 0.0
+        },
+        "trailing_only_offset_is_reached": {
+          "section": "回测与策略设置",
+          "value": false
+        },
+        "use_custom_stoploss": {
+          "section": "回测与策略设置",
+          "value": true
+        },
+        "minimal_roi": {
+          "section": "回测与策略设置",
+          "value": "{\"0\":100}"
+        },
+        "use_exit_signal": {
+          "section": "回测与策略设置",
+          "value": true
+        },
+        "exit_profit_only": {
+          "section": "回测与策略设置",
+          "value": false
+        },
+        "exit_profit_offset": {
+          "section": "回测与策略设置",
+          "value": 0.0
+        },
+        "ignore_roi_if_entry_signal": {
+          "section": "回测与策略设置",
+          "value": false
+        },
+        "trading_mode": {
+          "section": "回测与策略设置",
+          "value": "futures"
+        },
+        "margin_mode": {
+          "section": "回测与策略设置",
+          "value": "isolated"
+        },
+        "backtest_best_day": {
+          "section": "收益与总体统计",
+          "value": 0.8551563487607894
+        },
+        "backtest_worst_day": {
+          "section": "收益与总体统计",
+          "value": -0.2549399905636073
+        },
+        "backtest_best_day_abs": {
+          "section": "收益与总体统计",
+          "value": 914.73986948
+        },
+        "backtest_worst_day_abs": {
+          "section": "收益与总体统计",
+          "value": -46.73493767
+        },
+        "winning_days": {
+          "section": "收益与总体统计",
+          "value": 100
+        },
+        "draw_days": {
+          "section": "收益与总体统计",
+          "value": 2020
+        },
+        "losing_days": {
+          "section": "收益与总体统计",
+          "value": 202
+        },
+        "wins": {
+          "section": "收益与总体统计",
+          "value": 109
+        },
+        "losses": {
+          "section": "收益与总体统计",
+          "value": 217
+        },
+        "draws": {
+          "section": "收益与总体统计",
+          "value": 0
+        },
+        "winrate": {
+          "section": "收益与总体统计",
+          "value": 0.3343558282208589
+        },
+        "holding_avg": {
+          "section": "持仓与连续性",
+          "value": "3 days, 9:17:00"
+        },
+        "holding_avg_s": {
+          "section": "持仓与连续性",
+          "value": 292620.0
+        },
+        "winner_holding_min": {
+          "section": "持仓与连续性",
+          "value": "0d 01:00"
+        },
+        "winner_holding_min_s": {
+          "section": "持仓与连续性",
+          "value": 3600.0
+        },
+        "winner_holding_max": {
+          "section": "持仓与连续性",
+          "value": "24d 16:00"
+        },
+        "winner_holding_max_s": {
+          "section": "持仓与连续性",
+          "value": 2131200.0
+        },
+        "winner_holding_avg": {
+          "section": "持仓与连续性",
+          "value": "6d 03:48"
+        },
+        "winner_holding_avg_s": {
+          "section": "持仓与连续性",
+          "value": 532080.0
+        },
+        "loser_holding_min": {
+          "section": "持仓与连续性",
+          "value": "0d 00:00"
+        },
+        "loser_holding_min_s": {
+          "section": "持仓与连续性",
+          "value": 0.0
+        },
+        "loser_holding_max": {
+          "section": "持仓与连续性",
+          "value": "12d 00:00"
+        },
+        "loser_holding_max_s": {
+          "section": "持仓与连续性",
+          "value": 1036800.0
+        },
+        "loser_holding_avg": {
+          "section": "持仓与连续性",
+          "value": "1d 23:51"
+        },
+        "loser_holding_avg_s": {
+          "section": "持仓与连续性",
+          "value": 172260.0
+        },
+        "max_consecutive_wins": {
+          "section": "持仓与连续性",
+          "value": 4
+        },
+        "max_consecutive_losses": {
+          "section": "持仓与连续性",
+          "value": 14
+        },
+        "max_drawdown_account": {
+          "section": "回撤与钱包",
+          "value": 0.059679601906998246
+        },
+        "max_relative_drawdown": {
+          "section": "回撤与钱包",
+          "value": 0.1420286366579656
+        },
+        "max_drawdown_abs": {
+          "section": "回撤与钱包",
+          "value": 168.29170471999964
+        },
+        "drawdown_start": {
+          "section": "回撤与钱包",
+          "value": "2023-12-11 02:00:00"
+        },
+        "drawdown_start_ts": {
+          "section": "回撤与钱包",
+          "value": 1702260000000.0
+        },
+        "drawdown_end": {
+          "section": "回撤与钱包",
+          "value": "2024-08-29 15:00:00"
+        },
+        "drawdown_end_ts": {
+          "section": "回撤与钱包",
+          "value": 1724943600000.0
+        },
+        "drawdown_duration": {
+          "section": "回撤与钱包",
+          "value": "262 days 13:00:00"
+        },
+        "drawdown_duration_s": {
+          "section": "回撤与钱包",
+          "value": 22683600.0
+        },
+        "max_drawdown_low": {
+          "section": "回撤与钱包",
+          "value": 1651.6283239400002
+        },
+        "max_drawdown_high": {
+          "section": "回撤与钱包",
+          "value": 1819.9200286599998
+        },
+        "csum_min": {
+          "section": "回撤与钱包",
+          "value": 932.2651116899999
+        },
+        "csum_max": {
+          "section": "回撤与钱包",
+          "value": 3864.7354519899986
+        }
+      }
+    }
+  },
+  "benchmark": {
+    "name": "BTC 长期持有（价格基准）",
+    "source": "user_data/data/bybit/futures/BTC_USDT_USDT-1h-futures.feather",
+    "method": "在回测起点按首根 1h 收盘价将 1000 USDT 全部换算为 BTC，之后不交易；按同一永续价格序列逐时盯市，不计交易费与资金费。",
+    "summary": {
+      "start": "2020-04-15T06:00:00+00:00",
+      "end": "2026-08-30T14:00:00+00:00",
+      "startingBalance": 1000.0,
+      "finalBalance": 11451.039697542534,
+      "profitAbs": 10451.039697542534,
+      "profitPct": 1045.1039697542533,
+      "firstPrice": 6877.0,
+      "lastPrice": 78748.8,
+      "maxDrawdownPct": 77.23383649722204,
+      "maxDrawdownDate": "2022-11-21T21:00:00+00:00",
+      "positiveYears": 4,
+      "totalYears": 7
+    },
+    "curve": [
+      {
+        "date": "2020-04",
+        "equity": 1254.180602,
+        "drawdownPct": -7.906679
+      },
+      {
+        "date": "2020-05",
+        "equity": 1374.072997,
+        "drawdownPct": -5.693613
+      },
+      {
+        "date": "2020-06",
+        "equity": 1328.413552,
+        "drawdownPct": -10.466997
+      },
+      {
+        "date": "2020-07",
+        "equity": 1648.829431,
+        "drawdownPct": -0.425906
+      },
+      {
+        "date": "2020-08",
+        "equity": 1695.652174,
+        "drawdownPct": -6.25829
+      },
+      {
+        "date": "2020-09",
+        "equity": 1564.49033,
+        "drawdownPct": -13.509385
+      },
+      {
+        "date": "2020-10",
+        "equity": 2004.071543,
+        "drawdownPct": -1.066006
+      },
+      {
+        "date": "2020-11",
+        "equity": 2866.366148,
+        "drawdownPct": 0.0
+      },
+      {
+        "date": "2020-12",
+        "equity": 4205.540206,
+        "drawdownPct": -0.904559
+      },
+      {
+        "date": "2021-01",
+        "equity": 4817.21681,
+        "drawdownPct": -20.333786
+      },
+      {
+        "date": "2021-02",
+        "equity": 6566.235277,
+        "drawdownPct": -22.487619
+      },
+      {
+        "date": "2021-03",
+        "equity": 8558.891959,
+        "drawdownPct": -4.626914
+      },
+      {
+        "date": "2021-04",
+        "equity": 8387.087393,
+        "drawdownPct": -10.797331
+      },
+      {
+        "date": "2021-05",
+        "equity": 5415.297368,
+        "drawdownPct": -42.404442
+      },
+      {
+        "date": "2021-06",
+        "equity": 5092.04595,
+        "drawdownPct": -45.842452
+      },
+      {
+        "date": "2021-07",
+        "equity": 6026.683147,
+        "drawdownPct": -35.901917
+      },
+      {
+        "date": "2021-08",
+        "equity": 6860.549658,
+        "drawdownPct": -27.033151
+      },
+      {
+        "date": "2021-09",
+        "equity": 6362.876254,
+        "drawdownPct": -32.326263
+      },
+      {
+        "date": "2021-10",
+        "equity": 8919.296205,
+        "drawdownPct": -8.361159
+      },
+      {
+        "date": "2021-11",
+        "equity": 8282.972226,
+        "drawdownPct": -17.044222
+      },
+      {
+        "date": "2021-12",
+        "equity": 6718.118366,
+        "drawdownPct": -32.716575
+      },
+      {
+        "date": "2022-01",
+        "equity": 5589.646648,
+        "drawdownPct": -44.018466
+      },
+      {
+        "date": "2022-02",
+        "equity": 6274.611022,
+        "drawdownPct": -37.158398
+      },
+      {
+        "date": "2022-03",
+        "equity": 6617.856624,
+        "drawdownPct": -33.720719
+      },
+      {
+        "date": "2022-04",
+        "equity": 5469.172604,
+        "drawdownPct": -45.22504
+      },
+      {
+        "date": "2022-05",
+        "equity": 4621.346517,
+        "drawdownPct": -53.716204
+      },
+      {
+        "date": "2022-06",
+        "equity": 2897.411662,
+        "drawdownPct": -70.981789
+      },
+      {
+        "date": "2022-07",
+        "equity": 3386.723862,
+        "drawdownPct": -66.08122
+      },
+      {
+        "date": "2022-08",
+        "equity": 2915.588193,
+        "drawdownPct": -70.799747
+      },
+      {
+        "date": "2022-09",
+        "equity": 2822.378944,
+        "drawdownPct": -71.733258
+      },
+      {
+        "date": "2022-10",
+        "equity": 2978.042751,
+        "drawdownPct": -70.174251
+      },
+      {
+        "date": "2022-11",
+        "equity": 2493.311037,
+        "drawdownPct": -75.028945
+      },
+      {
+        "date": "2022-12",
+        "equity": 2406.499927,
+        "drawdownPct": -75.898377
+      },
+      {
+        "date": "2023-01",
+        "equity": 3363.385197,
+        "drawdownPct": -66.314962
+      },
+      {
+        "date": "2023-02",
+        "equity": 3363.370656,
+        "drawdownPct": -66.315107
+      },
+      {
+        "date": "2023-03",
+        "equity": 4137.283699,
+        "drawdownPct": -58.564199
+      },
+      {
+        "date": "2023-04",
+        "equity": 4248.509525,
+        "drawdownPct": -57.450248
+      },
+      {
+        "date": "2023-05",
+        "equity": 3955.067617,
+        "drawdownPct": -60.389133
+      },
+      {
+        "date": "2023-06",
+        "equity": 4430.056711,
+        "drawdownPct": -55.632013
+      },
+      {
+        "date": "2023-07",
+        "equity": 4249.585575,
+        "drawdownPct": -57.439471
+      },
+      {
+        "date": "2023-08",
+        "equity": 3769.681547,
+        "drawdownPct": -62.245815
+      },
+      {
+        "date": "2023-09",
+        "equity": 3919.368911,
+        "drawdownPct": -60.746663
+      },
+      {
+        "date": "2023-10",
+        "equity": 5041.020794,
+        "drawdownPct": -49.513074
+      },
+      {
+        "date": "2023-11",
+        "equity": 5486.025883,
+        "drawdownPct": -45.056251
+      },
+      {
+        "date": "2023-12",
+        "equity": 6154.544133,
+        "drawdownPct": -38.360894
+      },
+      {
+        "date": "2024-01",
+        "equity": 6187.683583,
+        "drawdownPct": -38.028996
+      },
+      {
+        "date": "2024-02",
+        "equity": 8896.91726,
+        "drawdownPct": -10.895428
+      },
+      {
+        "date": "2024-03",
+        "equity": 10379.235132,
+        "drawdownPct": -3.093019
+      },
+      {
+        "date": "2024-04",
+        "equity": 8820.110513,
+        "drawdownPct": -17.649974
+      },
+      {
+        "date": "2024-05",
+        "equity": 9823.440454,
+        "drawdownPct": -8.282263
+      },
+      {
+        "date": "2024-06",
+        "equity": 9124.545587,
+        "drawdownPct": -14.807579
+      },
+      {
+        "date": "2024-07",
+        "equity": 9395.942998,
+        "drawdownPct": -12.273644
+      },
+      {
+        "date": "2024-08",
+        "equity": 8571.237458,
+        "drawdownPct": -19.973607
+      },
+      {
+        "date": "2024-09",
+        "equity": 9201.221463,
+        "drawdownPct": -14.091685
+      },
+      {
+        "date": "2024-10",
+        "equity": 10227.177548,
+        "drawdownPct": -4.512723
+      },
+      {
+        "date": "2024-11",
+        "equity": 14029.954922,
+        "drawdownPct": -2.876148
+      },
+      {
+        "date": "2024-12",
+        "equity": 13600.407154,
+        "drawdownPct": -13.619219
+      },
+      {
+        "date": "2025-01",
+        "equity": 14886.956522,
+        "drawdownPct": -5.510741
+      },
+      {
+        "date": "2025-02",
+        "equity": 12259.357278,
+        "drawdownPct": -22.188422
+      },
+      {
+        "date": "2025-03",
+        "equity": 11997.14992,
+        "drawdownPct": -23.852683
+      },
+      {
+        "date": "2025-04",
+        "equity": 13685.909554,
+        "drawdownPct": -13.133927
+      },
+      {
+        "date": "2025-05",
+        "equity": 15205.191217,
+        "drawdownPct": -6.4226
+      },
+      {
+        "date": "2025-06",
+        "equity": 15570.917551,
+        "drawdownPct": -4.171809
+      },
+      {
+        "date": "2025-07",
+        "equity": 16821.302894,
+        "drawdownPct": -5.752836
+      },
+      {
+        "date": "2025-08",
+        "equity": 15733.60477,
+        "drawdownPct": -12.663896
+      },
+      {
+        "date": "2025-09",
+        "equity": 16579.002472,
+        "drawdownPct": -7.971155
+      },
+      {
+        "date": "2025-10",
+        "equity": 15929.431438,
+        "drawdownPct": -13.045269
+      },
+      {
+        "date": "2025-11",
+        "equity": 13131.976152,
+        "drawdownPct": -28.315869
+      },
+      {
+        "date": "2025-12",
+        "equity": 12737.370947,
+        "drawdownPct": -30.469919
+      },
+      {
+        "date": "2026-01",
+        "equity": 11444.583394,
+        "drawdownPct": -37.526919
+      },
+      {
+        "date": "2026-02",
+        "equity": 9733.837429,
+        "drawdownPct": -46.865447
+      },
+      {
+        "date": "2026-03",
+        "equity": 9923.600407,
+        "drawdownPct": -45.829579
+      },
+      {
+        "date": "2026-04",
+        "equity": 11095.099607,
+        "drawdownPct": -39.434662
+      },
+      {
+        "date": "2026-05",
+        "equity": 10709.553584,
+        "drawdownPct": -41.53926
+      },
+      {
+        "date": "2026-06",
+        "equity": 8521.666424,
+        "drawdownPct": -53.482382
+      },
+      {
+        "date": "2026-07",
+        "equity": 9140.293733,
+        "drawdownPct": -50.105452
+      },
+      {
+        "date": "2026-08",
+        "equity": 11451.039698,
+        "drawdownPct": -37.491675
+      }
+    ],
+    "yearly": [
+      {
+        "year": 2020,
+        "returnPct": 320.5540206485386,
+        "startEquity": 1000.0,
+        "endEquity": 4205.540206485386
+      },
+      {
+        "year": 2021,
+        "returnPct": 59.744480749615335,
+        "startEquity": 4205.540206485386,
+        "endEquity": 6718.11836556638
+      },
+      {
+        "year": 2022,
+        "returnPct": -64.17895910217422,
+        "startEquity": 6718.11836556638,
+        "endEquity": 2406.4999272938785
+      },
+      {
+        "year": 2023,
+        "returnPct": 155.74669929605128,
+        "startEquity": 2406.4999272938785,
+        "endEquity": 6154.544132615967
+      },
+      {
+        "year": 2024,
+        "returnPct": 120.9815521868975,
+        "startEquity": 6154.544132615967,
+        "endEquity": 13600.40715428239
+      },
+      {
+        "year": 2025,
+        "returnPct": -6.345664492676151,
+        "startEquity": 13600.40715428239,
+        "endEquity": 12737.370946633706
+      },
+      {
+        "year": 2026,
+        "returnPct": -10.098875619470993,
+        "startEquity": 12737.370946633706,
+        "endEquity": 11451.039697542534
+      }
+    ]
+  },
+  "allMetricRows": [
+    {
+      "section": "回撤与钱包",
+      "key": "csum_max",
+      "VolatilitySystem": 3800.7862748499997,
+      "confirm_v3_2_BTC": 3864.7354519899986
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "csum_min",
+      "VolatilitySystem": 869.2830129,
+      "confirm_v3_2_BTC": 932.2651116899999
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "drawdown_duration",
+      "VolatilitySystem": "110 days 18:00:00",
+      "confirm_v3_2_BTC": "262 days 13:00:00"
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "drawdown_duration_s",
+      "VolatilitySystem": 9568800.0,
+      "confirm_v3_2_BTC": 22683600.0
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "drawdown_end",
+      "VolatilitySystem": "2024-06-24 12:00:00",
+      "confirm_v3_2_BTC": "2024-08-29 15:00:00"
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "drawdown_end_ts",
+      "VolatilitySystem": 1719230400000.0,
+      "confirm_v3_2_BTC": 1724943600000.0
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "drawdown_start",
+      "VolatilitySystem": "2024-03-05 18:00:00",
+      "confirm_v3_2_BTC": "2023-12-11 02:00:00"
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "drawdown_start_ts",
+      "VolatilitySystem": 1709661600000.0,
+      "confirm_v3_2_BTC": 1702260000000.0
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "max_drawdown_abs",
+      "VolatilitySystem": 331.8246158699999,
+      "confirm_v3_2_BTC": 168.29170471999964
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "max_drawdown_account",
+      "VolatilitySystem": 0.08770679034325157,
+      "confirm_v3_2_BTC": 0.059679601906998246
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "max_drawdown_high",
+      "VolatilitySystem": 2783.340087709999,
+      "confirm_v3_2_BTC": 1819.9200286599998
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "max_drawdown_low",
+      "VolatilitySystem": 2451.515471839999,
+      "confirm_v3_2_BTC": 1651.6283239400002
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "max_relative_drawdown",
+      "VolatilitySystem": 0.19884875312012204,
+      "confirm_v3_2_BTC": 0.1420286366579656
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "wallet_stats.calmar",
+      "VolatilitySystem": 24.063551603317073,
+      "confirm_v3_2_BTC": 39.393272599715644
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "wallet_stats.drawdown_duration",
+      "VolatilitySystem": "110 days 18:00:00",
+      "confirm_v3_2_BTC": "262 days 13:00:00"
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "wallet_stats.drawdown_duration_s",
+      "VolatilitySystem": 9568800.0,
+      "confirm_v3_2_BTC": 22683600.0
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "wallet_stats.drawdown_end",
+      "VolatilitySystem": "2024-06-24 13:00:00",
+      "confirm_v3_2_BTC": "2024-08-29 16:00:00"
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "wallet_stats.drawdown_end_ts",
+      "VolatilitySystem": 1719234000000,
+      "confirm_v3_2_BTC": 1724947200000
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "wallet_stats.drawdown_start",
+      "VolatilitySystem": "2024-03-05 19:00:00",
+      "confirm_v3_2_BTC": "2023-12-11 03:00:00"
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "wallet_stats.drawdown_start_ts",
+      "VolatilitySystem": 1709665200000,
+      "confirm_v3_2_BTC": 1702263600000
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "wallet_stats.end_balance",
+      "VolatilitySystem": 3571.7543809199974,
+      "confirm_v3_2_BTC": 3864.7354519899986
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "wallet_stats.high_balance",
+      "VolatilitySystem": 3800.7862748499997,
+      "confirm_v3_2_BTC": 3864.7354519899986
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "wallet_stats.high_date",
+      "VolatilitySystem": "2024-11-25 16:00:00",
+      "confirm_v3_2_BTC": "2026-08-28 17:00:00"
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "wallet_stats.high_ts",
+      "VolatilitySystem": 1732550400000,
+      "confirm_v3_2_BTC": 1787936400000
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "wallet_stats.low_balance",
+      "VolatilitySystem": 869.2830129,
+      "confirm_v3_2_BTC": 932.2651116899999
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "wallet_stats.low_date",
+      "VolatilitySystem": "2020-06-15 07:00:00",
+      "confirm_v3_2_BTC": "2020-10-16 05:00:00"
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "wallet_stats.low_ts",
+      "VolatilitySystem": 1592204400000,
+      "confirm_v3_2_BTC": 1602824400000
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "wallet_stats.max_drawdown_abs",
+      "VolatilitySystem": 331.8246158699999,
+      "confirm_v3_2_BTC": 168.29170471999987
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "wallet_stats.max_drawdown_account",
+      "VolatilitySystem": 0.08770679034325157,
+      "confirm_v3_2_BTC": 0.059679601906998246
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "wallet_stats.max_drawdown_high",
+      "VolatilitySystem": 2783.340087709999,
+      "confirm_v3_2_BTC": 1819.9200286599998
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "wallet_stats.max_drawdown_low",
+      "VolatilitySystem": 2451.515471839999,
+      "confirm_v3_2_BTC": 1651.62832394
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "wallet_stats.max_relative_drawdown",
+      "VolatilitySystem": 0.19884875312012204,
+      "confirm_v3_2_BTC": 0.1420286366579656
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "wallet_stats.sharpe",
+      "VolatilitySystem": 0.7369658785388833,
+      "confirm_v3_2_BTC": 0.8751876474555624
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "wallet_stats.sortino",
+      "VolatilitySystem": 0.689091152706187,
+      "confirm_v3_2_BTC": 2.4916176031060124
+    },
+    {
+      "section": "回撤与钱包",
+      "key": "wallet_stats.start_balance",
+      "VolatilitySystem": 1000.0,
+      "confirm_v3_2_BTC": 1000.0
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "backtest_days",
+      "VolatilitySystem": 2328,
+      "confirm_v3_2_BTC": 2328
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "backtest_end",
+      "VolatilitySystem": "2026-08-30 14:00:00",
+      "confirm_v3_2_BTC": "2026-08-30 14:00:00"
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "backtest_start",
+      "VolatilitySystem": "2020-04-15 06:00:00",
+      "confirm_v3_2_BTC": "2020-04-15 06:00:00"
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "dry_run_wallet",
+      "VolatilitySystem": 1000,
+      "confirm_v3_2_BTC": 1000
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "enable_protections",
+      "VolatilitySystem": true,
+      "confirm_v3_2_BTC": true
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "exit_profit_offset",
+      "VolatilitySystem": 0.0,
+      "confirm_v3_2_BTC": 0.0
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "exit_profit_only",
+      "VolatilitySystem": false,
+      "confirm_v3_2_BTC": false
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "ignore_roi_if_entry_signal",
+      "VolatilitySystem": false,
+      "confirm_v3_2_BTC": false
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "margin_mode",
+      "VolatilitySystem": "isolated",
+      "confirm_v3_2_BTC": "isolated"
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "max_open_trades",
+      "VolatilitySystem": 1,
+      "confirm_v3_2_BTC": 1
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "max_open_trades_setting",
+      "VolatilitySystem": 1,
+      "confirm_v3_2_BTC": 1
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "minimal_roi",
+      "VolatilitySystem": "{\"0\":100}",
+      "confirm_v3_2_BTC": "{\"0\":100}"
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "pairlist",
+      "VolatilitySystem": "[\"BTC/USDT:USDT\"]",
+      "confirm_v3_2_BTC": "[\"BTC/USDT:USDT\"]"
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "stake_amount",
+      "VolatilitySystem": 540,
+      "confirm_v3_2_BTC": 540
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "stake_currency",
+      "VolatilitySystem": "USDT",
+      "confirm_v3_2_BTC": "USDT"
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "starting_balance",
+      "VolatilitySystem": 1000,
+      "confirm_v3_2_BTC": 1000
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "stoploss",
+      "VolatilitySystem": -1,
+      "confirm_v3_2_BTC": -0.18
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "strategy_name",
+      "VolatilitySystem": "VolatilitySystem",
+      "confirm_v3_2_BTC": "confirm_v3_2_BTC"
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "timeframe",
+      "VolatilitySystem": "1h",
+      "confirm_v3_2_BTC": "1h"
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "timeframe_detail",
+      "VolatilitySystem": "",
+      "confirm_v3_2_BTC": ""
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "timerange",
+      "VolatilitySystem": "",
+      "confirm_v3_2_BTC": ""
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "trading_mode",
+      "VolatilitySystem": "futures",
+      "confirm_v3_2_BTC": "futures"
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "trailing_only_offset_is_reached",
+      "VolatilitySystem": false,
+      "confirm_v3_2_BTC": false
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "trailing_stop",
+      "VolatilitySystem": false,
+      "confirm_v3_2_BTC": false
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "trailing_stop_positive",
+      "VolatilitySystem": null,
+      "confirm_v3_2_BTC": null
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "trailing_stop_positive_offset",
+      "VolatilitySystem": 0.0,
+      "confirm_v3_2_BTC": 0.0
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "use_custom_stoploss",
+      "VolatilitySystem": false,
+      "confirm_v3_2_BTC": true
+    },
+    {
+      "section": "回测与策略设置",
+      "key": "use_exit_signal",
+      "VolatilitySystem": true,
+      "confirm_v3_2_BTC": true
+    },
+    {
+      "section": "多空方向",
+      "key": "profit_total_long",
+      "VolatilitySystem": 2.6740990028099993,
+      "confirm_v3_2_BTC": 2.5956446241699997
+    },
+    {
+      "section": "多空方向",
+      "key": "profit_total_long_abs",
+      "VolatilitySystem": 2674.0990028099995,
+      "confirm_v3_2_BTC": 2595.6446241699996
+    },
+    {
+      "section": "多空方向",
+      "key": "profit_total_short",
+      "VolatilitySystem": 0.10768375785,
+      "confirm_v3_2_BTC": 0.26909082781999993
+    },
+    {
+      "section": "多空方向",
+      "key": "profit_total_short_abs",
+      "VolatilitySystem": 107.68375785,
+      "confirm_v3_2_BTC": 269.09082781999996
+    },
+    {
+      "section": "多空方向",
+      "key": "trade_count_long",
+      "VolatilitySystem": 97,
+      "confirm_v3_2_BTC": 164
+    },
+    {
+      "section": "多空方向",
+      "key": "trade_count_short",
+      "VolatilitySystem": 96,
+      "confirm_v3_2_BTC": 162
+    },
+    {
+      "section": "执行统计",
+      "key": "canceled_entry_orders",
+      "VolatilitySystem": 0,
+      "confirm_v3_2_BTC": 0
+    },
+    {
+      "section": "执行统计",
+      "key": "canceled_trade_entries",
+      "VolatilitySystem": 0,
+      "confirm_v3_2_BTC": 0
+    },
+    {
+      "section": "执行统计",
+      "key": "rejected_signals",
+      "VolatilitySystem": 0,
+      "confirm_v3_2_BTC": 0
+    },
+    {
+      "section": "执行统计",
+      "key": "replaced_entry_orders",
+      "VolatilitySystem": 0,
+      "confirm_v3_2_BTC": 0
+    },
+    {
+      "section": "执行统计",
+      "key": "timedout_entry_orders",
+      "VolatilitySystem": 0,
+      "confirm_v3_2_BTC": 0
+    },
+    {
+      "section": "执行统计",
+      "key": "timedout_exit_orders",
+      "VolatilitySystem": 0,
+      "confirm_v3_2_BTC": 0
+    },
+    {
+      "section": "持仓与连续性",
+      "key": "holding_avg",
+      "VolatilitySystem": "12 days, 1:24:00",
+      "confirm_v3_2_BTC": "3 days, 9:17:00"
+    },
+    {
+      "section": "持仓与连续性",
+      "key": "holding_avg_s",
+      "VolatilitySystem": 1041840.0,
+      "confirm_v3_2_BTC": 292620.0
+    },
+    {
+      "section": "持仓与连续性",
+      "key": "loser_holding_avg",
+      "VolatilitySystem": "7d 22:31",
+      "confirm_v3_2_BTC": "1d 23:51"
+    },
+    {
+      "section": "持仓与连续性",
+      "key": "loser_holding_avg_s",
+      "VolatilitySystem": 685860.0,
+      "confirm_v3_2_BTC": 172260.0
+    },
+    {
+      "section": "持仓与连续性",
+      "key": "loser_holding_max",
+      "VolatilitySystem": "29d 21:00",
+      "confirm_v3_2_BTC": "12d 00:00"
+    },
+    {
+      "section": "持仓与连续性",
+      "key": "loser_holding_max_s",
+      "VolatilitySystem": 2581200.0,
+      "confirm_v3_2_BTC": 1036800.0
+    },
+    {
+      "section": "持仓与连续性",
+      "key": "loser_holding_min",
+      "VolatilitySystem": "0d 03:00",
+      "confirm_v3_2_BTC": "0d 00:00"
+    },
+    {
+      "section": "持仓与连续性",
+      "key": "loser_holding_min_s",
+      "VolatilitySystem": 10800.0,
+      "confirm_v3_2_BTC": 0.0
+    },
+    {
+      "section": "持仓与连续性",
+      "key": "max_consecutive_losses",
+      "VolatilitySystem": 11,
+      "confirm_v3_2_BTC": 14
+    },
+    {
+      "section": "持仓与连续性",
+      "key": "max_consecutive_wins",
+      "VolatilitySystem": 7,
+      "confirm_v3_2_BTC": 4
+    },
+    {
+      "section": "持仓与连续性",
+      "key": "winner_holding_avg",
+      "VolatilitySystem": "18d 23:34",
+      "confirm_v3_2_BTC": "6d 03:48"
+    },
+    {
+      "section": "持仓与连续性",
+      "key": "winner_holding_avg_s",
+      "VolatilitySystem": 1640040.0,
+      "confirm_v3_2_BTC": 532080.0
+    },
+    {
+      "section": "持仓与连续性",
+      "key": "winner_holding_max",
+      "VolatilitySystem": "59d 06:00",
+      "confirm_v3_2_BTC": "24d 16:00"
+    },
+    {
+      "section": "持仓与连续性",
+      "key": "winner_holding_max_s",
+      "VolatilitySystem": 5119200.0,
+      "confirm_v3_2_BTC": 2131200.0
+    },
+    {
+      "section": "持仓与连续性",
+      "key": "winner_holding_min",
+      "VolatilitySystem": "1d 09:00",
+      "confirm_v3_2_BTC": "0d 01:00"
+    },
+    {
+      "section": "持仓与连续性",
+      "key": "winner_holding_min_s",
+      "VolatilitySystem": 118800.0,
+      "confirm_v3_2_BTC": 3600.0
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "avg_stake_amount",
+      "VolatilitySystem": 378.13267720207256,
+      "confirm_v3_2_BTC": 218.3002834355215
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "backtest_best_day",
+      "VolatilitySystem": 1.0042518765062978,
+      "confirm_v3_2_BTC": 0.8551563487607894
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "backtest_best_day_abs",
+      "VolatilitySystem": 525.53735837,
+      "confirm_v3_2_BTC": 914.73986948
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "backtest_end_ts",
+      "VolatilitySystem": 1788098400000,
+      "confirm_v3_2_BTC": 1788098400000
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "backtest_run_end_ts",
+      "VolatilitySystem": 1788491686,
+      "confirm_v3_2_BTC": 1788491787
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "backtest_run_start_ts",
+      "VolatilitySystem": 1788491654,
+      "confirm_v3_2_BTC": 1788491711
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "backtest_start_ts",
+      "VolatilitySystem": 1586930400000,
+      "confirm_v3_2_BTC": 1586930400000
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "backtest_worst_day",
+      "VolatilitySystem": -0.35337684623057014,
+      "confirm_v3_2_BTC": -0.2549399905636073
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "backtest_worst_day_abs",
+      "VolatilitySystem": -146.68165631,
+      "confirm_v3_2_BTC": -46.73493767
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "best_pair",
+      "VolatilitySystem": "{\"key\":\"BTC/USDT:USDT\",\"trades\":193,\"profit_mean\":0.010430505360563324,\"profit_mean_pct\":1.04,\"profit_total_abs\":2781.7827606600003,\"profit_total\":2.7817827606600005,\"profit_total_pct\":278.18,\"duration_avg\":\"12 days, 1:24:00\",\"wins\":72,\"draws\":0,\"losses\":121,\"winrate\":0.37305699481865284,\"cagr\":0.23189950181167118,\"expectancy\":14.41338217958549,\"expectancy_ratio\":0.4693654687725095,\"sortino\":0.8428263250244578,\"sharpe\":0.25414774986084526,\"calmar\":26.028758230952583,\"sqn\":2.2234,\"p_value\":0.027355419757590944,\"profit_factor\":1.7486573179594571,\"max_drawdown_account\":0.08770679034325157,\"max_drawdown_abs\":331.8246158699999}",
+      "confirm_v3_2_BTC": "{\"key\":\"BTC/USDT:USDT\",\"trades\":326,\"profit_mean\":-0.01271319340822618,\"profit_mean_pct\":-1.27,\"profit_total_abs\":2864.73545199,\"profit_total\":2.86473545199,\"profit_total_pct\":286.47,\"duration_avg\":\"3 days, 9:17:00\",\"wins\":109,\"draws\":0,\"losses\":217,\"winrate\":0.3343558282208589,\"cagr\":0.2360974578049999,\"expectancy\":8.78753206131902,\"expectancy_ratio\":0.7984536076752666,\"sortino\":3.4215524252606673,\"sharpe\":0.33570961289363255,\"calmar\":39.39327259971566,\"sqn\":2.2622,\"p_value\":0.024347215136723346,\"profit_factor\":2.199520166369294,\"max_drawdown_account\":0.059679601906998246,\"max_drawdown_abs\":168.29170471999964}"
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "cagr",
+      "VolatilitySystem": 0.23189950181167096,
+      "confirm_v3_2_BTC": 0.2360974578049999
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "calmar",
+      "VolatilitySystem": 26.028758230952583,
+      "confirm_v3_2_BTC": 39.39327259971566
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "draw_days",
+      "VolatilitySystem": 2141,
+      "confirm_v3_2_BTC": 2020
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "draws",
+      "VolatilitySystem": 0,
+      "confirm_v3_2_BTC": 0
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "expectancy",
+      "VolatilitySystem": 14.41338217958549,
+      "confirm_v3_2_BTC": 8.78753206131902
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "expectancy_ratio",
+      "VolatilitySystem": 0.4693654687725095,
+      "confirm_v3_2_BTC": 0.7984536076752666
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "final_balance",
+      "VolatilitySystem": 3781.7827606599976,
+      "confirm_v3_2_BTC": 3864.7354519899986
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "freqai_identifier",
+      "VolatilitySystem": null,
+      "confirm_v3_2_BTC": null
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "freqaimodel",
+      "VolatilitySystem": null,
+      "confirm_v3_2_BTC": null
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "losing_days",
+      "VolatilitySystem": 112,
+      "confirm_v3_2_BTC": 202
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "losses",
+      "VolatilitySystem": 121,
+      "confirm_v3_2_BTC": 217
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "market_change",
+      "VolatilitySystem": 10.451039697542534,
+      "confirm_v3_2_BTC": 10.451039697542534
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "p_value",
+      "VolatilitySystem": 0.027355419757590944,
+      "confirm_v3_2_BTC": 0.024347215136723346
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "profit_factor",
+      "VolatilitySystem": 1.7486573179594571,
+      "confirm_v3_2_BTC": 2.199520166369294
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "profit_mean",
+      "VolatilitySystem": 0.010430505360563324,
+      "confirm_v3_2_BTC": -0.01271319340822618
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "profit_median",
+      "VolatilitySystem": -0.029579887029530367,
+      "confirm_v3_2_BTC": -0.05570777467954933
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "profit_total",
+      "VolatilitySystem": 2.7817827606600005,
+      "confirm_v3_2_BTC": 2.86473545199
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "profit_total_abs",
+      "VolatilitySystem": 2781.7827606600003,
+      "confirm_v3_2_BTC": 2864.73545199
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "sharpe",
+      "VolatilitySystem": 0.25414774986084526,
+      "confirm_v3_2_BTC": 0.33570961289363255
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "sortino",
+      "VolatilitySystem": 0.8428263250244578,
+      "confirm_v3_2_BTC": 3.4215524252606673
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "sqn",
+      "VolatilitySystem": 2.2234,
+      "confirm_v3_2_BTC": 2.2622
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "stake_currency_decimals",
+      "VolatilitySystem": 3,
+      "confirm_v3_2_BTC": 3
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "total_trades",
+      "VolatilitySystem": 193,
+      "confirm_v3_2_BTC": 326
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "total_volume",
+      "VolatilitySystem": 295381.55736082,
+      "confirm_v3_2_BTC": 429819.63724005996
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "trades_per_day",
+      "VolatilitySystem": 0.08,
+      "confirm_v3_2_BTC": 0.14
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "winning_days",
+      "VolatilitySystem": 71,
+      "confirm_v3_2_BTC": 100
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "winrate",
+      "VolatilitySystem": 0.37305699481865284,
+      "confirm_v3_2_BTC": 0.3343558282208589
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "wins",
+      "VolatilitySystem": 72,
+      "confirm_v3_2_BTC": 109
+    },
+    {
+      "section": "收益与总体统计",
+      "key": "worst_pair",
+      "VolatilitySystem": "{\"key\":\"BTC/USDT:USDT\",\"trades\":193,\"profit_mean\":0.010430505360563324,\"profit_mean_pct\":1.04,\"profit_total_abs\":2781.7827606600003,\"profit_total\":2.7817827606600005,\"profit_total_pct\":278.18,\"duration_avg\":\"12 days, 1:24:00\",\"wins\":72,\"draws\":0,\"losses\":121,\"winrate\":0.37305699481865284,\"cagr\":0.23189950181167118,\"expectancy\":14.41338217958549,\"expectancy_ratio\":0.4693654687725095,\"sortino\":0.8428263250244578,\"sharpe\":0.25414774986084526,\"calmar\":26.028758230952583,\"sqn\":2.2234,\"p_value\":0.027355419757590944,\"profit_factor\":1.7486573179594571,\"max_drawdown_account\":0.08770679034325157,\"max_drawdown_abs\":331.8246158699999}",
+      "confirm_v3_2_BTC": "{\"key\":\"BTC/USDT:USDT\",\"trades\":326,\"profit_mean\":-0.01271319340822618,\"profit_mean_pct\":-1.27,\"profit_total_abs\":2864.73545199,\"profit_total\":2.86473545199,\"profit_total_pct\":286.47,\"duration_avg\":\"3 days, 9:17:00\",\"wins\":109,\"draws\":0,\"losses\":217,\"winrate\":0.3343558282208589,\"cagr\":0.2360974578049999,\"expectancy\":8.78753206131902,\"expectancy_ratio\":0.7984536076752666,\"sortino\":3.4215524252606673,\"sharpe\":0.33570961289363255,\"calmar\":39.39327259971566,\"sqn\":2.2622,\"p_value\":0.024347215136723346,\"profit_factor\":2.199520166369294,\"max_drawdown_account\":0.059679601906998246,\"max_drawdown_abs\":168.29170471999964}"
+    }
+  ]
+}

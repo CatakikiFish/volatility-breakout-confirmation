@@ -1,0 +1,83 @@
+{
+  "train": {
+    "archive": "backtest-result-2026-09-02_09-48-48.zip",
+    "n_v3": 239,
+    "n_mcap": 239,
+    "n_truncated_adds": 3,
+    "n_skipped_adds": 0,
+    "max_margin_v3": 1022.338,
+    "max_margin_mcap80": 850.76933333,
+    "truncated": [
+      {
+        "open_date": "2020-07-23 00:00:00+00:00",
+        "is_short": false,
+        "first_stake": 269.60583333333335,
+        "add_before": 697.7453333333333,
+        "add_after": 502.50466666666665,
+        "margin_before": 967.35116667,
+        "margin_after": 772.1105
+      },
+      {
+        "open_date": "2020-10-08 15:00:00+00:00",
+        "is_short": false,
+        "first_stake": 236.26416666666668,
+        "add_before": 706.752,
+        "add_after": 566.874,
+        "margin_before": 943.01616667,
+        "margin_after": 803.13816667
+      },
+      {
+        "open_date": "2020-10-19 15:00:00+00:00",
+        "is_short": false,
+        "first_stake": 263.7266666666667,
+        "add_before": 758.6113333333333,
+        "add_after": 536.6771666666667,
+        "margin_before": 1022.338,
+        "margin_after": 800.40383333
+      }
+    ],
+    "skipped_adds": []
+  },
+  "check1": {
+    "archive": "backtest-result-2026-09-02_09-49-15.zip",
+    "n_v3": 47,
+    "n_mcap": 47,
+    "n_truncated_adds": 0,
+    "n_skipped_adds": 1,
+    "max_margin_v3": 865.603,
+    "max_margin_mcap80": 865.603,
+    "truncated": [],
+    "skipped_adds": [
+      {
+        "open_date": "2025-01-20 18:00:00+00:00",
+        "is_short": true,
+        "first_stake_v3": 34.32613333333333,
+        "add_stake_v3": 102.55369999999999,
+        "first_stake_mcap": 34.32613333333333,
+        "max_stake_v3": 136.87983333,
+        "max_stake_mcap": 34.32613333
+      }
+    ]
+  },
+  "check2": {
+    "archive": "backtest-result-2026-09-02_09-49-41.zip",
+    "n_v3": 54,
+    "n_mcap": 54,
+    "n_truncated_adds": 1,
+    "n_skipped_adds": 0,
+    "max_margin_v3": 1000.37186667,
+    "max_margin_mcap80": 1000.37186667,
+    "truncated": [
+      {
+        "open_date": "2025-09-29 00:00:00+00:00",
+        "is_short": false,
+        "first_stake": 224.26700000000002,
+        "add_before": 645.9722333333334,
+        "add_after": 531.9771333333334,
+        "margin_before": 870.23923333,
+        "margin_after": 756.24413333
+      }
+    ],
+    "skipped_adds": []
+  }
+}

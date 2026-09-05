@@ -1,0 +1,14 @@
+\section*{摘\quad 要}
+
+本文以 BTC/USDT 永续合约的波动突破策略为对象，考察规则化退出与确认加仓对收益兑现及下行风险的影响。在原始 VolatilitySystem 基础上，引入 ATR 初始止损、盈利保护、收盘极值跟踪及分阶段仓位管理，形成 Confirm V3.2。采用 2020 年 4 月至 2026 年 8 月数据，在 BTC 单币、1000 USDT 初始资金及相同交易费口径下比较两套系统。结果表明，累计收益由 278.18\% 变为 286.47\%，最大百分比回撤由 19.88\% 降至 14.20\%，月度下行偏差由 2.53\% 降至 1.32\%，Profit Factor 由 1.75 提升至 2.20；七个年度窗口均盈利，样本末端强制平仓由 1 笔降为 0 笔。月度收益年化波动率仅由 28.03\% 降至 26.41\%，表明改进主要体现为下行风险压缩。确认交易承担主要利润贡献，同时伴随较高的赢家集中度。本文结果来自探索性回测，版本增量尚未获得稳定的重采样检验支持。研究表明，退出规则与资金分配是影响趋势策略风险收益结构的重要维度，其作用并不限于提高累计收益。
+
+\noindent\textbf{关键词：}波动突破；规则化退出；确认加仓；收益兑现；下行风险；BTC 永续合约
+
+\vspace{1.2em}
+\section*{Abstract}
+
+This paper examines the effects of rule-based exits and confirmation-based scaling-in on profit realization and downside risk in a BTC/USDT perpetual-futures breakout strategy. Confirm V3.2 extends the original VolatilitySystem with ATR-based stops, profit protection, trailing references based on completed-bar closing extremes, and staged position management. The two systems are compared over April 2020 to August 2026 with the same asset, initial capital of 1,000 USDT, and trading-fee assumptions. Cumulative return changes from 278.18\% to 286.47\%, while maximum percentage drawdown falls from 19.88\% to 14.20\%, monthly downside deviation from 2.53\% to 1.32\%, and the profit factor rises from 1.75 to 2.20. All seven calendar-year windows are profitable for V3.2, and terminal force-closing falls from one trade to zero. Annualized volatility estimated from monthly returns declines modestly, from 28.03\% to 26.41\%, indicating that the principal improvement concerns downside risk. Confirmed trades account for most profits, accompanied by substantial winner concentration. These exploratory backtests do not establish stable incremental superiority under resampling. The findings identify exit design and capital allocation as important determinants of a trend strategy's risk-return profile, beyond cumulative return alone.
+
+\noindent\textbf{Keywords:} volatility breakout; rule-based exits; confirmation-based scaling-in; profit realization; downside risk; BTC perpetual futures
+
+\clearpage

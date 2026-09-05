@@ -1,0 +1,1454 @@
+{
+  "btc_v31_birth": {
+    "train": {
+      "zip": "backtest-result-2026-09-02_11-18-39.zip",
+      "n": 239,
+      "profit_total_abs": 1048.08760627,
+      "profit_factor": 1.6223785409686713,
+      "max_drawdown_account": 0.07494337571118821,
+      "ratio": 13.985060004623358,
+      "underwater": 0.09933254050002675,
+      "rejected_signals": 0,
+      "liquidation": 0,
+      "n_confirm": 47,
+      "n_scout": 192,
+      "worst_trade": -46.73493767,
+      "top5_profit_sum": 883.68627901,
+      "confirm_loss": {
+        "n": 14,
+        "sum": -399.32685142,
+        "worst": -46.73493767
+      },
+      "long": {
+        "n": 127,
+        "profit_abs": 913.04999562
+      },
+      "short": {
+        "n": 112,
+        "profit_abs": 135.03761064999998
+      },
+      "stop_loss_bucket": {
+        "n": 122,
+        "sum": -1212.2596055
+      },
+      "giveback_median_trail_winners": 0.5208141179364203,
+      "n_trail_winners_giveback": 83,
+      "hour_buckets": {
+        "0": {
+          "n": 27,
+          "profit_abs": 233.0675,
+          "profit_factor": 2.474466011163301,
+          "n_confirm": 8
+        },
+        "3": {
+          "n": 26,
+          "profit_abs": 184.4065,
+          "profit_factor": 1.9856470988576949,
+          "n_confirm": 5
+        },
+        "6": {
+          "n": 17,
+          "profit_abs": 161.1712,
+          "profit_factor": 2.092481027537991,
+          "n_confirm": 4
+        },
+        "9": {
+          "n": 24,
+          "profit_abs": -104.5122,
+          "profit_factor": 0.43719178792178065,
+          "n_confirm": 1
+        },
+        "12": {
+          "n": 23,
+          "profit_abs": 31.8264,
+          "profit_factor": 1.215206369996315,
+          "n_confirm": 5
+        },
+        "15": {
+          "n": 48,
+          "profit_abs": 274.0169,
+          "profit_factor": 1.9740274015175003,
+          "n_confirm": 9
+        },
+        "18": {
+          "n": 38,
+          "profit_abs": 273.4647,
+          "profit_factor": 2.0198431563910417,
+          "n_confirm": 9
+        },
+        "21": {
+          "n": 36,
+          "profit_abs": -5.3533,
+          "profit_factor": 0.9826338273933917,
+          "n_confirm": 6
+        }
+      }
+    },
+    "check1": {
+      "zip": "backtest-result-2026-09-02_11-19-12.zip",
+      "n": 47,
+      "profit_total_abs": 467.10687397000004,
+      "profit_factor": 2.3772544058274905,
+      "max_drawdown_account": 0.06678879778974056,
+      "ratio": 6.993790716828151,
+      "underwater": 0.06678879778974056,
+      "rejected_signals": 0,
+      "liquidation": 0,
+      "n_confirm": 11,
+      "n_scout": 36,
+      "worst_trade": -38.72448306,
+      "top5_profit_sum": 620.9941397800001,
+      "confirm_loss": {
+        "n": 3,
+        "sum": -104.90799057999999,
+        "worst": -38.72448306
+      },
+      "long": {
+        "n": 20,
+        "profit_abs": 305.88284232
+      },
+      "short": {
+        "n": 27,
+        "profit_abs": 161.22403165
+      },
+      "stop_loss_bucket": {
+        "n": 25,
+        "sum": -227.24226489
+      },
+      "giveback_median_trail_winners": 0.5533046590274809,
+      "n_trail_winners_giveback": 17,
+      "hour_buckets": {
+        "0": {
+          "n": 7,
+          "profit_abs": 81.2168,
+          "profit_factor": 4.115925438488105,
+          "n_confirm": 3
+        },
+        "3": {
+          "n": 5,
+          "profit_abs": 166.9585,
+          "profit_factor": 11.609957870106372,
+          "n_confirm": 1
+        },
+        "6": {
+          "n": 2,
+          "profit_abs": 0.8298,
+          "profit_factor": 1.1184153668686898,
+          "n_confirm": 0
+        },
+        "9": {
+          "n": 1,
+          "profit_abs": -9.0722,
+          "profit_factor": 0.0,
+          "n_confirm": 0
+        },
+        "12": {
+          "n": 4,
+          "profit_abs": -67.6351,
+          "profit_factor": 0.0,
+          "n_confirm": 1
+        },
+        "15": {
+          "n": 11,
+          "profit_abs": -62.5334,
+          "profit_factor": 0.26671877695043517,
+          "n_confirm": 0
+        },
+        "18": {
+          "n": 8,
+          "profit_abs": 404.3843,
+          "profit_factor": 17.183259118498917,
+          "n_confirm": 3
+        },
+        "21": {
+          "n": 9,
+          "profit_abs": -47.0419,
+          "profit_factor": 0.5449409223575243,
+          "n_confirm": 3
+        }
+      }
+    },
+    "check2": {
+      "zip": "backtest-result-2026-09-02_11-24-25.zip",
+      "n": 54,
+      "profit_total_abs": 492.13016393,
+      "profit_factor": 2.271369836907828,
+      "max_drawdown_account": 0.12259395386694089,
+      "ratio": 4.014310236409705,
+      "underwater": 0.12259395386694089,
+      "rejected_signals": 0,
+      "liquidation": 0,
+      "n_confirm": 11,
+      "n_scout": 43,
+      "worst_trade": -34.63994997,
+      "top5_profit_sum": 698.5338751,
+      "confirm_loss": {
+        "n": 2,
+        "sum": -49.33225061,
+        "worst": -34.63994997
+      },
+      "long": {
+        "n": 29,
+        "profit_abs": 173.94727943
+      },
+      "short": {
+        "n": 25,
+        "profit_abs": 318.1828845
+      },
+      "stop_loss_bucket": {
+        "n": 34,
+        "sum": -325.61095452
+      },
+      "giveback_median_trail_winners": 0.45625490052321116,
+      "n_trail_winners_giveback": 14,
+      "hour_buckets": {
+        "0": {
+          "n": 9,
+          "profit_abs": 184.8276,
+          "profit_factor": 4.099279705760067,
+          "n_confirm": 2
+        },
+        "3": {
+          "n": 9,
+          "profit_abs": 74.5338,
+          "profit_factor": 2.0848296679094616,
+          "n_confirm": 1
+        },
+        "6": {
+          "n": 2,
+          "profit_abs": -5.3145,
+          "profit_factor": 0.42580546611131087,
+          "n_confirm": 0
+        },
+        "9": {
+          "n": 6,
+          "profit_abs": -13.5644,
+          "profit_factor": 0.618736001130973,
+          "n_confirm": 1
+        },
+        "12": {
+          "n": 1,
+          "profit_abs": -9.4759,
+          "profit_factor": 0.0,
+          "n_confirm": 0
+        },
+        "15": {
+          "n": 11,
+          "profit_abs": -6.1269,
+          "profit_factor": 0.9117811148106278,
+          "n_confirm": 1
+        },
+        "18": {
+          "n": 12,
+          "profit_abs": 269.1813,
+          "profit_factor": 3.3321466971542963,
+          "n_confirm": 5
+        },
+        "21": {
+          "n": 4,
+          "profit_abs": -1.9308,
+          "profit_factor": 0.9013035056577332,
+          "n_confirm": 1
+        }
+      }
+    }
+  },
+  "btc_v3_anchor_batch": {
+    "train": {
+      "zip": "backtest-result-2026-09-02_09-52-29.zip",
+      "confirm_v3_BTC": {
+        "n": 239,
+        "profit_total_abs": 1069.25931097,
+        "profit_factor": 1.6276520508457768,
+        "max_drawdown_account": 0.0796386972621279,
+        "ratio": 13.426378729558715,
+        "underwater": 0.09933254050002675,
+        "rejected_signals": 0,
+        "liquidation": 0,
+        "n_confirm": 47,
+        "n_scout": 192,
+        "worst_trade": -51.67458099,
+        "top5_profit_sum": 883.68627901,
+        "confirm_loss": {
+          "n": 14,
+          "sum": -418.90951014,
+          "worst": -51.67458099
+        },
+        "long": {
+          "n": 127,
+          "profit_abs": 942.23450512
+        },
+        "short": {
+          "n": 112,
+          "profit_abs": 127.02480584999998
+        },
+        "stop_loss_bucket": {
+          "n": 122,
+          "sum": -1212.2596055
+        },
+        "giveback_median_trail_winners": 0.5208141179364203,
+        "n_trail_winners_giveback": 83
+      },
+      "confirm_v3_BTC_anchor1": {
+        "n": 243,
+        "profit_total_abs": 204.65487042,
+        "profit_factor": 1.113713293105088,
+        "max_drawdown_account": 0.14809358318639357,
+        "ratio": 1.3819293585625332,
+        "underwater": 0.14809358318639357,
+        "rejected_signals": 0,
+        "liquidation": 0,
+        "n_confirm": 53,
+        "n_scout": 190,
+        "worst_trade": -45.95618341,
+        "top5_profit_sum": 479.80368963,
+        "confirm_loss": {
+          "n": 13,
+          "sum": -460.53542047,
+          "worst": -45.95618341
+        },
+        "long": {
+          "n": 126,
+          "profit_abs": 318.2832365
+        },
+        "short": {
+          "n": 117,
+          "profit_abs": -113.62836607999999
+        },
+        "stop_loss_bucket": {
+          "n": 128,
+          "sum": -1272.09461208
+        },
+        "giveback_median_trail_winners": 0.5663987041060528,
+        "n_trail_winners_giveback": 84
+      },
+      "confirm_v3_BTC_anchor2": {
+        "n": 241,
+        "profit_total_abs": 528.3335918700001,
+        "profit_factor": 1.3119105919149785,
+        "max_drawdown_account": 0.15355381993603515,
+        "ratio": 3.44070627542893,
+        "underwater": 0.15355381993603515,
+        "rejected_signals": 0,
+        "liquidation": 0,
+        "n_confirm": 46,
+        "n_scout": 195,
+        "worst_trade": -48.32888779,
+        "top5_profit_sum": 550.00831507,
+        "confirm_loss": {
+          "n": 9,
+          "sum": -336.61375033,
+          "worst": -48.32888779
+        },
+        "long": {
+          "n": 124,
+          "profit_abs": 592.00674064
+        },
+        "short": {
+          "n": 117,
+          "profit_abs": -63.67314877000001
+        },
+        "stop_loss_bucket": {
+          "n": 130,
+          "sum": -1280.59788282
+        },
+        "giveback_median_trail_winners": 0.5270105636517852,
+        "n_trail_winners_giveback": 75
+      }
+    },
+    "check1": {
+      "zip": "backtest-result-2026-09-02_09-53-42.zip",
+      "confirm_v3_BTC": {
+        "n": 47,
+        "profit_total_abs": 450.80235582000006,
+        "profit_factor": 2.258072398181309,
+        "max_drawdown_account": 0.06821309918122843,
+        "ratio": 6.608735876701764,
+        "underwater": 0.06821309918122843,
+        "rejected_signals": 0,
+        "liquidation": 0,
+        "n_confirm": 12,
+        "n_scout": 35,
+        "worst_trade": -43.46653655,
+        "top5_profit_sum": 620.9941397800001,
+        "confirm_loss": {
+          "n": 3,
+          "sum": -124.07780571,
+          "worst": -43.46653655
+        },
+        "long": {
+          "n": 20,
+          "profit_abs": 296.35426247000004
+        },
+        "short": {
+          "n": 27,
+          "profit_abs": 154.44809335000002
+        },
+        "stop_loss_bucket": {
+          "n": 25,
+          "sum": -227.24226489
+        },
+        "giveback_median_trail_winners": 0.5733578019141541,
+        "n_trail_winners_giveback": 18
+      },
+      "confirm_v3_BTC_anchor1": {
+        "n": 50,
+        "profit_total_abs": -30.289985129999994,
+        "profit_factor": 0.9227286201685793,
+        "max_drawdown_account": 0.14738661090000005,
+        "ratio": -0.20551381801262372,
+        "underwater": 0.14738661090000005,
+        "rejected_signals": 0,
+        "liquidation": 0,
+        "n_confirm": 13,
+        "n_scout": 37,
+        "worst_trade": -43.67753866,
+        "top5_profit_sum": 187.42680803,
+        "confirm_loss": {
+          "n": 4,
+          "sum": -163.83893924,
+          "worst": -43.67753866
+        },
+        "long": {
+          "n": 30,
+          "profit_abs": -17.88266374
+        },
+        "short": {
+          "n": 20,
+          "profit_abs": -12.407321390000003
+        },
+        "stop_loss_bucket": {
+          "n": 23,
+          "sum": -208.71650302
+        },
+        "giveback_median_trail_winners": 0.4844861177451152,
+        "n_trail_winners_giveback": 18
+      },
+      "confirm_v3_BTC_anchor2": {
+        "n": 47,
+        "profit_total_abs": 128.58157221,
+        "profit_factor": 1.5105806675312485,
+        "max_drawdown_account": 0.0726440440895426,
+        "ratio": 1.7700222202870148,
+        "underwater": 0.0726440440895426,
+        "rejected_signals": 0,
+        "liquidation": 0,
+        "n_confirm": 11,
+        "n_scout": 36,
+        "worst_trade": -43.12632782,
+        "top5_profit_sum": 192.79678705,
+        "confirm_loss": {
+          "n": 1,
+          "sum": -43.12632782,
+          "worst": -43.12632782
+        },
+        "long": {
+          "n": 27,
+          "profit_abs": 69.9347452
+        },
+        "short": {
+          "n": 20,
+          "profit_abs": 58.64682701
+        },
+        "stop_loss_bucket": {
+          "n": 22,
+          "sum": -203.19237159
+        },
+        "giveback_median_trail_winners": 0.5908523457147513,
+        "n_trail_winners_giveback": 21
+      }
+    },
+    "check2": {
+      "zip": "backtest-result-2026-09-02_09-54-39.zip",
+      "confirm_v3_BTC": {
+        "n": 54,
+        "profit_total_abs": 511.31878711999997,
+        "profit_factor": 2.3040036677738893,
+        "max_drawdown_account": 0.12416622825946917,
+        "ratio": 4.118018194540799,
+        "underwater": 0.12416622825946917,
+        "rejected_signals": 0,
+        "liquidation": 0,
+        "n_confirm": 11,
+        "n_scout": 43,
+        "worst_trade": -39.66793137,
+        "top5_profit_sum": 722.75047969,
+        "confirm_loss": {
+          "n": 2,
+          "sum": -54.36023201,
+          "worst": -39.66793137
+        },
+        "long": {
+          "n": 29,
+          "profit_abs": 193.13590262
+        },
+        "short": {
+          "n": 25,
+          "profit_abs": 318.1828845
+        },
+        "stop_loss_bucket": {
+          "n": 34,
+          "sum": -325.61095452
+        },
+        "giveback_median_trail_winners": 0.45625490052321116,
+        "n_trail_winners_giveback": 14
+      },
+      "confirm_v3_BTC_anchor1": {
+        "n": 54,
+        "profit_total_abs": 684.2112348699998,
+        "profit_factor": 2.966115407053645,
+        "max_drawdown_account": 0.10810306680774111,
+        "ratio": 6.3292490682697675,
+        "underwater": 0.10810306680774111,
+        "rejected_signals": 0,
+        "liquidation": 0,
+        "n_confirm": 14,
+        "n_scout": 40,
+        "worst_trade": -24.54579439,
+        "top5_profit_sum": 839.41870604,
+        "confirm_loss": {
+          "n": 2,
+          "sum": -37.7405119,
+          "worst": -24.54579439
+        },
+        "long": {
+          "n": 23,
+          "profit_abs": 343.40018929999997
+        },
+        "short": {
+          "n": 31,
+          "profit_abs": 340.81104557
+        },
+        "stop_loss_bucket": {
+          "n": 32,
+          "sum": -304.16803533
+        },
+        "giveback_median_trail_winners": 0.542444331596558,
+        "n_trail_winners_giveback": 17
+      },
+      "confirm_v3_BTC_anchor2": {
+        "n": 54,
+        "profit_total_abs": -193.24715146,
+        "profit_factor": 0.46892931860380016,
+        "max_drawdown_account": 0.25676555421915787,
+        "ratio": -0.7526210127666002,
+        "underwater": 0.25676555421915787,
+        "rejected_signals": 0,
+        "liquidation": 0,
+        "n_confirm": 6,
+        "n_scout": 48,
+        "worst_trade": -10.42612795,
+        "top5_profit_sum": 100.27502826999999,
+        "confirm_loss": {
+          "n": 0,
+          "sum": 0,
+          "worst": null
+        },
+        "long": {
+          "n": 27,
+          "profit_abs": -83.80474111000001
+        },
+        "short": {
+          "n": 27,
+          "profit_abs": -109.44241035
+        },
+        "stop_loss_bucket": {
+          "n": 37,
+          "sum": -348.19535736
+        },
+        "giveback_median_trail_winners": 0.6086725898421942,
+        "n_trail_winners_giveback": 13
+      }
+    }
+  },
+  "eth": {
+    "train": {
+      "zip": "backtest-result-2026-09-02_15-35-29.zip",
+      "strategies": {
+        "confirm_v3_1_BTC": {
+          "n": 150,
+          "profit_total_abs": 228.16348268,
+          "profit_factor": 1.2116470057716104,
+          "max_drawdown_account": 0.14275283327164207,
+          "ratio": 1.5983114131670604,
+          "underwater": 0.14275283327164207,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 22,
+          "n_scout": 128,
+          "worst_trade": -44.0151773,
+          "top5_profit_sum": 475.05083763,
+          "confirm_loss": {
+            "n": 6,
+            "sum": -214.8212376,
+            "worst": -44.0151773
+          },
+          "long": {
+            "n": 72,
+            "profit_abs": 291.38092901
+          },
+          "short": {
+            "n": 78,
+            "profit_abs": -63.21744633
+          },
+          "stop_loss_bucket": {
+            "n": 86,
+            "sum": -844.96254315
+          },
+          "giveback_median_trail_winners": 0.5429141716566865,
+          "n_trail_winners_giveback": 53,
+          "hour_buckets": {
+            "0": {
+              "n": 17,
+              "profit_abs": 6.7605,
+              "profit_factor": 1.0431484859567104,
+              "n_confirm": 4
+            },
+            "3": {
+              "n": 20,
+              "profit_abs": -122.5398,
+              "profit_factor": 0.191480278754074,
+              "n_confirm": 0
+            },
+            "6": {
+              "n": 7,
+              "profit_abs": -32.394,
+              "profit_factor": 0.4392549606237326,
+              "n_confirm": 1
+            },
+            "9": {
+              "n": 13,
+              "profit_abs": -44.0997,
+              "profit_factor": 0.6552427910497877,
+              "n_confirm": 1
+            },
+            "12": {
+              "n": 13,
+              "profit_abs": 47.5128,
+              "profit_factor": 1.6082503412934617,
+              "n_confirm": 1
+            },
+            "15": {
+              "n": 29,
+              "profit_abs": 229.3174,
+              "profit_factor": 2.4978154997919404,
+              "n_confirm": 5
+            },
+            "18": {
+              "n": 27,
+              "profit_abs": 156.0887,
+              "profit_factor": 1.7550035645221427,
+              "n_confirm": 7
+            },
+            "21": {
+              "n": 24,
+              "profit_abs": -12.4824,
+              "profit_factor": 0.9145972837676496,
+              "n_confirm": 3
+            }
+          }
+        },
+        "confirm_v3_1_BTC_anchor1": {
+          "n": 161,
+          "profit_total_abs": -2.9048311999999754,
+          "profit_factor": 0.9975061508379469,
+          "max_drawdown_account": 0.21858744653859638,
+          "ratio": -0.013289103496101568,
+          "underwater": 0.21858744653859638,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 24,
+          "n_scout": 137,
+          "worst_trade": -41.50727857,
+          "top5_profit_sum": 466.32844513,
+          "confirm_loss": {
+            "n": 6,
+            "sum": -189.79874571,
+            "worst": -41.50727857
+          },
+          "long": {
+            "n": 74,
+            "profit_abs": 68.61736403
+          },
+          "short": {
+            "n": 87,
+            "profit_abs": -71.52219523000001
+          },
+          "stop_loss_bucket": {
+            "n": 93,
+            "sum": -922.3880534
+          },
+          "giveback_median_trail_winners": 0.559701492537314,
+          "n_trail_winners_giveback": 49,
+          "hour_buckets": {
+            "0": {
+              "n": 23,
+              "profit_abs": -81.7852,
+              "profit_factor": 0.4960059075445357,
+              "n_confirm": 2
+            },
+            "3": {
+              "n": 15,
+              "profit_abs": 171.8203,
+              "profit_factor": 2.977703892959732,
+              "n_confirm": 3
+            },
+            "6": {
+              "n": 4,
+              "profit_abs": 33.9558,
+              "profit_factor": 4.302485863539801,
+              "n_confirm": 0
+            },
+            "9": {
+              "n": 17,
+              "profit_abs": -4.7324,
+              "profit_factor": 0.9611150231747493,
+              "n_confirm": 3
+            },
+            "12": {
+              "n": 14,
+              "profit_abs": -65.508,
+              "profit_factor": 0.4472985915467401,
+              "n_confirm": 2
+            },
+            "15": {
+              "n": 37,
+              "profit_abs": 93.3032,
+              "profit_factor": 1.3092653906590994,
+              "n_confirm": 6
+            },
+            "18": {
+              "n": 26,
+              "profit_abs": -21.2816,
+              "profit_factor": 0.871405760769927,
+              "n_confirm": 6
+            },
+            "21": {
+              "n": 25,
+              "profit_abs": -128.6768,
+              "profit_factor": 0.3499536415383364,
+              "n_confirm": 2
+            }
+          }
+        },
+        "confirm_v3_1_BTC_anchor2": {
+          "n": 160,
+          "profit_total_abs": -232.48966775,
+          "profit_factor": 0.8140330272845644,
+          "max_drawdown_account": 0.3040887627506258,
+          "ratio": -0.7645454098567197,
+          "underwater": 0.3040887627506258,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 26,
+          "n_scout": 134,
+          "worst_trade": -42.89886632,
+          "top5_profit_sum": 279.58318806,
+          "confirm_loss": {
+            "n": 11,
+            "sum": -363.38788393,
+            "worst": -42.89886632
+          },
+          "long": {
+            "n": 73,
+            "profit_abs": -16.941728599999998
+          },
+          "short": {
+            "n": 87,
+            "profit_abs": -215.54793915000002
+          },
+          "stop_loss_bucket": {
+            "n": 89,
+            "sum": -874.2417003099999
+          },
+          "giveback_median_trail_winners": 0.5884574437396055,
+          "n_trail_winners_giveback": 54,
+          "hour_buckets": {
+            "0": {
+              "n": 19,
+              "profit_abs": -7.4487,
+              "profit_factor": 0.9335517093467173,
+              "n_confirm": 2
+            },
+            "3": {
+              "n": 12,
+              "profit_abs": -11.2273,
+              "profit_factor": 0.8546264902185955,
+              "n_confirm": 1
+            },
+            "6": {
+              "n": 8,
+              "profit_abs": 39.5472,
+              "profit_factor": 1.9619237438975625,
+              "n_confirm": 1
+            },
+            "9": {
+              "n": 17,
+              "profit_abs": 12.9351,
+              "profit_factor": 1.0815354993775987,
+              "n_confirm": 4
+            },
+            "12": {
+              "n": 13,
+              "profit_abs": -12.3033,
+              "profit_factor": 0.8441631534148727,
+              "n_confirm": 0
+            },
+            "15": {
+              "n": 43,
+              "profit_abs": -103.6306,
+              "profit_factor": 0.7628272747416339,
+              "n_confirm": 12
+            },
+            "18": {
+              "n": 27,
+              "profit_abs": -70.9871,
+              "profit_factor": 0.6298947857719905,
+              "n_confirm": 4
+            },
+            "21": {
+              "n": 21,
+              "profit_abs": -79.3748,
+              "profit_factor": 0.48252285051446514,
+              "n_confirm": 2
+            }
+          }
+        }
+      }
+    },
+    "check1": {
+      "zip": "backtest-result-2026-09-02_15-35-41.zip",
+      "strategies": {
+        "confirm_v3_1_BTC": {
+          "n": 50,
+          "profit_total_abs": 227.87569224999993,
+          "profit_factor": 1.6168848592221319,
+          "max_drawdown_account": 0.08755595237597466,
+          "ratio": 2.6026293594692143,
+          "underwater": 0.08755595237597466,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 9,
+          "n_scout": 41,
+          "worst_trade": -40.77745614,
+          "top5_profit_sum": 428.95904593,
+          "confirm_loss": {
+            "n": 3,
+            "sum": -118.49992676,
+            "worst": -40.77745614
+          },
+          "long": {
+            "n": 24,
+            "profit_abs": 208.57917468
+          },
+          "short": {
+            "n": 26,
+            "profit_abs": 19.29651756999999
+          },
+          "stop_loss_bucket": {
+            "n": 24,
+            "sum": -233.70687286
+          },
+          "giveback_median_trail_winners": 0.5039609775253524,
+          "n_trail_winners_giveback": 18,
+          "hour_buckets": {
+            "0": {
+              "n": 9,
+              "profit_abs": 219.4015,
+              "profit_factor": 4.1275913659811785,
+              "n_confirm": 4
+            },
+            "3": {
+              "n": 6,
+              "profit_abs": 3.3767,
+              "profit_factor": 1.0860681198270836,
+              "n_confirm": 1
+            },
+            "6": {
+              "n": 7,
+              "profit_abs": 91.7259,
+              "profit_factor": 2.7327783944226116,
+              "n_confirm": 2
+            },
+            "9": {
+              "n": 1,
+              "profit_abs": 4.2509,
+              "profit_factor": Infinity,
+              "n_confirm": 0
+            },
+            "12": {
+              "n": 2,
+              "profit_abs": -20.2095,
+              "profit_factor": 0.0,
+              "n_confirm": 0
+            },
+            "15": {
+              "n": 11,
+              "profit_abs": -10.2921,
+              "profit_factor": 0.8067735063308865,
+              "n_confirm": 0
+            },
+            "18": {
+              "n": 8,
+              "profit_abs": -57.3352,
+              "profit_factor": 0.15205372492626043,
+              "n_confirm": 0
+            },
+            "21": {
+              "n": 6,
+              "profit_abs": -3.0425,
+              "profit_factor": 0.9538928901933647,
+              "n_confirm": 2
+            }
+          }
+        },
+        "confirm_v3_1_BTC_anchor1": {
+          "n": 49,
+          "profit_total_abs": 215.23673269999998,
+          "profit_factor": 1.5090079159654943,
+          "max_drawdown_account": 0.14135290241505122,
+          "ratio": 1.522690578139,
+          "underwater": 0.14135290241505122,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 8,
+          "n_scout": 41,
+          "worst_trade": -61.35683937,
+          "top5_profit_sum": 457.91435393,
+          "confirm_loss": {
+            "n": 3,
+            "sum": -141.14180868,
+            "worst": -61.35683937
+          },
+          "long": {
+            "n": 24,
+            "profit_abs": 286.99729614
+          },
+          "short": {
+            "n": 25,
+            "profit_abs": -71.76056344000001
+          },
+          "stop_loss_bucket": {
+            "n": 29,
+            "sum": -281.71356537
+          },
+          "giveback_median_trail_winners": 0.4802845408434721,
+          "n_trail_winners_giveback": 16,
+          "hour_buckets": {
+            "0": {
+              "n": 5,
+              "profit_abs": 245.343,
+              "profit_factor": 5.0195139714201025,
+              "n_confirm": 3
+            },
+            "3": {
+              "n": 6,
+              "profit_abs": 36.1671,
+              "profit_factor": 2.2834382177252808,
+              "n_confirm": 2
+            },
+            "6": {
+              "n": 1,
+              "profit_abs": -10.2119,
+              "profit_factor": 0.0,
+              "n_confirm": 0
+            },
+            "9": {
+              "n": 0,
+              "profit_abs": 0.0,
+              "profit_factor": null,
+              "n_confirm": 0
+            },
+            "12": {
+              "n": 6,
+              "profit_abs": 48.1995,
+              "profit_factor": 2.6763873487099876,
+              "n_confirm": 0
+            },
+            "15": {
+              "n": 15,
+              "profit_abs": -16.8816,
+              "profit_factor": 0.8284825918401488,
+              "n_confirm": 1
+            },
+            "18": {
+              "n": 8,
+              "profit_abs": -101.7658,
+              "profit_factor": 0.15508330387639266,
+              "n_confirm": 1
+            },
+            "21": {
+              "n": 8,
+              "profit_abs": 14.3864,
+              "profit_factor": 1.1897849096554813,
+              "n_confirm": 1
+            }
+          }
+        },
+        "confirm_v3_1_BTC_anchor2": {
+          "n": 47,
+          "profit_total_abs": -57.83193988999999,
+          "profit_factor": 0.8366907679466116,
+          "max_drawdown_account": 0.16262427376591648,
+          "ratio": -0.3556168987001537,
+          "underwater": 0.16262427376591648,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 4,
+          "n_scout": 43,
+          "worst_trade": -38.57216774,
+          "top5_profit_sum": 196.60939301,
+          "confirm_loss": {
+            "n": 2,
+            "sum": -75.25165776,
+            "worst": -38.57216774
+          },
+          "long": {
+            "n": 22,
+            "profit_abs": 102.83804076999999
+          },
+          "short": {
+            "n": 25,
+            "profit_abs": -160.66998066
+          },
+          "stop_loss_bucket": {
+            "n": 28,
+            "sum": -274.3588081
+          },
+          "giveback_median_trail_winners": 0.5271397031242238,
+          "n_trail_winners_giveback": 16,
+          "hour_buckets": {
+            "0": {
+              "n": 8,
+              "profit_abs": -73.9714,
+              "profit_factor": 0.0,
+              "n_confirm": 0
+            },
+            "3": {
+              "n": 7,
+              "profit_abs": 78.8513,
+              "profit_factor": 5.075677091749348,
+              "n_confirm": 1
+            },
+            "6": {
+              "n": 1,
+              "profit_abs": 4.4486,
+              "profit_factor": Infinity,
+              "n_confirm": 0
+            },
+            "9": {
+              "n": 2,
+              "profit_abs": 35.0633,
+              "profit_factor": 4.4148554228957595,
+              "n_confirm": 0
+            },
+            "12": {
+              "n": 2,
+              "profit_abs": 2.3774,
+              "profit_factor": 1.2343009566408618,
+              "n_confirm": 0
+            },
+            "15": {
+              "n": 11,
+              "profit_abs": -64.6203,
+              "profit_factor": 0.2682505565154187,
+              "n_confirm": 0
+            },
+            "18": {
+              "n": 6,
+              "profit_abs": -63.5773,
+              "profit_factor": 0.1438282479647216,
+              "n_confirm": 1
+            },
+            "21": {
+              "n": 10,
+              "profit_abs": 23.5966,
+              "profit_factor": 1.303197650132768,
+              "n_confirm": 2
+            }
+          }
+        }
+      }
+    },
+    "check2": {
+      "zip": "backtest-result-2026-09-02_15-35-53.zip",
+      "strategies": {
+        "confirm_v3_1_BTC": {
+          "n": 46,
+          "profit_total_abs": 271.6703077,
+          "profit_factor": 1.7343973363243765,
+          "max_drawdown_account": 0.1944956600282659,
+          "ratio": 1.396793674781835,
+          "underwater": 0.1944956600282659,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 12,
+          "n_scout": 34,
+          "worst_trade": -39.78871016,
+          "top5_profit_sum": 486.00911127,
+          "confirm_loss": {
+            "n": 3,
+            "sum": -114.74453277,
+            "worst": -39.78871016
+          },
+          "long": {
+            "n": 22,
+            "profit_abs": 93.61012244
+          },
+          "short": {
+            "n": 24,
+            "profit_abs": 178.06018526
+          },
+          "stop_loss_bucket": {
+            "n": 23,
+            "sum": -231.00436221
+          },
+          "giveback_median_trail_winners": 0.5875534618483853,
+          "n_trail_winners_giveback": 15,
+          "hour_buckets": {
+            "0": {
+              "n": 9,
+              "profit_abs": 19.6771,
+              "profit_factor": 1.1700046587897257,
+              "n_confirm": 4
+            },
+            "3": {
+              "n": 8,
+              "profit_abs": 173.2713,
+              "profit_factor": 5.285042380235221,
+              "n_confirm": 3
+            },
+            "6": {
+              "n": 2,
+              "profit_abs": -20.618,
+              "profit_factor": 0.0,
+              "n_confirm": 0
+            },
+            "9": {
+              "n": 2,
+              "profit_abs": -19.5522,
+              "profit_factor": 0.5085989369503101,
+              "n_confirm": 1
+            },
+            "12": {
+              "n": 1,
+              "profit_abs": -9.8171,
+              "profit_factor": 0.0,
+              "n_confirm": 0
+            },
+            "15": {
+              "n": 6,
+              "profit_abs": 144.4641,
+              "profit_factor": 4.709248794271839,
+              "n_confirm": 1
+            },
+            "18": {
+              "n": 11,
+              "profit_abs": 10.1198,
+              "profit_factor": 1.1846992723852376,
+              "n_confirm": 3
+            },
+            "21": {
+              "n": 7,
+              "profit_abs": -25.8747,
+              "profit_factor": 0.48022534747508333,
+              "n_confirm": 0
+            }
+          }
+        },
+        "confirm_v3_1_BTC_anchor1": {
+          "n": 51,
+          "profit_total_abs": 68.63218149,
+          "profit_factor": 1.173467744180777,
+          "max_drawdown_account": 0.17459122222242807,
+          "ratio": 0.3931021308881328,
+          "underwater": 0.17459122222242807,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 10,
+          "n_scout": 41,
+          "worst_trade": -41.23061845,
+          "top5_profit_sum": 278.42196853,
+          "confirm_loss": {
+            "n": 3,
+            "sum": -120.32624561,
+            "worst": -41.23061845
+          },
+          "long": {
+            "n": 24,
+            "profit_abs": -92.44882803
+          },
+          "short": {
+            "n": 27,
+            "profit_abs": 161.08100952
+          },
+          "stop_loss_bucket": {
+            "n": 26,
+            "sum": -259.86290762
+          },
+          "giveback_median_trail_winners": 0.5971116463299508,
+          "n_trail_winners_giveback": 18,
+          "hour_buckets": {
+            "0": {
+              "n": 9,
+              "profit_abs": 10.4828,
+              "profit_factor": 1.1799426882538693,
+              "n_confirm": 2
+            },
+            "3": {
+              "n": 8,
+              "profit_abs": 98.6406,
+              "profit_factor": 2.688437581671486,
+              "n_confirm": 1
+            },
+            "6": {
+              "n": 1,
+              "profit_abs": -10.4644,
+              "profit_factor": 0.0,
+              "n_confirm": 0
+            },
+            "9": {
+              "n": 2,
+              "profit_abs": 6.0666,
+              "profit_factor": 1.6320144002450818,
+              "n_confirm": 0
+            },
+            "12": {
+              "n": 3,
+              "profit_abs": -5.7367,
+              "profit_factor": 0.7144316472946434,
+              "n_confirm": 1
+            },
+            "15": {
+              "n": 16,
+              "profit_abs": 45.4272,
+              "profit_factor": 1.3537621500927481,
+              "n_confirm": 5
+            },
+            "18": {
+              "n": 6,
+              "profit_abs": -31.0804,
+              "profit_factor": 0.36650264088756185,
+              "n_confirm": 0
+            },
+            "21": {
+              "n": 6,
+              "profit_abs": -44.7034,
+              "profit_factor": 0.271284429324111,
+              "n_confirm": 1
+            }
+          }
+        },
+        "confirm_v3_1_BTC_anchor2": {
+          "n": 53,
+          "profit_total_abs": -146.65572938999995,
+          "profit_factor": 0.7180307842503109,
+          "max_drawdown_account": 0.29520699102456865,
+          "ratio": -0.496789486187319,
+          "underwater": 0.29520699102456865,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 12,
+          "n_scout": 41,
+          "worst_trade": -41.25080836,
+          "top5_profit_sum": 265.79620045,
+          "confirm_loss": {
+            "n": 6,
+            "sum": -198.02625145,
+            "worst": -41.25080836
+          },
+          "long": {
+            "n": 29,
+            "profit_abs": -252.49167725
+          },
+          "short": {
+            "n": 24,
+            "profit_abs": 105.83594785999999
+          },
+          "stop_loss_bucket": {
+            "n": 32,
+            "sum": -315.46413025
+          },
+          "giveback_median_trail_winners": 0.5907970676632617,
+          "n_trail_winners_giveback": 14,
+          "hour_buckets": {
+            "0": {
+              "n": 7,
+              "profit_abs": -52.7524,
+              "profit_factor": 0.3540909435626056,
+              "n_confirm": 1
+            },
+            "3": {
+              "n": 1,
+              "profit_abs": -10.0562,
+              "profit_factor": 0.0,
+              "n_confirm": 0
+            },
+            "6": {
+              "n": 2,
+              "profit_abs": -0.948,
+              "profit_factor": 0.9094081850693129,
+              "n_confirm": 0
+            },
+            "9": {
+              "n": 2,
+              "profit_abs": 10.2415,
+              "profit_factor": 2.0436065008257915,
+              "n_confirm": 0
+            },
+            "12": {
+              "n": 8,
+              "profit_abs": -40.4483,
+              "profit_factor": 0.32745344455305886,
+              "n_confirm": 1
+            },
+            "15": {
+              "n": 20,
+              "profit_abs": 59.8587,
+              "profit_factor": 1.3086214701844143,
+              "n_confirm": 5
+            },
+            "18": {
+              "n": 5,
+              "profit_abs": -47.5778,
+              "profit_factor": 0.0,
+              "n_confirm": 0
+            },
+            "21": {
+              "n": 8,
+              "profit_abs": -64.9732,
+              "profit_factor": 0.3895310399898391,
+              "n_confirm": 5
+            }
+          }
+        }
+      }
+    }
+  },
+  "bucket_selfcheck": {
+    "ok": true,
+    "details": {
+      "9": {
+        "got": [
+          -104.5,
+          -9.1,
+          -13.6
+        ],
+        "want": [
+          -104.5,
+          -9.1,
+          -13.6
+        ],
+        "match": true
+      },
+      "21": {
+        "got": [
+          -5.4,
+          -47.0,
+          -1.9
+        ],
+        "want": [
+          -5.4,
+          -47.0,
+          -1.9
+        ],
+        "match": true
+      },
+      "18": {
+        "got": [
+          273.5,
+          404.4,
+          269.2
+        ],
+        "want": [
+          273.5,
+          404.4,
+          269.2
+        ],
+        "match": true
+      }
+    }
+  },
+  "verdicts": {
+    "hour_structure_eth": "时段结构在 ETH 上成立",
+    "phase4_trigger": true,
+    "anchor0_structure": "BTC 锚点 0 优势得到独立资产支持",
+    "btc_bucket_selfcheck_ok": true
+  },
+  "eth_hour_structure": {
+    "combined_buckets": {
+      "0": {
+        "n": 35,
+        "profit_abs": 245.83905127999998,
+        "profit_factor": 1.717623188480512,
+        "n_confirm": 12
+      },
+      "3": {
+        "n": 34,
+        "profit_abs": 54.10817529,
+        "profit_factor": 1.2340014284521361,
+        "n_confirm": 4
+      },
+      "6": {
+        "n": 16,
+        "profit_abs": 38.713928069999994,
+        "profit_factor": 1.2947987978969961,
+        "n_confirm": 3
+      },
+      "9": {
+        "n": 16,
+        "profit_abs": -59.40096263,
+        "profit_factor": 0.6457985673241945,
+        "n_confirm": 2
+      },
+      "12": {
+        "n": 16,
+        "profit_abs": 17.486225879999996,
+        "profit_factor": 1.1616990170002546,
+        "n_confirm": 1
+      },
+      "15": {
+        "n": 46,
+        "profit_abs": 363.48935891,
+        "profit_factor": 2.481739336188142,
+        "n_confirm": 6
+      },
+      "18": {
+        "n": 46,
+        "profit_abs": 108.87326611000002,
+        "profit_factor": 1.3307748035050806,
+        "n_confirm": 10
+      },
+      "21": {
+        "n": 37,
+        "profit_abs": -41.39956028000001,
+        "profit_factor": 0.8419426432471036,
+        "n_confirm": 5
+      }
+    },
+    "bucket_rank_by_profit": [
+      15,
+      0,
+      18,
+      3,
+      6,
+      12,
+      21,
+      9
+    ],
+    "cond1_fullspan_b9_b21_nonpos": true,
+    "cond2_b9_windows_nonpos": 2,
+    "cond2_b21_windows_nonpos": 3,
+    "cond2": true,
+    "cond3_bucket18_rank": 3,
+    "cond3": true,
+    "triggered_phase4": true,
+    "verdict": "时段结构在 ETH 上成立"
+  },
+  "eth_anchor_structure": {
+    "anchor0_ratio_ge_others_windows": 3,
+    "anchor0_all_three_windows_profit": true,
+    "is_structure": true,
+    "verdict": "BTC 锚点 0 优势得到独立资产支持"
+  }
+}

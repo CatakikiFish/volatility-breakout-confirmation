@@ -1,0 +1,903 @@
+{
+  "seed": 20260902,
+  "n_boot": 10000,
+  "block_len": 10,
+  "start_balance": 1000.0,
+  "strategy_v32": "confirm_v3_2_BTC",
+  "strategy_v31": "confirm_v3_1_BTC",
+  "pairing_key": [
+    "open_date",
+    "is_short"
+  ],
+  "ratio_definition": "profit_total_abs / (max_drawdown_account * 1000) on closed-trade path",
+  "note": "trailclose changes identity; unmatched reported as-is. BTC windows viewed before freeze; ratio diff is not out-of-sample evidence.",
+  "archives": {
+    "train_20200415-20240829": "backtest-result-2026-09-03_06-08-16.zip",
+    "check1_20240829-20250829": "backtest-result-2026-09-03_06-05-55.zip",
+    "check2_20250918-20260829": "backtest-result-2026-09-03_06-05-51.zip"
+  },
+  "pairing": {
+    "train_20200415-20240829": {
+      "archive": "backtest-result-2026-09-03_06-08-16.zip",
+      "n_v32": 226,
+      "n_v31": 239,
+      "n_paired": 218,
+      "n_unmatched_v32": 8,
+      "n_unmatched_v31": 21,
+      "unmatched_v32": [
+        {
+          "open_date": "2020-07-23 18:00:00+00:00",
+          "is_short": false
+        },
+        {
+          "open_date": "2020-09-03 16:00:00+00:00",
+          "is_short": true
+        },
+        {
+          "open_date": "2021-04-10 07:00:00+00:00",
+          "is_short": false
+        },
+        {
+          "open_date": "2021-10-01 13:00:00+00:00",
+          "is_short": false
+        },
+        {
+          "open_date": "2023-03-09 22:00:00+00:00",
+          "is_short": true
+        },
+        {
+          "open_date": "2023-09-11 17:00:00+00:00",
+          "is_short": true
+        },
+        {
+          "open_date": "2023-11-07 21:00:00+00:00",
+          "is_short": false
+        },
+        {
+          "open_date": "2023-11-09 16:00:00+00:00",
+          "is_short": false
+        }
+      ],
+      "unmatched_v31": [
+        {
+          "open_date": "2020-04-29 17:00:00+00:00",
+          "is_short": false
+        },
+        {
+          "open_date": "2020-04-30 07:00:00+00:00",
+          "is_short": false
+        },
+        {
+          "open_date": "2020-07-23 00:00:00+00:00",
+          "is_short": false
+        },
+        {
+          "open_date": "2020-09-03 15:00:00+00:00",
+          "is_short": true
+        },
+        {
+          "open_date": "2020-10-21 15:00:00+00:00",
+          "is_short": false
+        },
+        {
+          "open_date": "2021-02-19 18:00:00+00:00",
+          "is_short": false
+        },
+        {
+          "open_date": "2021-04-10 06:00:00+00:00",
+          "is_short": false
+        },
+        {
+          "open_date": "2021-07-26 03:00:00+00:00",
+          "is_short": false
+        },
+        {
+          "open_date": "2021-07-30 21:00:00+00:00",
+          "is_short": false
+        },
+        {
+          "open_date": "2021-10-01 12:00:00+00:00",
+          "is_short": false
+        },
+        {
+          "open_date": "2021-10-06 15:00:00+00:00",
+          "is_short": false
+        },
+        {
+          "open_date": "2022-08-19 09:00:00+00:00",
+          "is_short": true
+        },
+        {
+          "open_date": "2023-01-12 00:00:00+00:00",
+          "is_short": false
+        },
+        {
+          "open_date": "2023-01-12 18:00:00+00:00",
+          "is_short": false
+        },
+        {
+          "open_date": "2023-01-14 03:00:00+00:00",
+          "is_short": false
+        },
+        {
+          "open_date": "2023-02-15 21:00:00+00:00",
+          "is_short": false
+        },
+        {
+          "open_date": "2023-03-09 21:00:00+00:00",
+          "is_short": true
+        },
+        {
+          "open_date": "2023-06-05 18:00:00+00:00",
+          "is_short": true
+        },
+        {
+          "open_date": "2023-08-18 00:00:00+00:00",
+          "is_short": true
+        },
+        {
+          "open_date": "2023-09-11 15:00:00+00:00",
+          "is_short": true
+        },
+        {
+          "open_date": "2023-10-24 00:00:00+00:00",
+          "is_short": false
+        }
+      ],
+      "n_close_time_diff": 44,
+      "close_time_diffs": [
+        {
+          "open_date": "2020-04-23 15:00:00+00:00",
+          "is_short": false,
+          "close_a": "2020-04-30 09:00:00+00:00",
+          "close_b": "2020-04-29 16:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2020-06-24 12:00:00+00:00",
+          "is_short": true,
+          "close_a": "2020-07-01 13:00:00+00:00",
+          "close_b": "2020-06-28 14:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2020-07-21 09:00:00+00:00",
+          "is_short": false,
+          "close_a": "2020-07-23 02:00:00+00:00",
+          "close_b": "2020-07-22 22:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2020-09-02 12:00:00+00:00",
+          "is_short": true,
+          "close_a": "2020-09-03 15:00:00+00:00",
+          "close_b": "2020-09-03 12:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2020-10-19 15:00:00+00:00",
+          "is_short": false,
+          "close_a": "2020-10-26 18:00:00+00:00",
+          "close_b": "2020-10-21 14:00:00+00:00",
+          "exit_a": "exit_signal",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2020-12-16 15:00:00+00:00",
+          "is_short": false,
+          "close_a": "2020-12-21 10:00:00+00:00",
+          "close_b": "2020-12-17 09:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2021-02-08 15:00:00+00:00",
+          "is_short": false,
+          "close_a": "2021-02-22 10:00:00+00:00",
+          "close_b": "2021-02-15 02:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2021-03-29 09:00:00+00:00",
+          "is_short": false,
+          "close_a": "2021-04-10 06:00:00+00:00",
+          "close_b": "2021-04-10 04:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2021-04-18 06:00:00+00:00",
+          "is_short": true,
+          "close_a": "2021-04-26 03:00:00+00:00",
+          "close_b": "2021-04-26 01:00:00+00:00",
+          "exit_a": "exit_signal",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2021-05-13 00:00:00+00:00",
+          "is_short": true,
+          "close_a": "2021-05-24 19:00:00+00:00",
+          "close_b": "2021-05-19 13:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2021-06-05 12:00:00+00:00",
+          "is_short": true,
+          "close_a": "2021-06-09 12:00:00+00:00",
+          "close_b": "2021-06-09 07:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2021-07-21 06:00:00+00:00",
+          "is_short": false,
+          "close_a": "2021-08-02 12:00:00+00:00",
+          "close_b": "2021-07-26 01:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2021-08-05 18:00:00+00:00",
+          "is_short": false,
+          "close_a": "2021-08-17 00:00:00+00:00",
+          "close_b": "2021-08-15 07:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2021-09-20 03:00:00+00:00",
+          "is_short": true,
+          "close_a": "2021-09-23 17:00:00+00:00",
+          "close_b": "2021-09-21 08:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2021-09-30 03:00:00+00:00",
+          "is_short": false,
+          "close_a": "2021-10-01 12:00:00+00:00",
+          "close_b": "2021-10-01 10:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2022-01-05 21:00:00+00:00",
+          "is_short": true,
+          "close_a": "2022-01-11 19:00:00+00:00",
+          "close_b": "2022-01-10 16:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2022-02-04 18:00:00+00:00",
+          "is_short": false,
+          "close_a": "2022-02-11 19:00:00+00:00",
+          "close_b": "2022-02-08 15:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2022-02-24 21:00:00+00:00",
+          "is_short": false,
+          "close_a": "2022-03-04 00:00:00+00:00",
+          "close_b": "2022-03-03 16:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2022-04-11 00:00:00+00:00",
+          "is_short": true,
+          "close_a": "2022-04-18 18:00:00+00:00",
+          "close_b": "2022-04-18 17:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2022-05-05 16:00:00+00:00",
+          "is_short": true,
+          "close_a": "2022-05-15 11:00:00+00:00",
+          "close_b": "2022-05-14 22:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2022-05-30 03:00:00+00:00",
+          "is_short": false,
+          "close_a": "2022-06-01 16:00:00+00:00",
+          "close_b": "2022-06-01 15:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2022-06-12 03:00:00+00:00",
+          "is_short": true,
+          "close_a": "2022-06-19 20:00:00+00:00",
+          "close_b": "2022-06-19 18:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2022-07-04 12:00:00+00:00",
+          "is_short": false,
+          "close_a": "2022-07-10 16:00:00+00:00",
+          "close_b": "2022-07-10 02:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2022-07-14 18:00:00+00:00",
+          "is_short": false,
+          "close_a": "2022-07-23 10:00:00+00:00",
+          "close_b": "2022-07-23 09:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2022-07-27 21:00:00+00:00",
+          "is_short": false,
+          "close_a": "2022-08-01 06:00:00+00:00",
+          "close_b": "2022-07-31 22:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2022-08-15 09:00:00+00:00",
+          "is_short": true,
+          "close_a": "2022-08-26 12:00:00+00:00",
+          "close_b": "2022-08-19 06:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2022-09-09 06:00:00+00:00",
+          "is_short": false,
+          "close_a": "2022-09-13 13:00:00+00:00",
+          "close_b": "2022-09-13 12:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2022-10-13 18:00:00+00:00",
+          "is_short": false,
+          "close_a": "2022-11-02 18:00:00+00:00",
+          "close_b": "2022-10-28 00:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2023-01-09 00:00:00+00:00",
+          "is_short": false,
+          "close_a": "2023-01-30 19:00:00+00:00",
+          "close_b": "2023-01-11 23:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2023-02-14 15:00:00+00:00",
+          "is_short": false,
+          "close_a": "2023-02-16 22:00:00+00:00",
+          "close_b": "2023-02-15 20:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2023-03-03 03:00:00+00:00",
+          "is_short": true,
+          "close_a": "2023-03-09 21:00:00+00:00",
+          "close_b": "2023-03-09 20:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2023-04-10 18:00:00+00:00",
+          "is_short": false,
+          "close_a": "2023-04-17 00:00:00+00:00",
+          "close_b": "2023-04-16 01:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2023-04-19 09:00:00+00:00",
+          "is_short": true,
+          "close_a": "2023-04-25 21:00:00+00:00",
+          "close_b": "2023-04-25 20:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2023-05-06 15:00:00+00:00",
+          "is_short": true,
+          "close_a": "2023-05-14 15:00:00+00:00",
+          "close_b": "2023-05-10 17:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2023-05-31 06:00:00+00:00",
+          "is_short": true,
+          "close_a": "2023-06-05 23:00:00+00:00",
+          "close_b": "2023-06-05 16:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2023-06-16 18:00:00+00:00",
+          "is_short": false,
+          "close_a": "2023-06-26 01:00:00+00:00",
+          "close_b": "2023-06-25 20:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2023-07-14 18:00:00+00:00",
+          "is_short": true,
+          "close_a": "2023-07-20 09:00:00+00:00",
+          "close_b": "2023-07-20 07:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2023-08-17 18:00:00+00:00",
+          "is_short": true,
+          "close_a": "2023-08-18 02:00:00+00:00",
+          "close_b": "2023-08-17 21:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2023-08-31 18:00:00+00:00",
+          "is_short": true,
+          "close_a": "2023-09-11 16:00:00+00:00",
+          "close_b": "2023-09-11 14:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2023-10-16 15:00:00+00:00",
+          "is_short": false,
+          "close_a": "2023-11-05 21:00:00+00:00",
+          "close_b": "2023-10-23 22:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2023-11-22 21:00:00+00:00",
+          "is_short": false,
+          "close_a": "2023-12-11 02:00:00+00:00",
+          "close_b": "2023-12-11 01:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2024-02-09 03:00:00+00:00",
+          "is_short": false,
+          "close_a": "2024-02-13 15:00:00+00:00",
+          "close_b": "2024-02-13 14:00:00+00:00",
+          "exit_a": "exit_signal",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2024-05-15 15:00:00+00:00",
+          "is_short": false,
+          "close_a": "2024-05-23 13:00:00+00:00",
+          "close_b": "2024-05-22 21:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2024-07-31 21:00:00+00:00",
+          "is_short": true,
+          "close_a": "2024-08-05 16:00:00+00:00",
+          "close_b": "2024-08-05 15:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        }
+      ]
+    },
+    "check1_20240829-20250829": {
+      "archive": "backtest-result-2026-09-03_06-05-55.zip",
+      "n_v32": 46,
+      "n_v31": 47,
+      "n_paired": 45,
+      "n_unmatched_v32": 1,
+      "n_unmatched_v31": 2,
+      "unmatched_v32": [
+        {
+          "open_date": "2025-02-03 04:00:00+00:00",
+          "is_short": true
+        }
+      ],
+      "unmatched_v31": [
+        {
+          "open_date": "2024-11-21 06:00:00+00:00",
+          "is_short": false
+        },
+        {
+          "open_date": "2025-02-03 03:00:00+00:00",
+          "is_short": true
+        }
+      ],
+      "n_close_time_diff": 10,
+      "close_time_diffs": [
+        {
+          "open_date": "2024-09-09 18:00:00+00:00",
+          "is_short": false,
+          "close_a": "2024-09-30 02:00:00+00:00",
+          "close_b": "2024-09-30 01:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2024-09-30 03:00:00+00:00",
+          "is_short": true,
+          "close_a": "2024-10-06 09:00:00+00:00",
+          "close_b": "2024-10-05 12:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2024-10-14 06:00:00+00:00",
+          "is_short": false,
+          "close_a": "2024-10-21 13:00:00+00:00",
+          "close_b": "2024-10-15 14:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2024-11-06 03:00:00+00:00",
+          "is_short": false,
+          "close_a": "2024-11-25 14:00:00+00:00",
+          "close_b": "2024-11-17 22:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2025-01-07 18:00:00+00:00",
+          "is_short": true,
+          "close_a": "2025-01-12 15:00:00+00:00",
+          "close_b": "2025-01-12 12:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2025-01-31 21:00:00+00:00",
+          "is_short": true,
+          "close_a": "2025-02-03 03:00:00+00:00",
+          "close_b": "2025-02-03 01:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2025-02-21 18:00:00+00:00",
+          "is_short": true,
+          "close_a": "2025-03-01 04:00:00+00:00",
+          "close_b": "2025-03-01 02:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2025-04-09 18:00:00+00:00",
+          "is_short": false,
+          "close_a": "2025-05-04 10:00:00+00:00",
+          "close_b": "2025-04-28 01:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2025-05-07 00:00:00+00:00",
+          "is_short": false,
+          "close_a": "2025-05-12 18:00:00+00:00",
+          "close_b": "2025-05-12 15:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2025-06-17 00:00:00+00:00",
+          "is_short": true,
+          "close_a": "2025-06-23 20:00:00+00:00",
+          "close_b": "2025-06-23 13:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        }
+      ]
+    },
+    "check2_20250918-20260829": {
+      "archive": "backtest-result-2026-09-03_06-05-51.zip",
+      "n_v32": 51,
+      "n_v31": 54,
+      "n_paired": 51,
+      "n_unmatched_v32": 0,
+      "n_unmatched_v31": 3,
+      "unmatched_v32": [],
+      "unmatched_v31": [
+        {
+          "open_date": "2026-08-19 16:00:00+00:00",
+          "is_short": false
+        },
+        {
+          "open_date": "2026-08-20 10:00:00+00:00",
+          "is_short": false
+        },
+        {
+          "open_date": "2026-08-21 10:00:00+00:00",
+          "is_short": false
+        }
+      ],
+      "n_close_time_diff": 7,
+      "close_time_diffs": [
+        {
+          "open_date": "2025-09-29 00:00:00+00:00",
+          "is_short": false,
+          "close_a": "2025-10-07 15:00:00+00:00",
+          "close_b": "2025-10-05 16:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2025-11-13 18:00:00+00:00",
+          "is_short": true,
+          "close_a": "2025-11-23 19:00:00+00:00",
+          "close_b": "2025-11-23 04:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2026-01-19 00:00:00+00:00",
+          "is_short": true,
+          "close_a": "2026-01-27 20:00:00+00:00",
+          "close_b": "2026-01-23 17:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2026-01-29 18:00:00+00:00",
+          "is_short": true,
+          "close_a": "2026-02-06 17:00:00+00:00",
+          "close_b": "2026-02-06 13:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2026-04-08 00:00:00+00:00",
+          "is_short": false,
+          "close_a": "2026-04-19 07:00:00+00:00",
+          "close_b": "2026-04-19 01:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2026-06-02 15:00:00+00:00",
+          "is_short": true,
+          "close_a": "2026-06-11 18:00:00+00:00",
+          "close_b": "2026-06-07 22:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2026-08-17 03:00:00+00:00",
+          "is_short": false,
+          "close_a": "2026-08-28 16:00:00+00:00",
+          "close_b": "2026-08-19 15:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        }
+      ]
+    }
+  },
+  "windows": {
+    "train_20200415-20240829": {
+      "n": 218,
+      "observed": {
+        "v32": {
+          "profit_total_abs": 1587.10273938,
+          "end_balance": 2587.102739380001,
+          "max_drawdown_account": 0.1363166666585125,
+          "ratio": 11.642763708093437
+        },
+        "v31": {
+          "profit_total_abs": 775.3189367800001,
+          "end_balance": 1775.3189367800003,
+          "max_drawdown_account": 0.1345522324222021,
+          "ratio": 5.7622153332036925
+        },
+        "ratio_diff_v32_minus_v31": 5.880548374889744,
+        "profit_diff_v32_minus_v31": 811.7838026,
+        "max_drawdown_account_diff": 0.001764434236310397
+      },
+      "bootstrap": {
+        "n_boot": 10000,
+        "block_len": 10,
+        "ratio_diff_v32_minus_v31": {
+          "mean": 8.369490032146693,
+          "ci95_low": -3.0147375092351893,
+          "ci95_high": 40.8142499198001,
+          "p_gt_0": 0.7085,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "profit_diff_v32_minus_v31": {
+          "mean": 821.4621133009852,
+          "ci95_low": -208.15851305725005,
+          "ci95_high": 2667.35757809275,
+          "p_gt_0": 0.694,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "max_drawdown_account_diff_v32_minus_v31": {
+          "mean": -0.010435706251248478,
+          "ci95_low": -0.10998948216837279,
+          "ci95_high": 0.049379286338874964,
+          "p_gt_0": 0.4653,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "ratio_v32": {
+          "mean": 14.956669408120598,
+          "ci95_low": 0.3620908369912681,
+          "ci95_high": 52.60506145874084,
+          "p_gt_0": 0.9851,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "ratio_v31": {
+          "mean": 6.587179375973907,
+          "ci95_low": -0.023865825895558797,
+          "ci95_high": 20.65945664652289,
+          "p_gt_0": 0.9733,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "note_p_gt_0": "P(差值>0) is P(ratio_v32 - ratio_v31 > 0) on finite resamples."
+      },
+      "insignificant_if_p_lt_0_80": true
+    },
+    "check1_20240829-20250829": {
+      "n": 45,
+      "observed": {
+        "v32": {
+          "profit_total_abs": 519.4570165000001,
+          "end_balance": 1519.4570165000002,
+          "max_drawdown_account": 0.059800236968265204,
+          "ratio": 8.686537760304622
+        },
+        "v31": {
+          "profit_total_abs": 481.1848303000002,
+          "end_balance": 1481.1848303000004,
+          "max_drawdown_account": 0.061593600686183116,
+          "ratio": 7.81225362601575
+        },
+        "ratio_diff_v32_minus_v31": 0.8742841342888727,
+        "profit_diff_v32_minus_v31": 38.27218619999991,
+        "max_drawdown_account_diff": -0.0017933637179179118
+      },
+      "bootstrap": {
+        "n_boot": 10000,
+        "block_len": 10,
+        "ratio_diff_v32_minus_v31": {
+          "mean": 0.46609982488008916,
+          "ci95_low": -2.44851295850138,
+          "ci95_high": 5.445250632663953,
+          "p_gt_0": 0.5288,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "profit_diff_v32_minus_v31": {
+          "mean": 33.61000428643096,
+          "ci95_low": -133.91263700000013,
+          "ci95_high": 284.88896232225,
+          "p_gt_0": 0.5823,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "max_drawdown_account_diff_v32_minus_v31": {
+          "mean": 0.007080912258728574,
+          "ci95_low": -0.009578876506672477,
+          "ci95_high": 0.05390289424508161,
+          "p_gt_0": 0.6439,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "ratio_v32": {
+          "mean": 6.118348195843942,
+          "ci95_low": -0.5827509100175909,
+          "ci95_high": 21.354185699476755,
+          "p_gt_0": 0.9451,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "ratio_v31": {
+          "mean": 5.652248370963853,
+          "ci95_low": -0.1171783603592138,
+          "ci95_high": 18.190373560395443,
+          "p_gt_0": 0.9685,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "note_p_gt_0": "P(差值>0) is P(ratio_v32 - ratio_v31 > 0) on finite resamples."
+      },
+      "insignificant_if_p_lt_0_80": true
+    },
+    "check2_20250918-20260829": {
+      "n": 51,
+      "observed": {
+        "v32": {
+          "profit_total_abs": 639.15041851,
+          "end_balance": 1639.15041851,
+          "max_drawdown_account": 0.13345689059094418,
+          "ratio": 4.789190094867759
+        },
+        "v31": {
+          "profit_total_abs": 437.34254491,
+          "end_balance": 1437.34254491,
+          "max_drawdown_account": 0.12259395386694073,
+          "ratio": 3.5674071282885333
+        },
+        "ratio_diff_v32_minus_v31": 1.2217829665792252,
+        "profit_diff_v32_minus_v31": 201.8078736,
+        "max_drawdown_account_diff": 0.010862936724003444
+      },
+      "bootstrap": {
+        "n_boot": 10000,
+        "block_len": 10,
+        "ratio_diff_v32_minus_v31": {
+          "mean": -0.8493475588308452,
+          "ci95_low": -4.688471770473974,
+          "ci95_high": 2.5498054919414392,
+          "p_gt_0": 0.1275,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "profit_diff_v32_minus_v31": {
+          "mean": -73.88452792081402,
+          "ci95_low": -267.311865105,
+          "ci95_high": 316.5501925934998,
+          "p_gt_0": 0.1162,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "max_drawdown_account_diff_v32_minus_v31": {
+          "mean": 0.011714409036088658,
+          "ci95_low": -0.01260722278483548,
+          "ci95_high": 0.05086622780910778,
+          "p_gt_0": 0.8634,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "ratio_v32": {
+          "mean": 1.6341273018827918,
+          "ci95_low": -0.9975845499911639,
+          "ci95_high": 9.46602281881551,
+          "p_gt_0": 0.6601,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "ratio_v31": {
+          "mean": 2.4834748607136365,
+          "ci95_low": -0.9850732696358776,
+          "ci95_high": 12.544359142806249,
+          "p_gt_0": 0.7579,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "note_p_gt_0": "P(差值>0) is P(ratio_v32 - ratio_v31 > 0) on finite resamples."
+      },
+      "insignificant_if_p_lt_0_80": true
+    }
+  },
+  "concat_three_windows_reference_only": {
+    "warning": "跨窗拼接非独立样本",
+    "n": 314,
+    "observed_ratio_diff": 7.553381705136282,
+    "bootstrap_p_gt_0": 0.6912,
+    "bootstrap_ci95": [
+      -6.823121565282964,
+      39.72214666440091
+    ]
+  }
+}

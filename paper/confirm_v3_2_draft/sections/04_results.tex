@@ -1,0 +1,214 @@
+\section{实证结果}
+
+\subsection{原始系统与 V3.2 的完整历史比较}
+
+\cref{tab:baseline-v32} 汇总两套系统的完整历史表现。净利润分别为 2781.783 和 2864.735 USDT，差额为 82.953 USDT。V3.2 的最大百分比回撤相对降低约 28.6\%，Profit Factor 提高至 2.20，最差单笔由 $-35.34\%$ 收窄至 $-18.48\%$，平均持仓由约 12.1 天缩短至 3.4 天。
+
+\cref{fig:equity-path} 显示，两者终值接近，但累计收益路径不同。77 个按月采样点中，V3.2 仅 8 个点高于原始系统，其中 7 个位于 2020 年，另 1 个为样本终点。因此，下行风险改善并不伴随累计权益的持续领先。
+
+\begin{table}[H]
+  \centering
+  \caption{原始 VolatilitySystem 与 Confirm V3.2 的完整历史指标}
+  \label{tab:baseline-v32}
+  \begin{threeparttable}
+    \begin{tabular}{lrr}
+      \toprule
+      指标 & 原始系统 & Confirm V3.2\\
+      \midrule
+      交易数 & 193 & 326\\
+      净利润（USDT） & 2781.783 & 2864.735\\
+      累计收益率 & 278.18\% & 286.47\%\\
+      CAGR & 23.19\% & 23.61\%\\
+      月度收益年化波动率 & 28.03\% & 26.41\%\\
+      月度下行偏差 & 2.53\% & 1.32\%\\
+      Profit Factor & 1.75 & 2.20\\
+      最大百分比回撤 & 19.88\% & 14.20\%\\
+      CAGR/最大百分比回撤 & 1.17 & 1.66\\
+      胜率 & 37.31\% & 33.44\%\\
+      等交易平均单笔收益 & 1.04\% & $-1.27\%$\\
+      最佳单笔收益 & 100.43\% & 85.52\%\\
+      最差单笔收益 & $-35.34\%$ & $-18.48\%$\\
+      平均持仓 & 12 天 1 小时 & 3 天 9 小时\\
+      前十大赢家占毛盈利 & 46.71\% & 58.00\%\\
+      期末强平 & 1 笔（+210.028） & 0 笔\\
+      \bottomrule
+    \end{tabular}
+    \begin{tablenotes}[flushleft]\footnotesize
+      \item 注：累计收益和 CAGR 均按 1000 USDT 初始权益计算。波动率和下行偏差由 76 个相邻月度收益观测按\cref{eq:path-risk}计算。单笔收益率由回测引擎按各交易实际保证金和杠杆计算，不等同于账户收益贡献。
+    \end{tablenotes}
+  \end{threeparttable}
+\end{table}
+
+原始系统唯一一笔期末强平盈利 210.028 USDT，占总利润 7.55\%；192 笔正常反向信号退出贡献 2571.754 USDT。与早期短窗口不同，全历史利润主要来自正常退出。V3.2 在该样本末端无需强制平仓，全部已实现利润由策略规则产生。
+
+V3.2 的 118 笔跟踪止损合计盈利 4570.742 USDT，181 笔初始止损合计亏损 1760.406 USDT，27 笔反向信号退出合计盈利 54.400 USDT。这一结构符合趋势跟踪的典型损益逻辑：多数错误突破以有限损失结束，少数持续趋势通过跟踪机制支付全部试错成本。
+
+月度收益年化波动率由 28.03\% 降至 26.41\%，相对降幅约 5.8\%；月度下行偏差由 2.53\% 降至 1.32\%，相对降幅约 48.1\%。资金路径改善主要体现为下行幅度收窄，总体月度波动变化较小。
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[
+      paper axis,
+      width=0.94\textwidth,
+      height=6.4cm,
+      date coordinates in=x,
+      xmin=2020-04-01,xmax=2026-09-01,
+      xtick={2020-04-01,2021-01-01,2022-01-01,2023-01-01,2024-01-01,2025-01-01,2026-01-01},
+      xticklabel=\year,
+      ylabel={账户权益（USDT）},
+      ymin=700,ymax=4200,
+      legend columns=2,
+      legend pos=north west,
+    ]
+      \addplot[PaperGray,thick] table[x=date,y=volatility,col sep=comma]{data/equity_curves.csv};
+      \addlegendentry{原始系统}
+      \addplot[PaperNavy,very thick] table[x=date,y=confirm_v32,col sep=comma]{data/equity_curves.csv};
+      \addlegendentry{V3.2}
+    \end{axis}
+  \end{tikzpicture}
+  \caption{原始系统与 V3.2 的月度已实现权益。两者终值接近，样本中段原始系统的累计权益较高。}
+  \label{fig:equity-path}
+\end{figure}
+
+\subsection{V2 至 V3.2 的版本比较}
+
+\cref{tab:version-comparison} 按统一回撤口径比较 V2 至 V3.2。V3.0 和 V3.1 的 CAGR 低于 V3.2，但最大百分比回撤也更低，CAGR/回撤比约为 1.90，高于 V3.2 的 1.66。V3.2 的收益和 Profit Factor 更高，等交易平均收益更低，赢家集中度更高，体现出不同风险预算与退出参数的权衡。
+
+\begin{table}[H]
+  \centering
+  \caption{V2、V3.0、V3.1 与 V3.2 的统一口径完整历史比较}
+  \label{tab:version-comparison}
+  \resizebox{\textwidth}{!}{%
+    \begin{tabular}{lrrrrrrrrr}
+      \toprule
+      版本 & 交易 & 累计收益 & CAGR & PF & 最大回撤 & CAGR/回撤 & 平均单笔 & 前十集中度 & 强平\\
+      \midrule
+      V2   & 343 & 213.65\% & 19.63\% & 1.75 & 22.93\% & 0.86 & $-0.63\%$ & 44.50\% & 1\\
+      V3.0 & 343 & 200.73\% & 18.84\% & 1.81 &  9.93\% & 1.90 & $-0.63\%$ & 41.69\% & 1\\
+      V3.1 & 343 & 200.75\% & 18.84\% & 1.82 &  9.93\% & 1.90 & $-0.60\%$ & 42.09\% & 1\\
+      V3.2 & 326 & 286.47\% & 23.61\% & 2.20 & 14.20\% & 1.66 & $-1.27\%$ & 58.00\% & 0\\
+      \bottomrule
+    \end{tabular}%
+  }
+  \vspace{0.3em}
+
+  \footnotesize\raggedright 注：PF 为 Profit Factor；“前十集中度”为前十大赢家占毛盈利比例。V3.0/V3.1 的最大百分比回撤均为 9.93\%，不同于研究早期报告的 7.96\%/7.49\% \texttt{max\_drawdown\_account}。
+\end{table}
+
+\subsection{年度收益与长期持有基准}
+
+原始系统七个年度窗口中五个为正，V3.2 为七个全部为正，BTC 长期持有为四个为正。首尾年度并非完整自然年：2020 年从 4 月 15 日开始，2026 年截至 8 月 30 日。V3.2 的年度收益分别为 5.10\%、34.53\%、18.82\%、66.69\%、8.39\%、6.48\% 和 19.57\%。原始系统在 2020 和 2025 年分别亏损 7.85\% 和 1.56\%。
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \begin{groupplot}[
+      group style={group size=2 by 1,horizontal sep=1.25cm},
+      paper axis,
+      height=6.1cm,
+      symbolic x coords={2020,2021,2022,2023,2024,2025,2026},
+      xtick=data,
+      x tick label style={rotate=45,anchor=east},
+      ybar,
+    ]
+      \nextgroupplot[
+        title={两套策略年度收益},
+        width=0.60\textwidth,
+        ylabel={年度收益率（\%）},
+        ymin=-20,ymax=175,
+        legend columns=2,
+        legend pos=north east,
+      ]
+        \addplot[fill=PaperGray!75,draw=PaperGray] table[x=year,y=volatility,col sep=comma]{data/yearly_returns.csv};
+        \addlegendentry{原始系统}
+        \addplot[fill=PaperNavy!82,draw=PaperNavy] table[x=year,y=confirm_v32,col sep=comma]{data/yearly_returns.csv};
+        \addlegendentry{V3.2}
+      \nextgroupplot[
+        title={BTC 长期持有年度收益},
+        width=0.34\textwidth,
+        ylabel={年度收益率（\%）},
+        ymin=-100,ymax=350,
+      ]
+        \addplot[fill=PaperGold!82,draw=PaperGold] table[x=year,y=buy_hold,col sep=comma]{data/yearly_returns.csv};
+    \end{groupplot}
+  \end{tikzpicture}
+  \caption{年度收益率比较。2020 年与 2026 年为不完整年度；长期持有基准不计交易费和资金费。}
+  \label{fig:yearly-returns}
+\end{figure}
+
+BTC 持有基准的累计收益为 1045.10\%，逐时盯市最大回撤为 77.23\%。相较持续持有，V3.2 的空仓、风险上限与双向交易改变了市场暴露，历史终值较低，年度收益分布则更均衡。
+
+\subsection{确认加仓与负平均单笔收益}
+
+V3.2 的等交易平均单笔收益为 $-1.27\%$，但账户净利润为正。248 笔未确认交易的平均收益为 $-4.85\%$，合计亏损 1309.604 USDT，Profit Factor 为 0.286；78 笔确认交易的平均收益为 10.11\%，合计盈利 4174.340 USDT，Profit Factor 为 8.541。
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[
+      paper axis,
+      width=0.78\textwidth,
+      height=6.0cm,
+      ybar,
+      symbolic x coords={未确认试探仓,确认仓},
+      xtick={未确认试探仓,确认仓},
+      enlarge x limits=0.35,
+      ylabel={利润贡献（USDT）},
+      ymin=-1800,ymax=4800,
+      nodes near coords,
+      nodes near coords style={font=\small},
+      axis x line*=bottom,
+    ]
+      \addplot[fill=PaperRed!75,draw=PaperRed,/pgf/bar width=24pt,bar shift=0pt] coordinates {(未确认试探仓,-1309.604)};
+      \addplot[fill=PaperTeal!80,draw=PaperTeal,/pgf/bar width=24pt,bar shift=0pt] coordinates {(确认仓,4174.340)};
+    \end{axis}
+  \end{tikzpicture}
+  \caption{V3.2 按事后是否完成确认加仓分组的利润贡献。该图描述资金分层机制，不构成确认规则的因果效应估计。}
+  \label{fig:confirmation-pnl}
+\end{figure}
+
+盈利交易平均保证金为 329.49 USDT，亏损交易为 162.45 USDT。不同仓位权重解释了等交易均值为负而账户利润为正的现象，也使确认订单的执行直接影响利润来源。前十大赢家占毛盈利 58.00\%；剔除这些交易后，净利润约为 $-181.95$ USDT，反映收益对少数趋势交易的集中依赖。
+
+V3.0 和 V3.1 的确认交易分别盈利约 2866.815 和 2865.794 USDT，未确认交易分别亏损约 859.522 和 858.340 USDT，具有相同的利润分层特征。
+
+\subsection{价格预定义熊市窗口}
+
+熊市窗口根据 BTC 价格路径预先定义为 2021-11-10 00:00 至 2022-11-22 00:00 UTC，期间价格下跌 76.34\%。原始系统与 V3.2 的累计收益分别为 64.66\% 和 24.55\%，均为正。
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \begin{groupplot}[
+      group style={group size=2 by 1,horizontal sep=1.2cm},
+      paper axis,
+      height=5.8cm,
+      ybar,
+      symbolic x coords={BTC,原始系统,V3.2},
+      xtick=data,
+    ]
+      \nextgroupplot[
+        width=0.47\textwidth,
+        title={熊市窗口收益率},
+        ylabel={收益率（\%）},
+        ymin=-90,ymax=80,
+        nodes near coords,
+        nodes near coords style={font=\scriptsize},
+      ]
+        \addplot[fill=PaperNavy!78,draw=PaperNavy] coordinates {(BTC,-76.34) (原始系统,64.66) (V3.2,24.55)};
+      \nextgroupplot[
+        width=0.47\textwidth,
+        title={熊市窗口最大回撤},
+        ylabel={最大回撤（\%）},
+        ymin=0,ymax=85,
+        nodes near coords,
+        nodes near coords style={font=\scriptsize},
+      ]
+        \addplot[fill=PaperRed!72,draw=PaperRed] coordinates {(BTC,77.23) (原始系统,19.55) (V3.2,6.33)};
+    \end{groupplot}
+  \end{tikzpicture}
+  \caption{2021--2022 年熊市窗口的收益与回撤。V3.2 的收益和回撤均低于原始系统。}
+  \label{fig:bear-window}
+\end{figure}
+
+V3.2 的回撤由原始系统的 19.55\% 降至 6.33\%，最差单笔由 $-35.24\%$ 收窄至 $-18.15\%$，同时累计收益减少 40.11 个百分点。原始系统唯一一笔期末强平亏损 30.609 USDT，正常退出利润为 677.225 USDT。预设的“原始不盈利、V3.2 盈利且回撤更低”联合条件未通过，结果体现的是熊市收益与风险的交换。

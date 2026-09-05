@@ -1,0 +1,317 @@
+{
+  "seed": 20260902,
+  "n_boot": 10000,
+  "block_len": 10,
+  "start_balance": 1000.0,
+  "strategy_v31": "confirm_v3_1_BTC",
+  "strategy_v3": "confirm_v3_BTC",
+  "pairing_key": [
+    "open_date",
+    "is_short"
+  ],
+  "ratio_definition": "profit_total_abs / (max_drawdown_account * 1000) on closed-trade path",
+  "archives": {
+    "train_20200415-20240829": "backtest-result-2026-09-02_11-18-39.zip",
+    "check1_20240829-20250829": "backtest-result-2026-09-02_11-19-12.zip",
+    "check2_20250918-20260829": "backtest-result-2026-09-02_11-24-25.zip"
+  },
+  "pairing": {
+    "train_20200415-20240829": {
+      "archive": "backtest-result-2026-09-02_11-18-39.zip",
+      "n_v31": 239,
+      "n_v3": 239,
+      "n_paired": 239,
+      "n_unmatched_v31": 0,
+      "n_unmatched_v3": 0,
+      "unmatched_v31": [],
+      "unmatched_v3": [],
+      "n_close_time_diff": 1,
+      "close_time_diffs": [
+        {
+          "open_date": "2024-03-05 18:00:00+00:00",
+          "is_short": true,
+          "close_a": "2024-03-06 05:00:00+00:00",
+          "close_b": "2024-03-06 06:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        }
+      ]
+    },
+    "check1_20240829-20250829": {
+      "archive": "backtest-result-2026-09-02_11-19-12.zip",
+      "n_v31": 47,
+      "n_v3": 47,
+      "n_paired": 47,
+      "n_unmatched_v31": 0,
+      "n_unmatched_v3": 0,
+      "unmatched_v31": [],
+      "unmatched_v3": [],
+      "n_close_time_diff": 4,
+      "close_time_diffs": [
+        {
+          "open_date": "2024-12-04 21:00:00+00:00",
+          "is_short": false,
+          "close_a": "2024-12-05 20:00:00+00:00",
+          "close_b": "2024-12-05 22:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2025-01-20 18:00:00+00:00",
+          "is_short": true,
+          "close_a": "2025-01-27 15:00:00+00:00",
+          "close_b": "2025-01-27 13:00:00+00:00",
+          "exit_a": "exit_signal",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2025-06-09 12:00:00+00:00",
+          "is_short": false,
+          "close_a": "2025-06-11 22:00:00+00:00",
+          "close_b": "2025-06-12 03:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        },
+        {
+          "open_date": "2025-08-24 21:00:00+00:00",
+          "is_short": true,
+          "close_a": "2025-08-27 14:00:00+00:00",
+          "close_b": "2025-08-28 04:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        }
+      ]
+    },
+    "check2_20250918-20260829": {
+      "archive": "backtest-result-2026-09-02_11-24-25.zip",
+      "n_v31": 54,
+      "n_v3": 54,
+      "n_paired": 54,
+      "n_unmatched_v31": 0,
+      "n_unmatched_v3": 0,
+      "unmatched_v31": [],
+      "unmatched_v3": [],
+      "n_close_time_diff": 1,
+      "close_time_diffs": [
+        {
+          "open_date": "2025-12-07 18:00:00+00:00",
+          "is_short": false,
+          "close_a": "2025-12-11 01:00:00+00:00",
+          "close_b": "2025-12-11 02:00:00+00:00",
+          "exit_a": "trailing_stop_loss",
+          "exit_b": "trailing_stop_loss"
+        }
+      ]
+    }
+  },
+  "windows": {
+    "train_20200415-20240829": {
+      "n": 239,
+      "observed": {
+        "v31": {
+          "profit_total_abs": 1048.08760627,
+          "end_balance": 2048.087606270001,
+          "max_drawdown_account": 0.09933254050002674,
+          "ratio": 10.551301728457432
+        },
+        "v3": {
+          "profit_total_abs": 1069.25931097,
+          "end_balance": 2069.259310970002,
+          "max_drawdown_account": 0.09933254050002674,
+          "ratio": 10.764441396419455
+        },
+        "ratio_diff_v31_minus_v3": -0.21313966796202344,
+        "profit_diff_v31_minus_v3": -21.171704699999964,
+        "max_drawdown_account_diff": 0.0
+      },
+      "bootstrap": {
+        "n_boot": 10000,
+        "block_len": 10,
+        "ratio_diff_v31_minus_v3": {
+          "mean": -0.035262795816973926,
+          "ci95_low": -1.157306875635682,
+          "ci95_high": 0.971366849022638,
+          "p_gt_0": 0.4821,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "profit_diff_v31_minus_v3": {
+          "mean": -22.05756733364298,
+          "ci95_low": -86.41646696999987,
+          "ci95_high": 28.525290640000037,
+          "p_gt_0": 0.2369,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "max_drawdown_account_diff_v31_minus_v3": {
+          "mean": -0.0025733995278759744,
+          "ci95_low": -0.013722686650718739,
+          "ci95_high": 0.008613767097096043,
+          "p_gt_0": 0.2216,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "ratio_v31": {
+          "mean": 9.280707832750538,
+          "ci95_low": 0.8498208344957888,
+          "ci95_high": 26.11826397950606,
+          "p_gt_0": 0.9948,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "ratio_v3": {
+          "mean": 9.315970628567511,
+          "ci95_low": 0.8397255203216364,
+          "ci95_high": 26.184942224736638,
+          "p_gt_0": 0.9954,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "note_p_gt_0": "P(差值>0) is P(ratio_v31 - ratio_v3 > 0) on finite resamples."
+      },
+      "insignificant_if_p_lt_0_80": true
+    },
+    "check1_20240829-20250829": {
+      "n": 47,
+      "observed": {
+        "v31": {
+          "profit_total_abs": 467.10687397000004,
+          "end_balance": 1467.1068739700006,
+          "max_drawdown_account": 0.06678879778974056,
+          "ratio": 6.993790716828151
+        },
+        "v3": {
+          "profit_total_abs": 450.80235582000006,
+          "end_balance": 1450.8023558200005,
+          "max_drawdown_account": 0.06821309918122827,
+          "ratio": 6.608735876701779
+        },
+        "ratio_diff_v31_minus_v3": 0.38505484012637226,
+        "profit_diff_v31_minus_v3": 16.30451814999998,
+        "max_drawdown_account_diff": -0.0014243013914877062
+      },
+      "bootstrap": {
+        "n_boot": 10000,
+        "block_len": 10,
+        "ratio_diff_v31_minus_v3": {
+          "mean": 0.3143329103295497,
+          "ci95_low": -0.290711992170513,
+          "ci95_high": 1.0485986637223708,
+          "p_gt_0": 0.9326,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "profit_diff_v31_minus_v3": {
+          "mean": 9.376294898243012,
+          "ci95_low": -5.730593960000079,
+          "ci95_high": 25.833097999999996,
+          "p_gt_0": 0.867,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "max_drawdown_account_diff_v31_minus_v3": {
+          "mean": -0.005125657271739667,
+          "ci95_low": -0.014371024837873529,
+          "ci95_high": 0.0025017937356373453,
+          "p_gt_0": 0.0668,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "ratio_v31": {
+          "mean": 5.0334557929682795,
+          "ci95_low": -0.2824222803492238,
+          "ci95_high": 16.24034250283033,
+          "p_gt_0": 0.9574,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "ratio_v3": {
+          "mean": 4.71912288263873,
+          "ci95_low": -0.3480266683361154,
+          "ci95_high": 15.513933282734243,
+          "p_gt_0": 0.9499,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "note_p_gt_0": "P(差值>0) is P(ratio_v31 - ratio_v3 > 0) on finite resamples."
+      },
+      "insignificant_if_p_lt_0_80": false
+    },
+    "check2_20250918-20260829": {
+      "n": 54,
+      "observed": {
+        "v31": {
+          "profit_total_abs": 492.13016393,
+          "end_balance": 1492.13016393,
+          "max_drawdown_account": 0.12259395386694073,
+          "ratio": 4.0143102364097105
+        },
+        "v3": {
+          "profit_total_abs": 511.31878711999997,
+          "end_balance": 1511.3187871200003,
+          "max_drawdown_account": 0.12416622825946884,
+          "ratio": 4.11801819454081
+        },
+        "ratio_diff_v31_minus_v3": -0.10370795813109979,
+        "profit_diff_v31_minus_v3": -19.188623189999987,
+        "max_drawdown_account_diff": -0.0015722743925281057
+      },
+      "bootstrap": {
+        "n_boot": 10000,
+        "block_len": 10,
+        "ratio_diff_v31_minus_v3": {
+          "mean": -0.01907052587215488,
+          "ci95_low": -0.5248095903583245,
+          "ci95_high": 0.27233211561477666,
+          "p_gt_0": 0.5171,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "profit_diff_v31_minus_v3": {
+          "mean": -3.6934315207470063,
+          "ci95_low": -43.40522778000002,
+          "ci95_high": 15.083944200000003,
+          "p_gt_0": 0.477,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "max_drawdown_account_diff_v31_minus_v3": {
+          "mean": -0.0035774637718069867,
+          "ci95_low": -0.014496829573508452,
+          "ci95_high": 0.0012515176624318114,
+          "p_gt_0": 0.0479,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "ratio_v31": {
+          "mean": 2.8484250473322645,
+          "ci95_low": -0.9471877412492667,
+          "ci95_high": 13.015720425931418,
+          "p_gt_0": 0.7927,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "ratio_v3": {
+          "mean": 2.867495573204419,
+          "ci95_low": -0.9497243529308375,
+          "ci95_high": 13.383235267047954,
+          "p_gt_0": 0.7908,
+          "n_finite": 10000,
+          "n_nonfinite": 0
+        },
+        "note_p_gt_0": "P(差值>0) is P(ratio_v31 - ratio_v3 > 0) on finite resamples."
+      },
+      "insignificant_if_p_lt_0_80": true
+    }
+  },
+  "concat_three_windows_reference_only": {
+    "warning": "跨窗拼接非独立样本",
+    "n": 340,
+    "observed_ratio_diff": -0.242174514201551,
+    "bootstrap_p_gt_0": 0.6358,
+    "bootstrap_ci95": [
+      -1.3610997425519564,
+      2.0716253318463362
+    ]
+  }
+}

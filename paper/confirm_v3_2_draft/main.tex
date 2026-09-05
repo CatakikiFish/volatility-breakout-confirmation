@@ -1,0 +1,135 @@
+\documentclass[UTF8,a4paper,12pt,oneside]{ctexart}
+
+\usepackage[a4paper,top=2.55cm,bottom=2.45cm,left=2.65cm,right=2.45cm,headheight=15pt]{geometry}
+\usepackage{microtype}
+\usepackage{setspace}
+\setstretch{1.36}
+\emergencystretch=1.5em
+
+\usepackage{amsmath,amssymb,mathtools,bm}
+\usepackage{booktabs,tabularx,array,multirow,threeparttable,longtable}
+\usepackage{graphicx,float,subcaption}
+\usepackage{siunitx}
+\usepackage{seqsplit}
+\sisetup{detect-all,group-separator={,},group-minimum-digits=4,round-mode=places,round-precision=2}
+\usepackage{enumitem}
+\setlist{itemsep=0.25em,topsep=0.35em,leftmargin=2em}
+\usepackage{xcolor}
+\definecolor{PaperNavy}{HTML}{1F4E79}
+\definecolor{PaperTeal}{HTML}{2A9D8F}
+\definecolor{PaperRed}{HTML}{C44536}
+\definecolor{PaperGold}{HTML}{C8952E}
+\definecolor{PaperGray}{HTML}{606975}
+\definecolor{PaperLight}{HTML}{EAF0F5}
+\definecolor{PaperDark}{HTML}{1F2933}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc,fit,shapes.geometric,backgrounds}
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot,groupplots,fillbetween}
+\pgfplotsset{compat=1.18}
+\pgfplotsset{
+  paper axis/.style={
+    width=\linewidth,
+    height=6.3cm,
+    axis line style={draw=PaperGray!70},
+    tick style={draw=PaperGray!70},
+    tick label style={font=\small,color=PaperDark},
+    label style={font=\small,color=PaperDark},
+    title style={font=\small\bfseries,color=PaperDark},
+    grid=major,
+    grid style={draw=PaperGray!16},
+    legend style={draw=none,fill=none,font=\small,cells={anchor=west}},
+  }
+}
+
+\usepackage[font=small,labelfont=bf,labelsep=quad]{caption}
+\captionsetup[table]{skip=6pt}
+\captionsetup[figure]{skip=7pt}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small 规则化退出与确认加仓}
+\fancyhead[R]{\small 南京大学计算机学院}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\ctexset{
+  section={format=\Large\bfseries\color{PaperDark},beforeskip=1.6ex,afterskip=0.9ex},
+  subsection={format=\large\bfseries\color{PaperNavy},beforeskip=1.3ex,afterskip=0.65ex},
+  subsubsection={format=\normalsize\bfseries\color{PaperDark},beforeskip=1.0ex,afterskip=0.45ex}
+}
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries\color{PaperDark}}{\thesection}{0.75em}{}
+\titleformat{\subsection}{\large\bfseries\color{PaperNavy}}{\thesubsection}{0.65em}{}
+
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=PaperNavy,
+  citecolor=PaperNavy,
+  urlcolor=PaperTeal,
+  pdftitle={规则化退出与确认加仓对波动突破策略收益兑现的影响},
+  pdfauthor={鄢靖东}
+}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\crefname{figure}{图}{图}
+\crefname{table}{表}{表}
+\crefname{equation}{式}{式}
+
+\usepackage[backend=biber,style=gb7714-2015,sorting=nyt,maxbibnames=8]{biblatex}
+\addbibresource{references.bib}
+
+\newcommand{\Vthree}{Confirm V3.2}
+\newcommand{\Original}{VolatilitySystem}
+\newcommand{\USDT}{\textsc{USDT}}
+\newcommand{\BTC}{\textsc{BTC}}
+\newcommand{\PF}{\mathrm{PF}}
+\newcommand{\MDD}{\mathrm{MDD}}
+\newcommand{\CAGR}{\mathrm{CAGR}}
+\newcommand{\Rcal}{\mathcal{R}}
+\newcommand{\evidence}[1]{\textcolor{PaperNavy}{\textbf{#1}}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+
+\begin{document}
+
+\begin{titlepage}
+  \thispagestyle{empty}
+  \centering
+  \vspace*{2.2cm}
+  {\zihao{1}\bfseries\color{PaperDark} 规则化退出与确认加仓对波动突破策略收益兑现的影响\par}
+  \vspace{0.85cm}
+  {\Large\color{PaperNavy} The Effects of Rule-Based Exits and Confirmation-Based Scaling-In on Profit Realization in a Volatility-Breakout Strategy\par}
+  \vspace{1.3cm}
+  {\large 基于 BTC/USDT 永续合约的策略开发案例研究\par}
+  \vspace{1.8cm}
+  \begin{tabular}{rl}
+    作者： & 鄢靖东 \\
+    单位： & 南京大学计算机学院 \\
+    专业： & 计算机科学与技术 \\
+    数据截止： & 2026 年 8 月 30 日 14:00 UTC \\
+    文稿日期： & 2026 年 9 月 5 日
+  \end{tabular}
+  \vfill
+  \vspace{0.8cm}
+\end{titlepage}
+
+\input{sections/00_abstract}
+
+\input{sections/01_introduction}
+\input{sections/02_theory_method}
+\input{sections/03_strategy_evolution}
+\input{sections/04_results}
+\input{sections/05_robustness}
+\input{sections/06_discussion}
+
+\clearpage
+\printbibliography[title={参考文献}]
+
+\clearpage
+\appendix
+\input{sections/appendices}
+
+\end{document}

@@ -1,0 +1,268 @@
+{
+  "note": "tseg 单独批次；V3.1 同批复现 13.99/6.99/4.01 与 5m 3.77。统计来自 tseg_zips。",
+  "zips": {
+    "train": "backtest-result-2026-09-02_15-54-06.zip",
+    "check1": "backtest-result-2026-09-02_15-54-21.zip",
+    "check2": "backtest-result-2026-09-02_15-54-34.zip",
+    "check2_5m": "backtest-result-2026-09-02_15-56-22.zip"
+  },
+  "excluded_selfcheck": {
+    "train": {
+      "n": 60,
+      "profit_abs": -109.8656,
+      "bucket9": {
+        "n": 24,
+        "profit_abs": -104.5122
+      },
+      "bucket21": {
+        "n": 36,
+        "profit_abs": -5.3533
+      },
+      "leaked": 0,
+      "match_1_5a": true
+    }
+  },
+  "verdict": "不确定",
+  "windows": {
+    "train": {
+      "zip": "backtest-result-2026-09-02_15-54-06.zip",
+      "tseg": {
+        "n": 186,
+        "profit_total_abs": 1195.88519871,
+        "profit_factor": 1.9604056129895315,
+        "max_drawdown_account": 0.0891797605286785,
+        "ratio": 13.409827427439954,
+        "underwater": 0.0891797605286785,
+        "rejected_signals": 0,
+        "liquidation": 0,
+        "n_confirm": 41,
+        "n_three_fills": 0,
+        "three_fill_profit_sum": 0,
+        "three_fill_worst": null,
+        "max_confirm_stake": 850.76933333,
+        "worst_trade": -46.73493767,
+        "top5_profit_sum": 806.60192639,
+        "confirm_loss": {
+          "n": 10,
+          "sum": -287.48798229,
+          "worst": -46.73493767
+        },
+        "trailing_stop_loss": {
+          "n": 79,
+          "sum": 2169.19997332
+        },
+        "exit_signal": {
+          "n": 16,
+          "sum": -79.31482057999999
+        },
+        "trail_3h_close": {
+          "n": 0,
+          "sum": 0
+        },
+        "stop_loss": {
+          "n": 90,
+          "sum": -895.4022226600001
+        },
+        "giveback_median_trail_winners": 0.5056840264282941,
+        "n_trail_winners_giveback": 69,
+        "vs_v31_identity": {
+          "n_identity_diff": 69,
+          "n_identical": 178,
+          "open_only_base": 61,
+          "open_only_other": 8,
+          "n_open_same_close_diff": 0
+        }
+      },
+      "v31": {
+        "n": 239,
+        "profit_total_abs": 1048.08760627,
+        "profit_factor": 1.6223785409686713,
+        "max_drawdown_account": 0.07494337571118821,
+        "ratio": 13.985060004623358,
+        "underwater": 0.09933254050002675,
+        "rejected_signals": 0,
+        "liquidation": 0
+      }
+    },
+    "check1": {
+      "zip": "backtest-result-2026-09-02_15-54-21.zip",
+      "tseg": {
+        "n": 39,
+        "profit_total_abs": 517.4771097700002,
+        "profit_factor": 3.1839121410759947,
+        "max_drawdown_account": 0.0504916127658055,
+        "ratio": 10.248773636330585,
+        "underwater": 0.0504916127658055,
+        "rejected_signals": 0,
+        "liquidation": 0,
+        "n_confirm": 8,
+        "n_three_fills": 0,
+        "three_fill_profit_sum": 0,
+        "three_fill_worst": null,
+        "max_confirm_stake": 840.02563333,
+        "worst_trade": -38.72448306,
+        "top5_profit_sum": 620.99413978,
+        "confirm_loss": {
+          "n": 1,
+          "sum": -38.72448306,
+          "worst": -38.72448306
+        },
+        "trailing_stop_loss": {
+          "n": 16,
+          "sum": 714.5197284700001
+        },
+        "exit_signal": {
+          "n": 2,
+          "sum": -5.8252631699999995
+        },
+        "trail_3h_close": {
+          "n": 0,
+          "sum": 0
+        },
+        "stop_loss": {
+          "n": 21,
+          "sum": -191.21735553000005
+        },
+        "giveback_median_trail_winners": 0.5533046590274809,
+        "n_trail_winners_giveback": 15,
+        "vs_v31_identity": {
+          "n_identity_diff": 12,
+          "n_identical": 37,
+          "open_only_base": 10,
+          "open_only_other": 2,
+          "n_open_same_close_diff": 0
+        }
+      },
+      "v31": {
+        "n": 47,
+        "profit_total_abs": 467.10687397000004,
+        "profit_factor": 2.3772544058274905,
+        "max_drawdown_account": 0.06678879778974056,
+        "ratio": 6.993790716828151,
+        "underwater": 0.06678879778974056,
+        "rejected_signals": 0,
+        "liquidation": 0
+      }
+    },
+    "check2": {
+      "zip": "backtest-result-2026-09-02_15-54-34.zip",
+      "tseg": {
+        "n": 45,
+        "profit_total_abs": 511.6506573500001,
+        "profit_factor": 2.5413679079362574,
+        "max_drawdown_account": 0.11477157081824393,
+        "ratio": 4.457991240359227,
+        "underwater": 0.11477157081824393,
+        "rejected_signals": 0,
+        "liquidation": 0,
+        "n_confirm": 9,
+        "n_three_fills": 0,
+        "three_fill_profit_sum": 0,
+        "three_fill_worst": null,
+        "max_confirm_stake": 1000.37186667,
+        "worst_trade": -34.63994997,
+        "top5_profit_sum": 698.5338751000002,
+        "confirm_loss": {
+          "n": 2,
+          "sum": -49.33225061,
+          "worst": -34.63994997
+        },
+        "trailing_stop_loss": {
+          "n": 13,
+          "sum": 808.95654245
+        },
+        "exit_signal": {
+          "n": 4,
+          "sum": -25.91630673
+        },
+        "trail_3h_close": {
+          "n": 0,
+          "sum": 0
+        },
+        "stop_loss": {
+          "n": 28,
+          "sum": -271.38957837
+        },
+        "giveback_median_trail_winners": 0.45366299761417617,
+        "n_trail_winners_giveback": 12,
+        "vs_v31_identity": {
+          "n_identity_diff": 11,
+          "n_identical": 44,
+          "open_only_base": 10,
+          "open_only_other": 1,
+          "n_open_same_close_diff": 0
+        }
+      },
+      "v31": {
+        "n": 54,
+        "profit_total_abs": 492.13016393,
+        "profit_factor": 2.271369836907828,
+        "max_drawdown_account": 0.12259395386694089,
+        "ratio": 4.014310236409705,
+        "underwater": 0.12259395386694089,
+        "rejected_signals": 0,
+        "liquidation": 0
+      }
+    },
+    "check2_5m": {
+      "zip": "backtest-result-2026-09-02_15-56-22.zip",
+      "tseg": {
+        "n": 45,
+        "profit_total_abs": 489.68828783000004,
+        "profit_factor": 2.4752053982744973,
+        "max_drawdown_account": 0.11676196066866766,
+        "ratio": 4.193902577737416,
+        "underwater": 0.11676196066866766,
+        "rejected_signals": 0,
+        "liquidation": 0,
+        "n_confirm": 9,
+        "n_three_fills": 0,
+        "three_fill_profit_sum": 0,
+        "three_fill_worst": null,
+        "max_confirm_stake": 1000.37186667,
+        "worst_trade": -34.63994997,
+        "top5_profit_sum": 676.5715055800001,
+        "confirm_loss": {
+          "n": 2,
+          "sum": -49.33225061,
+          "worst": -34.63994997
+        },
+        "trailing_stop_loss": {
+          "n": 13,
+          "sum": 786.99417293
+        },
+        "exit_signal": {
+          "n": 4,
+          "sum": -25.91630673
+        },
+        "trail_3h_close": {
+          "n": 0,
+          "sum": 0
+        },
+        "stop_loss": {
+          "n": 28,
+          "sum": -271.38957837
+        },
+        "giveback_median_trail_winners": 0.4841563519837603,
+        "n_trail_winners_giveback": 12,
+        "vs_v31_identity": {
+          "n_identity_diff": 11,
+          "n_identical": 44,
+          "open_only_base": 10,
+          "open_only_other": 1,
+          "n_open_same_close_diff": 0
+        }
+      },
+      "v31": {
+        "n": 54,
+        "profit_total_abs": 470.16779440999994,
+        "profit_factor": 2.2146322170639783,
+        "max_drawdown_account": 0.12472490540301005,
+        "ratio": 3.769638412559206,
+        "underwater": 0.12472490540301005,
+        "rejected_signals": 0,
+        "liquidation": 0
+      }
+    }
+  }
+}

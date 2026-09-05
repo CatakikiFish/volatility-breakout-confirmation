@@ -1,0 +1,1044 @@
+{
+  "windows": {
+    "train": {
+      "zip": "backtest-result-2026-09-02_15-38-46.zip",
+      "strategies": {
+        "confirm_v3_1_BTC": {
+          "n": 239,
+          "profit_total_abs": 1048.08760627,
+          "profit_factor": 1.6223785409686713,
+          "max_drawdown_account": 0.07494337571118821,
+          "ratio": 13.985060004623358,
+          "underwater": 0.09933254050002675,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 47,
+          "n_three_fills": 0,
+          "three_fill_profit_sum": 0,
+          "three_fill_worst": null,
+          "max_confirm_stake": 850.76933333,
+          "worst_trade": -46.73493767,
+          "top5_profit_sum": 883.68627901,
+          "confirm_loss": {
+            "n": 14,
+            "sum": -399.32685142,
+            "worst": -46.73493767
+          },
+          "trailing_stop_loss": {
+            "n": 95,
+            "sum": 2378.46695726
+          },
+          "exit_signal": {
+            "n": 21,
+            "sum": -119.52201412
+          },
+          "trail_3h_close": {
+            "n": 0,
+            "sum": 0
+          },
+          "stop_loss": {
+            "n": 122,
+            "sum": -1212.2596055
+          },
+          "giveback_median_trail_winners": 0.5208141179364203,
+          "n_trail_winners_giveback": 83
+        },
+        "confirm_v3_1_BTC_trailmin": {
+          "n": 245,
+          "profit_total_abs": 723.3653808500001,
+          "profit_factor": 1.4146449839954331,
+          "max_drawdown_account": 0.09227515875670055,
+          "ratio": 7.839221200987346,
+          "underwater": 0.09824334732813558,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 46,
+          "n_three_fills": 0,
+          "three_fill_profit_sum": 0,
+          "three_fill_worst": null,
+          "max_confirm_stake": 850.76933333,
+          "worst_trade": -46.73493767,
+          "top5_profit_sum": 578.12426053,
+          "confirm_loss": {
+            "n": 14,
+            "sum": -399.32685142,
+            "worst": -46.73493767
+          },
+          "trailing_stop_loss": {
+            "n": 95,
+            "sum": 2114.28278454
+          },
+          "exit_signal": {
+            "n": 21,
+            "sum": -119.52201412
+          },
+          "trail_3h_close": {
+            "n": 0,
+            "sum": 0
+          },
+          "stop_loss": {
+            "n": 128,
+            "sum": -1272.7976582000001
+          },
+          "giveback_median_trail_winners": 0.48217096092450135,
+          "n_trail_winners_giveback": 83,
+          "vs_v31_identity": {
+            "n_identity_diff": 38,
+            "n_identical": 223,
+            "open_only_base": 0,
+            "open_only_other": 6,
+            "n_open_same_close_diff": 16
+          }
+        },
+        "confirm_v3_1_BTC_trail3h": {
+          "n": 227,
+          "profit_total_abs": 1595.1632522799998,
+          "profit_factor": 1.9726423351796203,
+          "max_drawdown_account": 0.06599456315526898,
+          "ratio": 24.171131317696172,
+          "underwater": 0.08803146100010482,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 57,
+          "n_three_fills": 0,
+          "three_fill_profit_sum": 0,
+          "three_fill_worst": null,
+          "max_confirm_stake": 1069.03416667,
+          "worst_trade": -46.73493767,
+          "top5_profit_sum": 1399.58894779,
+          "confirm_loss": {
+            "n": 15,
+            "sum": -406.63237457,
+            "worst": -46.73493767
+          },
+          "trailing_stop_loss": {
+            "n": 50,
+            "sum": 134.43398127
+          },
+          "exit_signal": {
+            "n": 25,
+            "sum": 824.38044191
+          },
+          "trail_3h_close": {
+            "n": 32,
+            "sum": 1813.41464171
+          },
+          "stop_loss": {
+            "n": 119,
+            "sum": -1178.46808124
+          },
+          "giveback_median_trail_winners": 0.7595357373146158,
+          "n_trail_winners_giveback": 39,
+          "vs_v31_identity": {
+            "n_identity_diff": 132,
+            "n_identical": 167,
+            "open_only_base": 20,
+            "open_only_other": 8,
+            "n_open_same_close_diff": 52
+          }
+        },
+        "confirm_v3_1_BTC_revscout": {
+          "n": 239,
+          "profit_total_abs": 1048.08760627,
+          "profit_factor": 1.6223785409686713,
+          "max_drawdown_account": 0.07494337571118821,
+          "ratio": 13.985060004623358,
+          "underwater": 0.09933254050002675,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 47,
+          "n_three_fills": 0,
+          "three_fill_profit_sum": 0,
+          "three_fill_worst": null,
+          "max_confirm_stake": 850.76933333,
+          "worst_trade": -46.73493767,
+          "top5_profit_sum": 883.68627901,
+          "confirm_loss": {
+            "n": 14,
+            "sum": -399.32685142,
+            "worst": -46.73493767
+          },
+          "trailing_stop_loss": {
+            "n": 95,
+            "sum": 2378.46695726
+          },
+          "exit_signal": {
+            "n": 21,
+            "sum": -119.52201412
+          },
+          "trail_3h_close": {
+            "n": 0,
+            "sum": 0
+          },
+          "stop_loss": {
+            "n": 122,
+            "sum": -1212.2596055
+          },
+          "giveback_median_trail_winners": 0.5208141179364203,
+          "n_trail_winners_giveback": 83,
+          "vs_v31_identity": {
+            "n_identity_diff": 0,
+            "n_identical": 239,
+            "open_only_base": 0,
+            "open_only_other": 0,
+            "n_open_same_close_diff": 0
+          },
+          "vanished_exit_signal_confirms": {
+            "n": 0,
+            "profit_sum_in_v31": 0,
+            "rows": []
+          }
+        },
+        "confirm_v3_1_BTC_unit3": {
+          "n": 239,
+          "profit_total_abs": 1053.50202177,
+          "profit_factor": 1.6255937454982627,
+          "max_drawdown_account": 0.07876687719843366,
+          "ratio": 13.374937019731814,
+          "underwater": 0.09933254050002675,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 47,
+          "n_three_fills": 9,
+          "three_fill_profit_sum": 1001.70655312,
+          "three_fill_worst": 23.38652553,
+          "max_confirm_stake": 850.76933333,
+          "worst_trade": -46.73493767,
+          "top5_profit_sum": 907.878388,
+          "confirm_loss": {
+            "n": 14,
+            "sum": -399.32685142,
+            "worst": -46.73493767
+          },
+          "trailing_stop_loss": {
+            "n": 95,
+            "sum": 2383.88137276
+          },
+          "exit_signal": {
+            "n": 21,
+            "sum": -119.52201412
+          },
+          "trail_3h_close": {
+            "n": 0,
+            "sum": 0
+          },
+          "stop_loss": {
+            "n": 122,
+            "sum": -1212.2596055
+          },
+          "giveback_median_trail_winners": 0.5253163074039361,
+          "n_trail_winners_giveback": 83,
+          "vs_v31_identity": {
+            "n_identity_diff": 0,
+            "n_identical": 239,
+            "open_only_base": 0,
+            "open_only_other": 0,
+            "n_open_same_close_diff": 0
+          }
+        },
+        "confirm_v3_1_BTC_tseg": {
+          "n": 186,
+          "profit_total_abs": 1195.88519871,
+          "profit_factor": 1.9604056129895315,
+          "max_drawdown_account": 0.0891797605286785,
+          "ratio": 13.409827427439954,
+          "underwater": 0.0891797605286785,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 41,
+          "n_three_fills": 0,
+          "three_fill_profit_sum": 0,
+          "three_fill_worst": null,
+          "max_confirm_stake": 850.76933333,
+          "worst_trade": -46.73493767,
+          "top5_profit_sum": 806.60192639,
+          "confirm_loss": {
+            "n": 10,
+            "sum": -287.48798229,
+            "worst": -46.73493767
+          },
+          "trailing_stop_loss": {
+            "n": 79,
+            "sum": 2169.19997332
+          },
+          "exit_signal": {
+            "n": 16,
+            "sum": -79.31482057999999
+          },
+          "trail_3h_close": {
+            "n": 0,
+            "sum": 0
+          },
+          "stop_loss": {
+            "n": 90,
+            "sum": -895.4022226600001
+          },
+          "giveback_median_trail_winners": 0.5056840264282941,
+          "n_trail_winners_giveback": 69,
+          "vs_v31_identity": {
+            "n_identity_diff": 69,
+            "n_identical": 178,
+            "open_only_base": 61,
+            "open_only_other": 8,
+            "n_open_same_close_diff": 0
+          }
+        }
+      }
+    },
+    "check1": {
+      "zip": "backtest-result-2026-09-02_15-39-10.zip",
+      "strategies": {
+        "confirm_v3_1_BTC": {
+          "n": 47,
+          "profit_total_abs": 467.10687397000004,
+          "profit_factor": 2.3772544058274905,
+          "max_drawdown_account": 0.06678879778974056,
+          "ratio": 6.993790716828151,
+          "underwater": 0.06678879778974056,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 11,
+          "n_three_fills": 0,
+          "three_fill_profit_sum": 0,
+          "three_fill_worst": null,
+          "max_confirm_stake": 865.603,
+          "worst_trade": -38.72448306,
+          "top5_profit_sum": 620.9941397800001,
+          "confirm_loss": {
+            "n": 3,
+            "sum": -104.90799057999999,
+            "worst": -38.72448306
+          },
+          "trailing_stop_loss": {
+            "n": 20,
+            "sum": 700.17440203
+          },
+          "exit_signal": {
+            "n": 2,
+            "sum": -5.8252631699999995
+          },
+          "trail_3h_close": {
+            "n": 0,
+            "sum": 0
+          },
+          "stop_loss": {
+            "n": 25,
+            "sum": -227.24226489
+          },
+          "giveback_median_trail_winners": 0.5533046590274809,
+          "n_trail_winners_giveback": 17
+        },
+        "confirm_v3_1_BTC_trailmin": {
+          "n": 49,
+          "profit_total_abs": 340.08774503,
+          "profit_factor": 1.977464018609971,
+          "max_drawdown_account": 0.07943899117653731,
+          "ratio": 4.281118629442597,
+          "underwater": 0.07943899117653731,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 12,
+          "n_three_fills": 0,
+          "three_fill_profit_sum": 0,
+          "three_fill_worst": null,
+          "max_confirm_stake": 865.603,
+          "worst_trade": -38.72448306,
+          "top5_profit_sum": 460.7714763,
+          "confirm_loss": {
+            "n": 3,
+            "sum": -104.90799057999999,
+            "worst": -38.72448306
+          },
+          "trailing_stop_loss": {
+            "n": 21,
+            "sum": 581.9259143300001
+          },
+          "exit_signal": {
+            "n": 2,
+            "sum": -5.8252631699999995
+          },
+          "trail_3h_close": {
+            "n": 0,
+            "sum": 0
+          },
+          "stop_loss": {
+            "n": 26,
+            "sum": -236.01290613
+          },
+          "giveback_median_trail_winners": 0.5202027377039671,
+          "n_trail_winners_giveback": 18,
+          "vs_v31_identity": {
+            "n_identity_diff": 18,
+            "n_identical": 39,
+            "open_only_base": 0,
+            "open_only_other": 2,
+            "n_open_same_close_diff": 8
+          }
+        },
+        "confirm_v3_1_BTC_trail3h": {
+          "n": 46,
+          "profit_total_abs": 522.2549502800001,
+          "profit_factor": 2.5723399313619604,
+          "max_drawdown_account": 0.06317753093149443,
+          "ratio": 8.266466615263884,
+          "underwater": 0.06317753093149443,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 12,
+          "n_three_fills": 0,
+          "three_fill_profit_sum": 0,
+          "three_fill_worst": null,
+          "max_confirm_stake": 865.603,
+          "worst_trade": -38.72448306,
+          "top5_profit_sum": 707.6691737900001,
+          "confirm_loss": {
+            "n": 3,
+            "sum": -104.90799057999999,
+            "worst": -38.72448306
+          },
+          "trailing_stop_loss": {
+            "n": 10,
+            "sum": -34.621591769999995
+          },
+          "exit_signal": {
+            "n": 2,
+            "sum": 156.08940234000002
+          },
+          "trail_3h_close": {
+            "n": 9,
+            "sum": 628.0305750800001
+          },
+          "stop_loss": {
+            "n": 25,
+            "sum": -227.24343537000001
+          },
+          "giveback_median_trail_winners": 0.8029838520945475,
+          "n_trail_winners_giveback": 7,
+          "vs_v31_identity": {
+            "n_identity_diff": 29,
+            "n_identical": 32,
+            "open_only_base": 2,
+            "open_only_other": 1,
+            "n_open_same_close_diff": 13
+          }
+        },
+        "confirm_v3_1_BTC_revscout": {
+          "n": 47,
+          "profit_total_abs": 467.10687397000004,
+          "profit_factor": 2.3772544058274905,
+          "max_drawdown_account": 0.06678879778974056,
+          "ratio": 6.993790716828151,
+          "underwater": 0.06678879778974056,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 11,
+          "n_three_fills": 0,
+          "three_fill_profit_sum": 0,
+          "three_fill_worst": null,
+          "max_confirm_stake": 865.603,
+          "worst_trade": -38.72448306,
+          "top5_profit_sum": 620.9941397800001,
+          "confirm_loss": {
+            "n": 3,
+            "sum": -104.90799057999999,
+            "worst": -38.72448306
+          },
+          "trailing_stop_loss": {
+            "n": 20,
+            "sum": 700.17440203
+          },
+          "exit_signal": {
+            "n": 2,
+            "sum": -5.8252631699999995
+          },
+          "trail_3h_close": {
+            "n": 0,
+            "sum": 0
+          },
+          "stop_loss": {
+            "n": 25,
+            "sum": -227.24226489
+          },
+          "giveback_median_trail_winners": 0.5533046590274809,
+          "n_trail_winners_giveback": 17,
+          "vs_v31_identity": {
+            "n_identity_diff": 0,
+            "n_identical": 47,
+            "open_only_base": 0,
+            "open_only_other": 0,
+            "n_open_same_close_diff": 0
+          },
+          "vanished_exit_signal_confirms": {
+            "n": 0,
+            "profit_sum_in_v31": 0,
+            "rows": []
+          }
+        },
+        "confirm_v3_1_BTC_unit3": {
+          "n": 47,
+          "profit_total_abs": 473.21841107,
+          "profit_factor": 2.395274139354028,
+          "max_drawdown_account": 0.06725664649940158,
+          "ratio": 7.036009609462322,
+          "underwater": 0.06725664649940158,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 11,
+          "n_three_fills": 3,
+          "three_fill_profit_sum": 411.5881104,
+          "three_fill_worst": 29.69247349,
+          "max_confirm_stake": 865.603,
+          "worst_trade": -38.72448306,
+          "top5_profit_sum": 636.07573441,
+          "confirm_loss": {
+            "n": 3,
+            "sum": -104.90799057999999,
+            "worst": -38.72448306
+          },
+          "trailing_stop_loss": {
+            "n": 20,
+            "sum": 706.28593913
+          },
+          "exit_signal": {
+            "n": 2,
+            "sum": -5.8252631699999995
+          },
+          "trail_3h_close": {
+            "n": 0,
+            "sum": 0
+          },
+          "stop_loss": {
+            "n": 25,
+            "sum": -227.24226489
+          },
+          "giveback_median_trail_winners": 0.5533046590274809,
+          "n_trail_winners_giveback": 17,
+          "vs_v31_identity": {
+            "n_identity_diff": 0,
+            "n_identical": 47,
+            "open_only_base": 0,
+            "open_only_other": 0,
+            "n_open_same_close_diff": 0
+          }
+        },
+        "confirm_v3_1_BTC_tseg": {
+          "n": 39,
+          "profit_total_abs": 517.4771097700002,
+          "profit_factor": 3.1839121410759947,
+          "max_drawdown_account": 0.0504916127658055,
+          "ratio": 10.248773636330585,
+          "underwater": 0.0504916127658055,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 8,
+          "n_three_fills": 0,
+          "three_fill_profit_sum": 0,
+          "three_fill_worst": null,
+          "max_confirm_stake": 840.02563333,
+          "worst_trade": -38.72448306,
+          "top5_profit_sum": 620.99413978,
+          "confirm_loss": {
+            "n": 1,
+            "sum": -38.72448306,
+            "worst": -38.72448306
+          },
+          "trailing_stop_loss": {
+            "n": 16,
+            "sum": 714.5197284700001
+          },
+          "exit_signal": {
+            "n": 2,
+            "sum": -5.8252631699999995
+          },
+          "trail_3h_close": {
+            "n": 0,
+            "sum": 0
+          },
+          "stop_loss": {
+            "n": 21,
+            "sum": -191.21735553000005
+          },
+          "giveback_median_trail_winners": 0.5533046590274809,
+          "n_trail_winners_giveback": 15,
+          "vs_v31_identity": {
+            "n_identity_diff": 12,
+            "n_identical": 37,
+            "open_only_base": 10,
+            "open_only_other": 2,
+            "n_open_same_close_diff": 0
+          }
+        }
+      }
+    },
+    "check2": {
+      "zip": "backtest-result-2026-09-02_15-39-30.zip",
+      "strategies": {
+        "confirm_v3_1_BTC": {
+          "n": 54,
+          "profit_total_abs": 492.13016393,
+          "profit_factor": 2.271369836907828,
+          "max_drawdown_account": 0.12259395386694089,
+          "ratio": 4.014310236409705,
+          "underwater": 0.12259395386694089,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 11,
+          "n_three_fills": 0,
+          "three_fill_profit_sum": 0,
+          "three_fill_worst": null,
+          "max_confirm_stake": 1000.37186667,
+          "worst_trade": -34.63994997,
+          "top5_profit_sum": 698.5338751,
+          "confirm_loss": {
+            "n": 2,
+            "sum": -49.33225061,
+            "worst": -34.63994997
+          },
+          "trailing_stop_loss": {
+            "n": 15,
+            "sum": 844.57676395
+          },
+          "exit_signal": {
+            "n": 4,
+            "sum": -25.91630673
+          },
+          "trail_3h_close": {
+            "n": 0,
+            "sum": 0
+          },
+          "stop_loss": {
+            "n": 34,
+            "sum": -325.61095452
+          },
+          "giveback_median_trail_winners": 0.45625490052321116,
+          "n_trail_winners_giveback": 14
+        },
+        "confirm_v3_1_BTC_trailmin": {
+          "n": 55,
+          "profit_total_abs": 519.7527823700002,
+          "profit_factor": 2.32418158127488,
+          "max_drawdown_account": 0.13217326448947242,
+          "ratio": 3.932359425164977,
+          "underwater": 0.13217326448947242,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 10,
+          "n_three_fills": 0,
+          "three_fill_profit_sum": 0,
+          "three_fill_worst": null,
+          "max_confirm_stake": 1000.37186667,
+          "worst_trade": -34.63994997,
+          "top5_profit_sum": 756.48922231,
+          "confirm_loss": {
+            "n": 2,
+            "sum": -49.33225061,
+            "worst": -34.63994997
+          },
+          "trailing_stop_loss": {
+            "n": 15,
+            "sum": 877.62152586
+          },
+          "exit_signal": {
+            "n": 5,
+            "sum": -31.3384502
+          },
+          "trail_3h_close": {
+            "n": 0,
+            "sum": 0
+          },
+          "stop_loss": {
+            "n": 34,
+            "sum": -325.61095452
+          },
+          "giveback_median_trail_winners": 0.43949080468357116,
+          "n_trail_winners_giveback": 14,
+          "vs_v31_identity": {
+            "n_identity_diff": 13,
+            "n_identical": 48,
+            "open_only_base": 0,
+            "open_only_other": 1,
+            "n_open_same_close_diff": 6
+          }
+        },
+        "confirm_v3_1_BTC_trail3h": {
+          "n": 54,
+          "profit_total_abs": 218.35129918,
+          "profit_factor": 1.564089088565958,
+          "max_drawdown_account": 0.13406491119595998,
+          "ratio": 1.628698346436379,
+          "underwater": 0.13406491119595998,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 11,
+          "n_three_fills": 0,
+          "three_fill_profit_sum": 0,
+          "three_fill_worst": null,
+          "max_confirm_stake": 919.05023333,
+          "worst_trade": -34.63994997,
+          "top5_profit_sum": 465.72223869,
+          "confirm_loss": {
+            "n": 2,
+            "sum": -49.33225061,
+            "worst": -34.63994997
+          },
+          "trailing_stop_loss": {
+            "n": 6,
+            "sum": 40.22550483999999
+          },
+          "exit_signal": {
+            "n": 5,
+            "sum": 7.564130129999998
+          },
+          "trail_3h_close": {
+            "n": 8,
+            "sum": 497.0919575
+          },
+          "stop_loss": {
+            "n": 34,
+            "sum": -325.61095452
+          },
+          "giveback_median_trail_winners": 0.7356690140845055,
+          "n_trail_winners_giveback": 5,
+          "vs_v31_identity": {
+            "n_identity_diff": 18,
+            "n_identical": 45,
+            "open_only_base": 0,
+            "open_only_other": 0,
+            "n_open_same_close_diff": 9
+          }
+        },
+        "confirm_v3_1_BTC_revscout": {
+          "n": 54,
+          "profit_total_abs": 492.13016393,
+          "profit_factor": 2.271369836907828,
+          "max_drawdown_account": 0.12259395386694089,
+          "ratio": 4.014310236409705,
+          "underwater": 0.12259395386694089,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 11,
+          "n_three_fills": 0,
+          "three_fill_profit_sum": 0,
+          "three_fill_worst": null,
+          "max_confirm_stake": 1000.37186667,
+          "worst_trade": -34.63994997,
+          "top5_profit_sum": 698.5338751,
+          "confirm_loss": {
+            "n": 2,
+            "sum": -49.33225061,
+            "worst": -34.63994997
+          },
+          "trailing_stop_loss": {
+            "n": 15,
+            "sum": 844.57676395
+          },
+          "exit_signal": {
+            "n": 4,
+            "sum": -25.91630673
+          },
+          "trail_3h_close": {
+            "n": 0,
+            "sum": 0
+          },
+          "stop_loss": {
+            "n": 34,
+            "sum": -325.61095452
+          },
+          "giveback_median_trail_winners": 0.45625490052321116,
+          "n_trail_winners_giveback": 14,
+          "vs_v31_identity": {
+            "n_identity_diff": 0,
+            "n_identical": 54,
+            "open_only_base": 0,
+            "open_only_other": 0,
+            "n_open_same_close_diff": 0
+          },
+          "vanished_exit_signal_confirms": {
+            "n": 0,
+            "profit_sum_in_v31": 0,
+            "rows": []
+          }
+        },
+        "confirm_v3_1_BTC_unit3": {
+          "n": 54,
+          "profit_total_abs": 518.71052382,
+          "profit_factor": 2.2994923722872667,
+          "max_drawdown_account": 0.13198934954613373,
+          "ratio": 3.929942268854785,
+          "underwater": 0.13198934954613373,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 11,
+          "n_three_fills": 3,
+          "three_fill_profit_sum": 304.68197253999995,
+          "three_fill_worst": -26.76971258,
+          "max_confirm_stake": 1000.37186667,
+          "worst_trade": -34.63994997,
+          "top5_profit_sum": 742.7621731199999,
+          "confirm_loss": {
+            "n": 2,
+            "sum": -61.40966255000001,
+            "worst": -34.63994997
+          },
+          "trailing_stop_loss": {
+            "n": 15,
+            "sum": 883.23453578
+          },
+          "exit_signal": {
+            "n": 4,
+            "sum": -37.99371867
+          },
+          "trail_3h_close": {
+            "n": 0,
+            "sum": 0
+          },
+          "stop_loss": {
+            "n": 34,
+            "sum": -325.61095452
+          },
+          "giveback_median_trail_winners": 0.48073960902647317,
+          "n_trail_winners_giveback": 14,
+          "vs_v31_identity": {
+            "n_identity_diff": 0,
+            "n_identical": 54,
+            "open_only_base": 0,
+            "open_only_other": 0,
+            "n_open_same_close_diff": 0
+          }
+        },
+        "confirm_v3_1_BTC_tseg": {
+          "n": 45,
+          "profit_total_abs": 511.6506573500001,
+          "profit_factor": 2.5413679079362574,
+          "max_drawdown_account": 0.11477157081824393,
+          "ratio": 4.457991240359227,
+          "underwater": 0.11477157081824393,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 9,
+          "n_three_fills": 0,
+          "three_fill_profit_sum": 0,
+          "three_fill_worst": null,
+          "max_confirm_stake": 1000.37186667,
+          "worst_trade": -34.63994997,
+          "top5_profit_sum": 698.5338751000002,
+          "confirm_loss": {
+            "n": 2,
+            "sum": -49.33225061,
+            "worst": -34.63994997
+          },
+          "trailing_stop_loss": {
+            "n": 13,
+            "sum": 808.95654245
+          },
+          "exit_signal": {
+            "n": 4,
+            "sum": -25.91630673
+          },
+          "trail_3h_close": {
+            "n": 0,
+            "sum": 0
+          },
+          "stop_loss": {
+            "n": 28,
+            "sum": -271.38957837
+          },
+          "giveback_median_trail_winners": 0.45366299761417617,
+          "n_trail_winners_giveback": 12,
+          "vs_v31_identity": {
+            "n_identity_diff": 11,
+            "n_identical": 44,
+            "open_only_base": 10,
+            "open_only_other": 1,
+            "n_open_same_close_diff": 0
+          }
+        }
+      }
+    },
+    "check2_5m": {
+      "zip": "backtest-result-2026-09-02_15-42-38.zip",
+      "strategies": {
+        "confirm_v3_1_BTC": {
+          "n": 54,
+          "profit_total_abs": 470.16779440999994,
+          "profit_factor": 2.2146322170639783,
+          "max_drawdown_account": 0.12472490540301005,
+          "ratio": 3.769638412559206,
+          "underwater": 0.12472490540301005,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 11,
+          "n_three_fills": 0,
+          "three_fill_profit_sum": 0,
+          "three_fill_worst": null,
+          "max_confirm_stake": 1000.37186667,
+          "worst_trade": -34.63994997,
+          "top5_profit_sum": 676.5715055800001,
+          "confirm_loss": {
+            "n": 2,
+            "sum": -49.33225061,
+            "worst": -34.63994997
+          },
+          "trailing_stop_loss": {
+            "n": 15,
+            "sum": 822.6143944300002
+          },
+          "exit_signal": {
+            "n": 4,
+            "sum": -25.91630673
+          },
+          "trail_3h_close": {
+            "n": 0,
+            "sum": 0
+          },
+          "stop_loss": {
+            "n": 34,
+            "sum": -325.61095452
+          },
+          "giveback_median_trail_winners": 0.4841563519837603,
+          "n_trail_winners_giveback": 14
+        },
+        "confirm_v3_1_BTC_revscout": {
+          "n": 54,
+          "profit_total_abs": 470.16779440999994,
+          "profit_factor": 2.2146322170639783,
+          "max_drawdown_account": 0.12472490540301005,
+          "ratio": 3.769638412559206,
+          "underwater": 0.12472490540301005,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 11,
+          "n_three_fills": 0,
+          "three_fill_profit_sum": 0,
+          "three_fill_worst": null,
+          "max_confirm_stake": 1000.37186667,
+          "worst_trade": -34.63994997,
+          "top5_profit_sum": 676.57150558,
+          "confirm_loss": {
+            "n": 2,
+            "sum": -49.33225061,
+            "worst": -34.63994997
+          },
+          "trailing_stop_loss": {
+            "n": 15,
+            "sum": 822.61439443
+          },
+          "exit_signal": {
+            "n": 4,
+            "sum": -25.91630673
+          },
+          "trail_3h_close": {
+            "n": 0,
+            "sum": 0
+          },
+          "stop_loss": {
+            "n": 34,
+            "sum": -325.61095452
+          },
+          "giveback_median_trail_winners": 0.4841563519837603,
+          "n_trail_winners_giveback": 14,
+          "vs_v31_identity": {
+            "n_identity_diff": 0,
+            "n_identical": 54,
+            "open_only_base": 0,
+            "open_only_other": 0,
+            "n_open_same_close_diff": 0
+          },
+          "vanished_exit_signal_confirms": {
+            "n": 0,
+            "profit_sum_in_v31": 0,
+            "rows": []
+          }
+        },
+        "confirm_v3_1_BTC_tseg": {
+          "n": 45,
+          "profit_total_abs": 489.68828783000004,
+          "profit_factor": 2.4752053982744973,
+          "max_drawdown_account": 0.11676196066866766,
+          "ratio": 4.193902577737416,
+          "underwater": 0.11676196066866766,
+          "rejected_signals": 0,
+          "liquidation": 0,
+          "n_confirm": 9,
+          "n_three_fills": 0,
+          "three_fill_profit_sum": 0,
+          "three_fill_worst": null,
+          "max_confirm_stake": 1000.37186667,
+          "worst_trade": -34.63994997,
+          "top5_profit_sum": 676.5715055800001,
+          "confirm_loss": {
+            "n": 2,
+            "sum": -49.33225061,
+            "worst": -34.63994997
+          },
+          "trailing_stop_loss": {
+            "n": 13,
+            "sum": 786.99417293
+          },
+          "exit_signal": {
+            "n": 4,
+            "sum": -25.91630673
+          },
+          "trail_3h_close": {
+            "n": 0,
+            "sum": 0
+          },
+          "stop_loss": {
+            "n": 28,
+            "sum": -271.38957837
+          },
+          "giveback_median_trail_winners": 0.4841563519837603,
+          "n_trail_winners_giveback": 12,
+          "vs_v31_identity": {
+            "n_identity_diff": 11,
+            "n_identical": 44,
+            "open_only_base": 10,
+            "open_only_other": 1,
+            "n_open_same_close_diff": 0
+          }
+        }
+      }
+    }
+  },
+  "verdicts": {
+    "confirm_v3_1_BTC_trailmin": "否决",
+    "confirm_v3_1_BTC_trail3h": "不确定",
+    "confirm_v3_1_BTC_revscout": "晋级候选",
+    "confirm_v3_1_BTC_unit3": "不确定",
+    "confirm_v3_1_BTC_tseg": "不确定"
+  },
+  "v31_giveback_median": {
+    "train": 0.5208141179364203,
+    "check1": 0.5533046590274809,
+    "check2": 0.45625490052321116
+  },
+  "v31_5m_ratio": 3.769638412559206,
+  "tseg_zips": {
+    "train": "backtest-result-2026-09-02_15-54-06.zip",
+    "check1": "backtest-result-2026-09-02_15-54-21.zip",
+    "check2": "backtest-result-2026-09-02_15-54-34.zip",
+    "check2_5m": "backtest-result-2026-09-02_15-56-22.zip"
+  },
+  "tseg_excluded_selfcheck": {
+    "train": {
+      "n": 60,
+      "profit_abs": -109.8656,
+      "bucket9": {
+        "n": 24,
+        "profit_abs": -104.5122
+      },
+      "bucket21": {
+        "n": 36,
+        "profit_abs": -5.3533
+      },
+      "leaked": 0,
+      "match_1_5a": true
+    }
+  },
+  "exit_zips": {
+    "train": "backtest-result-2026-09-02_15-38-46.zip",
+    "check1": "backtest-result-2026-09-02_15-39-10.zip",
+    "check2": "backtest-result-2026-09-02_15-39-30.zip",
+    "check2_5m": "backtest-result-2026-09-02_15-42-38.zip"
+  }
+}

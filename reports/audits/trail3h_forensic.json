@@ -1,0 +1,207 @@
+{
+  "check2": {
+    "zip": "backtest-result-2026-09-02_15-39-30.zip",
+    "n_v31": 54,
+    "n_trail3h": 54,
+    "n_paired": 54,
+    "n_unmatched_v31": 0,
+    "n_unmatched_trail3h": 0,
+    "v31_profit_sum": 492.13016393,
+    "trail3h_profit_sum": 218.35129917999998,
+    "diff_sum_paired": -273.77886475,
+    "diff_sum_totals": -273.77886475,
+    "worst3_most_negative_diff": [
+      {
+        "open_date": "2026-08-17 03:00:00+00:00",
+        "is_short": false,
+        "v31_profit": 139.63761619,
+        "trail3h_profit": 26.87655083,
+        "diff_trail3h_minus_v31": -112.76106535999999,
+        "v31_exit_reason": "trailing_stop_loss",
+        "v31_close": "2026-08-19 15:00:00+00:00",
+        "trail3h_exit_reason": "trail_3h_close",
+        "trail3h_close": "2026-08-19 15:00:00+00:00"
+      },
+      {
+        "open_date": "2025-10-10 18:00:00+00:00",
+        "is_short": true,
+        "v31_profit": 93.59348034,
+        "trail3h_profit": 8.42761146,
+        "diff_trail3h_minus_v31": -85.16586888,
+        "v31_exit_reason": "trailing_stop_loss",
+        "v31_close": "2025-10-10 21:00:00+00:00",
+        "trail3h_exit_reason": "trail_3h_close",
+        "trail3h_close": "2025-10-10 21:00:00+00:00"
+      },
+      {
+        "open_date": "2026-01-29 18:00:00+00:00",
+        "is_short": true,
+        "v31_profit": 244.81948764,
+        "trail3h_profit": 189.71449988,
+        "diff_trail3h_minus_v31": -55.10498776,
+        "v31_exit_reason": "trailing_stop_loss",
+        "v31_close": "2026-02-06 13:00:00+00:00",
+        "trail3h_exit_reason": "trail_3h_close",
+        "trail3h_close": "2026-02-06 18:00:00+00:00"
+      }
+    ],
+    "top2_by_abs_diff": [
+      {
+        "open_date": "2026-08-17 03:00:00+00:00",
+        "is_short": false,
+        "v31_profit": 139.63761619,
+        "trail3h_profit": 26.87655083,
+        "diff_trail3h_minus_v31": -112.76106535999999,
+        "v31_exit_reason": "trailing_stop_loss",
+        "v31_close": "2026-08-19 15:00:00+00:00",
+        "trail3h_exit_reason": "trail_3h_close",
+        "trail3h_close": "2026-08-19 15:00:00+00:00"
+      },
+      {
+        "open_date": "2025-10-10 18:00:00+00:00",
+        "is_short": true,
+        "v31_profit": 93.59348034,
+        "trail3h_profit": 8.42761146,
+        "diff_trail3h_minus_v31": -85.16586888,
+        "v31_exit_reason": "trailing_stop_loss",
+        "v31_close": "2025-10-10 21:00:00+00:00",
+        "trail3h_exit_reason": "trail_3h_close",
+        "trail3h_close": "2025-10-10 21:00:00+00:00"
+      }
+    ],
+    "top2_share_of_paired_diff_sum": 0.7229445356227044,
+    "holds_2025_10_10_to_10_12": {
+      "n": 1,
+      "present": true,
+      "rows": [
+        {
+          "open_date": "2025-10-10 18:00:00+00:00",
+          "is_short": true,
+          "v31_profit": 93.59348034,
+          "trail3h_profit": 8.42761146,
+          "diff_trail3h_minus_v31": -85.16586888,
+          "v31_exit_reason": "trailing_stop_loss",
+          "v31_close": "2025-10-10 21:00:00+00:00",
+          "trail3h_exit_reason": "trail_3h_close",
+          "trail3h_close": "2025-10-10 21:00:00+00:00"
+        }
+      ]
+    },
+    "expected_n": 54
+  },
+  "train": {
+    "zip": "backtest-result-2026-09-02_15-38-46.zip",
+    "n_v31": 239,
+    "n_trail3h": 227,
+    "n_paired": 219,
+    "n_unmatched_v31": 20,
+    "n_unmatched_trail3h": 8,
+    "v31_profit_sum": 1048.08760627,
+    "trail3h_profit_sum": 1595.16325228,
+    "diff_sum_paired": 210.55924022999994,
+    "diff_sum_totals": 547.0756460100001,
+    "worst3_most_negative_diff": [
+      {
+        "open_date": "2021-07-21 06:00:00+00:00",
+        "is_short": false,
+        "v31_profit": 201.63752613,
+        "trail3h_profit": 141.88263349,
+        "diff_trail3h_minus_v31": -59.75489264000001,
+        "v31_exit_reason": "trailing_stop_loss",
+        "v31_close": "2021-07-26 01:00:00+00:00",
+        "trail3h_exit_reason": "trail_3h_close",
+        "trail3h_close": "2021-07-27 03:00:00+00:00"
+      },
+      {
+        "open_date": "2023-08-17 18:00:00+00:00",
+        "is_short": true,
+        "v31_profit": 59.30274504,
+        "trail3h_profit": 5.76053898,
+        "diff_trail3h_minus_v31": -53.54220606,
+        "v31_exit_reason": "trailing_stop_loss",
+        "v31_close": "2023-08-17 21:00:00+00:00",
+        "trail3h_exit_reason": "trail_3h_close",
+        "trail3h_close": "2023-08-17 21:00:00+00:00"
+      },
+      {
+        "open_date": "2023-11-22 21:00:00+00:00",
+        "is_short": false,
+        "v31_profit": 175.08645189,
+        "trail3h_profit": 125.52820469,
+        "diff_trail3h_minus_v31": -49.55824720000001,
+        "v31_exit_reason": "trailing_stop_loss",
+        "v31_close": "2023-12-11 01:00:00+00:00",
+        "trail3h_exit_reason": "exit_signal",
+        "trail3h_close": "2023-12-11 03:00:00+00:00"
+      }
+    ],
+    "top2_by_abs_diff": [
+      {
+        "open_date": "2023-01-09 00:00:00+00:00",
+        "is_short": false,
+        "v31_profit": 26.36641193,
+        "trail3h_profit": 400.32680296,
+        "diff_trail3h_minus_v31": 373.96039103,
+        "v31_exit_reason": "trailing_stop_loss",
+        "v31_close": "2023-01-11 23:00:00+00:00",
+        "trail3h_exit_reason": "trail_3h_close",
+        "trail3h_close": "2023-01-14 00:00:00+00:00"
+      },
+      {
+        "open_date": "2020-12-16 15:00:00+00:00",
+        "is_short": false,
+        "v31_profit": 27.89249683,
+        "trail3h_profit": 146.5249331,
+        "diff_trail3h_minus_v31": 118.63243627,
+        "v31_exit_reason": "trailing_stop_loss",
+        "v31_close": "2020-12-17 09:00:00+00:00",
+        "trail3h_exit_reason": "exit_signal",
+        "trail3h_close": "2021-01-02 21:00:00+00:00"
+      }
+    ],
+    "top2_share_of_paired_diff_sum": 2.339450060524186,
+    "holds_2025_10_10_to_10_12": {
+      "n": 0,
+      "present": false,
+      "rows": []
+    },
+    "expected_n": null
+  },
+  "train_top3_positive_diff": [
+    {
+      "open_date": "2023-01-09 00:00:00+00:00",
+      "is_short": false,
+      "v31_profit": 26.36641193,
+      "trail3h_profit": 400.32680296,
+      "diff_trail3h_minus_v31": 373.96039103,
+      "v31_exit_reason": "trailing_stop_loss",
+      "v31_close": "2023-01-11 23:00:00+00:00",
+      "trail3h_exit_reason": "trail_3h_close",
+      "trail3h_close": "2023-01-14 00:00:00+00:00"
+    },
+    {
+      "open_date": "2020-12-16 15:00:00+00:00",
+      "is_short": false,
+      "v31_profit": 27.89249683,
+      "trail3h_profit": 146.5249331,
+      "diff_trail3h_minus_v31": 118.63243627,
+      "v31_exit_reason": "trailing_stop_loss",
+      "v31_close": "2020-12-17 09:00:00+00:00",
+      "trail3h_exit_reason": "exit_signal",
+      "trail3h_close": "2021-01-02 21:00:00+00:00"
+    },
+    {
+      "open_date": "2020-10-19 15:00:00+00:00",
+      "is_short": false,
+      "v31_profit": 96.11898849,
+      "trail3h_profit": 202.43520037,
+      "diff_trail3h_minus_v31": 106.31621187999998,
+      "v31_exit_reason": "trailing_stop_loss",
+      "v31_close": "2020-10-21 14:00:00+00:00",
+      "trail3h_exit_reason": "exit_signal",
+      "trail3h_close": "2020-10-26 18:00:00+00:00"
+    }
+  ],
+  "check2_diff_sum_note": "paired diff sum expected ≈ -273.8",
+  "train_diff_sum_note": "totals expected trail3h - v31 ≈ +547"
+}

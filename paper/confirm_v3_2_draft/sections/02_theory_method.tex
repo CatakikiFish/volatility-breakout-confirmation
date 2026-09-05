@@ -1,0 +1,154 @@
+\section{理论基础与研究方法}
+
+\subsection{波动突破信号}
+
+设第 $t$ 个 3 小时聚合柱的开、高、低、收盘价分别为 $O_t,H_t,L_t,C_t$。真实波幅定义为\cite{wilder1978}
+\begin{equation}
+  \mathrm{TR}_t=\max\left\{H_t-L_t,\,|H_t-C_{t-1}|,\,|L_t-C_{t-1}|\right\}.
+  \label{eq:true-range}
+\end{equation}
+14 期 ATR 是真实波幅的平滑值。为与策略实现一致，本文记未经倍乘的指标为 $A_t=\mathrm{ATR}_{14,t}$。突破信号为
+\begin{equation}
+  S_t=
+  \begin{cases}
+    +1, & C_t-C_{t-1}>2A_{t-1},\\
+    -1, & C_t-C_{t-1}<-2A_{t-1},\\
+    0,  & \text{其他情形}.
+  \end{cases}
+  \label{eq:signal}
+\end{equation}
+其中 $+1$ 表示做多，$-1$ 表示做空。使用 $A_{t-1}$ 而不是当期 ATR，是为了避免用突破完成后的波动信息反过来定义同一次突破。策略在 1 小时主周期上运行，但信号仅在 3 小时聚合信息更新后发生。
+
+\subsection{规则化退出的定义}
+
+本文所称“收益兑现”，是把持仓中的浮动收益通过事先规定、可重复执行的退出规则转化为已实现利润。设第 $i$ 笔交易的已实现利润为 $\pi_i$，退出原因为 $z_i$。正常规则利润和期末强平利润分别定义为
+\begin{align}
+  \Pi_{\mathrm{rule}} &= \sum_{i=1}^{N}\pi_i\,\mathbf{1}(z_i\neq \text{force\_exit}), \\
+  \Pi_{\mathrm{force}} &= \sum_{i=1}^{N}\pi_i\,\mathbf{1}(z_i=\text{force\_exit}).
+  \label{eq:realized-profit}
+\end{align}
+期末强平是回测平台在样本截止时对未平仓头寸的终值处理，不属于策略自身的退出信号。本文分别报告其数量、利润及占比；该分类不改变已发生的盈亏，也不等同于保证任意样本截止日均无持仓。
+
+V3.2 的初始止损距离先由 ATR 给出，再受 6\% 价格距离上限约束。设开仓价为 $P_0$，杠杆为 $L=3$，则价格止损比例为
+\begin{equation}
+  d_0=\min\left(\frac{2A_t}{P_0},\frac{0.18}{L}\right)
+      =\min\left(\frac{2A_t}{P_0},0.06\right).
+  \label{eq:initial-distance}
+\end{equation}
+多头初始止损为 $P_0(1-d_0)$，空头为 $P_0(1+d_0)$。其中 $0.18/L$ 表示在 3 倍杠杆下，将保证金收益率层面的最大风险约束转换为 6\% 的标的价格距离。
+
+以价格距离 $R=|P_0-P_{\mathrm{stop},0}|$ 表示一单位初始风险。当有利价格移动达到 $2R$ 后，跟踪机制启动，并至少锁定 $0.5R$。令 $E_t^{(c)}$ 为入场后已完成 3 小时柱收盘价的有利极值，则多头和空头跟踪价分别为
+\begin{align}
+  P_{\mathrm{trail},t}^{\mathrm{long}}
+  &=\max\left(P_0+0.5R,\ E_t^{(c)}-3.6A_t\right),\\
+  P_{\mathrm{trail},t}^{\mathrm{short}}
+  &=\min\left(P_0-0.5R,\ E_t^{(c)}+3.6A_t\right).
+  \label{eq:trail}
+\end{align}
+参考极值来自已完成的 3 小时收盘，但止损触发仍由 1 小时柱内高低价模拟。该规则并非“只按收盘止损”，而是试图区分趋势极值的形成与止损的执行触发。
+
+\subsection{确认加仓与风险归一化}
+
+确认加仓把一次完整仓位拆成两个状态。第一次突破只建立试探仓；只有在持仓存续期间出现第二次独立同向突破，且与上一入场订单至少间隔一根主周期 K 线，才建立确认仓。设账户权益为 $E_t$，第一笔保证金为 $m_0$，固定初始风险预算为 $B=10$ USDT，则
+\begin{equation}
+  m_0=\operatorname{clip}\left(
+     \frac{B}{Ld_0},\ m_{\min},\ \min(270,m_{\max})
+  \right).
+  \label{eq:scout-stake}
+\end{equation}
+该式使不同波动时期的第一次试错尽量承担相近的美元风险。波动越高，$d_0$ 越大，试探仓越小；波动越低，试探仓越大，但不超过 270 USDT。
+
+第二次确认时，计划增加试探仓的三倍，使完整仓位近似形成 25\%/75\% 的两段结构。V3.1 以后还加入 80\% 保证金上限：
+\begin{equation}
+  m_1=\min\left(3m_0,\ m_{\max},\ 0.8E_t-m_{\mathrm{used}}\right).
+  \label{eq:add-stake}
+\end{equation}
+若计算结果低于交易所最小可成交保证金，则不加仓。加仓后重新计算均价、ATR 止损和 $R$，但新的止损不得比加仓前更松。这一约束避免“因为加仓而扩大已有仓位的价格风险边界”。
+
+只有持续持有的交易才可能出现第二次信号，因此按是否加仓分组包含存活选择。该分析用于描述资金配置与利润来源，不作为确认规则的单独因果效应估计。
+
+\subsection{数据与执行环境}
+
+主要数据为 Bybit 的 BTC/USDT:USDT 线性永续合约 K 线。完整历史从 2020 年 4 月 15 日 06:00 UTC 开始，到 2026 年 8 月 30 日 14:00 UTC 结束，共 2328 天。回测由 Freqtrade 2026.7 完成。平台默认将交易费同时计入开仓和平仓，并允许使用更低时间周期改善蜡烛内部执行近似\cite{freqtrade_backtesting}。
+
+\begin{table}[H]
+  \centering
+  \caption{完整历史比较的共同外部条件}
+  \label{tab:common-setting}
+  \begin{threeparttable}
+    \begin{tabularx}{0.92\textwidth}{@{}lY@{}}
+      \toprule
+      项目 & 设定\\
+      \midrule
+      交易对象 & BTC/USDT:USDT，Bybit 线性永续合约\\
+      数据区间 & 2020-04-15 06:00 至 2026-08-30 14:00 UTC\\
+      主周期与信号周期 & 1 小时执行，3 小时聚合信号\\
+      初始资金 & 1000 USDT\\
+      配置 stake 与槽位 & 540 USDT，最多同时一笔交易\\
+      市场方向 & 允许做多和做空\\
+      保证金模式 & 逐仓；策略内部杠杆保持各自原定义\\
+      交易费 & 未人工覆盖；归档记录的自动单边费率为 0.0600\%\\
+      价格和成交 & K 线回测；另对检查窗 2 使用 5 分钟细节模拟\\
+      软件环境 & Freqtrade 2026.7，Docker 隔离研究服务\\
+      \bottomrule
+    \end{tabularx}
+    \begin{tablenotes}[flushleft]\footnotesize
+      \item 注：共同条件控制了币种、钱包、槽位、数据与费用，但原始系统和 V3.2 的杠杆、首仓形成、加仓及退出规则不同，因此属于完整系统比较，不是单一规则的严格因果消融。
+    \end{tablenotes}
+  \end{threeparttable}
+\end{table}
+
+时间样本被划分为训练窗、检查窗 1 和检查窗 2。训练窗为 2020-04-15 至 2024-08-29；检查窗 1 为 2024-08-29 至 2025-08-29；检查窗 2 为 2025-09-18 至 2026-08-29。检查窗 2 与前一窗口之间的缺口来自当时可用数据边界。5 分钟数据只用于检查窗 2 的执行细节复核，不改变信号周期。
+
+BTC 长期持有基准使用同一 1 小时永续价格序列：在起点按首根收盘价将 1000 USDT 全部换算为 BTC，此后不交易，并按每小时收盘盯市。该基准不计交易费、资金费，也不使用杠杆。因此它表示市场机会成本，而不是与永续策略在融资成本和风险预算上完全相同的可执行方案。
+
+\subsection{评价指标}
+
+设账户初始权益为 $W_0$，结束权益为 $W_T$，回测年数为 $Y$，则累计收益与复合年化收益率分别为
+\begin{align}
+  R_{0,T}&=\frac{W_T}{W_0}-1,\\
+  \CAGR&=\left(\frac{W_T}{W_0}\right)^{1/Y}-1.
+  \label{eq:cagr}
+\end{align}
+Profit Factor 定义为毛盈利与毛亏损绝对值之比：
+\begin{equation}
+  \PF=\frac{\sum_i\max(\pi_i,0)}{\left|\sum_i\min(\pi_i,0)\right|}.
+  \label{eq:pf}
+\end{equation}
+设 $W_t^*=\max_{u\le t}W_u$，最大百分比回撤为
+\begin{equation}
+  \MDD=\max_t\left(1-\frac{W_t}{W_t^*}\right).
+  \label{eq:mdd}
+\end{equation}
+论文使用常见的年化收益回撤比
+\begin{equation}
+  \Rcal_{\mathrm{C/M}}=\frac{\CAGR}{\MDD}.
+  \label{eq:calmar-style}
+\end{equation}
+
+为描述权益路径的平滑程度，设月度采样权益为 $W_m$。定义月度收益
+$r_m=W_m/W_{m-1}-1$，共得到 $M$ 个收益观测。本文补充报告由月度收益估计的年化波动率与月度下行偏差：
+\begin{align}
+  \sigma_{\mathrm{ann},m}
+    &=\sqrt{12}\sqrt{\frac{1}{M-1}\sum_{m=1}^{M}(r_m-\bar r_m)^2},\\
+  \sigma_{\mathrm{down},m}
+    &=\sqrt{\frac{1}{M}\sum_{m=1}^{M}\min(r_m,0)^2}.
+  \label{eq:path-risk}
+\end{align}
+前者衡量月度收益围绕均值的总体波动，后者只计算负收益月份的下行幅度。二者均来自按月采样的已实现权益，只用于比较长期资金路径，不能替代逐时盯市波动、盘中风险或成交层面的实现偏差。
+
+早期实验另使用累计收益除以 \texttt{max\_drawdown\_account} 的自定义分数。该字段为最大绝对金额回撤发生时对应的账户回撤比例，不必等于全期最大百分比回撤；原分数仅在分窗与重采样结果中保留，不与式\eqref{eq:calmar-style}混用。
+
+单笔平均收益为
+\begin{equation}
+  \bar r_{\mathrm{trade}}=\frac{1}{N}\sum_{i=1}^{N}r_i,
+  \label{eq:mean-trade}
+\end{equation}
+其中每笔交易权重相同，不考虑投入保证金差异。因此，$\bar r_{\mathrm{trade}}<0$ 可以与账户总利润为正同时出现。本文还报告胜率、交易数、平均持仓、退出原因、做多/做空利润、确认分层、前十大赢家占毛盈利比例及年度收益。
+
+\subsection{检验设计}
+\label{sec:validation-design}
+
+策略开发采用单变量比较、参数邻域分析、分窗评价和配对块 bootstrap，并保存候选版本与未采用分支。V3.2 的训练窗和检查窗均参与过规则筛选，因此本文将其统一视为开发样本，分窗结果用于描述稳定性而非独立样本外检验。多重试验及模型选择仍可能使回测表现偏乐观\cite{white2000,hansen2005,bailey2017}。
+
+实现检验包括 lookahead 分析、recursive 分析及 5 分钟持仓路径模拟，分别用于检查未来数据引用、指标初始化敏感性和柱内执行近似\cite{freqtrade_lookahead,freqtrade_recursive}。以上检验与交易序列重采样的结果见第五节。

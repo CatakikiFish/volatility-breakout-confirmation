@@ -1,0 +1,31 @@
+# Credentials and local configuration
+.env
+*.env
+config.json
+secrets/
+
+# Runtime state and private market data
+*.sqlite*
+*.log
+user_data/data/
+user_data/logs/
+user_data/fwd_*/
+
+# Python and LaTeX build output
+__pycache__/
+*.py[cod]
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.run.xml
+*.toc
+*.xdv
+
+# Editor and OS files
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,30 @@
+{
+  "version": "v1.0.0",
+  "repository_files": 120,
+  "repository_bytes": 6139345,
+  "release_asset": "confirm-research-evidence-v1.0.0.zip",
+  "release_asset_bytes": 2306979,
+  "release_asset_sha256": "af54ff6d6794d82cc9ff18e63e7c77614da17595a1b4b330cb534b2c3baa46db",
+  "redacted_fields": [
+    "user_data/backtest_results/backtest-result-2026-09-02_09-42-00.zip!backtest-result-2026-09-02_09-42-00_config.json:api_server.jwt_secret_key",
+    "user_data/backtest_results/backtest-result-2026-09-02_09-42-00.zip!backtest-result-2026-09-02_09-42-00_config.json:api_server.ws_token",
+    "user_data/backtest_results/backtest-result-2026-09-02_11-32-11.zip!backtest-result-2026-09-02_11-32-11_config.json:api_server.jwt_secret_key",
+    "user_data/backtest_results/backtest-result-2026-09-02_11-32-11.zip!backtest-result-2026-09-02_11-32-11_config.json:api_server.ws_token",
+    "user_data/backtest_results/backtest-result-2026-09-03_06-10-14.zip!backtest-result-2026-09-03_06-10-14_config.json:api_server.jwt_secret_key",
+    "user_data/backtest_results/backtest-result-2026-09-03_06-10-14.zip!backtest-result-2026-09-03_06-10-14_config.json:api_server.ws_token",
+    "user_data/research/volatility_vs_v32_full_history/results/volatilitysystem/backtest-result-2026-09-04_03-14-47.zip!backtest-result-2026-09-04_03-14-47_config.json:api_server.jwt_secret_key",
+    "user_data/research/volatility_vs_v32_full_history/results/volatilitysystem/backtest-result-2026-09-04_03-14-47.zip!backtest-result-2026-09-04_03-14-47_config.json:api_server.ws_token",
+    "user_data/research/volatility_vs_v32_full_history/results/confirm_v3_2_btc/backtest-result-2026-09-04_03-16-28.zip!backtest-result-2026-09-04_03-16-28_config.json:api_server.jwt_secret_key",
+    "user_data/research/volatility_vs_v32_full_history/results/confirm_v3_2_btc/backtest-result-2026-09-04_03-16-28.zip!backtest-result-2026-09-04_03-16-28_config.json:api_server.ws_token",
+    "user_data/research/volatility_vs_v32_bear_window/results/backtest-result-2026-09-04_06-40-46.zip!backtest-result-2026-09-04_06-40-46_config.json:api_server.jwt_secret_key",
+    "user_data/research/volatility_vs_v32_bear_window/results/backtest-result-2026-09-04_06-40-46.zip!backtest-result-2026-09-04_06-40-46_config.json:api_server.ws_token"
+  ],
+  "excluded": [
+    "API credentials and private configuration",
+    "trade databases and runtime logs",
+    "server deployment material",
+    "exchange OHLCV data",
+    "unrelated ML teaching experiments",
+    "internal conversation-style evidence diary"
+  ]
+}

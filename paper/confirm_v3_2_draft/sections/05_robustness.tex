@@ -1,0 +1,72 @@
+\section{稳健性检验}
+
+\subsection{分窗结果与执行细节}
+
+V3.2 在训练窗及两个检查窗均盈利。\cref{tab:v31-v32-windows} 给出其与 V3.1 的分窗比较，并保留实验当时使用的账户回撤字段和排序分数。
+
+\begin{table}[H]
+  \centering
+  \caption{V3.1 与 V3.2 在三个 BTC 窗口中的历史结果}
+  \label{tab:v31-v32-windows}
+  \begin{threeparttable}
+    \begin{tabular}{llrrrrr}
+      \toprule
+      版本 & 窗口 & 交易 & 利润（USDT） & PF & 旧账户 DD & 旧收益/DD\\
+      \midrule
+      V3.1 & 训练 & 239 & 1048.088 & 1.62 & 7.49\% & 13.99\\
+      V3.1 & 检查 1 & 47 & 467.107 & 2.38 & 6.68\% & 6.99\\
+      V3.1 & 检查 2 & 54 & 492.130 & 2.27 & 12.26\% & 4.01\\
+      V3.1 & 检查 2，5m 细节 & 54 & 470.168 & 2.22 & 12.47\% & 3.77\\
+      \midrule
+      V3.2 & 训练 & 226 & 1661.987 & 2.01 & 5.87\% & 28.30\\
+      V3.2 & 检查 1 & 46 & 512.386 & 2.54 & 5.86\% & 8.74\\
+      V3.2 & 检查 2 & 51 & 639.150 & 2.66 & 13.35\% & 4.79\\
+      V3.2 & 检查 2，5m 细节 & 51 & 639.150 & 2.66 & 13.35\% & 4.79\\
+      \bottomrule
+    \end{tabular}
+    \begin{tablenotes}[flushleft]\footnotesize
+      \item 注：本表保留当时预注册采用的 \texttt{max\_drawdown\_account} 和累计收益/DD，仅用于还原历史判定；它们不与完整历史表中的最大百分比回撤和 CAGR/回撤混用。
+    \end{tablenotes}
+  \end{threeparttable}
+\end{table}
+
+检查窗 2 使用 5 分钟数据模拟持仓路径后，V3.1 的利润由 492.130 降至 470.168 USDT，V3.2 保持 639.150 USDT。更细周期模拟减少了小时柱内价格顺序不明确的影响，但仍不包含逐笔成交和盘口冲击。
+
+早期费用压力测试将单边费率由 0.0600\% 提高至 0.10\%，V1 的 4.5 ATR 版本在检查窗仍盈利，Profit Factor 为 1.316。该结果仅适用于上述早期版本，最终 V3.2 的手续费、资金费及滑点联合压力测试尚待补充。
+
+\subsection{实现检验与时间聚合敏感性}
+
+V3.2 的 lookahead 分析检查 100 个信号，结果为 \texttt{has\_bias=No}，入场与离场偏差信号均为零。recursive 分析在 500 根启动 K 线附近的 ATR 差异为 0.000\% 量级，未检出相应实现偏差\cite{freqtrade_lookahead,freqtrade_recursive}。
+
+主版本以 UTC 的 0、3、6、9 等小时为 3 小时聚合边界。锚点平移 1 小时后，检查窗 1 亏损；平移 2 小时后，检查窗 2 亏损；三锚点等权组合未改善结果。ETH 样本中原锚点在三个窗口均居首，但 BTC 对聚合边界的敏感性仍然较高。另行考察的 UTC 9--11 与 21--23 时段过滤未通过跨资产及跨年度验证，未纳入 V3.2。
+
+\subsection{版本增量的重采样检验}
+
+研究按交易顺序使用长度为 10 的块进行 10000 次配对 bootstrap。设第 $b$ 次重采样中候选版本与基准版本的旧口径风险调整指标差为 $\Delta_b$，正差概率为
+\begin{equation}
+  \widehat p_{+}=\frac{1}{B}\sum_{b=1}^{B}\mathbf{1}(\Delta_b>0),\qquad B=10000.
+  \label{eq:bootstrap-prob}
+\end{equation}
+预设支持门槛为 $\widehat p_{+}\ge0.80$，结果见\cref{tab:bootstrap}。该数值是重采样中的正差比例，不是常规显著性检验的 $p$ 值。
+
+\begin{table}[H]
+  \centering
+  \caption{版本增量的配对 bootstrap 正差概率}
+  \label{tab:bootstrap}
+  \begin{threeparttable}
+    \begin{tabular}{lrrrc}
+      \toprule
+      比较 & 训练窗 & 检查窗 1 & 检查窗 2 & 三窗是否稳定过 0.80\\
+      \midrule
+      V3.0 相对 V2 & 0.660 & 0.530 & 0.449 & 否\\
+      V3.1 相对 V3.0 & 0.482 & 0.933 & 0.517 & 否\\
+      V3.2 相对 V3.1 & 0.708 & 0.529 & 0.128 & 否\\
+      \bottomrule
+    \end{tabular}
+    \begin{tablenotes}[flushleft]\footnotesize
+      \item 注：V3.2 与 V3.1 的交易集合并非完全相同；三个窗口的匹配交易数分别为 218、45 和 51。概率针对研究时登记的旧口径指标差，不等同于未来盈利概率。
+    \end{tablenotes}
+  \end{threeparttable}
+\end{table}
+
+三个版本增量均未在三个窗口同时达到 0.80。V3.1 在检查窗 1 为 0.933，V3.2 在检查窗 2 仅为 0.128，表明版本差异对交易匹配和序列重采样较敏感。早期 V1 检查窗虽通过四项经济门槛，两年合并检验的 $p=0.131$ 仍未达到预注册的 0.10 标准。上述结果未提供稳定的版本增量支持。

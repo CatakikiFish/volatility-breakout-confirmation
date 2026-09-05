@@ -1,0 +1,10 @@
+{
+  "$schema": "https://schema.freqtrade.io/schema.json",
+  "dry_run_wallet": 1000,
+  "max_open_trades": 1,
+  "stake_amount": 540,
+  "tradable_balance_ratio": 0.99,
+  "exchange": {
+    "pair_whitelist": ["ETH/USDT:USDT"]
+  }
+}

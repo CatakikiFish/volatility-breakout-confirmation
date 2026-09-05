@@ -1,0 +1,5329 @@
+{
+  "fullhist_v3_v2": {
+    "zip": "backtest-result-2026-09-02_09-42-00.zip",
+    "strategies": {
+      "confirm_v3_BTC": {
+        "n": 343,
+        "profit_total_abs": 2007.2933062299999,
+        "profit_factor": 1.8088033911575703,
+        "max_drawdown_account": 0.0796386972621279,
+        "max_relative_drawdown": 0.09933254050002675,
+        "ratio": 25.204999268421815,
+        "underwater": 0.09933254050002675,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 1,
+        "liquidation": 0,
+        "worst_trade": -51.67458099,
+        "top5_profit_sum": 1060.41940025,
+        "n_confirm": 70,
+        "n_scout": 273,
+        "confirm_loss": {
+          "n": 19,
+          "sum": -597.34754786,
+          "worst": -51.67458099
+        },
+        "confirm_win": {
+          "n": 51,
+          "sum": 3464.16288631,
+          "best": 244.81948764
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2020",
+            "trades": 44,
+            "profit_abs": 115.64281684,
+            "profit_factor": 1.33688486
+          },
+          {
+            "key": "31/12/2021",
+            "trades": 46,
+            "profit_abs": 359.40719898,
+            "profit_factor": 2.34785001
+          },
+          {
+            "key": "31/12/2022",
+            "trades": 47,
+            "profit_abs": 338.25628325,
+            "profit_factor": 2.1450786
+          },
+          {
+            "key": "31/12/2023",
+            "trades": 66,
+            "profit_abs": 382.53260832,
+            "profit_factor": 1.77483319
+          },
+          {
+            "key": "31/12/2024",
+            "trades": 50,
+            "profit_abs": 133.85038211,
+            "profit_factor": 1.32279236
+          },
+          {
+            "key": "31/12/2025",
+            "trades": 55,
+            "profit_abs": 350.26153892,
+            "profit_factor": 1.80652197
+          },
+          {
+            "key": "31/12/2026",
+            "trades": 35,
+            "profit_abs": 327.34247781,
+            "profit_factor": 2.39988212
+          }
+        ],
+        "first_stake_year_median": {
+          "2020": 133.80433333333332,
+          "2021": 78.23666666666666,
+          "2022": 94.97133333333333,
+          "2023": 133.42716666666666,
+          "2024": 110.2345,
+          "2025": 133.93026666666665,
+          "2026": 171.40773333333334
+        },
+        "min_add_gap_hours": 3.0
+      },
+      "confirm_v2_BTC": {
+        "n": 343,
+        "profit_total_abs": 2136.50324185,
+        "profit_factor": 1.7538269033365714,
+        "max_drawdown_account": 0.11133700737766321,
+        "max_relative_drawdown": 0.22927735208833483,
+        "ratio": 19.189515617236108,
+        "underwater": 0.22927735208833483,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 1,
+        "liquidation": 0,
+        "worst_trade": -95.73946844,
+        "top5_profit_sum": 1361.68276619,
+        "n_confirm": 70,
+        "n_scout": 273,
+        "confirm_loss": {
+          "n": 19,
+          "sum": -632.51099374,
+          "worst": -95.73946844
+        },
+        "confirm_win": {
+          "n": 51,
+          "sum": 3856.08080755,
+          "best": 334.32836744
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2020",
+            "trades": 44,
+            "profit_abs": -30.81462693,
+            "profit_factor": 0.91996692
+          },
+          {
+            "key": "31/12/2021",
+            "trades": 46,
+            "profit_abs": 623.52516728,
+            "profit_factor": 2.34301888
+          },
+          {
+            "key": "31/12/2022",
+            "trades": 47,
+            "profit_abs": 515.50386976,
+            "profit_factor": 2.39715485
+          },
+          {
+            "key": "31/12/2023",
+            "trades": 66,
+            "profit_abs": 427.32521329,
+            "profit_factor": 1.93662212
+          },
+          {
+            "key": "31/12/2024",
+            "trades": 50,
+            "profit_abs": 59.57930296,
+            "profit_factor": 1.10811589
+          },
+          {
+            "key": "31/12/2025",
+            "trades": 55,
+            "profit_abs": 263.03808749,
+            "profit_factor": 1.63335502
+          },
+          {
+            "key": "31/12/2026",
+            "trades": 35,
+            "profit_abs": 278.346228,
+            "profit_factor": 2.43975605
+          }
+        ],
+        "first_stake_year_median": {
+          "2020": 133.19891666666666,
+          "2021": 127.10008333333332,
+          "2022": 130.86166666666668,
+          "2023": 131.51785,
+          "2024": 126.6222,
+          "2025": 114.71093333333333,
+          "2026": 126.67900000000002
+        },
+        "min_add_gap_hours": 3.0,
+        "vs_baseline": {
+          "n_identical": 342,
+          "only_a": 1,
+          "only_b": 1,
+          "open_only_a": 0,
+          "open_only_b": 0,
+          "n_time_or_reason_diff": 1,
+          "time_or_reason_diff": [
+            {
+              "open_date": "2022-02-17 15:00:00+00:00",
+              "is_short": true,
+              "close_a": "2022-02-20 09:00:00+00:00",
+              "close_b": "2022-02-20 12:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            }
+          ],
+          "added_opens": [],
+          "missing_opens": []
+        }
+      }
+    }
+  },
+  "check2_5m_v3_v2": {
+    "zip": "backtest-result-2026-09-02_09-47-31.zip",
+    "strategies": {
+      "confirm_v3_BTC": {
+        "n": 54,
+        "profit_total_abs": 489.3564176,
+        "profit_factor": 2.247993579491402,
+        "max_drawdown_account": 0.12628392100740016,
+        "max_relative_drawdown": 0.12628392100740016,
+        "ratio": 3.875049283363034,
+        "underwater": 0.12628392100740016,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 1,
+        "liquidation": 0,
+        "worst_trade": -39.66793137,
+        "top5_profit_sum": 700.78811017,
+        "n_confirm": 11,
+        "n_scout": 43,
+        "confirm_loss": {
+          "n": 2,
+          "sum": -54.36023201,
+          "worst": -39.66793137
+        },
+        "confirm_win": {
+          "n": 9,
+          "sum": 816.12343776,
+          "best": 244.81948764
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2025",
+            "trades": 19,
+            "profit_abs": 164.98387432,
+            "profit_factor": 2.0484523
+          },
+          {
+            "key": "31/12/2026",
+            "trades": 35,
+            "profit_abs": 324.37254328,
+            "profit_factor": 2.38174875
+          }
+        ],
+        "first_stake_year_median": {
+          "2025": 117.58460000000001,
+          "2026": 171.40773333333334
+        },
+        "min_add_gap_hours": 3.0
+      },
+      "confirm_v2_BTC": {
+        "n": 54,
+        "profit_total_abs": 342.72969095999997,
+        "profit_factor": 1.9585845683802787,
+        "max_drawdown_account": 0.12510835904810066,
+        "max_relative_drawdown": 0.12510835904810066,
+        "ratio": 2.7394627630614994,
+        "underwater": 0.12510835904810066,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 1,
+        "liquidation": 0,
+        "worst_trade": -39.66793137,
+        "top5_profit_sum": 541.95841666,
+        "n_confirm": 11,
+        "n_scout": 43,
+        "confirm_loss": {
+          "n": 2,
+          "sum": -59.25766555,
+          "worst": -39.66793137
+        },
+        "confirm_win": {
+          "n": 9,
+          "sum": 656.08056319,
+          "best": 244.81948764
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2025",
+            "trades": 19,
+            "profit_abs": 69.33335384,
+            "profit_factor": 1.42620446
+          },
+          {
+            "key": "31/12/2026",
+            "trades": 35,
+            "profit_abs": 273.39633712,
+            "profit_factor": 2.40303279
+          }
+        ],
+        "first_stake_year_median": {
+          "2025": 116.70066666666668,
+          "2026": 126.67900000000002
+        },
+        "min_add_gap_hours": 3.0,
+        "vs_baseline": {
+          "n_identical": 53,
+          "only_a": 1,
+          "only_b": 1,
+          "open_only_a": 0,
+          "open_only_b": 0,
+          "n_time_or_reason_diff": 1,
+          "time_or_reason_diff": [
+            {
+              "open_date": "2026-08-19 16:00:00+00:00",
+              "is_short": false,
+              "close_a": "2026-08-20 09:05:00+00:00",
+              "close_b": "2026-08-20 09:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            }
+          ],
+          "added_opens": [],
+          "missing_opens": []
+        }
+      }
+    }
+  },
+  "mcap_train": {
+    "zip": "backtest-result-2026-09-02_09-48-48.zip",
+    "strategies": {
+      "confirm_v3_BTC": {
+        "n": 239,
+        "profit_total_abs": 1069.25931097,
+        "profit_factor": 1.6276520508457768,
+        "max_drawdown_account": 0.0796386972621279,
+        "max_relative_drawdown": 0.09933254050002675,
+        "ratio": 13.426378729558715,
+        "underwater": 0.09933254050002675,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 1,
+        "liquidation": 0,
+        "worst_trade": -51.67458099,
+        "top5_profit_sum": 883.68627901,
+        "n_confirm": 47,
+        "n_scout": 192,
+        "confirm_loss": {
+          "n": 14,
+          "sum": -418.90951013999995,
+          "worst": -51.67458099
+        },
+        "confirm_win": {
+          "n": 33,
+          "sum": 1925.74488627,
+          "best": 215.29465707
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2020",
+            "trades": 44,
+            "profit_abs": 115.64281684,
+            "profit_factor": 1.33688486
+          },
+          {
+            "key": "31/12/2021",
+            "trades": 46,
+            "profit_abs": 359.40719898,
+            "profit_factor": 2.34785001
+          },
+          {
+            "key": "31/12/2022",
+            "trades": 47,
+            "profit_abs": 338.25628325,
+            "profit_factor": 2.1450786
+          },
+          {
+            "key": "31/12/2023",
+            "trades": 66,
+            "profit_abs": 382.53260832,
+            "profit_factor": 1.77483319
+          },
+          {
+            "key": "31/12/2024",
+            "trades": 36,
+            "profit_abs": -126.57959642,
+            "profit_factor": 0.58439361
+          }
+        ],
+        "first_stake_year_median": {
+          "2020": 133.80433333333332,
+          "2021": 78.23666666666666,
+          "2022": 94.97133333333333,
+          "2023": 133.42716666666666,
+          "2024": 108.27158333333335
+        },
+        "min_add_gap_hours": 3.0
+      },
+      "confirm_v3_BTC_mcap80": {
+        "n": 239,
+        "profit_total_abs": 1028.5049475499998,
+        "profit_factor": 1.6037293601391869,
+        "max_drawdown_account": 0.08113122315143949,
+        "max_relative_drawdown": 0.09933254050002675,
+        "ratio": 12.67705462335004,
+        "underwater": 0.09933254050002675,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 1,
+        "liquidation": 0,
+        "worst_trade": -51.67458099,
+        "top5_profit_sum": 883.68627901,
+        "n_confirm": 47,
+        "n_scout": 192,
+        "confirm_loss": {
+          "n": 14,
+          "sum": -418.90951013999995,
+          "worst": -51.67458099
+        },
+        "confirm_win": {
+          "n": 33,
+          "sum": 1884.99052285,
+          "best": 215.29465707
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2020",
+            "trades": 44,
+            "profit_abs": 74.88845342,
+            "profit_factor": 1.21816129
+          },
+          {
+            "key": "31/12/2021",
+            "trades": 46,
+            "profit_abs": 359.40719898,
+            "profit_factor": 2.34785001
+          },
+          {
+            "key": "31/12/2022",
+            "trades": 47,
+            "profit_abs": 338.25628325,
+            "profit_factor": 2.1450786
+          },
+          {
+            "key": "31/12/2023",
+            "trades": 66,
+            "profit_abs": 382.53260832,
+            "profit_factor": 1.77483319
+          },
+          {
+            "key": "31/12/2024",
+            "trades": 36,
+            "profit_abs": -126.57959642,
+            "profit_factor": 0.58439361
+          }
+        ],
+        "first_stake_year_median": {
+          "2020": 133.80433333333332,
+          "2021": 78.23666666666666,
+          "2022": 94.97133333333333,
+          "2023": 133.42716666666666,
+          "2024": 108.27158333333335
+        },
+        "min_add_gap_hours": 3.0,
+        "vs_baseline": {
+          "n_identical": 239,
+          "only_a": 0,
+          "only_b": 0,
+          "open_only_a": 0,
+          "open_only_b": 0,
+          "n_time_or_reason_diff": 0,
+          "time_or_reason_diff": [],
+          "added_opens": [],
+          "missing_opens": []
+        }
+      }
+    }
+  },
+  "mcap_check1": {
+    "zip": "backtest-result-2026-09-02_09-49-15.zip",
+    "strategies": {
+      "confirm_v3_BTC": {
+        "n": 47,
+        "profit_total_abs": 450.80235582000006,
+        "profit_factor": 2.258072398181309,
+        "max_drawdown_account": 0.06821309918122843,
+        "max_relative_drawdown": 0.06821309918122843,
+        "ratio": 6.608735876701764,
+        "underwater": 0.06821309918122843,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 0,
+        "liquidation": 0,
+        "worst_trade": -43.46653655,
+        "top5_profit_sum": 620.99413978,
+        "n_confirm": 12,
+        "n_scout": 35,
+        "confirm_loss": {
+          "n": 3,
+          "sum": -124.07780570999999,
+          "worst": -43.46653655
+        },
+        "confirm_win": {
+          "n": 9,
+          "sum": 700.33219276,
+          "best": 201.94225954
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2024",
+            "trades": 14,
+            "profit_abs": 270.78827163,
+            "profit_factor": 3.67730914
+          },
+          {
+            "key": "31/12/2025",
+            "trades": 33,
+            "profit_abs": 180.01408419,
+            "profit_factor": 1.69993766
+          }
+        ],
+        "first_stake_year_median": {
+          "2024": 114.14059999999999,
+          "2025": 137.07500000000002
+        },
+        "min_add_gap_hours": 3.0
+      },
+      "confirm_v3_BTC_mcap80": {
+        "n": 47,
+        "profit_total_abs": 447.93705884000013,
+        "profit_factor": 2.250076097814659,
+        "max_drawdown_account": 0.07033728410059492,
+        "max_relative_drawdown": 0.07033728410059492,
+        "ratio": 6.368415621498405,
+        "underwater": 0.07033728410059492,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 0,
+        "liquidation": 0,
+        "worst_trade": -43.46653655,
+        "top5_profit_sum": 620.99413978,
+        "n_confirm": 11,
+        "n_scout": 36,
+        "confirm_loss": {
+          "n": 3,
+          "sum": -124.07780570999999,
+          "worst": -43.46653655
+        },
+        "confirm_win": {
+          "n": 8,
+          "sum": 696.28439685,
+          "best": 201.94225954
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2024",
+            "trades": 14,
+            "profit_abs": 270.78827163,
+            "profit_factor": 3.67730914
+          },
+          {
+            "key": "31/12/2025",
+            "trades": 33,
+            "profit_abs": 177.14878721,
+            "profit_factor": 1.6887967
+          }
+        ],
+        "first_stake_year_median": {
+          "2024": 114.14059999999999,
+          "2025": 137.07500000000002
+        },
+        "min_add_gap_hours": 3.0,
+        "vs_baseline": {
+          "n_identical": 46,
+          "only_a": 1,
+          "only_b": 1,
+          "open_only_a": 0,
+          "open_only_b": 0,
+          "n_time_or_reason_diff": 1,
+          "time_or_reason_diff": [
+            {
+              "open_date": "2025-01-20 18:00:00+00:00",
+              "is_short": true,
+              "close_a": "2025-01-27 13:00:00+00:00",
+              "close_b": "2025-01-27 15:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "exit_signal"
+            }
+          ],
+          "added_opens": [],
+          "missing_opens": []
+        }
+      }
+    }
+  },
+  "mcap_check2": {
+    "zip": "backtest-result-2026-09-02_09-49-41.zip",
+    "strategies": {
+      "confirm_v3_BTC": {
+        "n": 54,
+        "profit_total_abs": 511.31878711999997,
+        "profit_factor": 2.3040036677738893,
+        "max_drawdown_account": 0.12416622825946917,
+        "max_relative_drawdown": 0.12416622825946917,
+        "ratio": 4.118018194540799,
+        "underwater": 0.12416622825946917,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 1,
+        "liquidation": 0,
+        "worst_trade": -39.66793137,
+        "top5_profit_sum": 722.75047969,
+        "n_confirm": 11,
+        "n_scout": 43,
+        "confirm_loss": {
+          "n": 2,
+          "sum": -54.36023201,
+          "worst": -39.66793137
+        },
+        "confirm_win": {
+          "n": 9,
+          "sum": 838.08580728,
+          "best": 244.81948764
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2025",
+            "trades": 19,
+            "profit_abs": 186.94624384,
+            "profit_factor": 2.18802046
+          },
+          {
+            "key": "31/12/2026",
+            "trades": 35,
+            "profit_abs": 324.37254328,
+            "profit_factor": 2.38174875
+          }
+        ],
+        "first_stake_year_median": {
+          "2025": 117.58460000000001,
+          "2026": 171.40773333333334
+        },
+        "min_add_gap_hours": 3.0
+      },
+      "confirm_v3_BTC_mcap80": {
+        "n": 54,
+        "profit_total_abs": 487.10218252999994,
+        "profit_factor": 2.2422446594959893,
+        "max_drawdown_account": 0.12650537751923546,
+        "max_relative_drawdown": 0.12650537751923546,
+        "ratio": 3.850446455969311,
+        "underwater": 0.12650537751923546,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 1,
+        "liquidation": 0,
+        "worst_trade": -39.66793137,
+        "top5_profit_sum": 698.5338751000002,
+        "n_confirm": 11,
+        "n_scout": 43,
+        "confirm_loss": {
+          "n": 2,
+          "sum": -54.36023201,
+          "worst": -39.66793137
+        },
+        "confirm_win": {
+          "n": 9,
+          "sum": 813.86920269,
+          "best": 244.81948764
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2025",
+            "trades": 19,
+            "profit_abs": 162.72963925,
+            "profit_factor": 2.03412691
+          },
+          {
+            "key": "31/12/2026",
+            "trades": 35,
+            "profit_abs": 324.37254328,
+            "profit_factor": 2.38174875
+          }
+        ],
+        "first_stake_year_median": {
+          "2025": 117.58460000000001,
+          "2026": 171.40773333333334
+        },
+        "min_add_gap_hours": 3.0,
+        "vs_baseline": {
+          "n_identical": 54,
+          "only_a": 0,
+          "only_b": 0,
+          "open_only_a": 0,
+          "open_only_b": 0,
+          "n_time_or_reason_diff": 0,
+          "time_or_reason_diff": [],
+          "added_opens": [],
+          "missing_opens": []
+        }
+      }
+    }
+  },
+  "stage23_train": {
+    "zip": "backtest-result-2026-09-02_09-52-29.zip",
+    "strategies": {
+      "confirm_v3_BTC": {
+        "n": 239,
+        "profit_total_abs": 1069.25931097,
+        "profit_factor": 1.6276520508457768,
+        "max_drawdown_account": 0.0796386972621279,
+        "max_relative_drawdown": 0.09933254050002675,
+        "ratio": 13.426378729558715,
+        "underwater": 0.09933254050002675,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 1,
+        "liquidation": 0,
+        "worst_trade": -51.67458099,
+        "top5_profit_sum": 883.68627901,
+        "n_confirm": 47,
+        "n_scout": 192,
+        "confirm_loss": {
+          "n": 14,
+          "sum": -418.90951013999995,
+          "worst": -51.67458099
+        },
+        "confirm_win": {
+          "n": 33,
+          "sum": 1925.74488627,
+          "best": 215.29465707
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2020",
+            "trades": 44,
+            "profit_abs": 115.64281684,
+            "profit_factor": 1.33688486
+          },
+          {
+            "key": "31/12/2021",
+            "trades": 46,
+            "profit_abs": 359.40719898,
+            "profit_factor": 2.34785001
+          },
+          {
+            "key": "31/12/2022",
+            "trades": 47,
+            "profit_abs": 338.25628325,
+            "profit_factor": 2.1450786
+          },
+          {
+            "key": "31/12/2023",
+            "trades": 66,
+            "profit_abs": 382.53260832,
+            "profit_factor": 1.77483319
+          },
+          {
+            "key": "31/12/2024",
+            "trades": 36,
+            "profit_abs": -126.57959642,
+            "profit_factor": 0.58439361
+          }
+        ],
+        "first_stake_year_median": {
+          "2020": 133.80433333333332,
+          "2021": 78.23666666666666,
+          "2022": 94.97133333333333,
+          "2023": 133.42716666666666,
+          "2024": 108.27158333333335
+        },
+        "min_add_gap_hours": 3.0
+      },
+      "confirm_v3_BTC_eqrisk": {
+        "n": 239,
+        "profit_total_abs": 1504.6334639599997,
+        "profit_factor": 1.4484968720780869,
+        "max_drawdown_account": 0.1775883208967621,
+        "max_relative_drawdown": 0.1775883208967621,
+        "ratio": 8.472592433793507,
+        "underwater": 0.1775883208967621,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 1,
+        "liquidation": 0,
+        "worst_trade": -147.63027109,
+        "top5_profit_sum": 1596.38168452,
+        "n_confirm": 47,
+        "n_scout": 192,
+        "confirm_loss": {
+          "n": 14,
+          "sum": -925.8924843699999,
+          "worst": -147.63027109
+        },
+        "confirm_win": {
+          "n": 33,
+          "sum": 3220.2906107599997,
+          "best": 450.14593166
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2020",
+            "trades": 44,
+            "profit_abs": 103.55754435,
+            "profit_factor": 1.2872526
+          },
+          {
+            "key": "31/12/2021",
+            "trades": 46,
+            "profit_abs": 404.49661882,
+            "profit_factor": 2.10836124
+          },
+          {
+            "key": "31/12/2022",
+            "trades": 47,
+            "profit_abs": 553.3420961,
+            "profit_factor": 1.92470194
+          },
+          {
+            "key": "31/12/2023",
+            "trades": 66,
+            "profit_abs": 841.86934997,
+            "profit_factor": 1.72719208
+          },
+          {
+            "key": "31/12/2024",
+            "trades": 36,
+            "profit_abs": -398.63214528,
+            "profit_factor": 0.54352114
+          }
+        ],
+        "first_stake_year_median": {
+          "2020": 144.37033333333335,
+          "2021": 109.59508333333333,
+          "2022": 185.85133333333332,
+          "2023": 304.69525,
+          "2024": 294.23058333333336
+        },
+        "min_add_gap_hours": 3.0,
+        "vs_baseline": {
+          "n_identical": 239,
+          "only_a": 0,
+          "only_b": 0,
+          "open_only_a": 0,
+          "open_only_b": 0,
+          "n_time_or_reason_diff": 0,
+          "time_or_reason_diff": [],
+          "added_opens": [],
+          "missing_opens": []
+        }
+      },
+      "confirm_v3_BTC_noloosen": {
+        "n": 239,
+        "profit_total_abs": 1088.84196969,
+        "profit_factor": 1.6465794198758419,
+        "max_drawdown_account": 0.07356879367154613,
+        "max_relative_drawdown": 0.09933254050002675,
+        "ratio": 14.800323824136951,
+        "underwater": 0.09933254050002675,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 1,
+        "liquidation": 0,
+        "worst_trade": -46.73493767,
+        "top5_profit_sum": 883.68627901,
+        "n_confirm": 47,
+        "n_scout": 192,
+        "confirm_loss": {
+          "n": 14,
+          "sum": -399.32685141999997,
+          "worst": -46.73493767
+        },
+        "confirm_win": {
+          "n": 33,
+          "sum": 1925.74488627,
+          "best": 215.29465707
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2020",
+            "trades": 44,
+            "profit_abs": 117.27803512,
+            "profit_factor": 1.34328377
+          },
+          {
+            "key": "31/12/2021",
+            "trades": 46,
+            "profit_abs": 359.40719898,
+            "profit_factor": 2.34785001
+          },
+          {
+            "key": "31/12/2022",
+            "trades": 47,
+            "profit_abs": 338.25628325,
+            "profit_factor": 2.1450786
+          },
+          {
+            "key": "31/12/2023",
+            "trades": 66,
+            "profit_abs": 387.5203992,
+            "profit_factor": 1.79294724
+          },
+          {
+            "key": "31/12/2024",
+            "trades": 36,
+            "profit_abs": -113.61994686,
+            "profit_factor": 0.61036539
+          }
+        ],
+        "first_stake_year_median": {
+          "2020": 133.80433333333332,
+          "2021": 78.23666666666666,
+          "2022": 94.97133333333333,
+          "2023": 133.42716666666666,
+          "2024": 108.27158333333335
+        },
+        "min_add_gap_hours": 3.0,
+        "vs_baseline": {
+          "n_identical": 238,
+          "only_a": 1,
+          "only_b": 1,
+          "open_only_a": 0,
+          "open_only_b": 0,
+          "n_time_or_reason_diff": 1,
+          "time_or_reason_diff": [
+            {
+              "open_date": "2024-03-05 18:00:00+00:00",
+              "is_short": true,
+              "close_a": "2024-03-06 06:00:00+00:00",
+              "close_b": "2024-03-06 05:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            }
+          ],
+          "added_opens": [],
+          "missing_opens": []
+        }
+      },
+      "confirm_v3_BTC_noloosen_keepR": {
+        "n": 241,
+        "profit_total_abs": 1121.9112006799999,
+        "profit_factor": 1.6387977941056975,
+        "max_drawdown_account": 0.09345564309746102,
+        "max_relative_drawdown": 0.10733254187973727,
+        "ratio": 12.004745390388091,
+        "underwater": 0.10733254187973727,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 1,
+        "liquidation": 0,
+        "worst_trade": -46.73493767,
+        "top5_profit_sum": 1031.2723465200002,
+        "n_confirm": 47,
+        "n_scout": 194,
+        "confirm_loss": {
+          "n": 14,
+          "sum": -451.52787323,
+          "worst": -46.73493767
+        },
+        "confirm_win": {
+          "n": 33,
+          "sum": 2087.9992028600004,
+          "best": 268.7572753
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2020",
+            "trades": 45,
+            "profit_abs": 76.99664759,
+            "profit_factor": 1.21303425
+          },
+          {
+            "key": "31/12/2021",
+            "trades": 46,
+            "profit_abs": 357.74703931,
+            "profit_factor": 2.30614943
+          },
+          {
+            "key": "31/12/2022",
+            "trades": 48,
+            "profit_abs": 473.14596154,
+            "profit_factor": 2.4865124
+          },
+          {
+            "key": "31/12/2023",
+            "trades": 66,
+            "profit_abs": 383.14874898,
+            "profit_factor": 1.80081105
+          },
+          {
+            "key": "31/12/2024",
+            "trades": 36,
+            "profit_abs": -169.12719674,
+            "profit_factor": 0.47835492
+          }
+        ],
+        "first_stake_year_median": {
+          "2020": 134.42783333333333,
+          "2021": 78.23666666666666,
+          "2022": 95.35866666666666,
+          "2023": 133.42716666666666,
+          "2024": 108.27158333333335
+        },
+        "min_add_gap_hours": 3.0,
+        "vs_baseline": {
+          "n_identical": 228,
+          "only_a": 11,
+          "only_b": 13,
+          "open_only_a": 1,
+          "open_only_b": 3,
+          "n_time_or_reason_diff": 10,
+          "time_or_reason_diff": [
+            {
+              "open_date": "2020-07-26 12:00:00+00:00",
+              "is_short": false,
+              "close_a": "2020-07-27 11:00:00+00:00",
+              "close_b": "2020-07-27 06:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            },
+            {
+              "open_date": "2020-09-04 00:00:00+00:00",
+              "is_short": true,
+              "close_a": "2020-09-14 08:00:00+00:00",
+              "close_b": "2020-09-14 13:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            },
+            {
+              "open_date": "2021-12-21 06:00:00+00:00",
+              "is_short": false,
+              "close_a": "2021-12-28 14:00:00+00:00",
+              "close_b": "2021-12-28 17:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            },
+            {
+              "open_date": "2022-04-11 00:00:00+00:00",
+              "is_short": true,
+              "close_a": "2022-04-18 17:00:00+00:00",
+              "close_b": "2022-04-13 14:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            },
+            {
+              "open_date": "2022-04-26 15:00:00+00:00",
+              "is_short": true,
+              "close_a": "2022-05-05 15:00:00+00:00",
+              "close_b": "2022-05-14 22:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            },
+            {
+              "open_date": "2022-09-13 15:00:00+00:00",
+              "is_short": true,
+              "close_a": "2022-09-19 13:00:00+00:00",
+              "close_b": "2022-09-19 03:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            },
+            {
+              "open_date": "2023-04-10 18:00:00+00:00",
+              "is_short": false,
+              "close_a": "2023-04-16 01:00:00+00:00",
+              "close_b": "2023-04-12 15:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            },
+            {
+              "open_date": "2023-07-10 22:00:00+00:00",
+              "is_short": false,
+              "close_a": "2023-07-14 18:00:00+00:00",
+              "close_b": "2023-07-13 21:00:00+00:00",
+              "exit_a": "exit_signal",
+              "exit_b": "trailing_stop_loss"
+            },
+            {
+              "open_date": "2024-03-05 18:00:00+00:00",
+              "is_short": true,
+              "close_a": "2024-03-06 06:00:00+00:00",
+              "close_b": "2024-03-06 05:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            },
+            {
+              "open_date": "2024-06-07 18:00:00+00:00",
+              "is_short": true,
+              "close_a": "2024-06-12 12:00:00+00:00",
+              "close_b": "2024-06-12 15:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "exit_signal"
+            }
+          ],
+          "added_opens": [
+            [
+              "2020-07-27 07:00:00+00:00",
+              false
+            ],
+            [
+              "2022-04-18 06:00:00+00:00",
+              true
+            ],
+            [
+              "2022-09-19 04:00:00+00:00",
+              true
+            ]
+          ],
+          "missing_opens": [
+            [
+              "2022-05-05 16:00:00+00:00",
+              true
+            ]
+          ]
+        }
+      },
+      "confirm_v3_BTC_sig3h": {
+        "n": 242,
+        "profit_total_abs": 1126.52206046,
+        "profit_factor": 1.667209561385144,
+        "max_drawdown_account": 0.06788106861295022,
+        "max_relative_drawdown": 0.09933254050002675,
+        "ratio": 16.595526315051032,
+        "underwater": 0.09933254050002675,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 1,
+        "liquidation": 0,
+        "worst_trade": -51.67458099,
+        "top5_profit_sum": 883.68627901,
+        "n_confirm": 46,
+        "n_scout": 196,
+        "confirm_loss": {
+          "n": 13,
+          "sum": -388.25411911,
+          "worst": -51.67458099
+        },
+        "confirm_win": {
+          "n": 33,
+          "sum": 1925.74488627,
+          "best": 215.29465707
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2020",
+            "trades": 44,
+            "profit_abs": 115.64281684,
+            "profit_factor": 1.33688486
+          },
+          {
+            "key": "31/12/2021",
+            "trades": 46,
+            "profit_abs": 373.90990768,
+            "profit_factor": 2.45571907
+          },
+          {
+            "key": "31/12/2022",
+            "trades": 50,
+            "profit_abs": 357.24244692,
+            "profit_factor": 2.13846754
+          },
+          {
+            "key": "31/12/2023",
+            "trades": 66,
+            "profit_abs": 382.53260832,
+            "profit_factor": 1.77483319
+          },
+          {
+            "key": "31/12/2024",
+            "trades": 36,
+            "profit_abs": -102.8057193,
+            "profit_factor": 0.63387256
+          }
+        ],
+        "first_stake_year_median": {
+          "2020": 133.80433333333332,
+          "2021": 78.91,
+          "2022": 94.64533333333333,
+          "2023": 133.42716666666666,
+          "2024": 108.27158333333335
+        },
+        "min_add_gap_hours": 5.0,
+        "vs_baseline": {
+          "n_identical": 237,
+          "only_a": 2,
+          "only_b": 5,
+          "open_only_a": 1,
+          "open_only_b": 4,
+          "n_time_or_reason_diff": 1,
+          "time_or_reason_diff": [
+            {
+              "open_date": "2024-03-05 18:00:00+00:00",
+              "is_short": true,
+              "close_a": "2024-03-06 06:00:00+00:00",
+              "close_b": "2024-03-08 15:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "stop_loss"
+            }
+          ],
+          "added_opens": [
+            [
+              "2021-07-26 02:00:00+00:00",
+              false
+            ],
+            [
+              "2022-01-22 01:00:00+00:00",
+              true
+            ],
+            [
+              "2022-02-20 10:00:00+00:00",
+              true
+            ],
+            [
+              "2022-03-16 04:00:00+00:00",
+              false
+            ]
+          ],
+          "missing_opens": [
+            [
+              "2021-07-26 03:00:00+00:00",
+              false
+            ]
+          ]
+        }
+      },
+      "confirm_v3_BTC_anchor1": {
+        "n": 243,
+        "profit_total_abs": 204.65487042,
+        "profit_factor": 1.113713293105088,
+        "max_drawdown_account": 0.14809358318639357,
+        "max_relative_drawdown": 0.14809358318639357,
+        "ratio": 1.3819293585625332,
+        "underwater": 0.14809358318639357,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 1,
+        "liquidation": 0,
+        "worst_trade": -45.95618341,
+        "top5_profit_sum": 479.80368963,
+        "n_confirm": 53,
+        "n_scout": 190,
+        "confirm_loss": {
+          "n": 13,
+          "sum": -460.5354204700001,
+          "worst": -45.95618341
+        },
+        "confirm_win": {
+          "n": 40,
+          "sum": 1342.08147528,
+          "best": 146.20704451
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2020",
+            "trades": 43,
+            "profit_abs": 30.50658158,
+            "profit_factor": 1.08730817
+          },
+          {
+            "key": "31/12/2021",
+            "trades": 43,
+            "profit_abs": 51.98006301,
+            "profit_factor": 1.19754616
+          },
+          {
+            "key": "31/12/2022",
+            "trades": 49,
+            "profit_abs": 133.2839899,
+            "profit_factor": 1.44860423
+          },
+          {
+            "key": "31/12/2023",
+            "trades": 67,
+            "profit_abs": 9.03033115,
+            "profit_factor": 1.01620744
+          },
+          {
+            "key": "31/12/2024",
+            "trades": 41,
+            "profit_abs": -20.14609522,
+            "profit_factor": 0.93948719
+          }
+        ],
+        "first_stake_year_median": {
+          "2020": 118.29641666666666,
+          "2021": 74.93566666666666,
+          "2022": 98.82183333333333,
+          "2023": 149.54433333333333,
+          "2024": 113.455
+        },
+        "min_add_gap_hours": 3.0,
+        "vs_baseline": {
+          "n_identical": 0,
+          "only_a": 239,
+          "only_b": 243,
+          "open_only_a": 234,
+          "open_only_b": 238,
+          "n_time_or_reason_diff": 5,
+          "time_or_reason_diff": [
+            {
+              "open_date": "2021-09-05 22:00:00+00:00",
+              "is_short": false,
+              "close_a": "2021-09-07 09:00:00+00:00",
+              "close_b": "2021-09-07 10:00:00+00:00",
+              "exit_a": "exit_signal",
+              "exit_b": "exit_signal"
+            },
+            {
+              "open_date": "2021-09-07 16:00:00+00:00",
+              "is_short": true,
+              "close_a": "2021-09-18 05:00:00+00:00",
+              "close_b": "2021-09-21 07:00:00+00:00",
+              "exit_a": "stop_loss",
+              "exit_b": "trailing_stop_loss"
+            },
+            {
+              "open_date": "2022-05-05 16:00:00+00:00",
+              "is_short": true,
+              "close_a": "2022-05-14 22:00:00+00:00",
+              "close_b": "2022-05-09 20:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            },
+            {
+              "open_date": "2023-03-13 16:00:00+00:00",
+              "is_short": false,
+              "close_a": "2023-03-14 12:00:00+00:00",
+              "close_b": "2023-03-14 21:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            },
+            {
+              "open_date": "2024-01-03 13:00:00+00:00",
+              "is_short": true,
+              "close_a": "2024-01-04 15:00:00+00:00",
+              "close_b": "2024-01-04 20:00:00+00:00",
+              "exit_a": "stop_loss",
+              "exit_b": "stop_loss"
+            }
+          ],
+          "added_opens": [
+            [
+              "2020-04-16 10:00:00+00:00",
+              false
+            ],
+            [
+              "2020-04-20 19:00:00+00:00",
+              true
+            ],
+            [
+              "2020-04-23 16:00:00+00:00",
+              false
+            ],
+            [
+              "2020-04-29 19:00:00+00:00",
+              false
+            ],
+            [
+              "2020-04-30 05:00:00+00:00",
+              false
+            ],
+            [
+              "2020-04-30 10:00:00+00:00",
+              true
+            ],
+            [
+              "2020-05-10 01:00:00+00:00",
+              true
+            ],
+            [
+              "2020-05-20 16:00:00+00:00",
+              true
+            ],
+            [
+              "2020-06-02 01:00:00+00:00",
+              false
+            ],
+            [
+              "2020-06-02 16:00:00+00:00",
+              true
+            ],
+            [
+              "2020-07-02 16:00:00+00:00",
+              true
+            ],
+            [
+              "2020-07-06 07:00:00+00:00",
+              false
+            ],
+            [
+              "2020-07-09 16:00:00+00:00",
+              true
+            ],
+            [
+              "2020-07-21 10:00:00+00:00",
+              false
+            ],
+            [
+              "2020-07-23 01:00:00+00:00",
+              false
+            ],
+            [
+              "2020-07-26 11:00:00+00:00",
+              false
+            ],
+            [
+              "2020-07-27 04:00:00+00:00",
+              false
+            ],
+            [
+              "2020-07-27 19:00:00+00:00",
+              false
+            ],
+            [
+              "2020-08-02 07:00:00+00:00",
+              true
+            ],
+            [
+              "2020-08-10 04:00:00+00:00",
+              false
+            ]
+          ],
+          "missing_opens": [
+            [
+              "2020-04-16 09:00:00+00:00",
+              false
+            ],
+            [
+              "2020-04-20 12:00:00+00:00",
+              true
+            ],
+            [
+              "2020-04-23 15:00:00+00:00",
+              false
+            ],
+            [
+              "2020-04-29 17:00:00+00:00",
+              false
+            ],
+            [
+              "2020-04-30 07:00:00+00:00",
+              false
+            ],
+            [
+              "2020-05-10 03:00:00+00:00",
+              true
+            ],
+            [
+              "2020-05-25 00:00:00+00:00",
+              true
+            ],
+            [
+              "2020-05-31 00:00:00+00:00",
+              false
+            ],
+            [
+              "2020-06-02 00:00:00+00:00",
+              false
+            ],
+            [
+              "2020-06-02 15:00:00+00:00",
+              true
+            ],
+            [
+              "2020-06-07 21:00:00+00:00",
+              false
+            ],
+            [
+              "2020-06-11 18:00:00+00:00",
+              true
+            ],
+            [
+              "2020-06-24 12:00:00+00:00",
+              true
+            ],
+            [
+              "2020-07-02 18:00:00+00:00",
+              true
+            ],
+            [
+              "2020-07-04 18:00:00+00:00",
+              false
+            ],
+            [
+              "2020-07-21 09:00:00+00:00",
+              false
+            ],
+            [
+              "2020-07-23 00:00:00+00:00",
+              false
+            ],
+            [
+              "2020-07-26 12:00:00+00:00",
+              false
+            ],
+            [
+              "2020-07-27 18:00:00+00:00",
+              false
+            ],
+            [
+              "2020-08-02 06:00:00+00:00",
+              true
+            ]
+          ]
+        }
+      },
+      "confirm_v3_BTC_anchor2": {
+        "n": 241,
+        "profit_total_abs": 528.3335918700001,
+        "profit_factor": 1.3119105919149785,
+        "max_drawdown_account": 0.15355381993603515,
+        "max_relative_drawdown": 0.15355381993603515,
+        "ratio": 3.44070627542893,
+        "underwater": 0.15355381993603515,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 1,
+        "liquidation": 0,
+        "worst_trade": -48.32888779,
+        "top5_profit_sum": 550.00831507,
+        "n_confirm": 46,
+        "n_scout": 195,
+        "confirm_loss": {
+          "n": 9,
+          "sum": -336.61375033,
+          "worst": -48.32888779
+        },
+        "confirm_win": {
+          "n": 37,
+          "sum": 1474.7032209000001,
+          "best": 139.47190777
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2020",
+            "trades": 52,
+            "profit_abs": 121.16596433,
+            "profit_factor": 1.2666416
+          },
+          {
+            "key": "31/12/2021",
+            "trades": 34,
+            "profit_abs": 218.88356655,
+            "profit_factor": 2.29811637
+          },
+          {
+            "key": "31/12/2022",
+            "trades": 55,
+            "profit_abs": -26.01441177,
+            "profit_factor": 0.93057036
+          },
+          {
+            "key": "31/12/2023",
+            "trades": 64,
+            "profit_abs": 134.99287643,
+            "profit_factor": 1.31002448
+          },
+          {
+            "key": "31/12/2024",
+            "trades": 36,
+            "profit_abs": 79.30559633,
+            "profit_factor": 1.30418264
+          }
+        ],
+        "first_stake_year_median": {
+          "2020": 123.46083333333334,
+          "2021": 73.75666666666667,
+          "2022": 96.0505,
+          "2023": 151.208,
+          "2024": 98.53975
+        },
+        "min_add_gap_hours": 3.0,
+        "vs_baseline": {
+          "n_identical": 0,
+          "only_a": 239,
+          "only_b": 241,
+          "open_only_a": 234,
+          "open_only_b": 236,
+          "n_time_or_reason_diff": 5,
+          "time_or_reason_diff": [
+            {
+              "open_date": "2020-04-29 17:00:00+00:00",
+              "is_short": false,
+              "close_a": "2020-04-30 06:00:00+00:00",
+              "close_b": "2020-04-30 09:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            },
+            {
+              "open_date": "2020-06-11 18:00:00+00:00",
+              "is_short": true,
+              "close_a": "2020-06-15 16:00:00+00:00",
+              "close_b": "2020-06-22 20:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "stop_loss"
+            },
+            {
+              "open_date": "2022-12-13 14:00:00+00:00",
+              "is_short": false,
+              "close_a": "2022-12-13 17:00:00+00:00",
+              "close_b": "2022-12-14 19:00:00+00:00",
+              "exit_a": "stop_loss",
+              "exit_b": "stop_loss"
+            },
+            {
+              "open_date": "2023-07-10 22:00:00+00:00",
+              "is_short": false,
+              "close_a": "2023-07-14 18:00:00+00:00",
+              "close_b": "2023-07-10 23:00:00+00:00",
+              "exit_a": "exit_signal",
+              "exit_b": "exit_signal"
+            },
+            {
+              "open_date": "2024-04-13 21:00:00+00:00",
+              "is_short": true,
+              "close_a": "2024-04-13 23:00:00+00:00",
+              "close_b": "2024-04-13 22:00:00+00:00",
+              "exit_a": "stop_loss",
+              "exit_b": "stop_loss"
+            }
+          ],
+          "added_opens": [
+            [
+              "2020-04-16 08:00:00+00:00",
+              false
+            ],
+            [
+              "2020-04-20 20:00:00+00:00",
+              true
+            ],
+            [
+              "2020-04-23 17:00:00+00:00",
+              false
+            ],
+            [
+              "2020-05-10 02:00:00+00:00",
+              true
+            ],
+            [
+              "2020-05-27 11:00:00+00:00",
+              false
+            ],
+            [
+              "2020-06-02 02:00:00+00:00",
+              false
+            ],
+            [
+              "2020-06-02 17:00:00+00:00",
+              true
+            ],
+            [
+              "2020-06-07 20:00:00+00:00",
+              false
+            ],
+            [
+              "2020-06-11 17:00:00+00:00",
+              true
+            ],
+            [
+              "2020-06-24 08:00:00+00:00",
+              true
+            ],
+            [
+              "2020-07-02 17:00:00+00:00",
+              true
+            ],
+            [
+              "2020-07-08 14:00:00+00:00",
+              false
+            ],
+            [
+              "2020-07-09 17:00:00+00:00",
+              true
+            ],
+            [
+              "2020-07-21 08:00:00+00:00",
+              false
+            ],
+            [
+              "2020-07-22 23:00:00+00:00",
+              false
+            ],
+            [
+              "2020-07-26 11:00:00+00:00",
+              false
+            ],
+            [
+              "2020-07-27 17:00:00+00:00",
+              false
+            ],
+            [
+              "2020-07-28 00:00:00+00:00",
+              false
+            ],
+            [
+              "2020-08-02 05:00:00+00:00",
+              true
+            ],
+            [
+              "2020-08-10 11:00:00+00:00",
+              true
+            ]
+          ],
+          "missing_opens": [
+            [
+              "2020-04-16 09:00:00+00:00",
+              false
+            ],
+            [
+              "2020-04-20 12:00:00+00:00",
+              true
+            ],
+            [
+              "2020-04-23 15:00:00+00:00",
+              false
+            ],
+            [
+              "2020-04-30 07:00:00+00:00",
+              false
+            ],
+            [
+              "2020-05-10 03:00:00+00:00",
+              true
+            ],
+            [
+              "2020-05-25 00:00:00+00:00",
+              true
+            ],
+            [
+              "2020-05-31 00:00:00+00:00",
+              false
+            ],
+            [
+              "2020-06-02 00:00:00+00:00",
+              false
+            ],
+            [
+              "2020-06-02 15:00:00+00:00",
+              true
+            ],
+            [
+              "2020-06-07 21:00:00+00:00",
+              false
+            ],
+            [
+              "2020-06-24 12:00:00+00:00",
+              true
+            ],
+            [
+              "2020-07-02 18:00:00+00:00",
+              true
+            ],
+            [
+              "2020-07-04 18:00:00+00:00",
+              false
+            ],
+            [
+              "2020-07-21 09:00:00+00:00",
+              false
+            ],
+            [
+              "2020-07-23 00:00:00+00:00",
+              false
+            ],
+            [
+              "2020-07-26 12:00:00+00:00",
+              false
+            ],
+            [
+              "2020-07-27 18:00:00+00:00",
+              false
+            ],
+            [
+              "2020-08-02 06:00:00+00:00",
+              true
+            ],
+            [
+              "2020-08-10 03:00:00+00:00",
+              false
+            ],
+            [
+              "2020-08-17 15:00:00+00:00",
+              false
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "stage23_check1": {
+    "zip": "backtest-result-2026-09-02_09-53-42.zip",
+    "strategies": {
+      "confirm_v3_BTC": {
+        "n": 47,
+        "profit_total_abs": 450.80235582000006,
+        "profit_factor": 2.258072398181309,
+        "max_drawdown_account": 0.06821309918122843,
+        "max_relative_drawdown": 0.06821309918122843,
+        "ratio": 6.608735876701764,
+        "underwater": 0.06821309918122843,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 0,
+        "liquidation": 0,
+        "worst_trade": -43.46653655,
+        "top5_profit_sum": 620.99413978,
+        "n_confirm": 12,
+        "n_scout": 35,
+        "confirm_loss": {
+          "n": 3,
+          "sum": -124.07780570999999,
+          "worst": -43.46653655
+        },
+        "confirm_win": {
+          "n": 9,
+          "sum": 700.33219276,
+          "best": 201.94225954
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2024",
+            "trades": 14,
+            "profit_abs": 270.78827163,
+            "profit_factor": 3.67730914
+          },
+          {
+            "key": "31/12/2025",
+            "trades": 33,
+            "profit_abs": 180.01408419,
+            "profit_factor": 1.69993766
+          }
+        ],
+        "first_stake_year_median": {
+          "2024": 114.14059999999999,
+          "2025": 137.07500000000002
+        },
+        "min_add_gap_hours": 3.0
+      },
+      "confirm_v3_BTC_eqrisk": {
+        "n": 47,
+        "profit_total_abs": 424.7363606500001,
+        "profit_factor": 1.77777028446436,
+        "max_drawdown_account": 0.09472826553599308,
+        "max_relative_drawdown": 0.0948475974868307,
+        "ratio": 4.48373416579254,
+        "underwater": 0.0948475974868307,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 0,
+        "liquidation": 0,
+        "worst_trade": -75.22547491,
+        "top5_profit_sum": 706.51660801,
+        "n_confirm": 12,
+        "n_scout": 35,
+        "confirm_loss": {
+          "n": 3,
+          "sum": -213.91273096999998,
+          "worst": -75.22547491
+        },
+        "confirm_win": {
+          "n": 9,
+          "sum": 825.8405731,
+          "best": 242.33071145
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2024",
+            "trades": 14,
+            "profit_abs": 238.11595334,
+            "profit_factor": 2.67898199
+          },
+          {
+            "key": "31/12/2025",
+            "trades": 33,
+            "profit_abs": 186.62040731,
+            "profit_factor": 1.46161949
+          }
+        ],
+        "first_stake_year_median": {
+          "2024": 142.85105,
+          "2025": 192.1420666666667
+        },
+        "min_add_gap_hours": 3.0,
+        "vs_baseline": {
+          "n_identical": 47,
+          "only_a": 0,
+          "only_b": 0,
+          "open_only_a": 0,
+          "open_only_b": 0,
+          "n_time_or_reason_diff": 0,
+          "time_or_reason_diff": [],
+          "added_opens": [],
+          "missing_opens": []
+        }
+      },
+      "confirm_v3_BTC_noloosen": {
+        "n": 47,
+        "profit_total_abs": 469.9721709500001,
+        "profit_factor": 2.3857026713307783,
+        "max_drawdown_account": 0.06466461287037407,
+        "max_relative_drawdown": 0.06466461287037407,
+        "ratio": 7.267841715717077,
+        "underwater": 0.06466461287037407,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 0,
+        "liquidation": 0,
+        "worst_trade": -38.72448306,
+        "top5_profit_sum": 620.99413978,
+        "n_confirm": 12,
+        "n_scout": 35,
+        "confirm_loss": {
+          "n": 3,
+          "sum": -104.90799057999999,
+          "worst": -38.72448306
+        },
+        "confirm_win": {
+          "n": 9,
+          "sum": 700.33219276,
+          "best": 201.94225954
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2024",
+            "trades": 14,
+            "profit_abs": 275.57479799,
+            "profit_factor": 3.85998216
+          },
+          {
+            "key": "31/12/2025",
+            "trades": 33,
+            "profit_abs": 194.39737296,
+            "profit_factor": 1.80063961
+          }
+        ],
+        "first_stake_year_median": {
+          "2024": 114.14059999999999,
+          "2025": 137.07500000000002
+        },
+        "min_add_gap_hours": 3.0,
+        "vs_baseline": {
+          "n_identical": 44,
+          "only_a": 3,
+          "only_b": 3,
+          "open_only_a": 0,
+          "open_only_b": 0,
+          "n_time_or_reason_diff": 3,
+          "time_or_reason_diff": [
+            {
+              "open_date": "2024-12-04 21:00:00+00:00",
+              "is_short": false,
+              "close_a": "2024-12-05 22:00:00+00:00",
+              "close_b": "2024-12-05 20:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            },
+            {
+              "open_date": "2025-06-09 12:00:00+00:00",
+              "is_short": false,
+              "close_a": "2025-06-12 03:00:00+00:00",
+              "close_b": "2025-06-11 22:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            },
+            {
+              "open_date": "2025-08-24 21:00:00+00:00",
+              "is_short": true,
+              "close_a": "2025-08-28 04:00:00+00:00",
+              "close_b": "2025-08-27 14:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            }
+          ],
+          "added_opens": [],
+          "missing_opens": []
+        }
+      },
+      "confirm_v3_BTC_noloosen_keepR": {
+        "n": 48,
+        "profit_total_abs": 204.29498424000002,
+        "profit_factor": 1.6023592946548426,
+        "max_drawdown_account": 0.08159003620680357,
+        "max_relative_drawdown": 0.08159003620680357,
+        "ratio": 2.5039207449569,
+        "underwater": 0.08159003620680357,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 0,
+        "liquidation": 0,
+        "worst_trade": -38.72448306,
+        "top5_profit_sum": 364.7371383,
+        "n_confirm": 13,
+        "n_scout": 35,
+        "confirm_loss": {
+          "n": 3,
+          "sum": -104.90799057999999,
+          "worst": -38.72448306
+        },
+        "confirm_win": {
+          "n": 10,
+          "sum": 434.65500605000005,
+          "best": 201.94225954
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2024",
+            "trades": 15,
+            "profit_abs": 9.26391444,
+            "profit_factor": 1.09614315
+          },
+          {
+            "key": "31/12/2025",
+            "trades": 33,
+            "profit_abs": 195.0310698,
+            "profit_factor": 1.80324954
+          }
+        ],
+        "first_stake_year_median": {
+          "2024": 115.3078,
+          "2025": 137.07500000000002
+        },
+        "min_add_gap_hours": 3.0,
+        "vs_baseline": {
+          "n_identical": 40,
+          "only_a": 7,
+          "only_b": 8,
+          "open_only_a": 0,
+          "open_only_b": 1,
+          "n_time_or_reason_diff": 7,
+          "time_or_reason_diff": [
+            {
+              "open_date": "2024-09-09 18:00:00+00:00",
+              "is_short": false,
+              "close_a": "2024-09-30 01:00:00+00:00",
+              "close_b": "2024-09-15 23:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            },
+            {
+              "open_date": "2024-11-06 03:00:00+00:00",
+              "is_short": false,
+              "close_a": "2024-11-17 22:00:00+00:00",
+              "close_b": "2024-11-10 06:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            },
+            {
+              "open_date": "2024-12-04 21:00:00+00:00",
+              "is_short": false,
+              "close_a": "2024-12-05 22:00:00+00:00",
+              "close_b": "2024-12-05 20:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            },
+            {
+              "open_date": "2025-01-20 18:00:00+00:00",
+              "is_short": true,
+              "close_a": "2025-01-27 13:00:00+00:00",
+              "close_b": "2025-01-27 15:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "exit_signal"
+            },
+            {
+              "open_date": "2025-06-09 12:00:00+00:00",
+              "is_short": false,
+              "close_a": "2025-06-12 03:00:00+00:00",
+              "close_b": "2025-06-11 22:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            },
+            {
+              "open_date": "2025-07-11 00:00:00+00:00",
+              "is_short": false,
+              "close_a": "2025-07-14 10:00:00+00:00",
+              "close_b": "2025-07-14 09:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            },
+            {
+              "open_date": "2025-08-24 21:00:00+00:00",
+              "is_short": true,
+              "close_a": "2025-08-28 04:00:00+00:00",
+              "close_b": "2025-08-27 14:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            }
+          ],
+          "added_opens": [
+            [
+              "2024-11-10 07:00:00+00:00",
+              false
+            ]
+          ],
+          "missing_opens": []
+        }
+      },
+      "confirm_v3_BTC_sig3h": {
+        "n": 48,
+        "profit_total_abs": 354.78221263,
+        "profit_factor": 1.9901050944234955,
+        "max_drawdown_account": 0.06821309918122843,
+        "max_relative_drawdown": 0.06821309918122843,
+        "ratio": 5.201086255990441,
+        "underwater": 0.06821309918122843,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 0,
+        "liquidation": 0,
+        "worst_trade": -43.46653655,
+        "top5_profit_sum": 506.67611021000005,
+        "n_confirm": 13,
+        "n_scout": 35,
+        "confirm_loss": {
+          "n": 3,
+          "sum": -124.07780570999999,
+          "worst": -43.46653655
+        },
+        "confirm_win": {
+          "n": 10,
+          "sum": 604.31204957,
+          "best": 165.93798079
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2024",
+            "trades": 14,
+            "profit_abs": 270.78827163,
+            "profit_factor": 3.67730914
+          },
+          {
+            "key": "31/12/2025",
+            "trades": 34,
+            "profit_abs": 83.993941,
+            "profit_factor": 1.32658846
+          }
+        ],
+        "first_stake_year_median": {
+          "2024": 114.14059999999999,
+          "2025": 137.15966666666668
+        },
+        "min_add_gap_hours": 6.0,
+        "vs_baseline": {
+          "n_identical": 46,
+          "only_a": 1,
+          "only_b": 2,
+          "open_only_a": 0,
+          "open_only_b": 1,
+          "n_time_or_reason_diff": 1,
+          "time_or_reason_diff": [
+            {
+              "open_date": "2025-02-21 18:00:00+00:00",
+              "is_short": true,
+              "close_a": "2025-03-01 02:00:00+00:00",
+              "close_b": "2025-02-25 00:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            }
+          ],
+          "added_opens": [
+            [
+              "2025-02-25 01:00:00+00:00",
+              true
+            ]
+          ],
+          "missing_opens": []
+        }
+      },
+      "confirm_v3_BTC_anchor1": {
+        "n": 50,
+        "profit_total_abs": -30.289985129999994,
+        "profit_factor": 0.9227286201685793,
+        "max_drawdown_account": 0.14738661090000005,
+        "max_relative_drawdown": 0.14738661090000005,
+        "ratio": -0.20551381801262372,
+        "underwater": 0.14738661090000005,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 0,
+        "liquidation": 0,
+        "worst_trade": -43.67753866,
+        "top5_profit_sum": 187.42680803,
+        "n_confirm": 13,
+        "n_scout": 37,
+        "confirm_loss": {
+          "n": 4,
+          "sum": -163.83893924,
+          "worst": -43.67753866
+        },
+        "confirm_win": {
+          "n": 9,
+          "sum": 244.37174853,
+          "best": 64.43949187
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2024",
+            "trades": 21,
+            "profit_abs": -81.69939494,
+            "profit_factor": 0.46913193
+          },
+          {
+            "key": "31/12/2025",
+            "trades": 29,
+            "profit_abs": 51.40940981,
+            "profit_factor": 1.2159178
+          }
+        ],
+        "first_stake_year_median": {
+          "2024": 100.9628,
+          "2025": 130.54013333333333
+        },
+        "min_add_gap_hours": 3.0,
+        "vs_baseline": {
+          "n_identical": 0,
+          "only_a": 47,
+          "only_b": 50,
+          "open_only_a": 47,
+          "open_only_b": 50,
+          "n_time_or_reason_diff": 0,
+          "time_or_reason_diff": [],
+          "added_opens": [
+            [
+              "2024-09-03 16:00:00+00:00",
+              true
+            ],
+            [
+              "2024-09-04 16:00:00+00:00",
+              false
+            ],
+            [
+              "2024-09-06 16:00:00+00:00",
+              true
+            ],
+            [
+              "2024-09-13 16:00:00+00:00",
+              false
+            ],
+            [
+              "2024-09-17 16:00:00+00:00",
+              false
+            ],
+            [
+              "2024-09-19 01:00:00+00:00",
+              false
+            ],
+            [
+              "2024-10-07 01:00:00+00:00",
+              false
+            ],
+            [
+              "2024-10-14 04:00:00+00:00",
+              false
+            ],
+            [
+              "2024-11-06 01:00:00+00:00",
+              false
+            ],
+            [
+              "2024-11-06 05:00:00+00:00",
+              false
+            ],
+            [
+              "2024-11-13 16:00:00+00:00",
+              false
+            ],
+            [
+              "2024-11-13 22:00:00+00:00",
+              true
+            ],
+            [
+              "2024-12-02 16:00:00+00:00",
+              false
+            ],
+            [
+              "2024-12-02 18:00:00+00:00",
+              false
+            ],
+            [
+              "2024-12-05 06:00:00+00:00",
+              false
+            ],
+            [
+              "2024-12-16 01:00:00+00:00",
+              false
+            ],
+            [
+              "2024-12-18 22:00:00+00:00",
+              true
+            ],
+            [
+              "2024-12-24 16:00:00+00:00",
+              false
+            ],
+            [
+              "2024-12-26 10:00:00+00:00",
+              true
+            ],
+            [
+              "2024-12-30 19:00:00+00:00",
+              false
+            ]
+          ],
+          "missing_opens": [
+            [
+              "2024-09-03 15:00:00+00:00",
+              true
+            ],
+            [
+              "2024-09-09 18:00:00+00:00",
+              false
+            ],
+            [
+              "2024-09-30 03:00:00+00:00",
+              true
+            ],
+            [
+              "2024-10-09 21:00:00+00:00",
+              true
+            ],
+            [
+              "2024-10-14 06:00:00+00:00",
+              false
+            ],
+            [
+              "2024-10-25 18:00:00+00:00",
+              true
+            ],
+            [
+              "2024-11-06 03:00:00+00:00",
+              false
+            ],
+            [
+              "2024-11-21 06:00:00+00:00",
+              false
+            ],
+            [
+              "2024-11-25 15:00:00+00:00",
+              true
+            ],
+            [
+              "2024-12-04 21:00:00+00:00",
+              false
+            ],
+            [
+              "2024-12-10 18:00:00+00:00",
+              true
+            ],
+            [
+              "2024-12-18 21:00:00+00:00",
+              true
+            ],
+            [
+              "2024-12-24 15:00:00+00:00",
+              false
+            ],
+            [
+              "2024-12-30 15:00:00+00:00",
+              true
+            ],
+            [
+              "2025-01-07 18:00:00+00:00",
+              true
+            ],
+            [
+              "2025-01-13 12:00:00+00:00",
+              true
+            ],
+            [
+              "2025-01-15 15:00:00+00:00",
+              false
+            ],
+            [
+              "2025-01-20 00:00:00+00:00",
+              true
+            ],
+            [
+              "2025-01-20 09:00:00+00:00",
+              false
+            ],
+            [
+              "2025-01-20 18:00:00+00:00",
+              true
+            ]
+          ]
+        }
+      },
+      "confirm_v3_BTC_anchor2": {
+        "n": 47,
+        "profit_total_abs": 128.58157221,
+        "profit_factor": 1.5105806675312485,
+        "max_drawdown_account": 0.0726440440895426,
+        "max_relative_drawdown": 0.0726440440895426,
+        "ratio": 1.7700222202870148,
+        "underwater": 0.0726440440895426,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 1,
+        "liquidation": 0,
+        "worst_trade": -43.12632782,
+        "top5_profit_sum": 192.79678705,
+        "n_confirm": 11,
+        "n_scout": 36,
+        "confirm_loss": {
+          "n": 1,
+          "sum": -43.12632782,
+          "worst": -43.12632782
+        },
+        "confirm_win": {
+          "n": 10,
+          "sum": 224.4433153,
+          "best": 49.88876205
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2024",
+            "trades": 15,
+            "profit_abs": 14.7997972,
+            "profit_factor": 1.13644813
+          },
+          {
+            "key": "31/12/2025",
+            "trades": 32,
+            "profit_abs": 113.78177501,
+            "profit_factor": 1.79362685
+          }
+        ],
+        "first_stake_year_median": {
+          "2024": 115.30716666666667,
+          "2025": 134.9804
+        },
+        "min_add_gap_hours": 15.0,
+        "vs_baseline": {
+          "n_identical": 0,
+          "only_a": 47,
+          "only_b": 47,
+          "open_only_a": 47,
+          "open_only_b": 47,
+          "n_time_or_reason_diff": 0,
+          "time_or_reason_diff": [],
+          "added_opens": [
+            [
+              "2024-09-04 17:00:00+00:00",
+              false
+            ],
+            [
+              "2024-09-06 17:00:00+00:00",
+              true
+            ],
+            [
+              "2024-09-17 17:00:00+00:00",
+              false
+            ],
+            [
+              "2024-09-30 02:00:00+00:00",
+              true
+            ],
+            [
+              "2024-10-07 02:00:00+00:00",
+              false
+            ],
+            [
+              "2024-10-14 05:00:00+00:00",
+              false
+            ],
+            [
+              "2024-10-15 15:00:00+00:00",
+              false
+            ],
+            [
+              "2024-11-06 05:00:00+00:00",
+              false
+            ],
+            [
+              "2024-11-10 07:00:00+00:00",
+              false
+            ],
+            [
+              "2024-11-21 05:00:00+00:00",
+              false
+            ],
+            [
+              "2024-12-04 20:00:00+00:00",
+              false
+            ],
+            [
+              "2024-12-05 05:00:00+00:00",
+              false
+            ],
+            [
+              "2024-12-16 02:00:00+00:00",
+              false
+            ],
+            [
+              "2024-12-19 20:00:00+00:00",
+              true
+            ],
+            [
+              "2024-12-30 20:00:00+00:00",
+              false
+            ],
+            [
+              "2024-12-30 22:00:00+00:00",
+              false
+            ],
+            [
+              "2025-01-07 17:00:00+00:00",
+              true
+            ],
+            [
+              "2025-01-19 23:00:00+00:00",
+              true
+            ],
+            [
+              "2025-01-20 08:00:00+00:00",
+              false
+            ],
+            [
+              "2025-01-27 02:00:00+00:00",
+              true
+            ]
+          ],
+          "missing_opens": [
+            [
+              "2024-09-03 15:00:00+00:00",
+              true
+            ],
+            [
+              "2024-09-09 18:00:00+00:00",
+              false
+            ],
+            [
+              "2024-09-30 03:00:00+00:00",
+              true
+            ],
+            [
+              "2024-10-09 21:00:00+00:00",
+              true
+            ],
+            [
+              "2024-10-14 06:00:00+00:00",
+              false
+            ],
+            [
+              "2024-10-25 18:00:00+00:00",
+              true
+            ],
+            [
+              "2024-11-06 03:00:00+00:00",
+              false
+            ],
+            [
+              "2024-11-21 06:00:00+00:00",
+              false
+            ],
+            [
+              "2024-11-25 15:00:00+00:00",
+              true
+            ],
+            [
+              "2024-12-04 21:00:00+00:00",
+              false
+            ],
+            [
+              "2024-12-10 18:00:00+00:00",
+              true
+            ],
+            [
+              "2024-12-18 21:00:00+00:00",
+              true
+            ],
+            [
+              "2024-12-24 15:00:00+00:00",
+              false
+            ],
+            [
+              "2024-12-30 15:00:00+00:00",
+              true
+            ],
+            [
+              "2025-01-07 18:00:00+00:00",
+              true
+            ],
+            [
+              "2025-01-13 12:00:00+00:00",
+              true
+            ],
+            [
+              "2025-01-15 15:00:00+00:00",
+              false
+            ],
+            [
+              "2025-01-20 00:00:00+00:00",
+              true
+            ],
+            [
+              "2025-01-20 09:00:00+00:00",
+              false
+            ],
+            [
+              "2025-01-20 18:00:00+00:00",
+              true
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "stage23_check2": {
+    "zip": "backtest-result-2026-09-02_09-54-39.zip",
+    "strategies": {
+      "confirm_v3_BTC": {
+        "n": 54,
+        "profit_total_abs": 511.31878711999997,
+        "profit_factor": 2.3040036677738893,
+        "max_drawdown_account": 0.12416622825946917,
+        "max_relative_drawdown": 0.12416622825946917,
+        "ratio": 4.118018194540799,
+        "underwater": 0.12416622825946917,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 1,
+        "liquidation": 0,
+        "worst_trade": -39.66793137,
+        "top5_profit_sum": 722.75047969,
+        "n_confirm": 11,
+        "n_scout": 43,
+        "confirm_loss": {
+          "n": 2,
+          "sum": -54.36023201,
+          "worst": -39.66793137
+        },
+        "confirm_win": {
+          "n": 9,
+          "sum": 838.08580728,
+          "best": 244.81948764
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2025",
+            "trades": 19,
+            "profit_abs": 186.94624384,
+            "profit_factor": 2.18802046
+          },
+          {
+            "key": "31/12/2026",
+            "trades": 35,
+            "profit_abs": 324.37254328,
+            "profit_factor": 2.38174875
+          }
+        ],
+        "first_stake_year_median": {
+          "2025": 117.58460000000001,
+          "2026": 171.40773333333334
+        },
+        "min_add_gap_hours": 3.0
+      },
+      "confirm_v3_BTC_eqrisk": {
+        "n": 54,
+        "profit_total_abs": 601.51259305,
+        "profit_factor": 2.128453292872842,
+        "max_drawdown_account": 0.15927091928602286,
+        "max_relative_drawdown": 0.15927091928602286,
+        "ratio": 3.776663032689527,
+        "underwater": 0.15927091928602286,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 1,
+        "liquidation": 0,
+        "worst_trade": -60.8245249,
+        "top5_profit_sum": 884.05515285,
+        "n_confirm": 11,
+        "n_scout": 43,
+        "confirm_loss": {
+          "n": 2,
+          "sum": -80.41425908,
+          "worst": -60.8245249
+        },
+        "confirm_win": {
+          "n": 9,
+          "sum": 1053.59482519,
+          "best": 306.02435955
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2025",
+            "trades": 19,
+            "profit_abs": 178.95562255,
+            "profit_factor": 1.84108158
+          },
+          {
+            "key": "31/12/2026",
+            "trades": 35,
+            "profit_abs": 422.5569705,
+            "profit_factor": 2.31936416
+          }
+        ],
+        "first_stake_year_median": {
+          "2025": 149.5464,
+          "2026": 235.6856333333333
+        },
+        "min_add_gap_hours": 3.0,
+        "vs_baseline": {
+          "n_identical": 54,
+          "only_a": 0,
+          "only_b": 0,
+          "open_only_a": 0,
+          "open_only_b": 0,
+          "n_time_or_reason_diff": 0,
+          "time_or_reason_diff": [],
+          "added_opens": [],
+          "missing_opens": []
+        }
+      },
+      "confirm_v3_BTC_noloosen": {
+        "n": 54,
+        "profit_total_abs": 516.3467685200001,
+        "profit_factor": 2.3339310511650155,
+        "max_drawdown_account": 0.12032712883496866,
+        "max_relative_drawdown": 0.12032712883496866,
+        "ratio": 4.291191633336329,
+        "underwater": 0.12032712883496866,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 1,
+        "liquidation": 0,
+        "worst_trade": -34.63994997,
+        "top5_profit_sum": 722.75047969,
+        "n_confirm": 11,
+        "n_scout": 43,
+        "confirm_loss": {
+          "n": 2,
+          "sum": -49.33225061,
+          "worst": -34.63994997
+        },
+        "confirm_win": {
+          "n": 9,
+          "sum": 838.08580728,
+          "best": 244.81948764
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2025",
+            "trades": 19,
+            "profit_abs": 191.97422524,
+            "profit_factor": 2.26024012
+          },
+          {
+            "key": "31/12/2026",
+            "trades": 35,
+            "profit_abs": 324.37254328,
+            "profit_factor": 2.38174875
+          }
+        ],
+        "first_stake_year_median": {
+          "2025": 117.58460000000001,
+          "2026": 171.40773333333334
+        },
+        "min_add_gap_hours": 3.0,
+        "vs_baseline": {
+          "n_identical": 53,
+          "only_a": 1,
+          "only_b": 1,
+          "open_only_a": 0,
+          "open_only_b": 0,
+          "n_time_or_reason_diff": 1,
+          "time_or_reason_diff": [
+            {
+              "open_date": "2025-12-07 18:00:00+00:00",
+              "is_short": false,
+              "close_a": "2025-12-11 02:00:00+00:00",
+              "close_b": "2025-12-11 01:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            }
+          ],
+          "added_opens": [],
+          "missing_opens": []
+        }
+      },
+      "confirm_v3_BTC_noloosen_keepR": {
+        "n": 54,
+        "profit_total_abs": 459.78633149000007,
+        "profit_factor": 2.13852925756978,
+        "max_drawdown_account": 0.12032712883496866,
+        "max_relative_drawdown": 0.12032712883496866,
+        "ratio": 3.8211360641755796,
+        "underwater": 0.12032712883496866,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 0,
+        "liquidation": 0,
+        "worst_trade": -34.63994997,
+        "top5_profit_sum": 722.75047969,
+        "n_confirm": 10,
+        "n_scout": 44,
+        "confirm_loss": {
+          "n": 2,
+          "sum": -49.33225061,
+          "worst": -34.63994997
+        },
+        "confirm_win": {
+          "n": 8,
+          "sum": 798.28117076,
+          "best": 244.81948764
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2025",
+            "trades": 19,
+            "profit_abs": 191.97422524,
+            "profit_factor": 2.26024012
+          },
+          {
+            "key": "31/12/2026",
+            "trades": 35,
+            "profit_abs": 267.81210625,
+            "profit_factor": 2.06481319
+          }
+        ],
+        "first_stake_year_median": {
+          "2025": 117.58460000000001,
+          "2026": 171.40773333333334
+        },
+        "min_add_gap_hours": 3.0,
+        "vs_baseline": {
+          "n_identical": 49,
+          "only_a": 5,
+          "only_b": 5,
+          "open_only_a": 2,
+          "open_only_b": 2,
+          "n_time_or_reason_diff": 3,
+          "time_or_reason_diff": [
+            {
+              "open_date": "2025-12-07 18:00:00+00:00",
+              "is_short": false,
+              "close_a": "2025-12-11 02:00:00+00:00",
+              "close_b": "2025-12-11 01:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            },
+            {
+              "open_date": "2026-06-17 21:00:00+00:00",
+              "is_short": true,
+              "close_a": "2026-06-24 20:00:00+00:00",
+              "close_b": "2026-06-24 15:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            },
+            {
+              "open_date": "2026-08-19 16:00:00+00:00",
+              "is_short": false,
+              "close_a": "2026-08-20 09:00:00+00:00",
+              "close_b": "2026-08-20 13:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            }
+          ],
+          "added_opens": [
+            [
+              "2026-06-24 16:00:00+00:00",
+              true
+            ],
+            [
+              "2026-08-21 09:00:00+00:00",
+              false
+            ]
+          ],
+          "missing_opens": [
+            [
+              "2026-08-20 10:00:00+00:00",
+              false
+            ],
+            [
+              "2026-08-21 10:00:00+00:00",
+              false
+            ]
+          ]
+        }
+      },
+      "confirm_v3_BTC_sig3h": {
+        "n": 55,
+        "profit_total_abs": 461.51635102,
+        "profit_factor": 2.1769963462807906,
+        "max_drawdown_account": 0.129074478107018,
+        "max_relative_drawdown": 0.129074478107018,
+        "ratio": 3.575581770993863,
+        "underwater": 0.129074478107018,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 1,
+        "liquidation": 0,
+        "worst_trade": -39.66793137,
+        "top5_profit_sum": 675.34745761,
+        "n_confirm": 11,
+        "n_scout": 44,
+        "confirm_loss": {
+          "n": 2,
+          "sum": -54.36023201,
+          "worst": -39.66793137
+        },
+        "confirm_win": {
+          "n": 9,
+          "sum": 757.32979502,
+          "best": 244.81948764
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2025",
+            "trades": 20,
+            "profit_abs": 137.14380774,
+            "profit_factor": 1.87153688
+          },
+          {
+            "key": "31/12/2026",
+            "trades": 35,
+            "profit_abs": 324.37254328,
+            "profit_factor": 2.38174875
+          }
+        ],
+        "first_stake_year_median": {
+          "2025": 116.91576666666667,
+          "2026": 171.40773333333334
+        },
+        "min_add_gap_hours": 9.0,
+        "vs_baseline": {
+          "n_identical": 53,
+          "only_a": 1,
+          "only_b": 2,
+          "open_only_a": 1,
+          "open_only_b": 2,
+          "n_time_or_reason_diff": 0,
+          "time_or_reason_diff": [],
+          "added_opens": [
+            [
+              "2025-10-10 22:00:00+00:00",
+              true
+            ],
+            [
+              "2025-10-17 10:00:00+00:00",
+              true
+            ]
+          ],
+          "missing_opens": [
+            [
+              "2025-10-17 09:00:00+00:00",
+              true
+            ]
+          ]
+        }
+      },
+      "confirm_v3_BTC_anchor1": {
+        "n": 54,
+        "profit_total_abs": 684.2112348699998,
+        "profit_factor": 2.966115407053645,
+        "max_drawdown_account": 0.10810306680774111,
+        "max_relative_drawdown": 0.10810306680774111,
+        "ratio": 6.3292490682697675,
+        "underwater": 0.10810306680774111,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 0,
+        "liquidation": 0,
+        "worst_trade": -24.54579439,
+        "top5_profit_sum": 839.4187060399998,
+        "n_confirm": 14,
+        "n_scout": 40,
+        "confirm_loss": {
+          "n": 2,
+          "sum": -37.7405119,
+          "worst": -24.54579439
+        },
+        "confirm_win": {
+          "n": 12,
+          "sum": 985.5309971499998,
+          "best": 229.62437114
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2025",
+            "trades": 18,
+            "profit_abs": 485.9033699,
+            "profit_factor": 5.06324956
+          },
+          {
+            "key": "31/12/2026",
+            "trades": 36,
+            "profit_abs": 198.30786497,
+            "profit_factor": 1.86818483
+          }
+        ],
+        "first_stake_year_median": {
+          "2025": 121.81700000000001,
+          "2026": 143.12320000000003
+        },
+        "min_add_gap_hours": 12.0,
+        "vs_baseline": {
+          "n_identical": 0,
+          "only_a": 54,
+          "only_b": 54,
+          "open_only_a": 53,
+          "open_only_b": 53,
+          "n_time_or_reason_diff": 1,
+          "time_or_reason_diff": [
+            {
+              "open_date": "2026-08-19 16:00:00+00:00",
+              "is_short": false,
+              "close_a": "2026-08-20 09:00:00+00:00",
+              "close_b": "2026-08-20 10:00:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            }
+          ],
+          "added_opens": [
+            [
+              "2025-09-22 01:00:00+00:00",
+              true
+            ],
+            [
+              "2025-09-22 07:00:00+00:00",
+              true
+            ],
+            [
+              "2025-09-29 01:00:00+00:00",
+              false
+            ],
+            [
+              "2025-10-07 16:00:00+00:00",
+              true
+            ],
+            [
+              "2025-10-10 22:00:00+00:00",
+              true
+            ],
+            [
+              "2025-10-21 16:00:00+00:00",
+              false
+            ],
+            [
+              "2025-10-28 22:00:00+00:00",
+              true
+            ],
+            [
+              "2025-11-03 04:00:00+00:00",
+              true
+            ],
+            [
+              "2025-11-12 16:00:00+00:00",
+              true
+            ],
+            [
+              "2025-11-26 19:00:00+00:00",
+              false
+            ],
+            [
+              "2025-12-01 01:00:00+00:00",
+              true
+            ],
+            [
+              "2025-12-02 16:00:00+00:00",
+              false
+            ],
+            [
+              "2025-12-07 19:00:00+00:00",
+              false
+            ],
+            [
+              "2025-12-09 16:00:00+00:00",
+              false
+            ],
+            [
+              "2025-12-12 16:00:00+00:00",
+              true
+            ],
+            [
+              "2025-12-18 19:00:00+00:00",
+              true
+            ],
+            [
+              "2025-12-26 04:00:00+00:00",
+              false
+            ],
+            [
+              "2025-12-29 04:00:00+00:00",
+              false
+            ],
+            [
+              "2025-12-29 10:00:00+00:00",
+              true
+            ],
+            [
+              "2026-01-06 19:00:00+00:00",
+              true
+            ]
+          ],
+          "missing_opens": [
+            [
+              "2025-09-22 03:00:00+00:00",
+              true
+            ],
+            [
+              "2025-09-25 18:00:00+00:00",
+              true
+            ],
+            [
+              "2025-09-29 00:00:00+00:00",
+              false
+            ],
+            [
+              "2025-10-10 18:00:00+00:00",
+              true
+            ],
+            [
+              "2025-10-17 09:00:00+00:00",
+              true
+            ],
+            [
+              "2025-10-21 15:00:00+00:00",
+              false
+            ],
+            [
+              "2025-10-28 21:00:00+00:00",
+              true
+            ],
+            [
+              "2025-11-04 18:00:00+00:00",
+              true
+            ],
+            [
+              "2025-11-13 18:00:00+00:00",
+              true
+            ],
+            [
+              "2025-11-26 18:00:00+00:00",
+              false
+            ],
+            [
+              "2025-12-01 03:00:00+00:00",
+              true
+            ],
+            [
+              "2025-12-07 18:00:00+00:00",
+              false
+            ],
+            [
+              "2025-12-12 18:00:00+00:00",
+              true
+            ],
+            [
+              "2025-12-17 15:00:00+00:00",
+              false
+            ],
+            [
+              "2025-12-17 16:00:00+00:00",
+              false
+            ],
+            [
+              "2025-12-17 18:00:00+00:00",
+              true
+            ],
+            [
+              "2025-12-26 03:00:00+00:00",
+              false
+            ],
+            [
+              "2025-12-29 03:00:00+00:00",
+              false
+            ],
+            [
+              "2025-12-29 12:00:00+00:00",
+              true
+            ],
+            [
+              "2026-01-05 03:00:00+00:00",
+              false
+            ]
+          ]
+        }
+      },
+      "confirm_v3_BTC_anchor2": {
+        "n": 54,
+        "profit_total_abs": -193.24715146,
+        "profit_factor": 0.46892931860380016,
+        "max_drawdown_account": 0.25676555421915787,
+        "max_relative_drawdown": 0.25676555421915787,
+        "ratio": -0.7526210127666002,
+        "underwater": 0.25676555421915787,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 0,
+        "liquidation": 0,
+        "worst_trade": -10.42612795,
+        "top5_profit_sum": 100.27502826999999,
+        "n_confirm": 6,
+        "n_scout": 48,
+        "confirm_loss": {
+          "n": 0,
+          "sum": 0,
+          "worst": null
+        },
+        "confirm_win": {
+          "n": 6,
+          "sum": 117.06869746,
+          "best": 21.3336155
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2025",
+            "trades": 22,
+            "profit_abs": -93.2032255,
+            "profit_factor": 0.36431595
+          },
+          {
+            "key": "31/12/2026",
+            "trades": 32,
+            "profit_abs": -100.04392596,
+            "profit_factor": 0.53952697
+          }
+        ],
+        "first_stake_year_median": {
+          "2025": 119.75010000000002,
+          "2026": 129.22333333333333
+        },
+        "min_add_gap_hours": 14.0,
+        "vs_baseline": {
+          "n_identical": 1,
+          "only_a": 53,
+          "only_b": 53,
+          "open_only_a": 53,
+          "open_only_b": 53,
+          "n_time_or_reason_diff": 0,
+          "time_or_reason_diff": [],
+          "added_opens": [
+            [
+              "2025-09-22 02:00:00+00:00",
+              true
+            ],
+            [
+              "2025-09-22 08:00:00+00:00",
+              true
+            ],
+            [
+              "2025-09-28 23:00:00+00:00",
+              false
+            ],
+            [
+              "2025-10-01 11:00:00+00:00",
+              false
+            ],
+            [
+              "2025-10-05 05:00:00+00:00",
+              false
+            ],
+            [
+              "2025-10-09 17:00:00+00:00",
+              true
+            ],
+            [
+              "2025-10-10 17:00:00+00:00",
+              true
+            ],
+            [
+              "2025-10-10 23:00:00+00:00",
+              true
+            ],
+            [
+              "2025-10-20 05:00:00+00:00",
+              false
+            ],
+            [
+              "2025-10-21 17:00:00+00:00",
+              false
+            ],
+            [
+              "2025-10-30 08:00:00+00:00",
+              false
+            ],
+            [
+              "2025-11-12 17:00:00+00:00",
+              true
+            ],
+            [
+              "2025-11-20 17:00:00+00:00",
+              true
+            ],
+            [
+              "2025-12-01 02:00:00+00:00",
+              true
+            ],
+            [
+              "2025-12-02 17:00:00+00:00",
+              false
+            ],
+            [
+              "2025-12-09 17:00:00+00:00",
+              false
+            ],
+            [
+              "2025-12-15 17:00:00+00:00",
+              true
+            ],
+            [
+              "2025-12-18 20:00:00+00:00",
+              true
+            ],
+            [
+              "2025-12-26 05:00:00+00:00",
+              false
+            ],
+            [
+              "2025-12-26 17:00:00+00:00",
+              true
+            ]
+          ],
+          "missing_opens": [
+            [
+              "2025-09-22 03:00:00+00:00",
+              true
+            ],
+            [
+              "2025-09-25 18:00:00+00:00",
+              true
+            ],
+            [
+              "2025-09-29 00:00:00+00:00",
+              false
+            ],
+            [
+              "2025-10-10 18:00:00+00:00",
+              true
+            ],
+            [
+              "2025-10-17 09:00:00+00:00",
+              true
+            ],
+            [
+              "2025-10-21 15:00:00+00:00",
+              false
+            ],
+            [
+              "2025-10-28 21:00:00+00:00",
+              true
+            ],
+            [
+              "2025-11-04 18:00:00+00:00",
+              true
+            ],
+            [
+              "2025-11-13 18:00:00+00:00",
+              true
+            ],
+            [
+              "2025-11-26 18:00:00+00:00",
+              false
+            ],
+            [
+              "2025-12-01 03:00:00+00:00",
+              true
+            ],
+            [
+              "2025-12-07 18:00:00+00:00",
+              false
+            ],
+            [
+              "2025-12-12 18:00:00+00:00",
+              true
+            ],
+            [
+              "2025-12-17 15:00:00+00:00",
+              false
+            ],
+            [
+              "2025-12-17 16:00:00+00:00",
+              false
+            ],
+            [
+              "2025-12-17 18:00:00+00:00",
+              true
+            ],
+            [
+              "2025-12-26 03:00:00+00:00",
+              false
+            ],
+            [
+              "2025-12-29 03:00:00+00:00",
+              false
+            ],
+            [
+              "2025-12-29 12:00:00+00:00",
+              true
+            ],
+            [
+              "2026-01-05 03:00:00+00:00",
+              false
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "check2_5m_noloosen": {
+    "zip": "backtest-result-2026-09-02_09-56-58.zip",
+    "strategies": {
+      "confirm_v3_BTC": {
+        "n": 54,
+        "profit_total_abs": 489.3564176,
+        "profit_factor": 2.247993579491402,
+        "max_drawdown_account": 0.12628392100740016,
+        "max_relative_drawdown": 0.12628392100740016,
+        "ratio": 3.875049283363034,
+        "underwater": 0.12628392100740016,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 1,
+        "liquidation": 0,
+        "worst_trade": -39.66793137,
+        "top5_profit_sum": 700.78811017,
+        "n_confirm": 11,
+        "n_scout": 43,
+        "confirm_loss": {
+          "n": 2,
+          "sum": -54.36023201,
+          "worst": -39.66793137
+        },
+        "confirm_win": {
+          "n": 9,
+          "sum": 816.12343776,
+          "best": 244.81948764
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2025",
+            "trades": 19,
+            "profit_abs": 164.98387432,
+            "profit_factor": 2.0484523
+          },
+          {
+            "key": "31/12/2026",
+            "trades": 35,
+            "profit_abs": 324.37254328,
+            "profit_factor": 2.38174875
+          }
+        ],
+        "first_stake_year_median": {
+          "2025": 117.58460000000001,
+          "2026": 171.40773333333334
+        },
+        "min_add_gap_hours": 3.0
+      },
+      "confirm_v3_BTC_noloosen": {
+        "n": 54,
+        "profit_total_abs": 494.3843989999999,
+        "profit_factor": 2.2771934313211655,
+        "max_drawdown_account": 0.12237934457579541,
+        "max_relative_drawdown": 0.12237934457579541,
+        "ratio": 4.03976995230436,
+        "underwater": 0.12237934457579541,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0,
+        "force_exit": 1,
+        "liquidation": 0,
+        "worst_trade": -34.63994997,
+        "top5_profit_sum": 700.78811017,
+        "n_confirm": 11,
+        "n_scout": 43,
+        "confirm_loss": {
+          "n": 2,
+          "sum": -49.33225061,
+          "worst": -34.63994997
+        },
+        "confirm_win": {
+          "n": 9,
+          "sum": 816.12343776,
+          "best": 244.81948764
+        },
+        "year_breakdown": [
+          {
+            "key": "31/12/2025",
+            "trades": 19,
+            "profit_abs": 170.01185572,
+            "profit_factor": 2.11606525
+          },
+          {
+            "key": "31/12/2026",
+            "trades": 35,
+            "profit_abs": 324.37254328,
+            "profit_factor": 2.38174875
+          }
+        ],
+        "first_stake_year_median": {
+          "2025": 117.58460000000001,
+          "2026": 171.40773333333334
+        },
+        "min_add_gap_hours": 3.0,
+        "vs_baseline": {
+          "n_identical": 53,
+          "only_a": 1,
+          "only_b": 1,
+          "open_only_a": 0,
+          "open_only_b": 0,
+          "n_time_or_reason_diff": 1,
+          "time_or_reason_diff": [
+            {
+              "open_date": "2025-12-07 18:00:00+00:00",
+              "is_short": false,
+              "close_a": "2025-12-11 02:00:00+00:00",
+              "close_b": "2025-12-11 01:15:00+00:00",
+              "exit_a": "trailing_stop_loss",
+              "exit_b": "trailing_stop_loss"
+            }
+          ],
+          "added_opens": [],
+          "missing_opens": []
+        }
+      }
+    }
+  },
+  "trade_set_diffs": {
+    "train": {
+      "confirm_v3_BTC_sig3h": {
+        "n_open_only_v3": 1,
+        "n_open_only_other": 4,
+        "open_only_v3": [
+          [
+            "2021-07-26 03:00:00+00:00",
+            false
+          ]
+        ],
+        "open_only_other": [
+          [
+            "2021-07-26 02:00:00+00:00",
+            false
+          ],
+          [
+            "2022-01-22 01:00:00+00:00",
+            true
+          ],
+          [
+            "2022-02-20 10:00:00+00:00",
+            true
+          ],
+          [
+            "2022-03-16 04:00:00+00:00",
+            false
+          ]
+        ],
+        "n_pnl_diff": 1,
+        "top_abs_pnl_diff": [
+          {
+            "open_date": "2024-03-05 18:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": -30.65539103,
+            "pnl_other": -6.88151391,
+            "diff": 23.77387712,
+            "close_v3": "2024-03-06 06:00:00+00:00",
+            "close_other": "2024-03-08 15:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "stop_loss"
+          }
+        ],
+        "min_add_gap_hours": 5.0,
+        "n_adds": 46,
+        "n_adds_v3": 47,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0
+      },
+      "confirm_v3_BTC_anchor1": {
+        "n_open_only_v3": 234,
+        "n_open_only_other": 238,
+        "open_only_v3": [
+          [
+            "2020-04-16 09:00:00+00:00",
+            false
+          ],
+          [
+            "2020-04-20 12:00:00+00:00",
+            true
+          ],
+          [
+            "2020-04-23 15:00:00+00:00",
+            false
+          ],
+          [
+            "2020-04-29 17:00:00+00:00",
+            false
+          ],
+          [
+            "2020-04-30 07:00:00+00:00",
+            false
+          ],
+          [
+            "2020-05-10 03:00:00+00:00",
+            true
+          ],
+          [
+            "2020-05-25 00:00:00+00:00",
+            true
+          ],
+          [
+            "2020-05-31 00:00:00+00:00",
+            false
+          ],
+          [
+            "2020-06-02 00:00:00+00:00",
+            false
+          ],
+          [
+            "2020-06-02 15:00:00+00:00",
+            true
+          ],
+          [
+            "2020-06-07 21:00:00+00:00",
+            false
+          ],
+          [
+            "2020-06-11 18:00:00+00:00",
+            true
+          ],
+          [
+            "2020-06-24 12:00:00+00:00",
+            true
+          ],
+          [
+            "2020-07-02 18:00:00+00:00",
+            true
+          ],
+          [
+            "2020-07-04 18:00:00+00:00",
+            false
+          ]
+        ],
+        "open_only_other": [
+          [
+            "2020-04-16 10:00:00+00:00",
+            false
+          ],
+          [
+            "2020-04-20 19:00:00+00:00",
+            true
+          ],
+          [
+            "2020-04-23 16:00:00+00:00",
+            false
+          ],
+          [
+            "2020-04-29 19:00:00+00:00",
+            false
+          ],
+          [
+            "2020-04-30 05:00:00+00:00",
+            false
+          ],
+          [
+            "2020-04-30 10:00:00+00:00",
+            true
+          ],
+          [
+            "2020-05-10 01:00:00+00:00",
+            true
+          ],
+          [
+            "2020-05-20 16:00:00+00:00",
+            true
+          ],
+          [
+            "2020-06-02 01:00:00+00:00",
+            false
+          ],
+          [
+            "2020-06-02 16:00:00+00:00",
+            true
+          ],
+          [
+            "2020-07-02 16:00:00+00:00",
+            true
+          ],
+          [
+            "2020-07-06 07:00:00+00:00",
+            false
+          ],
+          [
+            "2020-07-09 16:00:00+00:00",
+            true
+          ],
+          [
+            "2020-07-21 10:00:00+00:00",
+            false
+          ],
+          [
+            "2020-07-23 01:00:00+00:00",
+            false
+          ]
+        ],
+        "n_pnl_diff": 5,
+        "top_abs_pnl_diff": [
+          {
+            "open_date": "2021-09-07 16:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": -9.00787597,
+            "pnl_other": 41.47336155,
+            "diff": 50.48123752,
+            "close_v3": "2021-09-18 05:00:00+00:00",
+            "close_other": "2021-09-21 07:00:00+00:00",
+            "exit_v3": "stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2023-03-13 16:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": 4.5823168,
+            "pnl_other": -38.55964694,
+            "diff": -43.14196374,
+            "close_v3": "2023-03-14 12:00:00+00:00",
+            "close_other": "2023-03-14 21:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2022-05-05 16:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": 61.2067033,
+            "pnl_other": 24.73764917,
+            "diff": -36.46905413,
+            "close_v3": "2022-05-14 22:00:00+00:00",
+            "close_other": "2022-05-09 20:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2021-09-05 22:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": -2.38694735,
+            "pnl_other": -4.94041435,
+            "diff": -2.5534670000000004,
+            "close_v3": "2021-09-07 09:00:00+00:00",
+            "close_other": "2021-09-07 10:00:00+00:00",
+            "exit_v3": "exit_signal",
+            "exit_other": "exit_signal"
+          },
+          {
+            "open_date": "2024-01-03 13:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": -9.60182048,
+            "pnl_other": -9.00369804,
+            "diff": 0.5981224400000009,
+            "close_v3": "2024-01-04 15:00:00+00:00",
+            "close_other": "2024-01-04 20:00:00+00:00",
+            "exit_v3": "stop_loss",
+            "exit_other": "stop_loss"
+          }
+        ],
+        "min_add_gap_hours": 3.0,
+        "n_adds": 53,
+        "n_adds_v3": 47,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0
+      },
+      "confirm_v3_BTC_anchor2": {
+        "n_open_only_v3": 234,
+        "n_open_only_other": 236,
+        "open_only_v3": [
+          [
+            "2020-04-16 09:00:00+00:00",
+            false
+          ],
+          [
+            "2020-04-20 12:00:00+00:00",
+            true
+          ],
+          [
+            "2020-04-23 15:00:00+00:00",
+            false
+          ],
+          [
+            "2020-04-30 07:00:00+00:00",
+            false
+          ],
+          [
+            "2020-05-10 03:00:00+00:00",
+            true
+          ],
+          [
+            "2020-05-25 00:00:00+00:00",
+            true
+          ],
+          [
+            "2020-05-31 00:00:00+00:00",
+            false
+          ],
+          [
+            "2020-06-02 00:00:00+00:00",
+            false
+          ],
+          [
+            "2020-06-02 15:00:00+00:00",
+            true
+          ],
+          [
+            "2020-06-07 21:00:00+00:00",
+            false
+          ],
+          [
+            "2020-06-24 12:00:00+00:00",
+            true
+          ],
+          [
+            "2020-07-02 18:00:00+00:00",
+            true
+          ],
+          [
+            "2020-07-04 18:00:00+00:00",
+            false
+          ],
+          [
+            "2020-07-21 09:00:00+00:00",
+            false
+          ],
+          [
+            "2020-07-23 00:00:00+00:00",
+            false
+          ]
+        ],
+        "open_only_other": [
+          [
+            "2020-04-16 08:00:00+00:00",
+            false
+          ],
+          [
+            "2020-04-20 20:00:00+00:00",
+            true
+          ],
+          [
+            "2020-04-23 17:00:00+00:00",
+            false
+          ],
+          [
+            "2020-05-10 02:00:00+00:00",
+            true
+          ],
+          [
+            "2020-05-27 11:00:00+00:00",
+            false
+          ],
+          [
+            "2020-06-02 02:00:00+00:00",
+            false
+          ],
+          [
+            "2020-06-02 17:00:00+00:00",
+            true
+          ],
+          [
+            "2020-06-07 20:00:00+00:00",
+            false
+          ],
+          [
+            "2020-06-11 17:00:00+00:00",
+            true
+          ],
+          [
+            "2020-06-24 08:00:00+00:00",
+            true
+          ],
+          [
+            "2020-07-02 17:00:00+00:00",
+            true
+          ],
+          [
+            "2020-07-08 14:00:00+00:00",
+            false
+          ],
+          [
+            "2020-07-09 17:00:00+00:00",
+            true
+          ],
+          [
+            "2020-07-21 08:00:00+00:00",
+            false
+          ],
+          [
+            "2020-07-22 23:00:00+00:00",
+            false
+          ]
+        ],
+        "n_pnl_diff": 5,
+        "top_abs_pnl_diff": [
+          {
+            "open_date": "2020-06-11 18:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": -34.04635197,
+            "pnl_other": -9.16062506,
+            "diff": 24.885726910000002,
+            "close_v3": "2020-06-15 16:00:00+00:00",
+            "close_other": "2020-06-22 20:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "stop_loss"
+          },
+          {
+            "open_date": "2020-04-29 17:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": 32.47053896,
+            "pnl_other": 8.05008452,
+            "diff": -24.42045444,
+            "close_v3": "2020-04-30 06:00:00+00:00",
+            "close_other": "2020-04-30 09:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2023-07-10 22:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": -18.1740036,
+            "pnl_other": 0.23157508,
+            "diff": 18.405578679999998,
+            "close_v3": "2023-07-14 18:00:00+00:00",
+            "close_other": "2023-07-10 23:00:00+00:00",
+            "exit_v3": "exit_signal",
+            "exit_other": "exit_signal"
+          },
+          {
+            "open_date": "2024-04-13 21:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": -9.84102498,
+            "pnl_other": -8.1582159,
+            "diff": 1.6828090800000002,
+            "close_v3": "2024-04-13 23:00:00+00:00",
+            "close_other": "2024-04-13 22:00:00+00:00",
+            "exit_v3": "stop_loss",
+            "exit_other": "stop_loss"
+          },
+          {
+            "open_date": "2022-12-13 14:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": -10.4183118,
+            "pnl_other": -9.95297306,
+            "diff": 0.46533874,
+            "close_v3": "2022-12-13 17:00:00+00:00",
+            "close_other": "2022-12-14 19:00:00+00:00",
+            "exit_v3": "stop_loss",
+            "exit_other": "stop_loss"
+          }
+        ],
+        "min_add_gap_hours": 3.0,
+        "n_adds": 46,
+        "n_adds_v3": 47,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0
+      },
+      "confirm_v3_BTC_eqrisk": {
+        "n_open_only_v3": 0,
+        "n_open_only_other": 0,
+        "open_only_v3": [],
+        "open_only_other": [],
+        "n_pnl_diff": 225,
+        "top_abs_pnl_diff": [
+          {
+            "open_date": "2023-11-22 21:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": 175.08645189,
+            "pnl_other": 450.14593166,
+            "diff": 275.05947976999994,
+            "close_v3": "2023-12-11 01:00:00+00:00",
+            "close_other": "2023-12-11 01:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2023-06-16 18:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": 170.49643613,
+            "pnl_other": 352.10105823,
+            "diff": 181.60462209999997,
+            "close_v3": "2023-06-25 20:00:00+00:00",
+            "close_other": "2023-06-25 20:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2022-06-12 03:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": 215.29465707,
+            "pnl_other": 379.87389476,
+            "diff": 164.57923768999999,
+            "close_v3": "2022-06-19 18:00:00+00:00",
+            "close_other": "2022-06-19 18:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2023-10-16 15:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": 81.88611591,
+            "pnl_other": 191.06760378,
+            "diff": 109.18148787000001,
+            "close_v3": "2023-10-23 22:00:00+00:00",
+            "close_other": "2023-10-23 22:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2024-01-01 21:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": -51.67458099,
+            "pnl_other": -147.63027109,
+            "diff": -95.9556901,
+            "close_v3": "2024-01-03 11:00:00+00:00",
+            "close_other": "2024-01-03 11:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2024-02-28 10:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": -40.01128193,
+            "pnl_other": -122.13758801,
+            "diff": -82.12630608,
+            "close_v3": "2024-02-28 17:00:00+00:00",
+            "close_other": "2024-02-28 17:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2024-07-31 21:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": 51.11666379,
+            "pnl_other": 133.02870599,
+            "diff": 81.9120422,
+            "close_v3": "2024-08-05 15:00:00+00:00",
+            "close_other": "2024-08-05 15:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2024-03-05 18:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": -30.65539103,
+            "pnl_other": -111.06826461,
+            "diff": -80.41287358,
+            "close_v3": "2024-03-06 06:00:00+00:00",
+            "close_other": "2024-03-06 06:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          }
+        ],
+        "min_add_gap_hours": 3.0,
+        "n_adds": 47,
+        "n_adds_v3": 47,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0
+      },
+      "confirm_v3_BTC_noloosen": {
+        "n_open_only_v3": 0,
+        "n_open_only_other": 0,
+        "open_only_v3": [],
+        "open_only_other": [],
+        "n_pnl_diff": 5,
+        "top_abs_pnl_diff": [
+          {
+            "open_date": "2024-01-01 21:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": -51.67458099,
+            "pnl_other": -45.49589043,
+            "diff": 6.17869056,
+            "close_v3": "2024-01-03 11:00:00+00:00",
+            "close_other": "2024-01-03 11:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2023-05-24 06:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": -46.5719313,
+            "pnl_other": -41.58414042,
+            "diff": 4.987790880000006,
+            "close_v3": "2023-05-26 14:00:00+00:00",
+            "close_other": "2023-05-26 14:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2024-02-28 10:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": -40.01128193,
+            "pnl_other": -36.25533685,
+            "diff": 3.7559450800000036,
+            "close_v3": "2024-02-28 17:00:00+00:00",
+            "close_other": "2024-02-28 17:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2024-03-05 18:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": -30.65539103,
+            "pnl_other": -27.63037711,
+            "diff": 3.0250139199999992,
+            "close_v3": "2024-03-06 06:00:00+00:00",
+            "close_other": "2024-03-06 05:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2020-10-10 03:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": -48.37015595,
+            "pnl_other": -46.73493767,
+            "diff": 1.6352182799999966,
+            "close_v3": "2020-10-16 04:00:00+00:00",
+            "close_other": "2020-10-16 04:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          }
+        ],
+        "min_add_gap_hours": 3.0,
+        "n_adds": 47,
+        "n_adds_v3": 47,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0
+      },
+      "confirm_v3_BTC_noloosen_keepR": {
+        "n_open_only_v3": 1,
+        "n_open_only_other": 3,
+        "open_only_v3": [
+          [
+            "2022-05-05 16:00:00+00:00",
+            true
+          ]
+        ],
+        "open_only_other": [
+          [
+            "2020-07-27 07:00:00+00:00",
+            false
+          ],
+          [
+            "2022-04-18 06:00:00+00:00",
+            true
+          ],
+          [
+            "2022-09-19 04:00:00+00:00",
+            true
+          ]
+        ],
+        "n_pnl_diff": 30,
+        "top_abs_pnl_diff": [
+          {
+            "open_date": "2022-04-26 15:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": 16.14174343,
+            "pnl_other": 268.7572753,
+            "diff": 252.61553187,
+            "close_v3": "2022-05-05 15:00:00+00:00",
+            "close_other": "2022-05-14 22:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2024-06-07 18:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": 12.03267016,
+            "pnl_other": -32.61250088,
+            "diff": -44.64517104,
+            "close_v3": "2024-06-12 12:00:00+00:00",
+            "close_other": "2024-06-12 15:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "exit_signal"
+          },
+          {
+            "open_date": "2023-07-10 22:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": -18.1740036,
+            "pnl_other": 15.60174563,
+            "diff": 33.77574923,
+            "close_v3": "2023-07-14 18:00:00+00:00",
+            "close_other": "2023-07-13 21:00:00+00:00",
+            "exit_v3": "exit_signal",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2022-04-11 00:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": 49.40914086,
+            "pnl_other": 17.20056917,
+            "diff": -32.20857169,
+            "close_v3": "2022-04-18 17:00:00+00:00",
+            "close_other": "2022-04-13 14:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2023-04-10 18:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": 44.73248295,
+            "pnl_other": 15.2872582,
+            "diff": -29.445224749999998,
+            "close_v3": "2023-04-16 01:00:00+00:00",
+            "close_other": "2023-04-12 15:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2020-04-29 17:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": 32.47053896,
+            "pnl_other": 16.49932744,
+            "diff": -15.97121152,
+            "close_v3": "2020-04-30 06:00:00+00:00",
+            "close_other": "2020-04-30 06:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2020-09-04 00:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": -10.7934122,
+            "pnl_other": -23.6711342,
+            "diff": -12.877722,
+            "close_v3": "2020-09-14 08:00:00+00:00",
+            "close_other": "2020-09-14 13:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2022-01-21 00:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": 29.41304401,
+            "pnl_other": 19.25195101,
+            "diff": -10.161093000000001,
+            "close_v3": "2022-01-22 00:00:00+00:00",
+            "close_other": "2022-01-22 00:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          }
+        ],
+        "min_add_gap_hours": 3.0,
+        "n_adds": 47,
+        "n_adds_v3": 47,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0
+      },
+      "confirm_v3_BTC": {
+        "min_add_gap_hours": 3.0,
+        "n_adds": 47,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0
+      }
+    },
+    "check1": {
+      "confirm_v3_BTC_sig3h": {
+        "n_open_only_v3": 0,
+        "n_open_only_other": 1,
+        "open_only_v3": [],
+        "open_only_other": [
+          [
+            "2025-02-25 01:00:00+00:00",
+            true
+          ]
+        ],
+        "n_pnl_diff": 1,
+        "top_abs_pnl_diff": [
+          {
+            "open_date": "2025-02-21 18:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": 201.94225954,
+            "pnl_other": 18.29788638,
+            "diff": -183.64437316000001,
+            "close_v3": "2025-03-01 02:00:00+00:00",
+            "close_other": "2025-02-25 00:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          }
+        ],
+        "min_add_gap_hours": 6.0,
+        "n_adds": 13,
+        "n_adds_v3": 12,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0
+      },
+      "confirm_v3_BTC_anchor1": {
+        "n_open_only_v3": 47,
+        "n_open_only_other": 50,
+        "open_only_v3": [
+          [
+            "2024-09-03 15:00:00+00:00",
+            true
+          ],
+          [
+            "2024-09-09 18:00:00+00:00",
+            false
+          ],
+          [
+            "2024-09-30 03:00:00+00:00",
+            true
+          ],
+          [
+            "2024-10-09 21:00:00+00:00",
+            true
+          ],
+          [
+            "2024-10-14 06:00:00+00:00",
+            false
+          ],
+          [
+            "2024-10-25 18:00:00+00:00",
+            true
+          ],
+          [
+            "2024-11-06 03:00:00+00:00",
+            false
+          ],
+          [
+            "2024-11-21 06:00:00+00:00",
+            false
+          ],
+          [
+            "2024-11-25 15:00:00+00:00",
+            true
+          ],
+          [
+            "2024-12-04 21:00:00+00:00",
+            false
+          ],
+          [
+            "2024-12-10 18:00:00+00:00",
+            true
+          ],
+          [
+            "2024-12-18 21:00:00+00:00",
+            true
+          ],
+          [
+            "2024-12-24 15:00:00+00:00",
+            false
+          ],
+          [
+            "2024-12-30 15:00:00+00:00",
+            true
+          ],
+          [
+            "2025-01-07 18:00:00+00:00",
+            true
+          ]
+        ],
+        "open_only_other": [
+          [
+            "2024-09-03 16:00:00+00:00",
+            true
+          ],
+          [
+            "2024-09-04 16:00:00+00:00",
+            false
+          ],
+          [
+            "2024-09-06 16:00:00+00:00",
+            true
+          ],
+          [
+            "2024-09-13 16:00:00+00:00",
+            false
+          ],
+          [
+            "2024-09-17 16:00:00+00:00",
+            false
+          ],
+          [
+            "2024-09-19 01:00:00+00:00",
+            false
+          ],
+          [
+            "2024-10-07 01:00:00+00:00",
+            false
+          ],
+          [
+            "2024-10-14 04:00:00+00:00",
+            false
+          ],
+          [
+            "2024-11-06 01:00:00+00:00",
+            false
+          ],
+          [
+            "2024-11-06 05:00:00+00:00",
+            false
+          ],
+          [
+            "2024-11-13 16:00:00+00:00",
+            false
+          ],
+          [
+            "2024-11-13 22:00:00+00:00",
+            true
+          ],
+          [
+            "2024-12-02 16:00:00+00:00",
+            false
+          ],
+          [
+            "2024-12-02 18:00:00+00:00",
+            false
+          ],
+          [
+            "2024-12-05 06:00:00+00:00",
+            false
+          ]
+        ],
+        "n_pnl_diff": 0,
+        "top_abs_pnl_diff": [],
+        "min_add_gap_hours": 3.0,
+        "n_adds": 13,
+        "n_adds_v3": 12,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0
+      },
+      "confirm_v3_BTC_anchor2": {
+        "n_open_only_v3": 47,
+        "n_open_only_other": 47,
+        "open_only_v3": [
+          [
+            "2024-09-03 15:00:00+00:00",
+            true
+          ],
+          [
+            "2024-09-09 18:00:00+00:00",
+            false
+          ],
+          [
+            "2024-09-30 03:00:00+00:00",
+            true
+          ],
+          [
+            "2024-10-09 21:00:00+00:00",
+            true
+          ],
+          [
+            "2024-10-14 06:00:00+00:00",
+            false
+          ],
+          [
+            "2024-10-25 18:00:00+00:00",
+            true
+          ],
+          [
+            "2024-11-06 03:00:00+00:00",
+            false
+          ],
+          [
+            "2024-11-21 06:00:00+00:00",
+            false
+          ],
+          [
+            "2024-11-25 15:00:00+00:00",
+            true
+          ],
+          [
+            "2024-12-04 21:00:00+00:00",
+            false
+          ],
+          [
+            "2024-12-10 18:00:00+00:00",
+            true
+          ],
+          [
+            "2024-12-18 21:00:00+00:00",
+            true
+          ],
+          [
+            "2024-12-24 15:00:00+00:00",
+            false
+          ],
+          [
+            "2024-12-30 15:00:00+00:00",
+            true
+          ],
+          [
+            "2025-01-07 18:00:00+00:00",
+            true
+          ]
+        ],
+        "open_only_other": [
+          [
+            "2024-09-04 17:00:00+00:00",
+            false
+          ],
+          [
+            "2024-09-06 17:00:00+00:00",
+            true
+          ],
+          [
+            "2024-09-17 17:00:00+00:00",
+            false
+          ],
+          [
+            "2024-09-30 02:00:00+00:00",
+            true
+          ],
+          [
+            "2024-10-07 02:00:00+00:00",
+            false
+          ],
+          [
+            "2024-10-14 05:00:00+00:00",
+            false
+          ],
+          [
+            "2024-10-15 15:00:00+00:00",
+            false
+          ],
+          [
+            "2024-11-06 05:00:00+00:00",
+            false
+          ],
+          [
+            "2024-11-10 07:00:00+00:00",
+            false
+          ],
+          [
+            "2024-11-21 05:00:00+00:00",
+            false
+          ],
+          [
+            "2024-12-04 20:00:00+00:00",
+            false
+          ],
+          [
+            "2024-12-05 05:00:00+00:00",
+            false
+          ],
+          [
+            "2024-12-16 02:00:00+00:00",
+            false
+          ],
+          [
+            "2024-12-19 20:00:00+00:00",
+            true
+          ],
+          [
+            "2024-12-30 20:00:00+00:00",
+            false
+          ]
+        ],
+        "n_pnl_diff": 0,
+        "top_abs_pnl_diff": [],
+        "min_add_gap_hours": 15.0,
+        "n_adds": 11,
+        "n_adds_v3": 12,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0
+      },
+      "confirm_v3_BTC_eqrisk": {
+        "n_open_only_v3": 0,
+        "n_open_only_other": 0,
+        "open_only_v3": [],
+        "open_only_other": [],
+        "n_pnl_diff": 42,
+        "top_abs_pnl_diff": [
+          {
+            "open_date": "2025-02-21 18:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": 201.94225954,
+            "pnl_other": 242.33071145,
+            "diff": 40.388451909999986,
+            "close_v3": "2025-03-01 02:00:00+00:00",
+            "close_other": "2025-03-01 02:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2025-08-24 21:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": -42.98598566,
+            "pnl_other": -75.22547491,
+            "diff": -32.239489250000005,
+            "close_v3": "2025-08-28 04:00:00+00:00",
+            "close_other": "2025-08-28 04:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2025-06-09 12:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": -43.46653655,
+            "pnl_other": -73.70254779,
+            "diff": -30.236011239999996,
+            "close_v3": "2025-06-12 03:00:00+00:00",
+            "close_other": "2025-06-12 03:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2025-04-09 18:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": 49.57958569,
+            "pnl_other": 77.18151978,
+            "diff": 27.60193409,
+            "close_v3": "2025-04-28 01:00:00+00:00",
+            "close_other": "2025-04-28 01:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2024-12-04 21:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": -37.6252835,
+            "pnl_other": -64.98470827,
+            "diff": -27.359424769999997,
+            "close_v3": "2024-12-05 22:00:00+00:00",
+            "close_other": "2024-12-05 22:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2025-06-17 00:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": 43.83020556,
+            "pnl_other": 61.36228779,
+            "diff": 17.53208223,
+            "close_v3": "2025-06-23 13:00:00+00:00",
+            "close_other": "2025-06-23 13:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2025-05-07 00:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": 26.82391404,
+            "pnl_other": 42.91826246,
+            "diff": 16.094348420000003,
+            "close_v3": "2025-05-12 15:00:00+00:00",
+            "close_other": "2025-05-12 15:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2025-04-03 00:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": 24.0250315,
+            "pnl_other": 40.04171916,
+            "diff": 16.01668766,
+            "close_v3": "2025-04-07 14:00:00+00:00",
+            "close_other": "2025-04-07 14:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          }
+        ],
+        "min_add_gap_hours": 3.0,
+        "n_adds": 12,
+        "n_adds_v3": 12,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0
+      },
+      "confirm_v3_BTC_noloosen": {
+        "n_open_only_v3": 0,
+        "n_open_only_other": 0,
+        "open_only_v3": [],
+        "open_only_other": [],
+        "n_pnl_diff": 3,
+        "top_abs_pnl_diff": [
+          {
+            "open_date": "2025-08-24 21:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": -42.98598566,
+            "pnl_other": -33.34475038,
+            "diff": 9.641235279999997,
+            "close_v3": "2025-08-28 04:00:00+00:00",
+            "close_other": "2025-08-27 14:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2024-12-04 21:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": -37.6252835,
+            "pnl_other": -32.83875714,
+            "diff": 4.786526360000003,
+            "close_v3": "2024-12-05 22:00:00+00:00",
+            "close_other": "2024-12-05 20:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2025-06-09 12:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": -43.46653655,
+            "pnl_other": -38.72448306,
+            "diff": 4.7420534900000035,
+            "close_v3": "2025-06-12 03:00:00+00:00",
+            "close_other": "2025-06-11 22:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          }
+        ],
+        "min_add_gap_hours": 3.0,
+        "n_adds": 12,
+        "n_adds_v3": 12,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0
+      },
+      "confirm_v3_BTC_noloosen_keepR": {
+        "n_open_only_v3": 0,
+        "n_open_only_other": 1,
+        "open_only_v3": [],
+        "open_only_other": [
+          [
+            "2024-11-10 07:00:00+00:00",
+            false
+          ]
+        ],
+        "n_pnl_diff": 7,
+        "top_abs_pnl_diff": [
+          {
+            "open_date": "2024-11-06 03:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": 159.7041082,
+            "pnl_other": 16.30797514,
+            "diff": -143.39613306,
+            "close_v3": "2024-11-17 22:00:00+00:00",
+            "close_other": "2024-11-10 06:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2024-09-09 18:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": 165.93798079,
+            "pnl_other": 30.72255649,
+            "diff": -135.21542430000002,
+            "close_v3": "2024-09-30 01:00:00+00:00",
+            "close_other": "2024-09-15 23:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2025-08-24 21:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": -42.98598566,
+            "pnl_other": -33.34475038,
+            "diff": 9.641235279999997,
+            "close_v3": "2025-08-28 04:00:00+00:00",
+            "close_other": "2025-08-27 14:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2024-12-04 21:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": -37.6252835,
+            "pnl_other": -32.83875714,
+            "diff": 4.786526360000003,
+            "close_v3": "2024-12-05 22:00:00+00:00",
+            "close_other": "2024-12-05 20:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2025-06-09 12:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": -43.46653655,
+            "pnl_other": -38.72448306,
+            "diff": 4.7420534900000035,
+            "close_v3": "2025-06-12 03:00:00+00:00",
+            "close_other": "2025-06-11 22:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2025-07-11 00:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": 12.60269455,
+            "pnl_other": 14.33865235,
+            "diff": 1.7359577999999996,
+            "close_v3": "2025-07-14 10:00:00+00:00",
+            "close_other": "2025-07-14 09:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2025-01-20 18:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": 4.04779591,
+            "pnl_other": 2.94553495,
+            "diff": -1.1022609599999997,
+            "close_v3": "2025-01-27 13:00:00+00:00",
+            "close_other": "2025-01-27 15:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "exit_signal"
+          }
+        ],
+        "min_add_gap_hours": 3.0,
+        "n_adds": 13,
+        "n_adds_v3": 12,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0
+      },
+      "confirm_v3_BTC": {
+        "min_add_gap_hours": 3.0,
+        "n_adds": 12,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0
+      }
+    },
+    "check2": {
+      "confirm_v3_BTC_sig3h": {
+        "n_open_only_v3": 1,
+        "n_open_only_other": 2,
+        "open_only_v3": [
+          [
+            "2025-10-17 09:00:00+00:00",
+            true
+          ]
+        ],
+        "open_only_other": [
+          [
+            "2025-10-10 22:00:00+00:00",
+            true
+          ],
+          [
+            "2025-10-17 10:00:00+00:00",
+            true
+          ]
+        ],
+        "n_pnl_diff": 1,
+        "top_abs_pnl_diff": [
+          {
+            "open_date": "2025-10-10 18:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": 93.59348034,
+            "pnl_other": 30.95270976,
+            "diff": -62.640770579999995,
+            "close_v3": "2025-10-10 21:00:00+00:00",
+            "close_other": "2025-10-10 21:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          }
+        ],
+        "min_add_gap_hours": 9.0,
+        "n_adds": 11,
+        "n_adds_v3": 11,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0
+      },
+      "confirm_v3_BTC_anchor1": {
+        "n_open_only_v3": 53,
+        "n_open_only_other": 53,
+        "open_only_v3": [
+          [
+            "2025-09-22 03:00:00+00:00",
+            true
+          ],
+          [
+            "2025-09-25 18:00:00+00:00",
+            true
+          ],
+          [
+            "2025-09-29 00:00:00+00:00",
+            false
+          ],
+          [
+            "2025-10-10 18:00:00+00:00",
+            true
+          ],
+          [
+            "2025-10-17 09:00:00+00:00",
+            true
+          ],
+          [
+            "2025-10-21 15:00:00+00:00",
+            false
+          ],
+          [
+            "2025-10-28 21:00:00+00:00",
+            true
+          ],
+          [
+            "2025-11-04 18:00:00+00:00",
+            true
+          ],
+          [
+            "2025-11-13 18:00:00+00:00",
+            true
+          ],
+          [
+            "2025-11-26 18:00:00+00:00",
+            false
+          ],
+          [
+            "2025-12-01 03:00:00+00:00",
+            true
+          ],
+          [
+            "2025-12-07 18:00:00+00:00",
+            false
+          ],
+          [
+            "2025-12-12 18:00:00+00:00",
+            true
+          ],
+          [
+            "2025-12-17 15:00:00+00:00",
+            false
+          ],
+          [
+            "2025-12-17 16:00:00+00:00",
+            false
+          ]
+        ],
+        "open_only_other": [
+          [
+            "2025-09-22 01:00:00+00:00",
+            true
+          ],
+          [
+            "2025-09-22 07:00:00+00:00",
+            true
+          ],
+          [
+            "2025-09-29 01:00:00+00:00",
+            false
+          ],
+          [
+            "2025-10-07 16:00:00+00:00",
+            true
+          ],
+          [
+            "2025-10-10 22:00:00+00:00",
+            true
+          ],
+          [
+            "2025-10-21 16:00:00+00:00",
+            false
+          ],
+          [
+            "2025-10-28 22:00:00+00:00",
+            true
+          ],
+          [
+            "2025-11-03 04:00:00+00:00",
+            true
+          ],
+          [
+            "2025-11-12 16:00:00+00:00",
+            true
+          ],
+          [
+            "2025-11-26 19:00:00+00:00",
+            false
+          ],
+          [
+            "2025-12-01 01:00:00+00:00",
+            true
+          ],
+          [
+            "2025-12-02 16:00:00+00:00",
+            false
+          ],
+          [
+            "2025-12-07 19:00:00+00:00",
+            false
+          ],
+          [
+            "2025-12-09 16:00:00+00:00",
+            false
+          ],
+          [
+            "2025-12-12 16:00:00+00:00",
+            true
+          ]
+        ],
+        "n_pnl_diff": 1,
+        "top_abs_pnl_diff": [
+          {
+            "open_date": "2026-08-19 16:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": 33.69391695,
+            "pnl_other": 23.71179315,
+            "diff": -9.982123800000004,
+            "close_v3": "2026-08-20 09:00:00+00:00",
+            "close_other": "2026-08-20 10:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          }
+        ],
+        "min_add_gap_hours": 12.0,
+        "n_adds": 14,
+        "n_adds_v3": 11,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0
+      },
+      "confirm_v3_BTC_anchor2": {
+        "n_open_only_v3": 53,
+        "n_open_only_other": 53,
+        "open_only_v3": [
+          [
+            "2025-09-22 03:00:00+00:00",
+            true
+          ],
+          [
+            "2025-09-25 18:00:00+00:00",
+            true
+          ],
+          [
+            "2025-09-29 00:00:00+00:00",
+            false
+          ],
+          [
+            "2025-10-10 18:00:00+00:00",
+            true
+          ],
+          [
+            "2025-10-17 09:00:00+00:00",
+            true
+          ],
+          [
+            "2025-10-21 15:00:00+00:00",
+            false
+          ],
+          [
+            "2025-10-28 21:00:00+00:00",
+            true
+          ],
+          [
+            "2025-11-04 18:00:00+00:00",
+            true
+          ],
+          [
+            "2025-11-13 18:00:00+00:00",
+            true
+          ],
+          [
+            "2025-11-26 18:00:00+00:00",
+            false
+          ],
+          [
+            "2025-12-01 03:00:00+00:00",
+            true
+          ],
+          [
+            "2025-12-07 18:00:00+00:00",
+            false
+          ],
+          [
+            "2025-12-12 18:00:00+00:00",
+            true
+          ],
+          [
+            "2025-12-17 15:00:00+00:00",
+            false
+          ],
+          [
+            "2025-12-17 16:00:00+00:00",
+            false
+          ]
+        ],
+        "open_only_other": [
+          [
+            "2025-09-22 02:00:00+00:00",
+            true
+          ],
+          [
+            "2025-09-22 08:00:00+00:00",
+            true
+          ],
+          [
+            "2025-09-28 23:00:00+00:00",
+            false
+          ],
+          [
+            "2025-10-01 11:00:00+00:00",
+            false
+          ],
+          [
+            "2025-10-05 05:00:00+00:00",
+            false
+          ],
+          [
+            "2025-10-09 17:00:00+00:00",
+            true
+          ],
+          [
+            "2025-10-10 17:00:00+00:00",
+            true
+          ],
+          [
+            "2025-10-10 23:00:00+00:00",
+            true
+          ],
+          [
+            "2025-10-20 05:00:00+00:00",
+            false
+          ],
+          [
+            "2025-10-21 17:00:00+00:00",
+            false
+          ],
+          [
+            "2025-10-30 08:00:00+00:00",
+            false
+          ],
+          [
+            "2025-11-12 17:00:00+00:00",
+            true
+          ],
+          [
+            "2025-11-20 17:00:00+00:00",
+            true
+          ],
+          [
+            "2025-12-01 02:00:00+00:00",
+            true
+          ],
+          [
+            "2025-12-02 17:00:00+00:00",
+            false
+          ]
+        ],
+        "n_pnl_diff": 1,
+        "top_abs_pnl_diff": [
+          {
+            "open_date": "2026-06-25 15:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": -8.54061482,
+            "pnl_other": -8.3733145,
+            "diff": 0.16730032000000072,
+            "close_v3": "2026-07-02 12:00:00+00:00",
+            "close_other": "2026-07-02 12:00:00+00:00",
+            "exit_v3": "stop_loss",
+            "exit_other": "stop_loss"
+          }
+        ],
+        "min_add_gap_hours": 14.0,
+        "n_adds": 6,
+        "n_adds_v3": 11,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0
+      },
+      "confirm_v3_BTC_eqrisk": {
+        "n_open_only_v3": 0,
+        "n_open_only_other": 0,
+        "open_only_v3": [],
+        "open_only_other": [],
+        "n_pnl_diff": 50,
+        "top_abs_pnl_diff": [
+          {
+            "open_date": "2026-01-29 18:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": 244.81948764,
+            "pnl_other": 306.02435955,
+            "diff": 61.20487190999998,
+            "close_v3": "2026-02-06 13:00:00+00:00",
+            "close_other": "2026-02-06 13:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2026-08-17 03:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": 139.63761619,
+            "pnl_other": 183.00903071,
+            "diff": 43.37141452,
+            "close_v3": "2026-08-19 15:00:00+00:00",
+            "close_other": "2026-08-19 15:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2025-10-10 18:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": 93.59348034,
+            "pnl_other": 124.79130712,
+            "diff": 31.19782678,
+            "close_v3": "2025-10-10 21:00:00+00:00",
+            "close_other": "2025-10-10 21:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2026-04-08 00:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": 47.97442565,
+            "pnl_other": 73.5049856,
+            "diff": 25.530559949999997,
+            "close_v3": "2026-04-19 01:00:00+00:00",
+            "close_other": "2026-04-19 01:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2025-12-07 18:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": -39.66793137,
+            "pnl_other": -60.8245249,
+            "diff": -21.156593530000002,
+            "close_v3": "2025-12-11 02:00:00+00:00",
+            "close_other": "2025-12-11 02:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2026-08-19 16:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": 33.69391695,
+            "pnl_other": 50.53501624,
+            "diff": 16.841099289999995,
+            "close_v3": "2026-08-20 09:00:00+00:00",
+            "close_other": "2026-08-20 09:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2025-11-13 18:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": 46.19045826,
+            "pnl_other": 61.36237593,
+            "diff": 15.17191767,
+            "close_v3": "2025-11-23 04:00:00+00:00",
+            "close_other": "2025-11-23 04:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2026-08-20 10:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": 22.01304084,
+            "pnl_other": 35.46622101,
+            "diff": 13.45318017,
+            "close_v3": "2026-08-21 09:00:00+00:00",
+            "close_other": "2026-08-21 09:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          }
+        ],
+        "min_add_gap_hours": 3.0,
+        "n_adds": 11,
+        "n_adds_v3": 11,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0
+      },
+      "confirm_v3_BTC_noloosen": {
+        "n_open_only_v3": 0,
+        "n_open_only_other": 0,
+        "open_only_v3": [],
+        "open_only_other": [],
+        "n_pnl_diff": 1,
+        "top_abs_pnl_diff": [
+          {
+            "open_date": "2025-12-07 18:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": -39.66793137,
+            "pnl_other": -34.63994997,
+            "diff": 5.0279813999999945,
+            "close_v3": "2025-12-11 02:00:00+00:00",
+            "close_other": "2025-12-11 01:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          }
+        ],
+        "min_add_gap_hours": 3.0,
+        "n_adds": 11,
+        "n_adds_v3": 11,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0
+      },
+      "confirm_v3_BTC_noloosen_keepR": {
+        "n_open_only_v3": 2,
+        "n_open_only_other": 2,
+        "open_only_v3": [
+          [
+            "2026-08-20 10:00:00+00:00",
+            false
+          ],
+          [
+            "2026-08-21 10:00:00+00:00",
+            false
+          ]
+        ],
+        "open_only_other": [
+          [
+            "2026-06-24 16:00:00+00:00",
+            true
+          ],
+          [
+            "2026-08-21 09:00:00+00:00",
+            false
+          ]
+        ],
+        "n_pnl_diff": 3,
+        "top_abs_pnl_diff": [
+          {
+            "open_date": "2026-08-19 16:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": 33.69391695,
+            "pnl_other": 14.10008031,
+            "diff": -19.593836640000003,
+            "close_v3": "2026-08-20 09:00:00+00:00",
+            "close_other": "2026-08-20 13:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2025-12-07 18:00:00+00:00",
+            "is_short": false,
+            "pnl_v3": -39.66793137,
+            "pnl_other": -34.63994997,
+            "diff": 5.0279813999999945,
+            "close_v3": "2025-12-11 02:00:00+00:00",
+            "close_other": "2025-12-11 01:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          },
+          {
+            "open_date": "2026-06-17 21:00:00+00:00",
+            "is_short": true,
+            "pnl_v3": 13.43791154,
+            "pnl_other": 15.2401525,
+            "diff": 1.8022409600000007,
+            "close_v3": "2026-06-24 20:00:00+00:00",
+            "close_other": "2026-06-24 15:00:00+00:00",
+            "exit_v3": "trailing_stop_loss",
+            "exit_other": "trailing_stop_loss"
+          }
+        ],
+        "min_add_gap_hours": 3.0,
+        "n_adds": 10,
+        "n_adds_v3": 11,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0
+      },
+      "confirm_v3_BTC": {
+        "min_add_gap_hours": 3.0,
+        "n_adds": 11,
+        "rejected_signals": 0,
+        "canceled_entry_orders": 0
+      }
+    }
+  },
+  "noloosen_5m_identity": {
+    "n_identical": 53,
+    "only_a": 1,
+    "only_b": 1,
+    "open_only_a": 0,
+    "open_only_b": 0,
+    "n_time_or_reason_diff": 1,
+    "time_or_reason_diff": [
+      {
+        "open_date": "2025-12-07 18:00:00+00:00",
+        "is_short": false,
+        "close_a": "2025-12-11 02:00:00+00:00",
+        "close_b": "2025-12-11 01:15:00+00:00",
+        "exit_a": "trailing_stop_loss",
+        "exit_b": "trailing_stop_loss"
+      }
+    ],
+    "added_opens": [],
+    "missing_opens": []
+  }
+}

@@ -1,0 +1,71 @@
+\section{策略构建与版本比较}
+
+\subsection{初始止损、跟踪退出与确认加仓}
+
+原始 \Original 采用波动突破、半仓首入和一次加仓，以反向信号退出。在早期 BTC/ETH 近一年样本中，该策略累计收益为 24.78\%；剔除两笔期末强平后，62 笔正常退出仅贡献 1.13\%，Profit Factor 为 1.02。结合原始代码的 \texttt{stoploss=-1} 设置，首先考察初始止损和趋势退出。
+
+SL 版本保留 2 倍杠杆与原有仓位结构，只增加 2 ATR 初始止损及 6\% 价格距离上限。该样本累计收益提高至 28.20\%，最差单笔由 $-41.14\%$ 收窄至 $-8.93\%$，但期末强平仍贡献 23.66 个百分点。Trail 版本进一步在有利移动达到 2R 后启动 0.5R 盈利保护和 3 ATR 跟踪，100 笔交易均按正常规则退出，累计收益为 9.63\%。
+
+Confirm V1 将首仓与追加仓位改为 25\%/75\%，仅在第二次独立同向突破后加仓。相对 Trail，近一年样本收益由 9.63\% 降至 8.85\%，回撤由 19.12\% 降至 11.81\%。在 2024-08-29 至 2025-08-29 的检查窗，V1 收益为 21.79\%，Profit Factor 为 1.75，回撤为 5.79\%。这些早期实验采用 BTC/ETH 样本，区别于第四节的 BTC 单币完整历史比较。
+
+\subsection{跟踪参数与资产配置}
+
+V1 对 ATR 跟踪倍数进行一维搜索，范围为 2.0 至 5.0，步长为 0.1。训练窗最优值为 4.5，4.3 至 4.7 形成邻近参数平台；检查窗的收益与回撤随参数变化如\cref{fig:trail-platform}所示。
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[
+      paper axis,
+      width=0.86\textwidth,
+      height=6.0cm,
+      xlabel={跟踪 ATR 倍数},
+      ylabel={检查窗收益与回撤（\%）},
+      xmin=3.55,xmax=5.10,
+      legend pos=north east,
+    ]
+      \addplot[PaperNavy,very thick,mark=*] table[x=multiplier,y=return_pct,col sep=comma]{data/trail_platform.csv};
+      \addlegendentry{收益率}
+      \addplot[PaperRed,thick,mark=square*] table[x=multiplier,y=drawdown_pct,col sep=comma]{data/trail_platform.csv};
+      \addlegendentry{账户回撤（当时口径）}
+    \end{axis}
+  \end{tikzpicture}
+  \caption{V1 不同 ATR 跟踪倍数的检查窗结果。回撤采用该实验归档口径。}
+  \label{fig:trail-platform}
+\end{figure}
+
+随后将杠杆由 2 倍逐步提高至 3 倍，并比较双币与 BTC 单币配置。双币各分配 270 USDT、最多两仓，BTC 单币分配 540 USDT、最多一仓；在 6\% 价格止损距离下，两者名义最大止损预算近似相等：
+\begin{equation}
+  2\times270\times3\times6\%=540\times3\times6\%=97.2\ \text{USDT}.
+  \label{eq:risk-budget-equivalence}
+\end{equation}
+BTC 专属搜索选择 3.6 ATR，邻居 3.5 和 3.7 的旧口径分数分别达到最优值的 94.6\% 和 92.4\%。3.6 在检查窗 1 未胜过 4.5，原预注册 AND 条件未通过；V2 仍将其作为 BTC 专属配置保留。
+
+\subsection{风险预算与跟踪参考价}
+
+V3 将首仓风险固定为约 10 USDT，并按式\eqref{eq:scout-stake}计算保证金，以降低固定仓位在不同波动阶段的风险差异。相对 V2，训练窗旧账户回撤由 11.13\% 降至 7.96\%，最差单笔亏损由 95.7 USDT 减至 51.7 USDT。
+
+V3.1 增加加仓后止损不放宽及 80\% 合并保证金上限。加仓仍按新均价与当前 ATR 重算风险单位，但多头止损不得降低、空头止损不得提高；其他首仓风险复利及保留旧风险单位的变体未获采用。
+
+V3.2 将跟踪参考由持仓以来的小时盘中极值改为已完成 3 小时柱的有利收盘极值，以减少单根小时价格尖峰对跟踪参考的影响。止损触发仍按盘中价格模拟；初始止损、2R 激活、0.5R 锁盈、3.6 ATR、10 USDT 首仓风险、确认加仓及保证金上限均保持不变。各版本规则汇总见\cref{tab:rule-lineage}。
+
+\begin{table}[H]
+  \centering
+  \caption{策略谱系的关键规则变化}
+  \label{tab:rule-lineage}
+  \begin{tabularx}{\textwidth}{@{}lYYYY@{}}
+    \toprule
+    版本 & 首仓与加仓 & 初始风险 & 盈利退出 & 新增约束\\
+    \midrule
+    原始系统 & 50\%/50\% & 无有效硬边界 & 反向突破 & 2 倍杠杆\\
+    Trail & 50\%/50\% & 2 ATR，最多 6\% & 2R 激活、0.5R 锁盈、3 ATR & 期末强平降为零\\
+    V1 & 25\%/75\% 确认 & 同 Trail & 同 Trail & 第二次独立突破才加仓\\
+    V2 & 25\%/75\% & 同 V1 & 3.6 ATR & BTC、3 倍、540/1 槽\\
+    V3 & 风险倒推首仓，确认加 3 倍 & 首仓约 10 USDT & 同 V2 & 波动风险归一化\\
+    V3.1 & 同 V3 & 同 V3 & 同 V3 & 止损不放宽、80\% 帽\\
+    V3.2 & 同 V3.1 & 同 V3.1 & 3h 完成收盘极值 & 盘中触发保持不变\\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+弱突破入场、EMA200 过滤、2 小时信号、其他币种扩展及机器学习过滤均未通过各自的预设标准，未纳入最终版本。具体改动与结果列于附录\ref{app:failed-branches}。

@@ -1,0 +1,106 @@
+\section{Confirm V3.2 规则伪代码}
+
+策略按以下交易状态运行：
+
+\begin{enumerate}
+  \item 将 1 小时数据按 UTC 聚合为 3 小时柱，计算 14 期 ATR 和 3 小时收盘变化。
+  \item 若收盘变化大于前一 ATR 的 2 倍，产生多头突破；若小于负 2 倍 ATR，产生空头突破。反向突破同时是已有仓位的退出信号。
+  \item 第一次入场时，按式\eqref{eq:initial-distance}计算止损距离，再按 10 USDT 初始风险预算倒推试探保证金，使用 3 倍杠杆。
+  \item 保存初始止损价格与价格风险单位 $R$。在浮盈未达到 2R 前，只使用初始止损。
+  \item 持仓期间出现第二次独立同向突破时，计划增加试探保证金的 3 倍；加仓受可用额度与账户权益 80\% 保证金帽约束。
+  \item 加仓后按新均价和当前 ATR 重算初始止损与 $R$，但多头止损不得降低、空头止损不得提高。
+  \item 有利移动达到 2R 后启动跟踪。多头至少锁定 $P_0+0.5R$，空头至少锁定 $P_0-0.5R$。
+  \item 每个已完成 3 小时柱更新入场后的最高或最低收盘价，并按式\eqref{eq:trail}形成 ATR 跟踪参考。止损触发仍由主周期盘中高低价模拟。
+  \item 任何反向突破、初始止损或跟踪止损触发时关闭仓位；样本截止时未平仓的头寸另记为期末强平。
+\end{enumerate}
+
+\section{未采用的策略变体}
+\label{app:failed-branches}
+
+\begin{longtable}{@{}p{0.17\textwidth}p{0.25\textwidth}p{0.14\textwidth}p{0.30\textwidth}@{}}
+  \caption{未采用变体的规则及实验结果}\label{tab:failed-branches}\\
+  \toprule
+  分支 & 改动 & 判定 & 主要原因\\
+  \midrule
+  \endfirsthead
+  \multicolumn{4}{l}{\small 表\thetable\ 续}\\
+  \toprule
+  分支 & 改动 & 判定 & 主要原因\\
+  \midrule
+  \endhead
+  \midrule
+  \multicolumn{4}{r}{\small 接下页}\\
+  \endfoot
+  \bottomrule
+  \endlastfoot
+  Edge & 只在突破边沿入场 & 否决 & 少 4 笔交易但收益下降 4.35 个百分点\\
+  Risk & 完整目标仓按账户 1\% 风险 & 不晋级 & 回撤下降，但预设收益回撤门槛未严格超过 V1\\
+  StepDown & 6R 后把跟踪从 4.5 收紧至 3.0 & 否决 & 训练收益、合并回撤和风险调整指标失败\\
+  RiskOpt & 搜索 0.6\%--1.4\% 风险预算 & 否决 & 训练收益未达到预设门槛\\
+  EntryOpt & 搜索 1.5--2.5 ATR 入场阈值 & 否决 & 只有 2.0 单点过线，没有连续参数平台\\
+  ScoutConfirm & 1.6 ATR 试探，2.0 ATR 确认 & 否决 & 检查窗 PF 1.188、回撤 16.96\%\\
+  EMA200 Regime & 3h EMA200 上只多、下只空 & 否决 & 检查窗收益接近零，过滤掉有价值空头\\
+  Stop15/Stop25 & 初始止损改为 1.5/2.5 ATR & 否决 & 前者提前结束盈利交易，后者收益和回撤均恶化\\
+  山寨币扩展 & 加入 SOL、XRP、BNB 等 & 否决 & 新增信号亏损且占用仓位，无稳定跨资产迁移\\
+  横截面动量 & 八币多空相对强弱 & 终止 & PF 约 1.13，利润高度集中于 XRP\\
+  2h 信号 & 将 3h 聚合缩短为 2h & 否决 & 交易增加但检查窗 2 变为亏损\\
+  ML 假突破过滤 & 因果特征、walk-forward 分类 & 否决 & AUC 约 0.53--0.54，未保留足够净利润\\
+  addrisk & 按合并止损损失倒推加仓 & 否决 & 提前结束盈利交易且回撤反增\\
+  eqrisk & 首仓风险按当前权益复利 & 否决 & 三个窗口旧风险调整指标均低于 V3\\
+  \scriptsize\texttt{noloosen\_keepR} & 加仓后不放宽且保留旧 $R$ & 否决 & 检查窗 1 的两笔大赢家提前退出\\
+  tseg & 剔除 UTC 9--11、21--23 入场 & 未采用 & 跨资产与跨年度检验未通过，仅 ETH 条件满足\\
+\end{longtable}
+
+\section{冻结文件与 SHA-256}
+
+\begin{table}[H]
+  \centering
+  \caption{主要冻结策略文件哈希}
+  \label{tab:hashes}
+  \small
+  \begin{tabularx}{\textwidth}{@{}lY Y@{}}
+    \toprule
+    版本 & 文件 & SHA-256\\
+    \midrule
+    Confirm V1 & \path{user_data/strategies/VolatilitySystemTrailConfirm.py} & \scriptsize\ttfamily\shortstack[l]{2f96b5c063d37f981c5969440d34cad\\f7f7d782f01a10192f93cbccd8ed970fc}\\
+    V1 宽跟踪 & \path{user_data/strategies/confirm_v1_hyperopt.py} & \scriptsize\ttfamily\shortstack[l]{352f73758b82a2b0c17d732143c1bc9\\f3509e186b66ebaec1272757750392c24}\\
+    Confirm V2 & \path{user_data/strategies/confirm_v2_BTC.py} & \scriptsize\ttfamily\shortstack[l]{8a1579e1a28b99ff13d9313cc95db88\\0e68315ef8e535e33bd3ff41c514d69a1}\\
+    Confirm V3 & \path{user_data/strategies/confirm_v3_BTC.py} & \scriptsize\ttfamily\shortstack[l]{9066d4172499494ed2d09a9dff896cd\\7c967dce2a555c72432b9a4f746111868}\\
+    Confirm V3.1 & \path{user_data/strategies/confirm_v3_1_BTC.py} & \scriptsize\ttfamily\shortstack[l]{b71dc0c85a5ae3cff458c31c06a364b\\fb6d1bb522df1ca7a5fe09593aae41c2e}\\
+    Confirm V3.2 & \path{user_data/strategies/confirm_v3_2_BTC.py} & \scriptsize\ttfamily\shortstack[l]{909a30dd56cd2e71db52188b1002688\\7809822bc7ad5fa5da63bc6026b121424}\\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+
+V2、V3.0、V3.1 与 V3.2 使用相同的 BTC 单币覆盖配置，SHA-256 为
+\begin{center}
+  \ttfamily\seqsplit{fc371b414b46b8b370bb028a263591caeccb04ea0c6c4a13ed4298ecc5b8785e}.
+\end{center}
+
+\section{回测归档索引}
+
+\begingroup
+\small
+\setstretch{1.12}
+完整历史对照位于
+\path{user_data/research/volatility_vs_v32_full_history/results/}：
+\begin{itemize}[nosep]
+  \item 原始系统：\path{volatilitysystem/backtest-result-2026-09-04_03-14-47.zip}；
+  SHA-256：{\ttfamily\seqsplit{a1b96594f2e84228922600e26dc2265798592951da8b2cd604d3448701f1ff2b}}。
+  \item V3.2：\path{confirm_v3_2_btc/backtest-result-2026-09-04_03-16-28.zip}；
+  SHA-256：{\ttfamily\seqsplit{3d4db40b8498bb1c3bacbcdeb407d499a43c76dfd02f4dd72004a49ea4979967}}。
+\end{itemize}
+
+版本比较归档均位于 \path{user_data/backtest_results/}：
+\begin{itemize}[nosep]
+  \item V3/V2：\path{backtest-result-2026-09-02_09-42-00.zip}；
+  \item V3/V3.1：\path{backtest-result-2026-09-02_11-32-11.zip}；
+  \item V3.1/V3.2：\path{backtest-result-2026-09-03_06-10-14.zip}。
+\end{itemize}
+
+熊市窗口资料位于 \path{user_data/research/volatility_vs_v32_bear_window/}。
+实现检验见 \path{lookahead-confirm-v3-2-btc-20260903.csv} 和
+\path{user_data/research/confirm_v3_audit/REPORT.md}。
+其余实验及配对 bootstrap 归档见
+\path{CONFIRM_V1_TO_V3_2_RESEARCH_HISTORY.md} 中的证据索引。
+\endgroup
